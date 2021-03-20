@@ -2316,7 +2316,7 @@
 <script src="assets/js/telinput/js/intlTelInput.min.js"></script>
 <script type="text/javascript" src="assets/js/select2.full.min.js"></script>
 <script type="text/javascript" src="assets/js/aos.js"></script>
-<script type="text/javascript" src="assets/js/moment.min.js"></script>
+<script type="text/javascript" src="assets/js/moment-with-locales.min.js"></script>
 <script type="text/javascript" src="assets/js/daterangepicker.js"></script>
 
 <!--Sayfaya Özel JS-->
@@ -2326,32 +2326,10 @@
         if ($('#search_checkin, #search_checkout').length) {
             var currentDate = moment().format("DD MMMM YYYY");
 
+            moment.locale('tr');
             $('#search_checkin, #search_checkout').daterangepicker({
                 locale: {
                     format: 'DD MMMM YYYY',
-                    "daysOfWeek": [
-                        "Pt",
-                        "Sa",
-                        "Çr",
-                        "Pr",
-                        "Cm",
-                        "Ct",
-                        "Pz"
-                    ],
-                    "monthNames": [
-                        "Ocak",
-                        "Şubat",
-                        "Mart",
-                        "Nisan",
-                        "Mayıs",
-                        "Haziran",
-                        "Temmuz",
-                        "Ağustos",
-                        "Eylül",
-                        "Ekim",
-                        "Kasım",
-                        "Aralık"
-                    ],
                 },
                 "alwaysShowCalendars": true,
                 "minDate": currentDate,
