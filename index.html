@@ -14,8 +14,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/js/telinput/css/intlTelInput.css">
-    <link rel="stylesheet" href="assets/css/t-datepicker-main.css">
-    <link rel="stylesheet" href="assets/css/t-datepicker.min.css">
+    <link rel="stylesheet" href="assets/css/daterangepicker.css">
     <link rel="stylesheet" href="assets/css/select2.min.css">
     <link rel="stylesheet" href="assets/css/aos.css">
 </head>
@@ -151,12 +150,14 @@
                                 </div>
                             </div>
                         </li>
-                        <div class="t-datepicker default-picker">
+                        <div class="default-picker">
                             <li class="li-item li-item-calendar">
                                 <div class="search-container">
                                     <div class="search-box">
                                         <label class="label">Giriş</label>
-                                        <div class="t-check-in"></div>
+                                        <input type="text" name="datepicker" id="search_checkin" value=""
+                                               placeholder="Tarih Ekleyin"
+                                               readonly>
                                     </div>
                                 </div>
                             </li>
@@ -164,7 +165,9 @@
                                 <div class="search-container">
                                     <div class="search-box">
                                         <label class="label">Çıkış</label>
-                                        <div class="t-check-out"></div>
+                                        <input type="text" name="datepicker" id="search_checkout" value=""
+                                               placeholder="Tarih Ekleyin"
+                                               readonly>
                                     </div>
                                 </div>
                             </li>
@@ -1445,28 +1448,73 @@
 <script src="assets/js/jquery.maskedinput.js"></script>
 <script src="assets/js/telinput/js/utils.js"></script>
 <script src="assets/js/telinput/js/intlTelInput.min.js"></script>
-<script type="text/javascript" src="assets/js/t-datepicker.min.js"></script>
 <script type="text/javascript" src="assets/js/select2.full.min.js"></script>
 <script type="text/javascript" src="assets/js/aos.js"></script>
+<script type="text/javascript" src="assets/js/moment.min.js"></script>
+<script type="text/javascript" src="assets/js/daterangepicker.js"></script>
+
 
 <!--Sayfaya Özel JS-->
 <script type="text/javascript">
-    // Home DatePicker
+    // Daterange Picker
     $(document).ready(function () {
-        $('.default-picker').tDatePicker({
-            iconDate: '',
-            numCalendar: 1,
-            valiDation: true,
-            daysOfWeekHighlighted: [],
-            titleCheckIn: 'Tarih Ekleyin',
-            titleCheckOut: 'Tarih Ekleyin',
-            titleDateRange: 'Gece',
-            titleDateRanges: 'Gece',
-            titleToday: 'Bugün',
-            titleDays: ['Pt', 'Sa', 'Ça', 'Pe', 'Cu', 'Ct', 'Pz'],
-            titleMonths: ['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs',
-                'Haziran', 'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık'],
-        });
+        if ($('#search_checkin, #search_checkout').length) {
+            var currentDate = moment().format("DD MMMM YYYY");
+
+            $('#search_checkin, #search_checkout').daterangepicker({
+                locale: {
+                    format: 'DD MMMM YYYY',
+                    "daysOfWeek": [
+                        "Pt",
+                        "Sa",
+                        "Çr",
+                        "Pr",
+                        "Cm",
+                        "Ct",
+                        "Pz"
+                    ],
+                    "monthNames": [
+                        "Ocak",
+                        "Şubat",
+                        "Mart",
+                        "Nisan",
+                        "Mayıs",
+                        "Haziran",
+                        "Temmuz",
+                        "Ağustos",
+                        "Eylül",
+                        "Ekim",
+                        "Kasım",
+                        "Aralık"
+                    ],
+                },
+                "alwaysShowCalendars": true,
+                "minDate": currentDate,
+                "maxDate": moment().add('months', 12),
+                autoApply: true,
+                autoUpdateInput: false
+            }, function (start, end, label) {
+                var selectedStartDate = start.format('DD MMMM YYYY'); // selected start
+                var selectedEndDate = end.format('DD MMMM YYYY'); // selected end
+
+                $checkinInput = $('#search_checkin');
+                $checkoutInput = $('#search_checkout');
+
+                // Updating Fields with selected dates
+                $checkinInput.val(selectedStartDate);
+                $checkoutInput.val(selectedEndDate);
+
+                var checkOutPicker = $checkoutInput.data('daterangepicker');
+                checkOutPicker.setStartDate(selectedStartDate);
+                checkOutPicker.setEndDate(selectedEndDate);
+
+                var checkInPicker = $checkinInput.data('daterangepicker');
+                checkInPicker.setStartDate(selectedStartDate);
+                checkInPicker.setEndDate(selectedEndDate);
+            });
+
+        } // End Daterange Picker
+
 
         // Carousels
         // Carousels
@@ -1481,14 +1529,14 @@
                     margin: -140,
                     loop: false,
                     stagePadding: 0,
-                    padding:0
+                    padding: 0
                 });
             });
 
             $(".owl-carousel-campaigns").each(function () {
                 $(this).owlCarousel({
                     items: 1,
-                    margin:0,
+                    margin: 0,
                     loop: false,
                     stagePadding: 20,
                 });
@@ -1497,17 +1545,17 @@
             $(".owl-carousel-specs").each(function () {
                 $(this).owlCarousel({
                     items: 1,
-                    margin:-10,
+                    margin: -10,
                     loop: false,
                     stagePadding: 15,
-                    padding:0
+                    padding: 0
                 });
             });
 
             $(".owl-carousel-hotel").each(function () {
                 $(this).owlCarousel({
                     items: 1,
-                    margin:10,
+                    margin: 10,
                     stagePadding: 30,
                     loop: true,
                     dots: false,
@@ -1518,7 +1566,7 @@
             $(".owl-carousel-villa").each(function () {
                 $(this).owlCarousel({
                     items: 1,
-                    margin:10,
+                    margin: 10,
                     stagePadding: 30,
                     loop: true,
                     dots: false,
@@ -1529,7 +1577,7 @@
             $(".owl-carousel-boat").each(function () {
                 $(this).owlCarousel({
                     items: 1,
-                    margin:10,
+                    margin: 10,
                     stagePadding: 30,
                     loop: true,
                     dots: false,
@@ -1545,14 +1593,14 @@
                     margin: -140,
                     loop: false,
                     stagePadding: 0,
-                    padding:0
+                    padding: 0
                 });
             });
 
             $(".owl-carousel-campaigns").each(function () {
                 $(this).owlCarousel({
                     items: 2,
-                    margin:30,
+                    margin: 30,
                     loop: true,
                 });
             });
@@ -1560,17 +1608,17 @@
             $(".owl-carousel-specs").each(function () {
                 $(this).owlCarousel({
                     items: 2,
-                    margin:-10,
+                    margin: -10,
                     loop: false,
                     stagePadding: 50,
-                    padding:0
+                    padding: 0
                 });
             });
 
             $(".owl-carousel-hotel").each(function () {
                 $(this).owlCarousel({
                     items: 2,
-                    margin:5,
+                    margin: 5,
                     stagePadding: 40,
                     loop: true,
                     dots: false,
@@ -1581,7 +1629,7 @@
             $(".owl-carousel-villa").each(function () {
                 $(this).owlCarousel({
                     items: 2,
-                    margin:5,
+                    margin: 5,
                     stagePadding: 40,
                     loop: true,
                     dots: false,
@@ -1592,7 +1640,7 @@
             $(".owl-carousel-boat").each(function () {
                 $(this).owlCarousel({
                     items: 2,
-                    margin:5,
+                    margin: 5,
                     stagePadding: 40,
                     loop: true,
                     dots: false,
@@ -1606,7 +1654,7 @@
                 let $this = $(this);
                 $(this).owlCarousel({
                     items: 3,
-                    margin:30,
+                    margin: 30,
                     loop: true,
                     dots: false,
                     nav: false,
@@ -1626,7 +1674,7 @@
                 let $this = $(this);
                 $(this).owlCarousel({
                     items: 4,
-                    margin:15,
+                    margin: 15,
                     stagePadding: 0,
                     loop: true,
                     dots: false,
@@ -1647,7 +1695,7 @@
                 let $this = $(this);
                 $(this).owlCarousel({
                     items: 4,
-                    margin:15,
+                    margin: 15,
                     stagePadding: 0,
                     loop: true,
                     dots: false,
@@ -1667,12 +1715,12 @@
             $(".owl-carousel-boat").each(function () {
                 $(this).owlCarousel({
                     items: 4,
-                    margin:20,
+                    margin: 20,
                     stagePadding: 0,
                     loop: false,
                     dots: false,
                     nav: false,
-                    drag:false,
+                    drag: false,
                 });
             });
         }

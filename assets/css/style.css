@@ -7240,3 +7240,38 @@ td.t-disabled {
     font-size: 13px;
 }
 
+.daterangepicker.opensright:before,
+.daterangepicker.opensright:after{
+    display: none!important;
+}
+
+.daterangepicker .calendar-table th, .daterangepicker .calendar-table td{
+    min-width: 40px!important;
+    width: 40px!important;
+    height: 40px!important;
+    font-size: 14px!important;
+}
+
+.daterangepicker .drp-calendar{
+    max-width: max-content!important;
+}
+
+.daterangepicker td.in-range {
+    background-color: #fff0f2!important;
+}
+
+
+.daterangepicker td.active, .daterangepicker td.active:hover{
+    background-color: #E15068!important;
+}
+
+.daterangepicker td.start-date,
+.daterangepicker td.start-date.end-date,
+.daterangepicker td.end-date{
+    border-radius: 0!important;
+}
+
+.daterangepicker{
+    border-radius: 12px!important;
+    box-shadow: 0 7px 15px rgba(0, 0, 0, .3);
+}

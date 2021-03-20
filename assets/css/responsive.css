@@ -1654,6 +1654,18 @@
         max-width: 160px;
     }
 
+    .daterangepicker .drp-calendar.right{
+        display: none!important;
+    }
+
+    .daterangepicker{
+        width: auto!important;
+    }
+
+    .daterangepicker .drp-calendar.left {
+        padding:8px!important;
+    }
+
 
 }
 
