@@ -155,7 +155,7 @@
                                 <div class="search-container">
                                     <div class="search-box">
                                         <label class="label">Giriş</label>
-                                        <input type="text" name="datepicker" id="search_checkin" value=""
+                                        <input type="text" name="datepicker-in" id="search_checkin" value=""
                                                placeholder="Tarih Ekleyin"
                                                readonly>
                                     </div>
@@ -165,7 +165,7 @@
                                 <div class="search-container">
                                     <div class="search-box">
                                         <label class="label">Çıkış</label>
-                                        <input type="text" name="datepicker" id="search_checkout" value=""
+                                        <input type="text" name="datepicker-out" id="search_checkout" value=""
                                                placeholder="Tarih Ekleyin"
                                                readonly>
                                     </div>
@@ -1456,8 +1456,8 @@
 
 <!--Sayfaya Özel JS-->
 <script type="text/javascript">
-    // Daterange Picker
     $(document).ready(function () {
+        // Daterange Picker
         if ($('#search_checkin, #search_checkout').length) {
             var currentDate = moment().format("DD MMMM YYYY");
 
@@ -1513,10 +1513,10 @@
                 checkInPicker.setEndDate(selectedEndDate);
             });
 
-        } // End Daterange Picker
+        }
+        // End Daterange Picker
 
 
-        // Carousels
         // Carousels
         var isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
         var isDesktop = window.matchMedia("only screen and (min-width: 1200px)").matches;

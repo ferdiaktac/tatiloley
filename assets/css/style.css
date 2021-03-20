@@ -7250,6 +7250,7 @@ td.t-disabled {
     width: 40px!important;
     height: 40px!important;
     font-size: 14px!important;
+    border: 2px solid white!important;
 }
 
 .daterangepicker .drp-calendar{
@@ -7275,3 +7276,23 @@ td.t-disabled {
     border-radius: 12px!important;
     box-shadow: 0 7px 15px rgba(0, 0, 0, .3);
 }
+
+.detail-picker .search-container .search-box input{
+    height: 54px;
+    padding: 20px 16px 0;
+}
+
+.detail-picker {
+    margin-top:20px;
+}
+
+.daterangepicker.openscenter:after,
+.daterangepicker.openscenter:before{
+    display: none;
+}
+
+td.off.disabled {
+    background: #ededed!important;
+    border-radius: 0!important;
+}
+

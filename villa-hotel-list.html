@@ -14,8 +14,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/js/telinput/css/intlTelInput.css">
-    <link rel="stylesheet" href="assets/css/t-datepicker-main.css">
-    <link rel="stylesheet" href="assets/css/t-datepicker.min.css">
+    <link rel="stylesheet" href="assets/css/daterangepicker.css">
     <link rel="stylesheet" href="assets/css/select2.min.css">
     <link rel="stylesheet" href="assets/css/aos.css">
 </head>
@@ -160,12 +159,14 @@
                                 </div>
                             </div>
                         </li>
-                        <div class="t-datepicker search-picker">
+                        <div class="default-picker">
                             <li class="li-item li-item-calendar">
                                 <div class="search-container">
                                     <div class="search-box">
                                         <label class="label">Giriş</label>
-                                        <div class="t-check-in"></div>
+                                        <input type="text" name="datepicker-in" id="search_checkin" value=""
+                                               placeholder="Tarih Ekleyin"
+                                               readonly>
                                     </div>
                                 </div>
                             </li>
@@ -173,7 +174,9 @@
                                 <div class="search-container">
                                     <div class="search-box">
                                         <label class="label">Çıkış</label>
-                                        <div class="t-check-out"></div>
+                                        <input type="text" name="datepicker-out" id="search_checkout" value=""
+                                               placeholder="Tarih Ekleyin"
+                                               readonly>
                                     </div>
                                 </div>
                             </li>
@@ -2311,29 +2314,72 @@
 <script src="assets/js/jquery.maskedinput.js"></script>
 <script src="assets/js/telinput/js/utils.js"></script>
 <script src="assets/js/telinput/js/intlTelInput.min.js"></script>
-<script type="text/javascript" src="assets/js/t-datepicker.min.js"></script>
 <script type="text/javascript" src="assets/js/select2.full.min.js"></script>
 <script type="text/javascript" src="assets/js/aos.js"></script>
+<script type="text/javascript" src="assets/js/moment.min.js"></script>
+<script type="text/javascript" src="assets/js/daterangepicker.js"></script>
 
 <!--Sayfaya Özel JS-->
 <script type="text/javascript">
-    //Datepicker
     $(document).ready(function () {
-        $('.search-picker').tDatePicker({
-            dateCheckIn: '2021-04-20',
-            dateCheckOut: '2021-04-25',
-            iconDate: '',
-            numCalendar: 1,
-            daysOfWeekHighlighted: [],
-            titleCheckIn: 'Tarih Ekleyin',
-            titleCheckOut: 'Tarih Ekleyin',
-            titleDateRange: 'Gece',
-            titleDateRanges: 'Gece',
-            titleToday: 'Bugün',
-            titleDays: ['Pt', 'Sa', 'Ça', 'Pe', 'Cu', 'Ct', 'Pz'],
-            titleMonths: ['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs',
-                'Haziran', 'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık'],
-        });
+        // Daterange Picker
+        if ($('#search_checkin, #search_checkout').length) {
+            var currentDate = moment().format("DD MMMM YYYY");
+
+            $('#search_checkin, #search_checkout').daterangepicker({
+                locale: {
+                    format: 'DD MMMM YYYY',
+                    "daysOfWeek": [
+                        "Pt",
+                        "Sa",
+                        "Çr",
+                        "Pr",
+                        "Cm",
+                        "Ct",
+                        "Pz"
+                    ],
+                    "monthNames": [
+                        "Ocak",
+                        "Şubat",
+                        "Mart",
+                        "Nisan",
+                        "Mayıs",
+                        "Haziran",
+                        "Temmuz",
+                        "Ağustos",
+                        "Eylül",
+                        "Ekim",
+                        "Kasım",
+                        "Aralık"
+                    ],
+                },
+                "alwaysShowCalendars": true,
+                "minDate": currentDate,
+                "maxDate": moment().add('months', 12),
+                autoApply: true,
+                autoUpdateInput: false
+            }, function (start, end, label) {
+                var selectedStartDate = start.format('DD MMMM YYYY'); // selected start
+                var selectedEndDate = end.format('DD MMMM YYYY'); // selected end
+
+                $checkinInput = $('#search_checkin');
+                $checkoutInput = $('#search_checkout');
+
+                // Updating Fields with selected dates
+                $checkinInput.val(selectedStartDate);
+                $checkoutInput.val(selectedEndDate);
+
+                var checkOutPicker = $checkoutInput.data('daterangepicker');
+                checkOutPicker.setStartDate(selectedStartDate);
+                checkOutPicker.setEndDate(selectedEndDate);
+
+                var checkInPicker = $checkinInput.data('daterangepicker');
+                checkInPicker.setStartDate(selectedStartDate);
+                checkInPicker.setEndDate(selectedEndDate);
+            });
+
+        }
+        // End Daterange Picker
     });
 </script>
 <!--Sayfaya Özel JS-->
