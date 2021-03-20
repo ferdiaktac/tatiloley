@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_3" data-name="Rectangle 3" width="15" height="15" transform="translate(-0.112 -0.113)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="magnifying" transform="translate(-1288.695 -581.695)">
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="16" cy="16" r="16" transform="translate(1288.695 581.695)" fill="rgba(0,0,0,0.3)"/>
+    <g id="magnifying-2" data-name="magnifying" transform="translate(1296.808 589.809)" clip-path="url(#clip-path)">
+      <g id="_01_align_center" data-name="01 align center" transform="translate(0.659 0.659)">
+        <path id="Path_50" data-name="Path 50" d="M13.991,13.166,10.338,9.514a5.842,5.842,0,1,0-.825.825l3.653,3.653ZM5.825,10.491a4.666,4.666,0,1,1,4.666-4.666,4.666,4.666,0,0,1-4.666,4.666Z" transform="translate(0.027 0.027)" fill="#fff"/>
+      </g>
+      <path id="fi-rr-plus" d="M4.836,2.313h-2.1V.21A.21.21,0,0,0,2.523,0h0a.21.21,0,0,0-.21.21v2.1H.21a.21.21,0,0,0-.21.21H0a.21.21,0,0,0,.21.21h2.1v2.1a.21.21,0,0,0,.21.21h0a.21.21,0,0,0,.21-.21v-2.1h2.1a.21.21,0,0,0,.21-.21h0A.21.21,0,0,0,4.836,2.313Z" transform="translate(3.888 3.887)" fill="#fff" stroke="#fff" stroke-width="0.5"/>
+    </g>
+  </g>
+</svg>
