@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="13" viewBox="0 0 13 13">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_2389" data-name="Rectangle 2389" width="13" height="13" transform="translate(24 98)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="close-mobile-icon" transform="translate(-24 -98)" clip-path="url(#clip-path)">
+    <path id="fi-rr-angle-left" d="M10.724,13a.542.542,0,0,1-.383-.159L5.915,8.415a2.708,2.708,0,0,1,0-3.83L10.341.159a.542.542,0,1,1,.766.766L6.681,5.351a1.625,1.625,0,0,0,0,2.3l4.427,4.427a.542.542,0,0,1-.383.925Z" transform="translate(22.306 98)"/>
+  </g>
+</svg>

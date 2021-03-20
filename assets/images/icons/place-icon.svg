@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="Rectangle_32" fill="#fff" stroke="#707070" d="M0 0H12V12H0z"/>
+        </clipPath>
+        <style>
+            .cls-3{fill:#fff}
+        </style>
+    </defs>
+    <g id="place-icon" clip-path="url(#clip-path)">
+        <g id="_01_align_center" transform="translate(.975)">
+            <path id="Path_420" d="M5.975 11.955l-.349-.3C5.146 11.254.951 7.63.951 4.979a5.025 5.025 0 0 1 10.05 0c0 2.651-4.2 6.274-4.674 6.678zm0-10.913a3.943 3.943 0 0 0-3.938 3.937c0 1.665 2.581 4.325 3.938 5.543C7.332 9.3 9.914 6.643 9.914 4.979a3.943 3.943 0 0 0-3.939-3.938z" class="cls-3" transform="translate(-.951 .045)"/>
+            <path id="Path_421" d="M5.975 6.971a1.992 1.992 0 1 1 1.992-1.992 1.992 1.992 0 0 1-1.992 1.992zm0-2.988a1 1 0 1 0 1 1 1 1 0 0 0-1-.999z" class="cls-3" transform="translate(-.951 .045)"/>
+        </g>
+    </g>
+</svg>

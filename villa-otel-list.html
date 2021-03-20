@@ -1,0 +1,2341 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Tatiloley</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+          rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="assets/images/icons/favicon.png"/>
+    <link rel="stylesheet" href="assets/css/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl-carousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/js/telinput/css/intlTelInput.css">
+    <link rel="stylesheet" href="assets/css/t-datepicker-main.css">
+    <link rel="stylesheet" href="assets/css/t-datepicker.min.css">
+    <link rel="stylesheet" href="assets/css/select2.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+</head>
+<body>
+
+<header class="header pages">
+    <div class="container">
+        <div class="row">
+            <!--Logo-->
+            <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                <div class="logo">
+                    <a href="#" title="Tatiloley">
+                        <img src="assets/images/header/logo.svg" title="Tatiloley" alt="Tatiloley">
+                    </a>
+                </div>
+            </div>
+            <!--Logo-->
+            <!--Menu-->
+            <div class="col-lg-9 col-md-9 col-sm-6 col-6">
+                <div class="main-menu">
+                    <ul>
+                        <li><a href="#">Yardım</a></li>
+                        <li class="nav-select-lang">
+                            <div><span class="flag-icon flag-icon-tr"></span>TR</div>
+                            <ul>
+                                <li><a href="#"><span class="flag-icon flag-icon-us"></span>EN</a></li>
+                                <li><a href="#"><span class="flag-icon flag-icon-fr"></span>FR</a></li>
+                                <li><a href="#"><span class="flag-icon flag-icon-tr"></span>TR</a></li>
+                            </ul>
+                        </li>
+                        <li class="header-phone animation-tooltip rotation-yaxis">
+                            <a href="tel:08500000000" class="animation-title">
+                                <span>Destek Hattı</span>0850 000 00 00
+                                <div class="animation-tooltip-text">Deneyimli tatil danışmanlarımız ile iletişime geçin.
+                                </div>
+                            </a>
+                        </li>
+                        <li class="add-property">
+                            <a href="#">Mülkünü Ekle</a>
+                        </li>
+                        <li class="login has-dropdown">
+                            <a href="#">Giriş Yap</a>
+                            <div class="dropdown-container">
+                                <ul>
+                                    <li><a data-toggle="modal" data-target="#loginModal" href="#">Giriş Yap</a></li>
+                                    <li><a data-toggle="modal" data-target="#registerModal" href="#">Üye Ol</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!--If logged in-->
+                        <!--<li class="logged-in has-dropdown">
+                            <div class="logged-in-area">
+                                <span class="menu-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="13" viewBox="0 0 20 13">
+                                    <g id="fi-rr-menu-burger" transform="translate(0 -4)">
+                                    <rect id="Rectangle_2385" data-name="Rectangle 2385" width="20" height="1.625" rx="0.813" transform="translate(0 9.688)" fill="#fff"/>
+                                    <rect id="Rectangle_2386" data-name="Rectangle 2386" width="20" height="1.625" rx="0.813" transform="translate(0 4)" fill="#fff"/>
+                                    <rect id="Rectangle_2387" data-name="Rectangle 2387" width="20" height="1.625" rx="0.813" transform="translate(0 15.375)" fill="#fff"/>
+                                    </g></svg></span>
+                                <span class="pp">
+                                    <img src="assets/images/header/default-pp.png" alt="">
+                                </span>
+                            </div>
+                        <div class="dropdown-container">
+                            <ul>
+                                <li><a href="#">Seyahatlerim</a></li>
+                                <li> <a href="#">Beğendiklerim</a></li>
+                                <li> <a href="#">Profilim</a></li>
+                                <li> <a href="#">İlan Veren Bilgilerim</a></li>
+                                <li> <a href="#">İlan Veren Panosu</a></li>
+                                <li> <a href="#">Çıkış Yap</a></li>
+                            </ul>
+                        </div>
+                    </li>-->
+                        <!--If logged in-->
+                    </ul>
+                </div>
+
+                <div class="mobile-menu">
+                    <div class="logged-in">
+                        <div class="logged-in-area" data-toggle="modal" data-target="#mobile_menu">
+                                <span class="menu-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="13" viewBox="0 0 20 13">
+                                    <g id="fi-rr-menu-burger" transform="translate(0 -4)">
+                                    <rect id="Rectangle_2385" data-name="Rectangle 2385" width="20" height="1.625"
+                                          rx="0.813" transform="translate(0 9.688)" fill="#fff"/>
+                                    <rect id="Rectangle_2386" data-name="Rectangle 2386" width="20" height="1.625"
+                                          rx="0.813" transform="translate(0 4)" fill="#fff"/>
+                                    <rect id="Rectangle_2387" data-name="Rectangle 2387" width="20" height="1.625"
+                                          rx="0.813" transform="translate(0 15.375)" fill="#fff"/>
+                                    </g></svg></span>
+                            <span class="pp">
+                                    <img src="assets/images/header/default-pp.png" alt="">
+                                </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--Menu-->
+    </div>
+</header>
+
+<section class="list-detail-top">
+    <div class="container">
+        <div class="title animated fadeInDown">
+            <h1>Alanya Kiralık Villa Evler</h1>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+                ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+                dolor sit amet, consetetur.</p>
+        </div>
+        <a class="collapse-search-btn" data-toggle="collapse" href="#collapse-search" role="button"
+           aria-expanded="false" aria-controls="collapse-search">
+            <i class="search-icon-red"></i>
+            <span class="if-collapsed">Arama Seçeneklerini Gizle</span>
+            <span class="if-not-collapsed">Arama Seçeneklerini Göster</span>
+            <i class="arrow-down-red"></i>
+        </a>
+        <div class="search-area animated fadeInUp collapse" id="collapse-search">
+            <div class="search-box-wrapper">
+                <form>
+                    <ul class="ul-block">
+                        <li class="li-item li-item-destination">
+                            <div class="search-container">
+                                <div class="search-box">
+                                    <label class="label" for="destination">Nereye</label>
+                                    <select class="destination form-control" id="destination" name="destination">
+                                        <option><!--Dont Remove--></option>
+                                        <option value="Antalya">Antalya</option>
+                                        <option value="Antalya, Alanya">Antalya, Alanya</option>
+                                        <option value="İstanbul">İstanbul</option>
+                                        <option value="Ankara">Ankara</option>
+                                        <option value="Antalya">Antalya</option>
+                                        <option value="Antalya">Antalya</option>
+                                        <option value="Antalya, Alanya" selected>Antalya, Alanya</option>
+                                        <option value="İstanbul">İstanbul</option>
+                                        <option value="Ankara">Ankara</option>
+                                        <option value="Antalya">Antalya</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </li>
+                        <div class="t-datepicker search-picker">
+                            <li class="li-item li-item-calendar">
+                                <div class="search-container">
+                                    <div class="search-box">
+                                        <label class="label">Giriş</label>
+                                        <div class="t-check-in"></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="li-item li-item-calendar">
+                                <div class="search-container">
+                                    <div class="search-box">
+                                        <label class="label">Çıkış</label>
+                                        <div class="t-check-out"></div>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                        <li class="li-item li-item-guest-select">
+                            <div class="search-container">
+                                <div class="search-box">
+                                    <label class="label" for="pax">Misafir</label>
+                                    <span class="trigger">
+                                <input type="text" name="pax" id="pax" class="form-control" data-adults="1"
+                                       data-children="0" data-baby="0" data-total="1"
+                                       placeholder="1 Yetişkin, 1 Çocuk, 0 Bebek" disabled></span>
+                                    <div class="popover-content d-none">
+                                        <div class="form-group">
+                                            <label for="adult">Yetişkinler <i>13 ve üzeri yaştakiler</i></label>
+                                            <div class="input-group number-spinner">
+                                                <a class="btn btn-minus" data-dir="dwn"><i class="fas fa-minus"></i></a>
+                                                <input type="text" name="adult" id="adult"
+                                                       class="form-control text-center" value="0" max="9" min="1"
+                                                       disabled>
+                                                <a class="btn btn-plus" data-dir="up"><i class="fas fa-plus"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="child">Çocuklar <i>Yaş aralığı 2-12</i></label>
+                                            <div class="input-group number-spinner">
+                                                <a class="btn btn-minus" data-dir="dwn"><i class="fas fa-minus"></i></a>
+                                                <input type="text" name="child" id="child"
+                                                       class="form-control text-center" value="0" max="9" min="0"
+                                                       disabled>
+                                                <a class="btn btn-plus" data-dir="up"><i class="fas fa-plus"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="form-group m-0">
+                                            <label for="baby">Bebekler <i>2 yaş ve altı</i></label>
+                                            <div class="input-group number-spinner">
+                                                <a class="btn btn-minus" data-dir="dwn"><i class="fas fa-minus"></i></a>
+                                                <input type="text" name="baby" id="baby"
+                                                       class="form-control text-center" value="0" max="3" min="0"
+                                                       disabled>
+                                                <a class="btn btn-plus" data-dir="up"><i class="fas fa-plus"></i></a>
+                                            </div>
+                                        </div>
+                                        <a class="btn dismiss">Uygula</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="li-item li-item-category">
+                            <div class="search-container">
+                                <div class="search-box">
+                                    <label class="label" for="category">Tatil Tipi</label>
+                                    <select class="category form-control" id="category" name="category">
+                                        <option value="Tümünü Göster">Tümünü Göster</option>
+                                        <option value="Villalar" selected>Villalar</option>
+                                        <option value="Konsept Oteller">Konsept Oteller</option>
+                                        <option value="Tekneler">Tekneler</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="li-item li-item-button">
+                            <button type="submit" class="search-btn" id="search-btn" value="">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                     width="20" height="20" viewBox="0 0 20 20">
+                                    <defs>
+                                        <clipPath id="clip-path">
+                                            <rect id="Rectangle_3" data-name="Rectangle 3" width="20" height="20"
+                                                  transform="translate(1302 595)" fill="#fff" stroke="#707070"
+                                                  stroke-width="1"/>
+                                        </clipPath>
+                                    </defs>
+                                    <g id="Mask_Group_1" data-name="Mask Group 1" transform="translate(-1302 -595)"
+                                       clip-path="url(#clip-path)">
+                                        <g id="_01_align_center" data-name="01 align center"
+                                           transform="translate(1302.027 595.027)">
+                                            <path id="Path_50" data-name="Path 50"
+                                                  d="M19.973,18.8l-5.211-5.211a8.336,8.336,0,1,0-1.177,1.177L18.8,19.973ZM8.322,14.98A6.658,6.658,0,1,1,14.98,8.322,6.658,6.658,0,0,1,8.322,14.98Z"
+                                                  fill="#fff"/>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span class="btn-text">Arama Yap</span>
+                            </button>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="page-content">
+    <div class="breadcrumb-sorting">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <ul class="breadcrumb">
+                        <li><a href="/"><img src="assets/images/icons/home-icon-black.svg" width="16" height="16"></a>
+                        </li>
+                        <li><a href="#">Kiralık Villa</a></li>
+                        <li><a href="#">Antalya Kiralık Villa</a></li>
+                        <li><a href="#">Alanya Kiralık Villa</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div class="sort-mobile-wrapper">
+                        <a href="#" class="filter-mobile-btn" data-toggle="modal"
+                           data-target="#filter_wrapper">Filtrele</a>
+                        <div class="sort-wrapper">
+                            <span class="result">80 İlan bulundu</span>
+                            <select class="sort">
+                                <option value="Akıllı Sıralama" selected>Akıllı Sıralama</option>
+                                <option value="Son Eklenenle">Son Eklenenler</option>
+                                <option value="En Düşük Fiyat">En Düşük Fiyat</option>
+                                <option value="En Yüksek Puan">En Yüksek Puan</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="list-detail-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="filter-wrapper modal modal-bottom fade " id="filter_wrapper" tabindex="-1"
+                         role="dialog">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <img src="assets/images/icons/close-mobile-icon.svg">
+                                </button>
+                                <h2 class="bordered-title">Arama Seçenekleri</h2>
+                            </div>
+                            <h3>Arama Seçenekleri</h3>
+                            <form>
+                                <div class="modal-content">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="only-in-stock" checked>
+                                        <label class="custom-control-label" for="only-in-stock">
+                                            <b>Sadece müsait olanları göster</b>
+                                        </label>
+                                    </div>
+                                    <div class="select">
+                                        <label>Şehir</label>
+                                        <select class="filter_select">
+                                            <option value="Antalya" selected>Antalya</option>
+                                            <option value="İstanbul">İstanbul</option>
+                                            <option value="Ankara">Ankara</option>
+                                        </select>
+                                    </div>
+                                    <div class="select">
+                                        <label>İlçe</label>
+                                        <select class="filter_select">
+                                            <option><!--Dont Remove--></option>
+                                            <option value="Alanya" selected>Alanya</option>
+                                            <option value="Alanya">Alanya</option>
+                                            <option value="Alanya">Alanya</option>
+                                        </select>
+                                    </div>
+                                    <div class="range">
+                                        <span class="left">Fiyat</span>
+                                        <span class="right"><output name="price_range_output"
+                                                                    id="price_range_output">1000</output> ₺ / Günlük</span>
+                                        <input type="range" class="range-slider" name="price_range" id="price_range"
+                                               value="1000" min="200"
+                                               max="10000" step="100"
+                                               oninput="price_range_output.value = price_range.value">
+                                    </div>
+                                    <div class="range">
+                                        <span class="left">Min. Gece Sayısı</span>
+                                        <span class="right"><output name="min_night_range_output"
+                                                                    id="min_night_range_output">3</output> - 30</span>
+                                        <input type="range" class="range-slider" name="min_night_range"
+                                               id="min_night_range"
+                                               value="3" min="3"
+                                               max="30" step="1"
+                                               oninput="min_night_range_output.value = min_night_range.value">
+                                    </div>
+                                    <div class="checkbox-group">
+                                        <strong>Rezervasyon Tipi</strong>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <label class="custom-control-label">
+                                                Anında Rezervasyon
+                                            </label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <label class="custom-control-label">
+                                                Ön Onaylı
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                    <div class="checkbox-group">
+                                        <strong>Ödeme Tipi</strong>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <label class="custom-control-label">
+                                                Peşin Ödeme
+                                            </label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <label class="custom-control-label">
+                                                Kapıda Ödeme
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="checkbox-group">
+                                        <strong>Villa Konsepti</strong>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <label class="custom-control-label">
+                                                Deniz Manzaralı Villalar
+                                            </label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <label class="custom-control-label">
+                                                Lüks Tatil Villaları
+                                            </label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <label class="custom-control-label">
+                                                Balayı Villası
+                                            </label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <label class="custom-control-label">
+                                                Muhafazakar Villalar
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="checkbox-group">
+                                        <strong>Ev Kuralları</strong>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <label class="custom-control-label">
+                                                Çocuklara Uygun (2-12)
+                                            </label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <label class="custom-control-label">
+                                                Bebeklere Uygun (0-2)
+                                            </label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <label class="custom-control-label">
+                                                Evcil Hayvanlara Uygun
+                                            </label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <label class="custom-control-label">
+                                                Sigara İçilebilir
+                                            </label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <label class="custom-control-label">
+                                                Etkinlik Düzenlenebilir
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="checkbox-group">
+                                        <strong>Denize Uzaklık</strong>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <label class="custom-control-label">
+                                                0-100
+                                            </label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <label class="custom-control-label">
+                                                100-250
+                                            </label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <label class="custom-control-label">
+                                                250-500
+                                            </label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <label class="custom-control-label">
+                                                500-1000
+                                            </label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <label class="custom-control-label">
+                                                1000+
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="checkbox-group">
+                                        <strong>Olanaklar</strong>
+                                        <div class="filter-scroll-content">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <label class="custom-control-label">
+                                                    Klima
+                                                </label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <label class="custom-control-label">
+                                                    Uydu Yayını
+                                                </label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <label class="custom-control-label">
+                                                    Deniz Manzaralı
+                                                </label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <label class="custom-control-label">
+                                                    Ortak Havuz
+                                                </label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <label class="custom-control-label">
+                                                    Çocuk Havuzu
+                                                </label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <label class="custom-control-label">
+                                                    Denize Yakın
+                                                </label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <label class="custom-control-label">
+                                                    Çamaşır Makinesi
+                                                </label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <label class="custom-control-label">
+                                                    Buzdolabı
+                                                </label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <label class="custom-control-label">
+                                                    Duşakabin
+                                                </label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <label class="custom-control-label">
+                                                    Klima
+                                                </label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <label class="custom-control-label">
+                                                    Uydu Yayını
+                                                </label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <label class="custom-control-label">
+                                                    Deniz Manzaralı
+                                                </label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <label class="custom-control-label">
+                                                    Ortak Havuz
+                                                </label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <label class="custom-control-label">
+                                                    Çocuk Havuzu
+                                                </label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <label class="custom-control-label">
+                                                    Denize Yakın
+                                                </label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <label class="custom-control-label">
+                                                    Çamaşır Makinesi
+                                                </label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <label class="custom-control-label">
+                                                    Buzdolabı
+                                                </label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <label class="custom-control-label">
+                                                    Duşakabin
+                                                </label>
+                                            </div>
+                                            <a class="show-hide-checks" href="#"></a>
+                                        </div>
+                                    </div>
+                                    <div class="checkbox-group">
+                                        <strong>Semt</strong>
+                                        <div class="filter-scroll-content-district">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <label class="custom-control-label">
+                                                    Kargıcak
+                                                </label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <label class="custom-control-label">
+                                                    Mahmutlar
+                                                </label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <label class="custom-control-label">
+                                                    Oba
+                                                </label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <label class="custom-control-label">
+                                                    Çarşı
+                                                </label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <label class="custom-control-label">
+                                                    Kargıcak
+                                                </label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <label class="custom-control-label">
+                                                    Mahmutlar
+                                                </label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <label class="custom-control-label">
+                                                    Oba
+                                                </label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <label class="custom-control-label">
+                                                    Çarşı
+                                                </label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <label class="custom-control-label">
+                                                    Kargıcak
+                                                </label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <label class="custom-control-label">
+                                                    Mahmutlar
+                                                </label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <label class="custom-control-label">
+                                                    Oba
+                                                </label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <label class="custom-control-label">
+                                                    Çarşı
+                                                </label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <label class="custom-control-label">
+                                                    Kargıcak
+                                                </label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <label class="custom-control-label">
+                                                    Mahmutlar
+                                                </label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <label class="custom-control-label">
+                                                    Oba
+                                                </label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <label class="custom-control-label">
+                                                    Çarşı
+                                                </label>
+                                            </div>
+                                            <a class="show-hide-checks-district" href="#"></a>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="custom-button" value="Filtreleri Uygula">Filtreleri
+                                            Uygula
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="col-lg-12 col-md-6 advert-list-wrapper">
+                        <div class="row">
+                            <div class="col-lg-12 advert-item">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-6 advert-images-area">
+                                        <img class="tatiloley-recommends"
+                                             src="assets/images/icons/tatiloley-recommends.png"
+                                             alt="Tatiloley Öneriyor">
+                                        <div class="hidden-m" data-toggle="modal" data-target="#loginModal">
+                                            <span href="#" class="favorite" data-toggle="tooltip" title=""
+                                                  data-original-title="Beğendiklerime ekle">
+                                                <i class="far fa-heart"></i> </span></div>
+                                        <div class="hidden-d" data-toggle="modal" data-target="#mobile_login">
+                                            <span href="#" class="favorite" data-toggle="tooltip" title=""
+                                                  data-original-title="Beğendiklerime ekle">
+                                                <i class="far fa-heart"></i> </span></div>
+                                        <div class="owl-carousel owl-theme owl-carousel-advert-img">
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-1.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-2.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-3.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-1.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-2.png"
+                                                             alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 p-0">
+                                        <div class="advert-cont">
+                                            <div class="top">
+                                                <span class="advert-location">Antalya, Alanya, Kargıcak</span>
+                                                <a href="#"><h2 class="title">Alanya'da Muhteşem Olanaklara Sahip,
+                                                    Havuzlu,
+                                                    Konforlu Villa</h2></a>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="advert-number-review">
+                                                    <span>İlan no: 123456</span>
+                                                    <span class="advert-review"><img
+                                                            src="assets/images/icons/review-red.svg"><b>4.50</b>(14 Yorum)</span>
+                                                </div>
+                                                <div class="advert-bt">
+                                                    <span>3 kişilik, 1 banyo, havuz</span>
+                                                    <div class="animation-tooltip rotation-yaxis">
+                                                    <span class="change-date animation-title"><img
+                                                            src="assets/images/icons/change-date.svg">Esnek Tarih Değişikliği</span>
+                                                        <div class="animation-tooltip-text">Lorem ipsum dolor sit amet,
+                                                            consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                                            invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                                            voluptua. At vero eos et accusam et justo duo dolores et ea
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 pl-0">
+                                        <div class="price-cont">
+                                            <div class="night-price">
+                                                <p>Gecelik Toplam Fiyat</p>
+                                                <span>950,00₺</span>
+                                            </div>
+                                            <div class="total-price">
+                                                <p>Toplam</p>
+                                                <span>2.200,00₺</span>
+                                            </div>
+                                            <div class="button-area">
+                                                <p>En az 1 gece</p>
+                                                <a href="#" class="custom-button-red">İncele</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-6 advert-list-banner">
+                        <div class="row align-item-center">
+                            <div class="col-lg-9 left">
+                                <h3>Lorem ipsum dolor sit amet lorem ipsum</h3>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                    tempor
+                                    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                            </div>
+                            <div class="col-lg-3 right">
+                                <a href="#">Custom Button</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-6 advert-list-wrapper">
+                        <div class="row">
+                            <div class="col-lg-12 advert-item">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-6 advert-images-area">
+                                        <img class="tatiloley-recommends"
+                                             src="assets/images/icons/tatiloley-recommends.png"
+                                             alt="Tatiloley Öneriyor">
+                                        <div data-toggle="modal" data-target="#AddFavoriteList">
+                                            <span href="#" class="favorite active" data-toggle="tooltip" title=""
+                                                  data-original-title="Beğendiklerimden Çıkar">
+                                                <i class="far fa-heart"></i></span></div>
+                                        <div class="owl-carousel owl-theme owl-carousel-advert-img">
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-2.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-1.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-3.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-1.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-2.png"
+                                                             alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 p-0">
+                                        <div class="advert-cont">
+                                            <div class="top">
+                                                <span class="advert-location">Antalya, Alanya, Kargıcak</span>
+                                                <a href="#"><h2 class="title">Alanya'da Muhteşem Olanaklara Sahip,
+                                                    Havuzlu,
+                                                    Konforlu Villa</h2></a>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="advert-number-review">
+                                                    <span>İlan no: 123456</span>
+                                                    <span class="advert-review"><img
+                                                            src="assets/images/icons/review-red.svg"><b>4.50</b>(14 Yorum)</span>
+                                                </div>
+                                                <div class="advert-bt">
+                                                    <span>3 kişilik, 1 banyo, havuz</span>
+                                                    <div class="animation-tooltip rotation-yaxis">
+                                                    <span class="change-date animation-title"><img
+                                                            src="assets/images/icons/change-date.svg">Esnek Tarih Değişikliği</span>
+                                                        <div class="animation-tooltip-text">Lorem ipsum dolor sit amet,
+                                                            consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                                            invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                                            voluptua. At vero eos et accusam et justo duo dolores et ea
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 pl-0">
+                                        <div class="price-cont">
+                                            <div class="night-price">
+                                                <p>Gecelik Toplam Fiyat</p>
+                                                <span>950,00₺</span>
+                                            </div>
+                                            <div class="total-price">
+                                                <p>Toplam</p>
+                                                <span>2.200,00₺</span>
+                                            </div>
+                                            <div class="button-area">
+                                                <p>En az 1 gece</p>
+                                                <a href="#" class="custom-button-red">İncele</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-6 advert-list-wrapper">
+                        <div class="row">
+                            <div class="col-lg-12 advert-item">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-6 advert-images-area">
+                                        <img class="tatiloley-recommends"
+                                             src="assets/images/icons/tatiloley-recommends.png"
+                                             alt="Tatiloley Öneriyor">
+                                        <div data-toggle="modal" data-target="#AddFavoriteList">
+                                            <span href="#" class="favorite" data-toggle="tooltip" title=""
+                                                  data-original-title="Beğendiklerime Ekle">
+                                                <i class="far fa-heart"></i></span></div>
+                                        <div class="owl-carousel owl-theme owl-carousel-advert-img">
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-3.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-2.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-1.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-1.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-2.png"
+                                                             alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 p-0">
+                                        <div class="advert-cont">
+                                            <div class="top">
+                                                <span class="advert-location">Antalya, Alanya, Kargıcak</span>
+                                                <a href="#"><h2 class="title">Alanya'da Muhteşem Olanaklara Sahip,
+                                                    Havuzlu,
+                                                    Konforlu Villa</h2></a>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="advert-number-review">
+                                                    <span>İlan no: 123456</span>
+                                                    <span class="advert-review"><img
+                                                            src="assets/images/icons/review-red.svg"><b>4.50</b>(14 Yorum)</span>
+                                                </div>
+                                                <div class="advert-bt">
+                                                    <span>3 kişilik, 1 banyo, havuz</span>
+                                                    <div class="animation-tooltip rotation-yaxis">
+                                                    <span class="change-date animation-title"><img
+                                                            src="assets/images/icons/change-date.svg">Esnek Tarih Değişikliği</span>
+                                                        <div class="animation-tooltip-text">Lorem ipsum dolor sit amet,
+                                                            consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                                            invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                                            voluptua. At vero eos et accusam et justo duo dolores et ea
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 pl-0">
+                                        <div class="price-cont">
+                                            <div class="night-price">
+                                                <p>Gecelik Toplam Fiyat</p>
+                                                <span>950,00₺</span>
+                                            </div>
+                                            <div class="total-price">
+                                                <p>Toplam</p>
+                                                <span>2.200,00₺</span>
+                                            </div>
+                                            <div class="button-area">
+                                                <p>En az 1 gece</p>
+                                                <a href="#" class="custom-button-red">İncele</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-6 advert-list-wrapper">
+                        <div class="row">
+                            <div class="col-lg-12 advert-item">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-6 advert-images-area">
+                                        <img class="tatiloley-recommends"
+                                             src="assets/images/icons/tatiloley-recommends.png"
+                                             alt="Tatiloley Öneriyor">
+                                        <div class="hidden-m" data-toggle="modal" data-target="#loginModal">
+                                            <span href="#" class="favorite" data-toggle="tooltip" title=""
+                                                  data-original-title="Beğendiklerime ekle">
+                                                <i class="far fa-heart"></i> </span></div>
+                                        <div class="hidden-d" data-toggle="modal" data-target="#mobile_login">
+                                            <span href="#" class="favorite" data-toggle="tooltip" title=""
+                                                  data-original-title="Beğendiklerime ekle">
+                                                <i class="far fa-heart"></i> </span></div>
+                                        <div class="owl-carousel owl-theme owl-carousel-advert-img">
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-1.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-2.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-3.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-1.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-2.png"
+                                                             alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 p-0">
+                                        <div class="advert-cont">
+                                            <div class="top">
+                                                <span class="advert-location">Antalya, Alanya, Kargıcak</span>
+                                                <a href="#"><h2 class="title">Alanya'da Muhteşem Olanaklara Sahip,
+                                                    Havuzlu,
+                                                    Konforlu Villa</h2></a>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="advert-number-review">
+                                                    <span>İlan no: 123456</span>
+                                                    <span class="advert-review"><img
+                                                            src="assets/images/icons/review-red.svg"><b>4.50</b>(14 Yorum)</span>
+                                                </div>
+                                                <div class="advert-bt">
+                                                    <span>3 kişilik, 1 banyo, havuz</span>
+                                                    <div class="animation-tooltip rotation-yaxis">
+                                                    <span class="change-date animation-title"><img
+                                                            src="assets/images/icons/change-date.svg">Esnek Tarih Değişikliği</span>
+                                                        <div class="animation-tooltip-text">Lorem ipsum dolor sit amet,
+                                                            consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                                            invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                                            voluptua. At vero eos et accusam et justo duo dolores et ea
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 pl-0">
+                                        <div class="price-cont">
+                                            <div class="night-price">
+                                                <p>Gecelik Toplam Fiyat</p>
+                                                <span>950,00₺</span>
+                                            </div>
+                                            <div class="total-price">
+                                                <p>Toplam</p>
+                                                <span>2.200,00₺</span>
+                                            </div>
+                                            <div class="button-area">
+                                                <p>En az 1 gece</p>
+                                                <a href="#" class="custom-button-red">İncele</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-6 advert-list-wrapper">
+                        <div class="row">
+                            <div class="col-lg-12 advert-item">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-6 advert-images-area">
+                                        <img class="tatiloley-recommends"
+                                             src="assets/images/icons/tatiloley-recommends.png"
+                                             alt="Tatiloley Öneriyor">
+                                        <div data-toggle="modal" data-target="#AddFavoriteList">
+                                            <span href="#" class="favorite active" data-toggle="tooltip" title=""
+                                                  data-original-title="Beğendiklerimden Çıkar">
+                                                <i class="far fa-heart"></i></span></div>
+                                        <div class="owl-carousel owl-theme owl-carousel-advert-img">
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-2.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-1.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-3.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-1.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-2.png"
+                                                             alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 p-0">
+                                        <div class="advert-cont">
+                                            <div class="top">
+                                                <span class="advert-location">Antalya, Alanya, Kargıcak</span>
+                                                <a href="#"><h2 class="title">Alanya'da Muhteşem Olanaklara Sahip,
+                                                    Havuzlu,
+                                                    Konforlu Villa</h2></a>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="advert-number-review">
+                                                    <span>İlan no: 123456</span>
+                                                    <span class="advert-review"><img
+                                                            src="assets/images/icons/review-red.svg"><b>4.50</b>(14 Yorum)</span>
+                                                </div>
+                                                <div class="advert-bt">
+                                                    <span>3 kişilik, 1 banyo, havuz</span>
+                                                    <div class="animation-tooltip rotation-yaxis">
+                                                    <span class="change-date animation-title"><img
+                                                            src="assets/images/icons/change-date.svg">Esnek Tarih Değişikliği</span>
+                                                        <div class="animation-tooltip-text">Lorem ipsum dolor sit amet,
+                                                            consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                                            invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                                            voluptua. At vero eos et accusam et justo duo dolores et ea
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 pl-0">
+                                        <div class="price-cont">
+                                            <div class="night-price">
+                                                <p>Gecelik Toplam Fiyat</p>
+                                                <span>950,00₺</span>
+                                            </div>
+                                            <div class="total-price">
+                                                <p>Toplam</p>
+                                                <span>2.200,00₺</span>
+                                            </div>
+                                            <div class="button-area">
+                                                <p>En az 1 gece</p>
+                                                <a href="#" class="custom-button-red">İncele</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-6 advert-list-wrapper">
+                        <div class="row">
+                            <div class="col-lg-12 advert-item">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-6 advert-images-area">
+                                        <img class="tatiloley-recommends"
+                                             src="assets/images/icons/tatiloley-recommends.png"
+                                             alt="Tatiloley Öneriyor">
+                                        <div data-toggle="modal" data-target="#AddFavoriteList">
+                                            <span href="#" class="favorite" data-toggle="tooltip" title=""
+                                                  data-original-title="Beğendiklerime Ekle">
+                                                <i class="far fa-heart"></i></span></div>
+                                        <div class="owl-carousel owl-theme owl-carousel-advert-img">
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-3.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-2.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-1.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-1.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-2.png"
+                                                             alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 p-0">
+                                        <div class="advert-cont">
+                                            <div class="top">
+                                                <span class="advert-location">Antalya, Alanya, Kargıcak</span>
+                                                <a href="#"><h2 class="title">Alanya'da Muhteşem Olanaklara Sahip,
+                                                    Havuzlu,
+                                                    Konforlu Villa</h2></a>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="advert-number-review">
+                                                    <span>İlan no: 123456</span>
+                                                    <span class="advert-review"><img
+                                                            src="assets/images/icons/review-red.svg"><b>4.50</b>(14 Yorum)</span>
+                                                </div>
+                                                <div class="advert-bt">
+                                                    <span>3 kişilik, 1 banyo, havuz</span>
+                                                    <div class="animation-tooltip rotation-yaxis">
+                                                    <span class="change-date animation-title"><img
+                                                            src="assets/images/icons/change-date.svg">Esnek Tarih Değişikliği</span>
+                                                        <div class="animation-tooltip-text">Lorem ipsum dolor sit amet,
+                                                            consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                                            invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                                            voluptua. At vero eos et accusam et justo duo dolores et ea
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 pl-0">
+                                        <div class="price-cont">
+                                            <div class="night-price">
+                                                <p>Gecelik Toplam Fiyat</p>
+                                                <span>950,00₺</span>
+                                            </div>
+                                            <div class="total-price">
+                                                <p>Toplam</p>
+                                                <span>2.200,00₺</span>
+                                            </div>
+                                            <div class="button-area">
+                                                <p>En az 1 gece</p>
+                                                <a href="#" class="custom-button-red">İncele</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-6 advert-list-wrapper">
+                        <div class="row">
+                            <div class="col-lg-12 advert-item">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-6 advert-images-area">
+                                        <img class="tatiloley-recommends"
+                                             src="assets/images/icons/tatiloley-recommends.png"
+                                             alt="Tatiloley Öneriyor">
+                                        <div class="hidden-m" data-toggle="modal" data-target="#loginModal">
+                                            <span href="#" class="favorite" data-toggle="tooltip" title=""
+                                                  data-original-title="Beğendiklerime ekle">
+                                                <i class="far fa-heart"></i> </span></div>
+                                        <div class="hidden-d" data-toggle="modal" data-target="#mobile_login">
+                                            <span href="#" class="favorite" data-toggle="tooltip" title=""
+                                                  data-original-title="Beğendiklerime ekle">
+                                                <i class="far fa-heart"></i> </span></div>
+                                        <div class="owl-carousel owl-theme owl-carousel-advert-img">
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-1.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-2.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-3.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-1.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-2.png"
+                                                             alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 p-0">
+                                        <div class="advert-cont">
+                                            <div class="top">
+                                                <span class="advert-location">Antalya, Alanya, Kargıcak</span>
+                                                <a href="#"><h2 class="title">Alanya'da Muhteşem Olanaklara Sahip,
+                                                    Havuzlu,
+                                                    Konforlu Villa</h2></a>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="advert-number-review">
+                                                    <span>İlan no: 123456</span>
+                                                    <span class="advert-review"><img
+                                                            src="assets/images/icons/review-red.svg"><b>4.50</b>(14 Yorum)</span>
+                                                </div>
+                                                <div class="advert-bt">
+                                                    <span>3 kişilik, 1 banyo, havuz</span>
+                                                    <div class="animation-tooltip rotation-yaxis">
+                                                    <span class="change-date animation-title"><img
+                                                            src="assets/images/icons/change-date.svg">Esnek Tarih Değişikliği</span>
+                                                        <div class="animation-tooltip-text">Lorem ipsum dolor sit amet,
+                                                            consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                                            invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                                            voluptua. At vero eos et accusam et justo duo dolores et ea
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 pl-0">
+                                        <div class="price-cont">
+                                            <div class="night-price">
+                                                <p>Gecelik Toplam Fiyat</p>
+                                                <span>950,00₺</span>
+                                            </div>
+                                            <div class="total-price">
+                                                <p>Toplam</p>
+                                                <span>2.200,00₺</span>
+                                            </div>
+                                            <div class="button-area">
+                                                <p>En az 1 gece</p>
+                                                <a href="#" class="custom-button-red">İncele</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-6 advert-list-wrapper">
+                        <div class="row">
+                            <div class="col-lg-12 advert-item">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-6 advert-images-area">
+                                        <img class="tatiloley-recommends"
+                                             src="assets/images/icons/tatiloley-recommends.png"
+                                             alt="Tatiloley Öneriyor">
+                                        <div data-toggle="modal" data-target="#AddFavoriteList">
+                                            <span href="#" class="favorite active" data-toggle="tooltip" title=""
+                                                  data-original-title="Beğendiklerimden Çıkar">
+                                                <i class="far fa-heart"></i></span></div>
+                                        <div class="owl-carousel owl-theme owl-carousel-advert-img">
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-2.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-1.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-3.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-1.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-2.png"
+                                                             alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 p-0">
+                                        <div class="advert-cont">
+                                            <div class="top">
+                                                <span class="advert-location">Antalya, Alanya, Kargıcak</span>
+                                                <a href="#"><h2 class="title">Alanya'da Muhteşem Olanaklara Sahip,
+                                                    Havuzlu,
+                                                    Konforlu Villa</h2></a>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="advert-number-review">
+                                                    <span>İlan no: 123456</span>
+                                                    <span class="advert-review"><img
+                                                            src="assets/images/icons/review-red.svg"><b>4.50</b>(14 Yorum)</span>
+                                                </div>
+                                                <div class="advert-bt">
+                                                    <span>3 kişilik, 1 banyo, havuz</span>
+                                                    <div class="animation-tooltip rotation-yaxis">
+                                                    <span class="change-date animation-title"><img
+                                                            src="assets/images/icons/change-date.svg">Esnek Tarih Değişikliği</span>
+                                                        <div class="animation-tooltip-text">Lorem ipsum dolor sit amet,
+                                                            consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                                            invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                                            voluptua. At vero eos et accusam et justo duo dolores et ea
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 pl-0">
+                                        <div class="price-cont">
+                                            <div class="night-price">
+                                                <p>Gecelik Toplam Fiyat</p>
+                                                <span>950,00₺</span>
+                                            </div>
+                                            <div class="total-price">
+                                                <p>Toplam</p>
+                                                <span>2.200,00₺</span>
+                                            </div>
+                                            <div class="button-area">
+                                                <p>En az 1 gece</p>
+                                                <a href="#" class="custom-button-red">İncele</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-6 advert-list-wrapper">
+                        <div class="row">
+                            <div class="col-lg-12 advert-item">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-6 advert-images-area">
+                                        <img class="tatiloley-recommends"
+                                             src="assets/images/icons/tatiloley-recommends.png"
+                                             alt="Tatiloley Öneriyor">
+                                        <div data-toggle="modal" data-target="#AddFavoriteList">
+                                            <span href="#" class="favorite" data-toggle="tooltip" title=""
+                                                  data-original-title="Beğendiklerime Ekle">
+                                                <i class="far fa-heart"></i></span></div>
+                                        <div class="owl-carousel owl-theme owl-carousel-advert-img">
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-3.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-2.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-1.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-1.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-2.png"
+                                                             alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 p-0">
+                                        <div class="advert-cont">
+                                            <div class="top">
+                                                <span class="advert-location">Antalya, Alanya, Kargıcak</span>
+                                                <a href="#"><h2 class="title">Alanya'da Muhteşem Olanaklara Sahip,
+                                                    Havuzlu,
+                                                    Konforlu Villa</h2></a>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="advert-number-review">
+                                                    <span>İlan no: 123456</span>
+                                                    <span class="advert-review"><img
+                                                            src="assets/images/icons/review-red.svg"><b>4.50</b>(14 Yorum)</span>
+                                                </div>
+                                                <div class="advert-bt">
+                                                    <span>3 kişilik, 1 banyo, havuz</span>
+                                                    <div class="animation-tooltip rotation-yaxis">
+                                                    <span class="change-date animation-title"><img
+                                                            src="assets/images/icons/change-date.svg">Esnek Tarih Değişikliği</span>
+                                                        <div class="animation-tooltip-text">Lorem ipsum dolor sit amet,
+                                                            consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                                            invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                                            voluptua. At vero eos et accusam et justo duo dolores et ea
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 pl-0">
+                                        <div class="price-cont">
+                                            <div class="night-price">
+                                                <p>Gecelik Toplam Fiyat</p>
+                                                <span>950,00₺</span>
+                                            </div>
+                                            <div class="total-price">
+                                                <p>Toplam</p>
+                                                <span>2.200,00₺</span>
+                                            </div>
+                                            <div class="button-area">
+                                                <p>En az 1 gece</p>
+                                                <a href="#" class="custom-button-red">İncele</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-6 advert-list-wrapper">
+                        <div class="row">
+                            <div class="col-lg-12 advert-item">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-6 advert-images-area">
+                                        <img class="tatiloley-recommends"
+                                             src="assets/images/icons/tatiloley-recommends.png"
+                                             alt="Tatiloley Öneriyor">
+                                        <div class="hidden-m" data-toggle="modal" data-target="#loginModal">
+                                            <span href="#" class="favorite" data-toggle="tooltip" title=""
+                                                  data-original-title="Beğendiklerime ekle">
+                                                <i class="far fa-heart"></i> </span></div>
+                                        <div class="hidden-d" data-toggle="modal" data-target="#mobile_login">
+                                            <span href="#" class="favorite" data-toggle="tooltip" title=""
+                                                  data-original-title="Beğendiklerime ekle">
+                                                <i class="far fa-heart"></i> </span></div>
+                                        <div class="owl-carousel owl-theme owl-carousel-advert-img">
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-1.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-2.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-3.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-1.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-2.png"
+                                                             alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 p-0">
+                                        <div class="advert-cont">
+                                            <div class="top">
+                                                <span class="advert-location">Antalya, Alanya, Kargıcak</span>
+                                                <a href="#"><h2 class="title">Alanya'da Muhteşem Olanaklara Sahip,
+                                                    Havuzlu,
+                                                    Konforlu Villa</h2></a>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="advert-number-review">
+                                                    <span>İlan no: 123456</span>
+                                                    <span class="advert-review"><img
+                                                            src="assets/images/icons/review-red.svg"><b>4.50</b>(14 Yorum)</span>
+                                                </div>
+                                                <div class="advert-bt">
+                                                    <span>3 kişilik, 1 banyo, havuz</span>
+                                                    <div class="animation-tooltip rotation-yaxis">
+                                                    <span class="change-date animation-title"><img
+                                                            src="assets/images/icons/change-date.svg">Esnek Tarih Değişikliği</span>
+                                                        <div class="animation-tooltip-text">Lorem ipsum dolor sit amet,
+                                                            consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                                            invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                                            voluptua. At vero eos et accusam et justo duo dolores et ea
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 pl-0">
+                                        <div class="price-cont">
+                                            <div class="night-price">
+                                                <p>Gecelik Toplam Fiyat</p>
+                                                <span>950,00₺</span>
+                                            </div>
+                                            <div class="total-price">
+                                                <p>Toplam</p>
+                                                <span>2.200,00₺</span>
+                                            </div>
+                                            <div class="button-area">
+                                                <p>En az 1 gece</p>
+                                                <a href="#" class="custom-button-red">İncele</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-6 advert-list-wrapper">
+                        <div class="row">
+                            <div class="col-lg-12 advert-item">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-6 advert-images-area">
+                                        <img class="tatiloley-recommends"
+                                             src="assets/images/icons/tatiloley-recommends.png"
+                                             alt="Tatiloley Öneriyor">
+                                        <div data-toggle="modal" data-target="#AddFavoriteList">
+                                            <span href="#" class="favorite active" data-toggle="tooltip" title=""
+                                                  data-original-title="Beğendiklerimden Çıkar">
+                                                <i class="far fa-heart"></i></span></div>
+                                        <div class="owl-carousel owl-theme owl-carousel-advert-img">
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-2.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-1.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-3.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-1.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-2.png"
+                                                             alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 p-0">
+                                        <div class="advert-cont">
+                                            <div class="top">
+                                                <span class="advert-location">Antalya, Alanya, Kargıcak</span>
+                                                <a href="#"><h2 class="title">Alanya'da Muhteşem Olanaklara Sahip,
+                                                    Havuzlu,
+                                                    Konforlu Villa</h2></a>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="advert-number-review">
+                                                    <span>İlan no: 123456</span>
+                                                    <span class="advert-review"><img
+                                                            src="assets/images/icons/review-red.svg"><b>4.50</b>(14 Yorum)</span>
+                                                </div>
+                                                <div class="advert-bt">
+                                                    <span>3 kişilik, 1 banyo, havuz</span>
+                                                    <div class="animation-tooltip rotation-yaxis">
+                                                    <span class="change-date animation-title"><img
+                                                            src="assets/images/icons/change-date.svg">Esnek Tarih Değişikliği</span>
+                                                        <div class="animation-tooltip-text">Lorem ipsum dolor sit amet,
+                                                            consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                                            invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                                            voluptua. At vero eos et accusam et justo duo dolores et ea
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 pl-0">
+                                        <div class="price-cont">
+                                            <div class="night-price">
+                                                <p>Gecelik Toplam Fiyat</p>
+                                                <span>950,00₺</span>
+                                            </div>
+                                            <div class="total-price">
+                                                <p>Toplam</p>
+                                                <span>2.200,00₺</span>
+                                            </div>
+                                            <div class="button-area">
+                                                <p>En az 1 gece</p>
+                                                <a href="#" class="custom-button-red">İncele</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-6 advert-list-wrapper">
+                        <div class="row">
+                            <div class="col-lg-12 advert-item">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-6 advert-images-area">
+                                        <img class="tatiloley-recommends"
+                                             src="assets/images/icons/tatiloley-recommends.png"
+                                             alt="Tatiloley Öneriyor">
+                                        <div data-toggle="modal" data-target="#AddFavoriteList">
+                                            <span href="#" class="favorite" data-toggle="tooltip" title=""
+                                                  data-original-title="Beğendiklerime Ekle">
+                                                <i class="far fa-heart"></i></span></div>
+                                        <div class="owl-carousel owl-theme owl-carousel-advert-img">
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-3.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-2.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-1.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-1.png"
+                                                             alt=""></a>
+                                            <a href="#"><img class="owl-lazy"
+                                                             data-src="assets/images/others/demo-villa-2.png"
+                                                             alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 p-0">
+                                        <div class="advert-cont">
+                                            <div class="top">
+                                                <span class="advert-location">Antalya, Alanya, Kargıcak</span>
+                                                <a href="#"><h2 class="title">Alanya'da Muhteşem Olanaklara Sahip,
+                                                    Havuzlu,
+                                                    Konforlu Villa</h2></a>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="advert-number-review">
+                                                    <span>İlan no: 123456</span>
+                                                    <span class="advert-review"><img
+                                                            src="assets/images/icons/review-red.svg"><b>4.50</b>(14 Yorum)</span>
+                                                </div>
+                                                <div class="advert-bt">
+                                                    <span>3 kişilik, 1 banyo, havuz</span>
+                                                    <div class="animation-tooltip rotation-yaxis">
+                                                    <span class="change-date animation-title"><img
+                                                            src="assets/images/icons/change-date.svg">Esnek Tarih Değişikliği</span>
+                                                        <div class="animation-tooltip-text">Lorem ipsum dolor sit amet,
+                                                            consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                                            invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                                            voluptua. At vero eos et accusam et justo duo dolores et ea
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 pl-0">
+                                        <div class="price-cont">
+                                            <div class="night-price">
+                                                <p>Gecelik Toplam Fiyat</p>
+                                                <span>950,00₺</span>
+                                            </div>
+                                            <div class="total-price">
+                                                <p>Toplam</p>
+                                                <span>2.200,00₺</span>
+                                            </div>
+                                            <div class="button-area">
+                                                <p>En az 1 gece</p>
+                                                <a href="#" class="custom-button-red">İncele</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-12 pagination-wrapper">
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <span>1-20 / 350 konaklama yeri</span>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="seo-text-area">
+                        <strong>Antalya Alanya Kiralık Villa ve Yazlıklar</strong>
+
+                        <p>Akdeniz sahillerinin en gözde tatil merkezlerinden olan Alanya, yaz aylarında çok
+                            sayıda turiste ev sahipliği yapıyor. Antalya’nın doğusunda, Akdeniz kıyısında yer
+                            alan Alanya, yaz aylarında deniz tatilcilerinin en uğrak noktalarından biri olarak
+                            göze çarpıyor. Rahat ve huzurlu bir ortamda Alanya tatili yapmak isterseniz siz de
+                            Alanya kiralık villalarını tercih edebilirsiniz. Pek çok otel tatiline göre daha
+                            ekonomik olan villa tatili özellikle son yıllarda hayli popülerlik kazanmıştır.
+                            Villaların yanı sıra; dilerseniz kiralık yazlıklarda da Alanya tatilinizi
+                            geçirebilirsiniz. Alanya'daki kiralık yazlıklar denize yakın konumları ile
+                            tatilciler tarafından tercih ediliyor. Evinizin konforunda bir tatil deneyimi için
+                            hemen kategorimizde yer alan Alanya kiralık tatil villalarını ve yazlıklarını
+                            incelemeye başlayabilirsiniz.</p>
+
+                        <strong>Alanya'da Kiralık Villada Tatil</strong>
+
+                        <p>Son yılların popüler tatillerinden olan villa tatili hem daha konforlu hem de daha
+                            ekonomik olması sebebiyle tatilcilerden beğeni kazanmayı başarıyor. Alanya kiralık
+                            yazlık villalarının lüks görünümleri, denize sıfır konumları, Alanya’nın eşsiz doğal
+                            güzelliklerine doyabileceğiniz manzaraları ve geniş gruplar için konforlu bir
+                            konaklama imkanı sunmaları Alanya’nın villa tatilinde en çok tercih edilen tatil
+                            beldelerinden biri olmasını sağlıyor. Üstelik farklı gereksinimlere uygun olarak pek
+                            çok farklı villa seçeneği bulunuyor. Çocuklu aileler, kalabalık arkadaş grupları,
+                            muhafazakar kimseler ve balayı çiftleri gibi farklı tatil gruplarının aradıkları
+                            tatil ortamını bulabilmelerini sağlayan Alanya villaları ile hiç unutamayacağınız
+                            bir tatil deneyimi yaşamaya hazır olun!</p>
+
+                        <strong>Alanya Kiralık Villa Fiyatları</strong>
+
+                        <p>Alanya’da kiralık villa ya da yazlık tatili yapmak pek çok otel tatili ile
+                            kıyaslandığında daha uygun maliyetli bir seçim olarak biliniyor. Özellikle kalabalık
+                            arkadaş grupları ve geniş aileler için villa tatili oldukça uygun bir tatil
+                            alternatifi. Üstelik bu şekilde tatil yapmak, tatildeyken bile evinizin konforunda
+                            hissetmenize yardımcı olacak. Alanya kiralık villa fiyatları ve Alanya yazlık
+                            fiyatları; konutun konumuna, manzarasına ve diğer özelliklerine bağlı olarak
+                            değişkenlik gösteriyor. Kiralama kategorimizde her gereksinime uygun konut tipi
+                            bulunduğu gibi her bütçeye...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="app-section">
+        <div class="container">
+            <div class="app-area">
+                <div class="left col-lg-6 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000"
+                     data-aos-delay="200">
+                    <h2>Tatiloley Uygulamasını İndirin</h2>
+                    <span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.</span>
+                    <div class="app-logo">
+                        <a href="#"><img src="assets/images/footer/appstore-white.svg"></a>
+                        <a href="#"><img src="assets/images/footer/gplay-white.svg"></a>
+                    </div>
+                </div>
+                <div class="right col-lg-6 aos-init aos-animate" data-aos="fade-left" data-aos-duration="1000"
+                     data-aos-delay="400">
+                    <img src="assets/images/footer/footer-img.png" alt="Tatiloley Uygulamasını İndirin">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-area">
+                <div class="row">
+                    <div class="left col-lg-7 aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000"
+                         data-aos-delay="200">
+                        <h2>Sorunuz mu var?</h2>
+                        <p>Deneyimli tatil danışmanlarımız haftanın 7 günü size yardımcı olmak için sorularınızı
+                            bekliyorlar.</p>
+                        <span><a href="tel:085000000000">0850 000 00 00</a></span>
+                    </div>
+                    <div class="right col-lg-5 aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000"
+                         data-aos-delay="400">
+                        <h2>Kampanyaları Kaçırma</h2>
+                        <p>Kampanyalardan anında haberdar olmak için hemen kaydolun.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="E-posta adresiniz" class="email-text">
+                            <input type="submit" class="email-send" value="Kaydol">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="footer-top-links">
+                        <li>
+                            <a href="#">Hakkımızda</a>
+                            <a href="#">Yardım</a>
+                            <a href="#">Kullanım Şartları</a>
+                            <a href="#">KVKK</a>
+                            <a href="#">İptal Politikaları</a>
+                            <a href="#">Basın</a>
+                            <a href="#">İletişim</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-12">
+                    <div class="footer-bottom">
+                        <div class="social-links">
+                            <ul>
+                                <li><a href="#" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i>
+                                </a></li>
+                                <li><a href="#" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i> </a>
+                                </li>
+                                <li><a href="#" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i> </a>
+                                </li>
+                                <li><a href="#" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                                </a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-logo"><img src="assets/images/footer/footer-logos.png" alt=""></div>
+                        <div class="copyright">© 2021 Tatiloley.com - Tüm Hakları Sakldır</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tursab-section">
+        <div class="container">
+            <span>TatilOley.com Turizm Seyahat Acentası TÜRSAB 10504 Numaralı Belge ile Turizm Bakanlığına bağlıdır.</span>
+        </div>
+    </div>
+</footer>
+
+<!--Mobile Bottom Menu-->
+<div class="mobile-bottom-fixed-menu">
+    <ul>
+        <li class="home active"><a href="#"><i></i>Keşfedin</a></li>
+        <li class="liked"><a href="#"><i></i>Beğendiklerim</a></li>
+        <!--<li class="travels"><a href="#"><i></i>Seyahatler</a></li>-->
+        <li class="login"><a href="#" data-toggle="modal" data-target="#mobile_login"><i></i>Giriş Yap</a></li>
+        <!--<li class="profile"><a href="#"><i></i>Profilim</a></li>-->
+    </ul>
+</div>
+<!--Mobile Bottom Menu-->
+
+<!--Add Favorite List-->
+<div class="modal fade" id="AddFavoriteList" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/icons/close-icon.svg">
+                </button>
+                <h2 class="bordered-title">Beğeni Listelerim</h2>
+                <a href="#">Tümü</a>
+            </div>
+            <div class="modal-form d-flex justify-content-center flex-column">
+                <div class="favorite-lists-wrapper">
+                    <div class="iconed-control search">
+                        <div class="input">
+                            <input class="search-input" id="search_input" type="text"
+                                   placeholder="Yeni oluştur veya ara"></div>
+                        <div class="icon"><img src="assets/images/icons/search-icon-gray.svg"></div>
+                    </div>
+                    <ul class="favorite-lists">
+                        <li>Ayvalıktaki beğendiğim yerler
+                            <a href="#">Ekle</a>
+                        </li>
+                        <li>Annemler için
+                            <a class="active" href="#">Sil</a>
+                        </li>
+                        <li>Antalyadaki seçtiklerim
+                            <a href="#">Ekle</a>
+                        </li>
+                        <li>Ayvalıktaki beğendiğim yerler
+                            <a href="#">Ekle</a>
+                        </li>
+                        <li>Ayvalıktaki beğendiğim yerler
+                            <a href="#">Ekle</a>
+                        </li>
+                        <li>Annemler için
+                            <a href="#">Ekle</a>
+                        </li>
+                        <li>Antalyadaki seçtiklerim
+                            <a href="#">Ekle</a>
+                        </li>
+                        <li>Ayvalıktaki beğendiğim yerler
+                            <a href="#">Ekle</a>
+                        </li>
+                        <div class="noresults">Sonuç bulunamadı.</div>
+                    </ul>
+                    <button id="create_list" class="custom-button-red" type="submit" disabled>
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                        Liste Oluştur
+                    </button>
+                    <a href="#" class="custom-button-red" data-dismiss="modal">Kapat</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Add Favorite List-->
+
+<!--Login-->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/icons/close-icon.svg">
+                </button>
+                <h2 class="bordered-title">Giriş Yap</h2>
+            </div>
+            <div class="modal-form d-flex justify-content-center flex-column">
+                <div class="modal-form-inner">
+                    <form action="">
+                        <div class="iconed-control">
+                            <div class="input"><input type="email" placeholder="E-posta" required name="email"></div>
+                            <div class="icon"><img src="assets/images/icons/email.svg"></div>
+                        </div>
+                        <div class="iconed-control">
+                            <div class="input"><input type="password" placeholder="Şifre" required name="password">
+                            </div>
+                            <div class="icon"><img src="assets/images/icons/password.svg"></div>
+                        </div>
+                        <div class="login-form-group">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="remember_me"
+                                       value="remember_me">
+                                <label class="custom-control-label" for="remember_me">Beni Hatırla</label>
+                            </div>
+                            <div><a href="#" data-toggle="modal" data-target="#forgetpasswordModal"
+                                    onclick="$('#loginModal').modal('hide')">Şifremi Unuttum</a></div>
+                        </div>
+                        <button class="custom-button">Giriş Yap</button>
+                    </form>
+                    <div class="login-register">Hesabınız yok mu?<a data-toggle="modal" data-target="#registerModal"
+                                                                    onclick="$('#loginModal').modal('hide')" href="#">Hemen
+                        Kaydolun</a></div>
+                    <div class="login-social">
+                        <p><span>veya</span></p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="social-btn">
+                                    <a href="#"><img src="assets/images/icons/fb-logo.svg" alt="">
+                                        <span>Facebook ile devam et</span></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="social-btn">
+                                    <a href="#"><img src="assets/images/icons/g-logo.svg" alt="">
+                                        <span>Google ile devam et</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Login end-->
+
+<!--Register-->
+<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/icons/close-icon.svg">
+                </button>
+                <h2 class="bordered-title">Üye Ol</h2>
+            </div>
+            <div class="modal-form d-flex justify-content-center flex-column">
+                <div class="modal-form-inner">
+                    <form action="">
+                        <div class="iconed-control">
+                            <div class="input"><input type="text" placeholder="Adınız" required name="text"></div>
+                            <div class="icon"><img src="assets/images/icons/user.svg"></div>
+                        </div>
+                        <div class="iconed-control">
+                            <div class="input"><input type="text" placeholder="Soyadınız" required name="surname"></div>
+                            <div class="icon"><img src="assets/images/icons/user.svg"></div>
+                        </div>
+                        <div class="iconed-control">
+                            <div class="input"><input type="email" placeholder="E-posta" required name="email"></div>
+                            <div class="icon"><img src="assets/images/icons/email.svg"></div>
+                        </div>
+                        <div class="iconed-control">
+                            <div class="input"><input type="tel" id="tel_number" required name="tel_number"></div>
+                            <div class="icon"><img src="assets/images/icons/phone.svg"></div>
+                        </div>
+                        <div class="iconed-control">
+                            <div class="input"><input type="password" placeholder="Şifre" required name="password">
+                            </div>
+                            <div class="icon"><img src="assets/images/icons/password.svg"></div>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="user_agreement"
+                                   value="user_agreement" required>
+                            <label class="custom-control-label" for="user-agreement"><a data-toggle="modal"
+                                                                                        data-target="#userAgreementModal"
+                                                                                        href="#">Üyelik sözleşmesini</a>
+                                ve <a href="#">Kişisel verilerin korunması</a> ve gizlilik politikasını okudum
+                                ve kabul ediyorum.</label>
+                        </div>
+                        <button class="custom-button">Üye Ol</button>
+                    </form>
+                    <div class="login-register">Zaten bir hesabınız mı var?<a data-toggle="modal"
+                                                                              data-target="#loginModal"
+                                                                              onclick="$('#registerModal').modal('hide')"
+                                                                              href="#">Giriş Yapın</a></div>
+                    <div class="login-social">
+                        <p><span>veya</span></p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="social-btn">
+                                    <a href="#"><img src="assets/images/icons/fb-logo.svg" alt="">
+                                        <span>Facebook ile devam et</span></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="social-btn">
+                                    <a href="#"><img src="assets/images/icons/g-logo.svg" alt="">
+                                        <span>Google ile devam et</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Register end-->
+
+<!--Forget Password-->
+<div class="modal fade" id="forgetpasswordModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/icons/close-icon.svg">
+                </button>
+                <h2 class="bordered-title">Şifremi Unuttum</h2>
+            </div>
+            <div class="modal-form d-flex justify-content-center flex-column">
+                <div class="modal-form-inner">
+                    <form action="">
+                        <div class="iconed-control">
+                            <div class="input"><input type="email" placeholder="E-posta Adresiniz" required
+                                                      name="email"></div>
+                            <div class="icon"><img src="assets/images/icons/email.svg"></div>
+                        </div>
+                        <button class="custom-button">Şifremi Gönder</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Forget Password end-->
+
+<!--User Agreement-->
+<div class="modal fade" id="userAgreementModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/icons/close-icon.svg">
+                </button>
+                <h2 class="bordered-title">Üyelik Sözleşmesi</h2>
+            </div>
+            <div class="modal-form d-flex justify-content-center flex-column">
+                <div class="modal-form-inner">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et risus tempus, vehicula lacus
+                        pulvinar, facilisis ipsum. Vestibulum tristique magna sagittis dictum hendrerit. Nunc bibendum
+                        convallis velit, a lacinia augue ornare eget. Proin accumsan nec felis in placerat. Vestibulum
+                        sed mollis tellus, et mattis tortor. Donec suscipit purus nec neque consectetur, eget imperdiet
+                        magna fringilla. Praesent finibus posuere ex, sed ultrices odio scelerisque quis.
+                    </p>
+                    <p>
+                        Nam at tincidunt lorem. Nulla scelerisque ullamcorper aliquet. Etiam eget nulla in eros
+                        condimentum dapibus. Aenean blandit mauris odio, vel cursus nibh aliquet sit amet. Nunc lobortis
+                        egestas arcu, sit amet bibendum metus pulvinar vitae. Proin tempus eleifend massa sit amet
+                        gravida. Proin sed odio a lectus consectetur convallis. In lorem velit, vulputate quis nibh vel,
+                        accumsan fringilla sapien. Fusce volutpat diam vel turpis consequat suscipit vel quis arcu.
+                        Nulla ac tortor eget nulla cursus laoreet. Pellentesque habitant morbi tristique senectus et
+                        netus et malesuada fames ac turpis egestas. Maecenas vitae lorem eget erat vestibulum suscipit.
+                        Suspendisse lectus turpis, consequat a metus sed, pulvinar fringilla quam. Nulla facilisi.
+                        Pellentesque porttitor auctor cursus.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--User Agreement End-->
+
+<!--Mobile Register-->
+<div class="modal modal-bottom fade" id="mobile_register" tabindex="-1" role="dialog">
+    <div class="modal-dialog " role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/icons/close-mobile-icon.svg">
+                </button>
+                <h2 class="bordered-title">Üye Ol</h2>
+            </div>
+            <div class="modal-body">
+                <div class="modal-form-inner">
+                    <form action="">
+                        <div class="iconed-control">
+                            <div class="input"><input type="text" placeholder="Adınız" required name="text"></div>
+                            <div class="icon"><img src="assets/images/icons/user.svg"></div>
+                        </div>
+                        <div class="iconed-control">
+                            <div class="input"><input type="text" placeholder="Soyadınız" required name="surname"></div>
+                            <div class="icon"><img src="assets/images/icons/user.svg"></div>
+                        </div>
+                        <div class="iconed-control">
+                            <div class="input"><input type="email" placeholder="E-posta" required name="email"></div>
+                            <div class="icon"><img src="assets/images/icons/email.svg"></div>
+                        </div>
+                        <div class="iconed-control">
+                            <div class="input"><input type="tel" id="tel_number_mobile" required
+                                                      name="tel_number_mobile"></div>
+                            <div class="icon"><img src="assets/images/icons/phone.svg"></div>
+                        </div>
+                        <div class="iconed-control">
+                            <div class="input"><input type="password" placeholder="Şifre" required name="password">
+                            </div>
+                            <div class="icon"><img src="assets/images/icons/password.svg"></div>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="mobile_user-agreement"
+                                   value="user_agreement" required>
+                            <label class="custom-control-label" for="mobile_user-agreement"><a data-toggle="modal"
+                                                                                               data-target="#userAgreementModal"
+                                                                                               href="#">Üyelik
+                                sözleşmesini</a>
+                                ve <a href="#">Kişisel verilerin korunması</a> ve gizlilik politikasını okudum
+                                ve kabul ediyorum.</label>
+                        </div>
+                        <button class="custom-button">Üye Ol</button>
+                    </form>
+                    <div class="login-register">Zaten bir hesabınız mı var?<a data-toggle="modal"
+                                                                              data-target="#mobile_login"
+                                                                              onclick="$('#mobile_register').modal('hide')"
+                                                                              href="#">Giriş Yapın</a></div>
+                    <div class="login-social">
+                        <p><span>veya</span></p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="social-btn">
+                                    <a href="#"><img src="assets/images/icons/fb-logo.svg" alt="">
+                                        <span>Facebook ile devam et</span></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="social-btn">
+                                    <a href="#"><img src="assets/images/icons/g-logo.svg" alt="">
+                                        <span>Google ile devam et</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Mobile Register-->
+
+<!--Mobile Login-->
+<div class="modal modal-bottom fade" id="mobile_login" tabindex="-1" role="dialog">
+    <div class="modal-dialog " role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/icons/close-mobile-icon.svg">
+                </button>
+                <h2 class="bordered-title">Giriş Yap</h2>
+            </div>
+            <div class="modal-body">
+                <div class="modal-form-inner">
+                    <form action="">
+                        <div class="iconed-control">
+                            <div class="input"><input type="email" placeholder="E-posta" required name="email"></div>
+                            <div class="icon"><img src="assets/images/icons/email.svg"></div>
+                        </div>
+                        <div class="iconed-control">
+                            <div class="input"><input type="password" placeholder="Şifre" required name="password">
+                            </div>
+                            <div class="icon"><img src="assets/images/icons/password.svg"></div>
+                        </div>
+                        <div class="login-form-group">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="mobile_remember_me"
+                                       value="mobile_remember_me">
+                                <label class="custom-control-label" for="mobile_remember_me">Beni Hatırla</label>
+                            </div>
+                            <div><a href="#" data-toggle="modal" data-target="#forgetpasswordModal">Şifremi Unuttum</a>
+                            </div>
+                        </div>
+                        <button class="custom-button">Giriş Yap</button>
+                    </form>
+                    <div class="login-register">Hesabınız yok mu?<a data-toggle="modal" data-target="#mobile_register"
+                                                                    onclick="$('#mobile_login').modal('hide')" href="#">Hemen
+                        Kaydolun</a></div>
+                    <div class="login-social">
+                        <p><span>veya</span></p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="social-btn">
+                                    <a href="#"><img src="assets/images/icons/fb-logo.svg" alt="">
+                                        <span>Facebook ile devam et</span></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="social-btn">
+                                    <a href="#"><img src="assets/images/icons/g-logo.svg" alt="">
+                                        <span>Google ile devam et</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Mobile Login-->
+
+<!--Mobile Menu-->
+<div class="modal modal-bottom fade" id="mobile_menu" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/icons/close-mobile-icon.svg">
+                </button>
+                <h2 class="bordered-title">Menu</h2>
+            </div>
+            <div class="modal-body">
+                <ul class="mobile-menu-list">
+                    <li><a class="login" data-toggle="modal" data-target="#mobile_login"
+                           onclick="$('#mobile_menu').modal('hide')" href="#">Giriş Yap</a></li>
+                    <li><a class="register" data-toggle="modal" data-target="#mobile_register"
+                           onclick="$('#mobile_menu').modal('hide')" href="#">Üye
+                        Ol</a></li>
+                    <li><a class="add-property" href="#">Mülkünü Ekle</a></li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <ul>
+                    <li class="header-phone">
+                        <a href="tel:08500000000">
+                            <span>Destek Hattı</span>
+                            0850 000 00 00
+                        </a>
+                    </li>
+                    <li><a href="#">Yardım</a></li>
+                    <li class="nav-select-lang">
+                        <div><span class="flag-icon flag-icon-tr"></span>TR</div>
+                        <ul>
+                            <li><a href="#"><span class="flag-icon flag-icon-us"></span>EN</a></li>
+                            <li><a href="#"><span class="flag-icon flag-icon-fr"></span>FR</a></li>
+                            <li><a href="#"><span class="flag-icon flag-icon-tr"></span>TR</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Mobile Menu-->
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/ed60a6a57c.js" crossorigin="anonymous"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/main.js" crossorigin="anonymous"></script>
+<script src="assets/js/jquery.maskedinput.js"></script>
+<script src="assets/js/telinput/js/utils.js"></script>
+<script src="assets/js/telinput/js/intlTelInput.min.js"></script>
+<script type="text/javascript" src="assets/js/t-datepicker.min.js"></script>
+<script type="text/javascript" src="assets/js/select2.full.min.js"></script>
+<script type="text/javascript" src="assets/js/aos.js"></script>
+
+<!--Sayfaya Özel JS-->
+<script type="text/javascript">
+    //Datepicker
+    $(document).ready(function () {
+        $('.search-picker').tDatePicker({
+            dateCheckIn: '2021-04-20',
+            dateCheckOut: '2021-04-25',
+            iconDate: '',
+            numCalendar: 1,
+            daysOfWeekHighlighted: [],
+            titleCheckIn: 'Tarih Ekleyin',
+            titleCheckOut: 'Tarih Ekleyin',
+            titleDateRange: 'Gece',
+            titleDateRanges: 'Gece',
+            titleToday: 'Bugün',
+            titleDays: ['Pt', 'Sa', 'Ça', 'Pe', 'Cu', 'Ct', 'Pz'],
+            titleMonths: ['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs',
+                'Haziran', 'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık'],
+        });
+    });
+</script>
+<!--Sayfaya Özel JS-->
+</body>
+</html>

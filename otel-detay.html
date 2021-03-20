@@ -1,0 +1,1769 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Tatiloley</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+          rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="assets/images/icons/favicon.png"/>
+    <link rel="stylesheet" href="assets/css/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl-carousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/js/telinput/css/intlTelInput.css">
+    <link rel="stylesheet" href="assets/css/t-datepicker-main.css">
+    <link rel="stylesheet" href="assets/css/t-datepicker.min.css">
+    <link rel="stylesheet" href="assets/css/select2.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+</head>
+<body>
+<header class="header pages">
+    <div class="container">
+        <div class="row">
+            <!--Logo-->
+            <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                <div class="logo">
+                    <a href="#" title="Tatiloley">
+                        <img src="assets/images/header/logo.svg" title="Tatiloley" alt="Tatiloley">
+                    </a>
+                </div>
+            </div>
+            <!--Logo-->
+            <!--Menu-->
+            <div class="col-lg-9 col-md-9 col-sm-6 col-6">
+                <div class="main-menu">
+                    <ul>
+                        <li><a href="#">Yardım</a></li>
+                        <li class="nav-select-lang">
+                            <div><span class="flag-icon flag-icon-tr"></span>TR</div>
+                            <ul>
+                                <li><a href="#"><span class="flag-icon flag-icon-us"></span>EN</a></li>
+                                <li><a href="#"><span class="flag-icon flag-icon-fr"></span>FR</a></li>
+                                <li><a href="#"><span class="flag-icon flag-icon-tr"></span>TR</a></li>
+                            </ul>
+                        </li>
+                        <li class="header-phone animation-tooltip rotation-yaxis">
+                            <a href="tel:08500000000" class="animation-title">
+                                <span>Destek Hattı</span>0850 000 00 00
+                                <div class="animation-tooltip-text">Deneyimli tatil danışmanlarımız ile iletişime geçin.
+                                </div>
+                            </a>
+                        </li>
+                        <li class="add-property">
+                            <a href="#">Mülkünü Ekle</a>
+                        </li>
+                        <li class="login has-dropdown">
+                            <a href="#">Giriş Yap</a>
+                            <div class="dropdown-container">
+                                <ul>
+                                    <li><a data-toggle="modal" data-target="#loginModal" href="#">Giriş Yap</a></li>
+                                    <li><a data-toggle="modal" data-target="#registerModal" href="#">Üye Ol</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!--If logged in-->
+                        <!--<li class="logged-in has-dropdown">
+                            <div class="logged-in-area">
+                                <span class="menu-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="13" viewBox="0 0 20 13">
+                                    <g id="fi-rr-menu-burger" transform="translate(0 -4)">
+                                    <rect id="Rectangle_2385" data-name="Rectangle 2385" width="20" height="1.625" rx="0.813" transform="translate(0 9.688)" fill="#fff"/>
+                                    <rect id="Rectangle_2386" data-name="Rectangle 2386" width="20" height="1.625" rx="0.813" transform="translate(0 4)" fill="#fff"/>
+                                    <rect id="Rectangle_2387" data-name="Rectangle 2387" width="20" height="1.625" rx="0.813" transform="translate(0 15.375)" fill="#fff"/>
+                                    </g></svg></span>
+                                <span class="pp">
+                                    <img src="assets/images/header/default-pp.png" alt="">
+                                </span>
+                            </div>
+                        <div class="dropdown-container">
+                            <ul>
+                                <li><a href="#">Seyahatlerim</a></li>
+                                <li> <a href="#">Beğendiklerim</a></li>
+                                <li> <a href="#">Profilim</a></li>
+                                <li> <a href="#">İlan Veren Bilgilerim</a></li>
+                                <li> <a href="#">İlan Veren Panosu</a></li>
+                                <li> <a href="#">Çıkış Yap</a></li>
+                            </ul>
+                        </div>
+                    </li>-->
+                        <!--If logged in-->
+                    </ul>
+                </div>
+
+                <div class="mobile-menu">
+                    <div class="logged-in">
+                        <div class="logged-in-area" data-toggle="modal" data-target="#mobile_menu">
+                                <span class="menu-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="13" viewBox="0 0 20 13">
+                                    <g id="fi-rr-menu-burger" transform="translate(0 -4)">
+                                    <rect id="Rectangle_2385" data-name="Rectangle 2385" width="20" height="1.625"
+                                          rx="0.813" transform="translate(0 9.688)" fill="#fff"/>
+                                    <rect id="Rectangle_2386" data-name="Rectangle 2386" width="20" height="1.625"
+                                          rx="0.813" transform="translate(0 4)" fill="#fff"/>
+                                    <rect id="Rectangle_2387" data-name="Rectangle 2387" width="20" height="1.625"
+                                          rx="0.813" transform="translate(0 15.375)" fill="#fff"/>
+                                    </g></svg></span>
+                            <span class="pp">
+                                    <img src="assets/images/others/ilan-sahibi.png" alt="">
+                                </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Menu-->
+    </div>
+</header>
+
+<section class="page-content detail-page">
+    <div class="breadcrumb-sorting">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 hidden-m">
+                    <ul class="breadcrumb">
+                        <li><a href="/"><img src="assets/images/icons/home-icon-black.svg" width="16" height="16"></a>
+                        </li>
+                        <li><a href="#">Konsept Oteller</a></li>
+                        <li><a href="#">Antalya Konsept Otel</a></li>
+                        <li><a href="#">Alanya Konsept Otel</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <a href="javascript:history.back()" class="page-back hidden-d">
+                        <img src="assets/images/icons/close-mobile-icon.svg">
+                        Konsept Otel
+                    </a>
+                    <ul class="share-favorite-wrapper">
+                        <li><a href="#" class="share" data-toggle="modal" data-target="#Share">
+                            <img src="assets/images/icons/share-icon.svg">
+                            <span>Paylaş</span>
+                        </a></li>
+                        <li><a href="#" class="favorite active" data-toggle="modal" data-target="#AddFavoriteList">
+                            <i class="far fa-heart" aria-hidden="true"></i>
+                            <span>Beğen</span>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="advert-gallery-wrapper">
+    <div class="container mp-0">
+        <div class="hero-gallery" id="hero-gallery" data-toggle="modal" data-target="#GalleryModal">
+            <div class="col-md-6 p-0 float-left w-50">
+                <img class="w-100 hero-big" src="assets/images/others/otel-detay1.png"
+                     data-target="#HeroGalleryWrapper"
+                     data-slide-to="0">
+            </div>
+            <div class="col-md-6 float-left w-50">
+                <div class="row">
+                    <div class="col-md-6 pr-0 pl-12">
+                        <img class="w-100" src="assets/images/others/otel-detay2.png" data-target="#HeroGalleryWrapper"
+                             data-slide-to="1">
+                    </div>
+                    <div class="col-md-6 pr-0 pl-12 m-pt-12">
+                        <img class="w-100 br-top" src="assets/images/others/otel-detay3.png"
+                             data-target="#HeroGalleryWrapper"
+                             data-slide-to="2">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 float-left">
+                <div class="row">
+                    <div class="col-md-6 pr-0 pt-12 m-pl-0 w-50">
+                        <img class="w-100" src="assets/images/others/otel-detay4.png"
+                             data-target="#HeroGalleryWrapper"
+                             data-slide-to="3">
+                    </div>
+                    <div class="col-md-6 pr-0 pl-12 pt-12 w-50">
+                        <img class="w-100 br-bottom" src="assets/images/others/otel-detay5.png"
+                             data-target="#HeroGalleryWrapper"
+                             data-slide-to="4">
+                        <div class="show-all-gallery">
+                            <a href="#" data-toggle="modal" data-target="#GalleryModal">
+                                <img src="assets/images/icons/gallery-icon.svg">Tüm fotoğrafları göster</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="advert-detail-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="advert-head-area part-space">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <h1>Nautical Hotel, Ölüdeniz Sahiline Sıfır</h1>
+                            <ul class="title-bottom-list">
+                                <li class="reviews">
+                                    <img src="assets/images/icons/review-red.svg">
+                                    <a href="#" data-toggle="modal" data-target="#reviewsModal"><span>4,5</span>(14
+                                        Yorum)</a>
+                                </li>
+                                <li class="location">
+                                    <img src="assets/images/icons/place-icon-red.svg">
+                                    <span>Muğla, Fethiye, Ölüdeniz</span>
+                                </li>
+                                <li class="advert-number">
+                                    <img src="assets/images/icons/number.svg">
+                                    <span>İlan No: <b>123456</b></span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4">
+                            <a href="#" class="custom-button-red">Rezervasyon Yap</a>
+                        </div>
+                    </div>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                        sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                        invidunt ut labore et dolore magna.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                        diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                        At vero eos et accusam et justo duo
+                        dolores et ea rebum.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="advert-rooms part-space">
+                       <div class="col-lg-12 col-md-6 advert-room-wrapper">
+                           <div class="row">
+                               <div class="col-lg-12 advert-item">
+                                   <div class="row">
+                                       <div class="col-lg-4 col-md-6 advert-images-area">
+
+
+                                           <div class="owl-carousel owl-theme owl-carousel-advert-img">
+                                               <a href="#"><img class="owl-lazy"
+                                                                data-src="assets/images/others/demo-villa-1.png"
+                                                                alt=""></a>
+                                               <a href="#"><img class="owl-lazy"
+                                                                data-src="assets/images/others/demo-villa-2.png"
+                                                                alt=""></a>
+                                               <a href="#"><img class="owl-lazy"
+                                                                data-src="assets/images/others/demo-villa-3.png"
+                                                                alt=""></a>
+                                               <a href="#"><img class="owl-lazy"
+                                                                data-src="assets/images/others/demo-villa-1.png"
+                                                                alt=""></a>
+                                               <a href="#"><img class="owl-lazy"
+                                                                data-src="assets/images/others/demo-villa-2.png"
+                                                                alt=""></a>
+                                           </div>
+                                       </div>
+                                       <div class="col-lg-4 p-0">
+                                           adsd
+                                       </div>
+                                       <div class="col-lg-2 pl-0">
+                                           <div class="price-cont">
+                                               <div class="night-price">
+                                                   <p>Gecelik Toplam Fiyat</p>
+                                                   <span>950,00₺</span>
+                                               </div>
+                                               <div class="total-price">
+                                                   <p>Toplam</p>
+                                                   <span>2.200,00₺</span>
+                                               </div>
+                                               <div class="button-area">
+                                                   <p>En az 1 gece</p>
+                                                   <a href="#" class="custom-button-red">İncele</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                </div>
+                <div class="facilities part-space">
+                    <h3 class="part-title">Olanaklar</h3>
+                    <ul>
+                        <li><img src="assets/images/icons/elevator.svg">Asansör</li>
+                        <li><img src="assets/images/icons/hair-dryer.svg">Saç kurutma makinesi</li>
+                        <li><img src="assets/images/icons/air-conditioning.svg">Klima</li>
+                        <li><img src="assets/images/icons/wifi.svg">Wifi</li>
+                        <li><img src="assets/images/icons/iron.svg">Ütü</li>
+                        <li><img src="assets/images/icons/tv.svg">TV</li>
+                        <li><img src="assets/images/icons/washing-machine.svg">Çamaşır Makinesi</li>
+                        <li><img src="assets/images/icons/kitchen.svg">Mutfak</li>
+                        <li><img src="assets/images/icons/pool.svg">Havuz</li>
+                    </ul>
+                    <a href="#" class="advert-detail-button" data-toggle="modal" data-target="#facilitiesModal">
+                        Tüm Olanakları Göster
+                    </a>
+                </div>
+                <div class="distances part-space">
+                    <h3 class="part-title">Mesafeler</h3>
+                    <ul>
+                        <li><img src="assets/images/icons/distance-1.svg">
+                            <p>Havaalanı Mesafesi<strong>130 km</strong></p>
+                        </li>
+                        <li><img src="assets/images/icons/distance-2.svg">
+                            <p>Deniz Mesafesi<strong>9 km</strong></p>
+                        </li>
+                        <li><img src="assets/images/icons/distance-3.svg">
+                            <p>Market Mesafesi<strong>1 km</strong></p>
+                        </li>
+                        <li><img src="assets/images/icons/distance-4.svg">
+                            <p>Hastane Mesafesi<strong>1 km</strong></p>
+                        </li>
+                        <li><img src="assets/images/icons/distance-5.svg">
+                            <p>Restaurant Mesafesi<strong>1 km</strong></p>
+                        </li>
+                        <li><img src="assets/images/icons/distance-6.svg">
+                            <p>Merkez Mesafesi<strong>8 km</strong></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="rules part-space">
+                    <h3 class="part-title">Kurallar</h3>
+                    <ul>
+                        <li><img src="assets/images/icons/check-in.svg">
+                            <p>Giriş:<strong>14:00 'dan itibaren</strong></p>
+                        </li>
+                        <li><img src="assets/images/icons/check-out.svg">
+                            <p>Çıkış:<strong>16:00</strong></p>
+                        </li>
+                    </ul>
+                    <div class="rules-desc">
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt
+                            ut labore et dolore.</p>
+
+                        <p>aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                            Stet
+                            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+                            dolor
+                            sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                            et ea
+                            rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                            amet.</p>
+
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt
+                            ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
+                            duo
+                            dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+                            dolor
+                            sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                            tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                            et
+                            justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                            ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="availability part-space">
+                    <h3 class="part-title">Uygunluk</h3>
+                    Hazırlanıyor...
+                </div>
+                <div class="reviews-wrapper part-space">
+                    <h3 class="part-title"><img src="assets/images/icons/review-red.svg">
+                        4.5 (14 Misafir Yorumu)</h3>
+                    <div class="row">
+                        <div class="col-lg-6 review-item">
+                            <div class="review-head">
+                                <div class="left">
+                                    <img src="assets/images/others/demo-review-img-1.png">
+                                    <span class="name">Thomas<span class="date">Ağustos 2020</span></span>
+                                </div>
+                                <div class="right">
+                                    <img src="assets/images/icons/review-red.svg">
+                                    <span>4.5</span>
+                                </div>
+                            </div>
+                            <div class="review-desc more">
+                                liquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                                rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                                amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                eirmod tempor invidunt ut labore et dolore magna aliquyam erat.liquyam erat, sed diam
+                                voluptua. At vero eos et accusam et justo duo dolores et ea
+                                rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                                amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+                            </div>
+                        </div>
+                        <div class="col-lg-6 review-item">
+                            <div class="review-head">
+                                <div class="left">
+                                    <img src="assets/images/others/demo-review-img-2.png">
+                                    <span class="name">Thomas<span class="date">Ağustos 2020</span></span>
+                                </div>
+                                <div class="right">
+                                    <img src="assets/images/icons/review-red.svg">
+                                    <span>4.5</span>
+                                </div>
+                            </div>
+                            <div class="review-desc more">
+                                liquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                                rebum. Stet clita kasd gubergren.
+                            </div>
+                        </div>
+                        <div class="col-lg-6 review-item">
+                            <div class="review-head">
+                                <div class="left">
+                                    <img src="assets/images/others/demo-review-img-3.png">
+                                    <span class="name">Thomas<span class="date">Ağustos 2020</span></span>
+                                </div>
+                                <div class="right">
+                                    <img src="assets/images/icons/review-red.svg">
+                                    <span>4.5</span>
+                                </div>
+                            </div>
+                            <div class="review-desc more">
+                                liquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                                rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                                amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                eirmod tempor invidunt ut labore et dolore magna aliquyam erat.liquyam erat, sed diam
+                                voluptua. At vero eos et accusam et justo duo dolores et ea
+                                rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                                amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+                            </div>
+                        </div>
+                        <div class="col-lg-6 review-item">
+                            <div class="review-head">
+                                <div class="left">
+                                    <img src="assets/images/others/demo-review-img-4.png">
+                                    <span class="name">Thomas<span class="date">Ağustos 2020</span></span>
+                                </div>
+                                <div class="right">
+                                    <img src="assets/images/icons/review-red.svg">
+                                    <span>4.5</span>
+                                </div>
+                            </div>
+                            <div class="review-desc more">
+                                liquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                                rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                                amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                eirmod tempor invidunt ut labore et dolore magna aliquyam erat.liquyam erat, sed diam
+                                voluptua. At vero eos et accusam et justo duo dolores et ea
+                                rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                                amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+                            </div>
+                        </div>
+                        <div class="col-lg-6 review-item">
+                            <div class="review-head">
+                                <div class="left">
+                                    <img src="assets/images/others/demo-review-img-5.png">
+                                    <span class="name">Thomas<span class="date">Ağustos 2020</span></span>
+                                </div>
+                                <div class="right">
+                                    <img src="assets/images/icons/review-red.svg">
+                                    <span>4.5</span>
+                                </div>
+                            </div>
+                            <div class="review-desc more">
+                                liquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                                rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                                amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                eirmod tempor invidunt ut labore et dolore magna aliquyam erat.liquyam erat, sed diam
+                                voluptua. At vero eos et accusam et justo duo dolores et ea
+                                rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                                amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+                            </div>
+                        </div>
+                        <div class="col-lg-6 review-item">
+                            <div class="review-head">
+                                <div class="left">
+                                    <img src="assets/images/others/demo-review-img-6.png">
+                                    <span class="name">Thomas<span class="date">Ağustos 2020</span></span>
+                                </div>
+                                <div class="right">
+                                    <img src="assets/images/icons/review-red.svg">
+                                    <span>4.5</span>
+                                </div>
+                            </div>
+                            <div class="review-desc more">
+                                liquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                                rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                                amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                eirmod tempor invidunt ut labore et dolore magna aliquyam erat.liquyam erat, sed diam
+                                voluptua. At vero eos et accusam et justo duo dolores et ea
+                                rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                                amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="advert-detail-button" data-toggle="modal" data-target="#reviewsModal">
+                        14 misafir yorumunun tümünü göster
+                    </a>
+                </div>
+                <div class="advert-location part-space">
+                    <h3 class="part-title">Konum
+                        <span>Antalya, Alanya, Kargıcak</span>
+                    </h3>
+                    <div id="map-canvas"></div>
+                    <span class="map-info">Tam konum rezervasyondan sonra verilir.</span>
+                </div>
+                <div class="advert-owner part-space">
+                    <h3 class="part-title">İlan Sahibi</h3>
+                    <div class="advert-owner-head">
+                        <div class="left">
+                            <img class="owner-verified" src="assets/images/icons/verified.svg">
+                            <img class="owner-photo" src="assets/images/others/ilan-sahibi.png">
+                        </div>
+                        <div class="right">
+                            <h3>Murat</h3>
+                            <span>Mayıs 2015 tarihinde katıldı.</span>
+                        </div>
+                    </div>
+                    <div class="advert-owner-specs">
+                        <span><img src="assets/images/icons/review-red.svg">100 olumlu misafir yorumu</span>
+                        <span><img src="assets/images/icons/chat.svg">Bir sorunuz mu var?
+                        <a href="#">İlan hakkında bilgi al</a></span>
+                    </div>
+                </div>
+                <div class="cancellation-policy part-space">
+                    <h3 class="part-title">İptal Politikası</h3>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore.
+
+                        aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
+                        sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                        dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                        rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="col-lg-3" id="detail-sidebar">
+                <div id="reservation" class="advert-booking hotel-booking sticky-top">
+                    <div class="row hotel-summary">
+                        <div class="col-lg-12">
+                            <h3 class="part-title">Rezervasyon Bilgileri</h3>
+                            <div class="selected-room">
+                                <div><span>1</span> x Superior Kara Manzaralı Oda</div>
+                                <div><span>1</span> x Superior Kara Manzaralı Oda</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row res-details">
+                        <div class="col-lg-12">
+                            <div class="info">
+                                <strong>Kapıda Ödeme Fırsatı</strong>
+                                %40'ını şimdi, kalanını giriş yaparken ödeyin
+                            </div>
+                            <div class="price-details">
+                                <div class="price-item">
+                                    <span>Şimdi Ödenecek</span>
+                                    <strong id="now-price">880,00 ₺</strong>
+                                </div>
+                                <div class="price-item">
+                                    <span>Kapıda Ödenecek</span>
+                                    <strong id="after-price">1.320,00 ₺</strong>
+                                </div>
+                                <div class="price-item total">
+                                    <span>Toplam <span id="total-night">(6 gece
+                                        <span id="total-room">, 2 oda)</span></span>
+                                    </span>
+                                    <strong id="total-price">2.200,00 ₺</strong>
+                                </div>
+                            </div>
+                            <button type="submit" class="search-btn" id="search-btn" value="Hemen Rezervasyon Yap">
+                                Hemen Rezervasyon Yap
+                            </button>
+                            <p class="button-bottom-info">Bu adımda ödeme yapmayacaksınız</p>
+                        </div>
+                    </div>
+                    <div class="res-bottom">
+                        <div class="money-back-g">
+                            <img src="assets/images/icons/money-back.svg">
+                            <span>%100 PARA İADESİ GÜVENCESİ</span>
+                        </div>
+                        <a href="#">
+                            <img src="assets/images/icons/chat-black-icon.svg">
+                            Canlı Sohbet Başlat
+                        </a>
+                        <a href="tel:08508888888">
+                            <img src="assets/images/icons/phone-icon.svg">
+                            0850 888 88 88
+                        </a>
+                        <span class="advert-num"><strong>#19745</strong> nolu ilan hakkında müsaitlik bilgisi al</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container related-wrapper">
+        <h3 class="part-title">Sizin İçin Öneriler</h3>
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="advert-item">
+                    <div class="advert-images-area">
+                        <div class="hidden-m" data-toggle="modal" data-target="#loginModal">
+                                            <span href="#" class="favorite" data-toggle="tooltip" title=""
+                                                  data-original-title="Beğendiklerime ekle">
+                                                <i class="far fa-heart"></i> </span></div>
+                        <div class="hidden-d" data-toggle="modal" data-target="#mobile_login">
+                                            <span href="#" class="favorite" data-toggle="tooltip" title=""
+                                                  data-original-title="Beğendiklerime ekle">
+                                                <i class="far fa-heart"></i> </span></div>
+                        <div class="owl-carousel owl-theme owl-carousel-advert-img">
+                            <a href="#"><img class="owl-lazy"
+                                             data-src="assets/images/others/demo-villa-1.png"
+                                             alt=""></a>
+                            <a href="#"><img class="owl-lazy"
+                                             data-src="assets/images/others/demo-villa-2.png"
+                                             alt=""></a>
+                            <a href="#"><img class="owl-lazy"
+                                             data-src="assets/images/others/demo-villa-3.png"
+                                             alt=""></a>
+                            <a href="#"><img class="owl-lazy"
+                                             data-src="assets/images/others/demo-villa-1.png"
+                                             alt=""></a>
+                            <a href="#"><img class="owl-lazy"
+                                             data-src="assets/images/others/demo-villa-2.png"
+                                             alt=""></a>
+                        </div>
+                    </div>
+                    <div class="advert-cont">
+                        <div class="top">
+                            <span class="advert-location">Antalya, Alanya, Kargıcak</span>
+                            <a href="#"><h2 class="title">Alanya'da Muhteşem Olanaklara Sahip,
+                                Havuzlu, Konforlu Villa</h2></a>
+                        </div>
+                        <div class="price-cont">
+                            <div class="night-price">
+                                <p>Gecelik Fiyat</p>
+                                <span>950,00₺</span>
+                            </div>
+                            <div class="advert-number-review">
+                                <span class="advert-review"><img
+                                        src="assets/images/icons/review-red.svg"><b>4.50</b>(14)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="advert-item">
+                    <div class="advert-images-area">
+                        <div class="hidden-m" data-toggle="modal" data-target="#loginModal">
+                                            <span href="#" class="favorite" data-toggle="tooltip" title=""
+                                                  data-original-title="Beğendiklerime ekle">
+                                                <i class="far fa-heart"></i> </span></div>
+                        <div class="hidden-d" data-toggle="modal" data-target="#mobile_login">
+                                            <span href="#" class="favorite" data-toggle="tooltip" title=""
+                                                  data-original-title="Beğendiklerime ekle">
+                                                <i class="far fa-heart"></i> </span></div>
+                        <div class="owl-carousel owl-theme owl-carousel-advert-img">
+                            <a href="#"><img class="owl-lazy"
+                                             data-src="assets/images/others/demo-villa-2.png"
+                                             alt=""></a>
+                            <a href="#"><img class="owl-lazy"
+                                             data-src="assets/images/others/demo-villa-2.png"
+                                             alt=""></a>
+                            <a href="#"><img class="owl-lazy"
+                                             data-src="assets/images/others/demo-villa-3.png"
+                                             alt=""></a>
+                            <a href="#"><img class="owl-lazy"
+                                             data-src="assets/images/others/demo-villa-1.png"
+                                             alt=""></a>
+                            <a href="#"><img class="owl-lazy"
+                                             data-src="assets/images/others/demo-villa-2.png"
+                                             alt=""></a>
+                        </div>
+                    </div>
+                    <div class="advert-cont">
+                        <div class="top">
+                            <span class="advert-location">Antalya, Alanya, Kargıcak</span>
+                            <a href="#"><h2 class="title">Alanya'da Muhteşem Olanaklara Sahip,
+                                Havuzlu, Konforlu Villa</h2></a>
+                        </div>
+                        <div class="price-cont">
+                            <div class="night-price">
+                                <p>Gecelik Fiyat</p>
+                                <span>950,00₺</span>
+                            </div>
+                            <div class="advert-number-review">
+                                <span class="advert-review"><img
+                                        src="assets/images/icons/review-red.svg"><b>4.50</b>(14)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="advert-item">
+                    <div class="advert-images-area">
+                        <div class="hidden-m" data-toggle="modal" data-target="#loginModal">
+                                            <span href="#" class="favorite" data-toggle="tooltip" title=""
+                                                  data-original-title="Beğendiklerime ekle">
+                                                <i class="far fa-heart"></i> </span></div>
+                        <div class="hidden-d" data-toggle="modal" data-target="#mobile_login">
+                                            <span href="#" class="favorite" data-toggle="tooltip" title=""
+                                                  data-original-title="Beğendiklerime ekle">
+                                                <i class="far fa-heart"></i> </span></div>
+                        <div class="owl-carousel owl-theme owl-carousel-advert-img">
+                            <a href="#"><img class="owl-lazy"
+                                             data-src="assets/images/others/demo-villa-3.png"
+                                             alt=""></a>
+                            <a href="#"><img class="owl-lazy"
+                                             data-src="assets/images/others/demo-villa-2.png"
+                                             alt=""></a>
+                            <a href="#"><img class="owl-lazy"
+                                             data-src="assets/images/others/demo-villa-3.png"
+                                             alt=""></a>
+                            <a href="#"><img class="owl-lazy"
+                                             data-src="assets/images/others/demo-villa-1.png"
+                                             alt=""></a>
+                            <a href="#"><img class="owl-lazy"
+                                             data-src="assets/images/others/demo-villa-2.png"
+                                             alt=""></a>
+                        </div>
+                    </div>
+                    <div class="advert-cont">
+                        <div class="top">
+                            <span class="advert-location">Antalya, Alanya, Kargıcak</span>
+                            <a href="#"><h2 class="title">Alanya'da Muhteşem Olanaklara Sahip,
+                                Havuzlu, Konforlu Villa</h2></a>
+                        </div>
+                        <div class="price-cont">
+                            <div class="night-price">
+                                <p>Gecelik Fiyat</p>
+                                <span>950,00₺</span>
+                            </div>
+                            <div class="advert-number-review">
+                                <span class="advert-review"><img
+                                        src="assets/images/icons/review-red.svg"><b>4.50</b>(14)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="advert-item">
+                    <div class="advert-images-area">
+                        <div class="hidden-m" data-toggle="modal" data-target="#loginModal">
+                                            <span href="#" class="favorite" data-toggle="tooltip" title=""
+                                                  data-original-title="Beğendiklerime ekle">
+                                                <i class="far fa-heart"></i> </span></div>
+                        <div class="hidden-d" data-toggle="modal" data-target="#mobile_login">
+                                            <span href="#" class="favorite" data-toggle="tooltip" title=""
+                                                  data-original-title="Beğendiklerime ekle">
+                                                <i class="far fa-heart"></i> </span></div>
+                        <div class="owl-carousel owl-theme owl-carousel-advert-img">
+                            <a href="#"><img class="owl-lazy"
+                                             data-src="assets/images/others/demo-villa-1.png"
+                                             alt=""></a>
+                            <a href="#"><img class="owl-lazy"
+                                             data-src="assets/images/others/demo-villa-2.png"
+                                             alt=""></a>
+                            <a href="#"><img class="owl-lazy"
+                                             data-src="assets/images/others/demo-villa-3.png"
+                                             alt=""></a>
+                            <a href="#"><img class="owl-lazy"
+                                             data-src="assets/images/others/demo-villa-1.png"
+                                             alt=""></a>
+                            <a href="#"><img class="owl-lazy"
+                                             data-src="assets/images/others/demo-villa-2.png"
+                                             alt=""></a>
+                        </div>
+                    </div>
+                    <div class="advert-cont">
+                        <div class="top">
+                            <span class="advert-location">Antalya, Alanya, Kargıcak</span>
+                            <a href="#"><h2 class="title">Alanya'da Muhteşem Olanaklara Sahip,
+                                Havuzlu, Konforlu Villa</h2></a>
+                        </div>
+                        <div class="price-cont">
+                            <div class="night-price">
+                                <p>Gecelik Fiyat</p>
+                                <span>950,00₺</span>
+                            </div>
+                            <div class="advert-number-review">
+                                <span class="advert-review"><img
+                                        src="assets/images/icons/review-red.svg"><b>4.50</b>(14)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="app-section">
+        <div class="container">
+            <div class="app-area">
+                <div class="left col-lg-6 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000"
+                     data-aos-delay="200">
+                    <h2>Tatiloley Uygulamasını İndirin</h2>
+                    <span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.</span>
+                    <div class="app-logo">
+                        <a href="#"><img src="assets/images/footer/appstore-white.svg"></a>
+                        <a href="#"><img src="assets/images/footer/gplay-white.svg"></a>
+                    </div>
+                </div>
+                <div class="right col-lg-6 aos-init aos-animate" data-aos="fade-left" data-aos-duration="1000"
+                     data-aos-delay="400">
+                    <img src="assets/images/footer/footer-img.png" alt="Tatiloley Uygulamasını İndirin">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-area">
+                <div class="row">
+                    <div class="left col-lg-7 aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000"
+                         data-aos-delay="200">
+                        <h2>Sorunuz mu var?</h2>
+                        <p>Deneyimli tatil danışmanlarımız haftanın 7 günü size yardımcı olmak için sorularınızı
+                            bekliyorlar.</p>
+                        <span><a href="tel:085000000000">0850 000 00 00</a></span>
+                    </div>
+                    <div class="right col-lg-5 aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000"
+                         data-aos-delay="400">
+                        <h2>Kampanyaları Kaçırma</h2>
+                        <p>Kampanyalardan anında haberdar olmak için hemen kaydolun.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="E-posta adresiniz" class="email-text">
+                            <input type="submit" class="email-send" value="Kaydol">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="footer-top-links">
+                        <li>
+                            <a href="#">Hakkımızda</a>
+                            <a href="#">Yardım</a>
+                            <a href="#">Kullanım Şartları</a>
+                            <a href="#">KVKK</a>
+                            <a href="#">İptal Politikaları</a>
+                            <a href="#">Basın</a>
+                            <a href="#">İletişim</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-12">
+                    <div class="footer-bottom">
+                        <div class="social-links">
+                            <ul>
+                                <li><a href="#" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i>
+                                </a></li>
+                                <li><a href="#" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i> </a>
+                                </li>
+                                <li><a href="#" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i> </a>
+                                </li>
+                                <li><a href="#" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                                </a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-logo"><img src="assets/images/footer/footer-logos.png" alt=""></div>
+                        <div class="copyright">© 2021 Tatiloley.com - Tüm Hakları Sakldır</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tursab-section">
+        <div class="container">
+            <span>TatilOley.com Turizm Seyahat Acentası TÜRSAB 10504 Numaralı Belge ile Turizm Bakanlığına bağlıdır.</span>
+        </div>
+    </div>
+</footer>
+
+<!--List Mobile Bottom Menu-->
+<div class="bottom-detail-page">
+    <div class="price">
+        <strong>550,00₺</strong><span>/ gece</span>
+        <p>'den başlayan</p>
+    </div>
+    <a href="#detail-sidebar">Uygunluk Durumunu Kontrol Edin</a>
+</div>
+<!--List Mobile Bottom Menu-->
+
+<!--Reviews Modal-->
+<div class="modal fade" id="reviewsModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/icons/close-icon.svg">
+                </button>
+                <h3 class="bordered-title part-title"><img src="assets/images/icons/review-red.svg">
+                    4.5 (14 Misafir Yorumu)</h3>
+            </div>
+            <div class="reviews-wrapper part-space">
+                <div class="row">
+                    <div class="review-item">
+                        <div class="review-head">
+                            <div class="left">
+                                <img src="assets/images/others/demo-review-img-1.png">
+                                <span class="name">Thomas<span class="date">Ağustos 2020</span></span>
+                            </div>
+                            <div class="right">
+                                <img src="assets/images/icons/review-red.svg">
+                                <span>4.5</span>
+                            </div>
+                        </div>
+                        <div class="review-desc more">
+                            liquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                            rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                            amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                            eirmod tempor invidunt ut labore et dolore magna aliquyam erat.liquyam erat, sed diam
+                            voluptua. At vero eos et accusam et justo duo dolores et ea
+                            rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                            amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                            eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+                        </div>
+                    </div>
+                    <div class="review-item">
+                        <div class="review-head">
+                            <div class="left">
+                                <img src="assets/images/others/demo-review-img-2.png">
+                                <span class="name">Thomas<span class="date">Ağustos 2020</span></span>
+                            </div>
+                            <div class="right">
+                                <img src="assets/images/icons/review-red.svg">
+                                <span>4.5</span>
+                            </div>
+                        </div>
+                        <div class="review-desc more">
+                            liquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                            rebum. Stet clita kasd gubergren.
+                        </div>
+                    </div>
+                    <div class="review-item">
+                        <div class="review-head">
+                            <div class="left">
+                                <img src="assets/images/others/demo-review-img-3.png">
+                                <span class="name">Thomas<span class="date">Ağustos 2020</span></span>
+                            </div>
+                            <div class="right">
+                                <img src="assets/images/icons/review-red.svg">
+                                <span>4.5</span>
+                            </div>
+                        </div>
+                        <div class="review-desc more">
+                            liquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                            rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                            amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                            eirmod tempor invidunt ut labore et dolore magna aliquyam erat.liquyam erat, sed diam
+                            voluptua. At vero eos et accusam et justo duo dolores et ea
+                            rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                            amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                            eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+                        </div>
+                    </div>
+                    <div class="review-item">
+                        <div class="review-head">
+                            <div class="left">
+                                <img src="assets/images/others/demo-review-img-4.png">
+                                <span class="name">Thomas<span class="date">Ağustos 2020</span></span>
+                            </div>
+                            <div class="right">
+                                <img src="assets/images/icons/review-red.svg">
+                                <span>4.5</span>
+                            </div>
+                        </div>
+                        <div class="review-desc more">
+                            liquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                            rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                            amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                            eirmod tempor invidunt ut labore et dolore magna aliquyam erat.liquyam erat, sed diam
+                            voluptua. At vero eos et accusam et justo duo dolores et ea
+                            rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                            amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                            eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+                        </div>
+                    </div>
+                    <div class="review-item">
+                        <div class="review-head">
+                            <div class="left">
+                                <img src="assets/images/others/demo-review-img-5.png">
+                                <span class="name">Thomas<span class="date">Ağustos 2020</span></span>
+                            </div>
+                            <div class="right">
+                                <img src="assets/images/icons/review-red.svg">
+                                <span>4.5</span>
+                            </div>
+                        </div>
+                        <div class="review-desc more">
+                            liquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                            rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                            amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                            eirmod tempor invidunt ut labore et dolore magna aliquyam erat.liquyam erat, sed diam
+                            voluptua. At vero eos et accusam et justo duo dolores et ea
+                            rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                            amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                            eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+                        </div>
+                    </div>
+                    <div class="review-item">
+                        <div class="review-head">
+                            <div class="left">
+                                <img src="assets/images/others/demo-review-img-1.png">
+                                <span class="name">Thomas<span class="date">Ağustos 2020</span></span>
+                            </div>
+                            <div class="right">
+                                <img src="assets/images/icons/review-red.svg">
+                                <span>4.5</span>
+                            </div>
+                        </div>
+                        <div class="review-desc more">
+                            liquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                            rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                            amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                            eirmod tempor invidunt ut labore et dolore magna aliquyam erat.liquyam erat, sed diam
+                            voluptua. At vero eos et accusam et justo duo dolores et ea
+                            rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                            amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                            eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+                        </div>
+                    </div>
+                    <div class="review-item">
+                        <div class="review-head">
+                            <div class="left">
+                                <img src="assets/images/others/demo-review-img-2.png">
+                                <span class="name">Thomas<span class="date">Ağustos 2020</span></span>
+                            </div>
+                            <div class="right">
+                                <img src="assets/images/icons/review-red.svg">
+                                <span>4.5</span>
+                            </div>
+                        </div>
+                        <div class="review-desc more">
+                            liquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                            rebum. Stet clita kasd gubergren.
+                        </div>
+                    </div>
+                    <div class="review-item">
+                        <div class="review-head">
+                            <div class="left">
+                                <img src="assets/images/others/demo-review-img-3.png">
+                                <span class="name">Thomas<span class="date">Ağustos 2020</span></span>
+                            </div>
+                            <div class="right">
+                                <img src="assets/images/icons/review-red.svg">
+                                <span>4.5</span>
+                            </div>
+                        </div>
+                        <div class="review-desc more">
+                            liquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                            rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                            amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                            eirmod tempor invidunt ut labore et dolore magna aliquyam erat.liquyam erat, sed diam
+                            voluptua. At vero eos et accusam et justo duo dolores et ea
+                            rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                            amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                            eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Reviews Modal-->
+
+<!--Facilities Modal-->
+<div class="modal fade" id="facilitiesModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/icons/close-icon.svg">
+                </button>
+                <h2 class="bordered-title">Olanaklar</h2>
+            </div>
+            <div class="modal-checklists d-flex justify-content-center">
+                <ul class="green-checklist">
+                    <li>Küvetli Banyo</li>
+                    <li>Sigara İçilebilir</li>
+                    <li>Çocuk Yatağı (ücretli)</li>
+                    <li>Küvetli Banyo</li>
+                    <li>Sigara İçilebilir</li>
+                    <li>Çocuk Yatağı (ücretli)</li>
+                    <li>Küvetli Banyo</li>
+                    <li>Sigara İçilebilir</li>
+                    <li>Çocuk Yatağı (ücretli)</li>
+                    <li>Küvetli Banyo</li>
+                    <li>Sigara İçilebilir</li>
+                    <li>Çocuk Yatağı (ücretli)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Facilities Modal-->
+
+<!--Hero Gallery-->
+<div class="modal modal-bottom fade" id="GalleryModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close hidden-m" data-dismiss="modal">
+                    <span><img src="assets/images/icons/close-icon.svg">Kapat</span>
+                </button>
+                <button type="button" class="close hidden-d" data-dismiss="modal">
+                    <span><img src="assets/images/icons/close-mobile-icon.svg"></span>
+                </button>
+                <div id="slidetext"></div>
+                <ul class="share-favorite-wrapper">
+                    <li><a href="#" class="share" data-toggle="modal" data-target="#Share">
+                        <img src="assets/images/icons/share-icon.svg">
+                        <span>Paylaş</span>
+                    </a></li>
+                    <li><a href="#" class="favorite active" data-toggle="modal" data-target="#AddFavoriteList">
+                        <i class="far fa-heart" aria-hidden="true"></i>
+                        <span>Beğen</span>
+                    </a></li>
+                </ul>
+            </div>
+            <div class="modal-body">
+                <div id="HeroGalleryWrapper" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="assets/images/others/otel-detay1.png" alt="">
+                            <p class="gallery-description">Lorem ipsum dolor sit amet lorem</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="assets/images/others/otel-detay2.png" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="assets/images/others/otel-detay3.png" alt="">
+                            <p class="gallery-description">Lorem ipsum dolor sit amet lorem</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="assets/images/others/otel-detay4.png" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="assets/images/others/otel-detay5.png" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="assets/images/others/otel-detay1.png" alt="">
+                            <p class="gallery-description">Lorem ipsum dolor sit amet lorem</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="assets/images/others/otel-detay2.png" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100"
+                                 src="https://images.unsplash.com/photo-1569019168901-13771393f299?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1648&q=80"
+                                 alt="">
+                            <p class="gallery-description">Lorem ipsum dolor sit amet lorem</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="left carousel-control-prev" href="#HeroGalleryWrapper" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a class="right carousel-control-next" href="#HeroGalleryWrapper" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--Hero Gallery-->
+
+<!--Share-->
+<div class="modal fade" id="Share" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/icons/close-icon.svg">
+                </button>
+                <h2 class="bordered-title">Bu yeri arkadaşlarınızla ve ailenizle paylaşın</h2>
+            </div>
+            <div class="modal-form d-flex justify-content-center flex-column">
+                <div class="share-wrapper">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i>Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
+                        <li>
+                            <a href="#" class="copy_clipboard" id="copy_clipboard" onclick="copyClipboard()">
+                                <div class="container">
+                                    <input type="text" id="advert_url" readonly value="http://tattiloley.com/url"/>
+                                    <span class="normal"><i class="far fa-copy"></i>Bağlantıyı kopyala</span>
+                                    <span class="copied"><i class="far fa-copy"></i>Bağlantı kopyalandı</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li><a href="#"><i class="fas fa-envelope-open-text"></i>E-posta</a></li>
+                        <li><a href="#"><i class="fab fa-whatsapp"></i>Whatsapp</a></li>
+                        <li><a href="#"><i class="fab fa-facebook-messenger"></i>Messenger</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Share-->
+
+<!--Add Favorite List-->
+<div class="modal fade" id="AddFavoriteList" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/icons/close-icon.svg">
+                </button>
+                <h2 class="bordered-title">Beğeni Listelerim</h2>
+                <a href="#">Tümü</a>
+            </div>
+            <div class="modal-form d-flex justify-content-center flex-column">
+                <div class="favorite-lists-wrapper">
+                    <div class="iconed-control search">
+                        <div class="input">
+                            <input class="search-input" id="search_input" type="text"
+                                   placeholder="Yeni oluştur veya ara"></div>
+                        <div class="icon"><img src="assets/images/icons/search-icon-gray.svg"></div>
+                    </div>
+                    <ul class="favorite-lists">
+                        <li>Ayvalıktaki beğendiğim yerler
+                            <a href="#">Ekle</a>
+                        </li>
+                        <li>Annemler için
+                            <a class="active" href="#">Sil</a>
+                        </li>
+                        <li>Antalyadaki seçtiklerim
+                            <a href="#">Ekle</a>
+                        </li>
+                        <li>Ayvalıktaki beğendiğim yerler
+                            <a href="#">Ekle</a>
+                        </li>
+                        <li>Ayvalıktaki beğendiğim yerler
+                            <a href="#">Ekle</a>
+                        </li>
+                        <li>Annemler için
+                            <a href="#">Ekle</a>
+                        </li>
+                        <li>Antalyadaki seçtiklerim
+                            <a href="#">Ekle</a>
+                        </li>
+                        <li>Ayvalıktaki beğendiğim yerler
+                            <a href="#">Ekle</a>
+                        </li>
+                        <div class="noresults">Sonuç bulunamadı.</div>
+                    </ul>
+                    <button id="create_list" class="custom-button-red" type="submit" disabled>
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                        Liste Oluştur
+                    </button>
+                    <a href="#" class="custom-button-red" data-dismiss="modal">Kapat</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Add Favorite List-->
+
+<!--Login-->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/icons/close-icon.svg">
+                </button>
+                <h2 class="bordered-title">Giriş Yap</h2>
+            </div>
+            <div class="modal-form d-flex justify-content-center flex-column">
+                <div class="modal-form-inner">
+                    <form action="">
+                        <div class="iconed-control">
+                            <div class="input"><input type="email" placeholder="E-posta" required name="email"></div>
+                            <div class="icon"><img src="assets/images/icons/email.svg"></div>
+                        </div>
+                        <div class="iconed-control">
+                            <div class="input"><input type="password" placeholder="Şifre" required name="password">
+                            </div>
+                            <div class="icon"><img src="assets/images/icons/password.svg"></div>
+                        </div>
+                        <div class="login-form-group">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="remember_me"
+                                       value="remember_me">
+                                <label class="custom-control-label" for="remember_me">Beni Hatırla</label>
+                            </div>
+                            <div><a href="#" data-toggle="modal" data-target="#forgetpasswordModal"
+                                    onclick="$('#loginModal').modal('hide')">Şifremi Unuttum</a></div>
+                        </div>
+                        <button class="custom-button">Giriş Yap</button>
+                    </form>
+                    <div class="login-register">Hesabınız yok mu?<a data-toggle="modal" data-target="#registerModal"
+                                                                    onclick="$('#loginModal').modal('hide')" href="#">Hemen
+                        Kaydolun</a></div>
+                    <div class="login-social">
+                        <p><span>veya</span></p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="social-btn">
+                                    <a href="#"><img src="assets/images/icons/fb-logo.svg" alt="">
+                                        <span>Facebook ile devam et</span></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="social-btn">
+                                    <a href="#"><img src="assets/images/icons/g-logo.svg" alt="">
+                                        <span>Google ile devam et</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Login end-->
+
+<!--Register-->
+<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/icons/close-icon.svg">
+                </button>
+                <h2 class="bordered-title">Üye Ol</h2>
+            </div>
+            <div class="modal-form d-flex justify-content-center flex-column">
+                <div class="modal-form-inner">
+                    <form action="">
+                        <div class="iconed-control">
+                            <div class="input"><input type="text" placeholder="Adınız" required name="text"></div>
+                            <div class="icon"><img src="assets/images/icons/user.svg"></div>
+                        </div>
+                        <div class="iconed-control">
+                            <div class="input"><input type="text" placeholder="Soyadınız" required name="surname"></div>
+                            <div class="icon"><img src="assets/images/icons/user.svg"></div>
+                        </div>
+                        <div class="iconed-control">
+                            <div class="input"><input type="email" placeholder="E-posta" required name="email"></div>
+                            <div class="icon"><img src="assets/images/icons/email.svg"></div>
+                        </div>
+                        <div class="iconed-control">
+                            <div class="input"><input type="tel" id="tel_number" required name="tel_number"></div>
+                            <div class="icon"><img src="assets/images/icons/phone.svg"></div>
+                        </div>
+                        <div class="iconed-control">
+                            <div class="input"><input type="password" placeholder="Şifre" required name="password">
+                            </div>
+                            <div class="icon"><img src="assets/images/icons/password.svg"></div>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="user_agreement"
+                                   value="user_agreement" required>
+                            <label class="custom-control-label" for="#user-agreement"><a data-toggle="modal"
+                                                                                         data-target="#userAgreementModal"
+                                                                                         href="#">Üyelik
+                                sözleşmesini</a>
+                                ve <a href="#">Kişisel verilerin korunması</a> ve gizlilik politikasını okudum
+                                ve kabul ediyorum.</label>
+                        </div>
+                        <button class="custom-button">Üye Ol</button>
+                    </form>
+                    <div class="login-register">Zaten bir hesabınız mı var?<a data-toggle="modal"
+                                                                              data-target="#loginModal"
+                                                                              onclick="$('#registerModal').modal('hide')"
+                                                                              href="#">Giriş Yapın</a></div>
+                    <div class="login-social">
+                        <p><span>veya</span></p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="social-btn">
+                                    <a href="#"><img src="assets/images/icons/fb-logo.svg" alt="">
+                                        <span>Facebook ile devam et</span></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="social-btn">
+                                    <a href="#"><img src="assets/images/icons/g-logo.svg" alt="">
+                                        <span>Google ile devam et</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Register end-->
+
+<!--Forget Password-->
+<div class="modal fade" id="forgetpasswordModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/icons/close-icon.svg">
+                </button>
+                <h2 class="bordered-title">Şifremi Unuttum</h2>
+            </div>
+            <div class="modal-form d-flex justify-content-center flex-column">
+                <div class="modal-form-inner">
+                    <form action="">
+                        <div class="iconed-control">
+                            <div class="input"><input type="email" placeholder="E-posta Adresiniz" required
+                                                      name="email"></div>
+                            <div class="icon"><img src="assets/images/icons/email.svg"></div>
+                        </div>
+                        <button class="custom-button">Şifremi Gönder</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Forget Password end-->
+
+<!--User Agreement-->
+<div class="modal fade" id="userAgreementModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/icons/close-icon.svg">
+                </button>
+                <h2 class="bordered-title">Üyelik Sözleşmesi</h2>
+            </div>
+            <div class="modal-form d-flex justify-content-center flex-column">
+                <div class="modal-form-inner">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et risus tempus, vehicula lacus
+                        pulvinar, facilisis ipsum. Vestibulum tristique magna sagittis dictum hendrerit. Nunc bibendum
+                        convallis velit, a lacinia augue ornare eget. Proin accumsan nec felis in placerat. Vestibulum
+                        sed mollis tellus, et mattis tortor. Donec suscipit purus nec neque consectetur, eget imperdiet
+                        magna fringilla. Praesent finibus posuere ex, sed ultrices odio scelerisque quis.
+                    </p>
+                    <p>
+                        Nam at tincidunt lorem. Nulla scelerisque ullamcorper aliquet. Etiam eget nulla in eros
+                        condimentum dapibus. Aenean blandit mauris odio, vel cursus nibh aliquet sit amet. Nunc lobortis
+                        egestas arcu, sit amet bibendum metus pulvinar vitae. Proin tempus eleifend massa sit amet
+                        gravida. Proin sed odio a lectus consectetur convallis. In lorem velit, vulputate quis nibh vel,
+                        accumsan fringilla sapien. Fusce volutpat diam vel turpis consequat suscipit vel quis arcu.
+                        Nulla ac tortor eget nulla cursus laoreet. Pellentesque habitant morbi tristique senectus et
+                        netus et malesuada fames ac turpis egestas. Maecenas vitae lorem eget erat vestibulum suscipit.
+                        Suspendisse lectus turpis, consequat a metus sed, pulvinar fringilla quam. Nulla facilisi.
+                        Pellentesque porttitor auctor cursus.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--User Agreement End-->
+
+<!--Mobile Register-->
+<div class="modal modal-bottom fade" id="mobile_register" tabindex="-1" role="dialog">
+    <div class="modal-dialog " role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/icons/close-mobile-icon.svg">
+                </button>
+                <h2 class="bordered-title">Üye Ol</h2>
+            </div>
+            <div class="modal-body">
+                <div class="modal-form-inner">
+                    <form action="">
+                        <div class="iconed-control">
+                            <div class="input"><input type="text" placeholder="Adınız" required name="text"></div>
+                            <div class="icon"><img src="assets/images/icons/user.svg"></div>
+                        </div>
+                        <div class="iconed-control">
+                            <div class="input"><input type="text" placeholder="Soyadınız" required name="surname"></div>
+                            <div class="icon"><img src="assets/images/icons/user.svg"></div>
+                        </div>
+                        <div class="iconed-control">
+                            <div class="input"><input type="email" placeholder="E-posta" required name="email"></div>
+                            <div class="icon"><img src="assets/images/icons/email.svg"></div>
+                        </div>
+                        <div class="iconed-control">
+                            <div class="input"><input type="tel" id="tel_number_mobile" required
+                                                      name="tel_number_mobile"></div>
+                            <div class="icon"><img src="assets/images/icons/phone.svg"></div>
+                        </div>
+                        <div class="iconed-control">
+                            <div class="input"><input type="password" placeholder="Şifre" required name="password">
+                            </div>
+                            <div class="icon"><img src="assets/images/icons/password.svg"></div>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="mobile_user-agreement"
+                                   value="user_agreement" required>
+                            <label class="custom-control-label" for="mobile_user-agreement"><a data-toggle="modal"
+                                                                                               data-target="#userAgreementModal"
+                                                                                               href="#">Üyelik
+                                sözleşmesini</a>
+                                ve <a href="#">Kişisel verilerin korunması</a> ve gizlilik politikasını okudum
+                                ve kabul ediyorum.</label>
+                        </div>
+                        <button class="custom-button">Üye Ol</button>
+                    </form>
+                    <div class="login-register">Zaten bir hesabınız mı var?<a data-toggle="modal"
+                                                                              data-target="#mobile_login"
+                                                                              onclick="$('#mobile_register').modal('hide')"
+                                                                              href="#">Giriş Yapın</a></div>
+                    <div class="login-social">
+                        <p><span>veya</span></p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="social-btn">
+                                    <a href="#"><img src="assets/images/icons/fb-logo.svg" alt="">
+                                        <span>Facebook ile devam et</span></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="social-btn">
+                                    <a href="#"><img src="assets/images/icons/g-logo.svg" alt="">
+                                        <span>Google ile devam et</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Mobile Register-->
+
+<!--Mobile Login-->
+<div class="modal modal-bottom fade" id="mobile_login" tabindex="-1" role="dialog">
+    <div class="modal-dialog " role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/icons/close-mobile-icon.svg">
+                </button>
+                <h2 class="bordered-title">Giriş Yap</h2>
+            </div>
+            <div class="modal-body">
+                <div class="modal-form-inner">
+                    <form action="">
+                        <div class="iconed-control">
+                            <div class="input"><input type="email" placeholder="E-posta" required name="email"></div>
+                            <div class="icon"><img src="assets/images/icons/email.svg"></div>
+                        </div>
+                        <div class="iconed-control">
+                            <div class="input"><input type="password" placeholder="Şifre" required name="password">
+                            </div>
+                            <div class="icon"><img src="assets/images/icons/password.svg"></div>
+                        </div>
+                        <div class="login-form-group">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="mobile_remember_me"
+                                       value="mobile_remember_me">
+                                <label class="custom-control-label" for="mobile_remember_me">Beni Hatırla</label>
+                            </div>
+                            <div><a href="#" data-toggle="modal" data-target="#forgetpasswordModal">Şifremi Unuttum</a>
+                            </div>
+                        </div>
+                        <button class="custom-button">Giriş Yap</button>
+                    </form>
+                    <div class="login-register">Hesabınız yok mu?<a data-toggle="modal" data-target="#mobile_register"
+                                                                    onclick="$('#mobile_login').modal('hide')" href="#">Hemen
+                        Kaydolun</a></div>
+                    <div class="login-social">
+                        <p><span>veya</span></p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="social-btn">
+                                    <a href="#"><img src="assets/images/icons/fb-logo.svg" alt="">
+                                        <span>Facebook ile devam et</span></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="social-btn">
+                                    <a href="#"><img src="assets/images/icons/g-logo.svg" alt="">
+                                        <span>Google ile devam et</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Mobile Login-->
+
+<!--Mobile Menu-->
+<div class="modal modal-bottom fade" id="mobile_menu" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/icons/close-mobile-icon.svg">
+                </button>
+                <h2 class="bordered-title">Menu</h2>
+            </div>
+            <div class="modal-body">
+                <ul class="mobile-menu-list">
+                    <li><a href="#">Seyahatlerim</a></li>
+                    <li><a href="#">Beğendiklerim</a></li>
+                    <li><a href="#">Profilim</a></li>
+                    <li><a href="#">İlan Veren Bilgilerim</a></li>
+                    <li><a href="#">İlan Veren Panosu</a></li>
+                    <li><a href="#">Çıkış Yap</a></li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <ul>
+                    <li class="header-phone">
+                        <a href="tel:08500000000">
+                            <span>Destek Hattı</span>
+                            0850 000 00 00
+                        </a>
+                    </li>
+                    <li><a href="#">Yardım</a></li>
+                    <li class="nav-select-lang">
+                        <div><span class="flag-icon flag-icon-tr"></span>TR</div>
+                        <ul>
+                            <li><a href="#"><span class="flag-icon flag-icon-us"></span>EN</a></li>
+                            <li><a href="#"><span class="flag-icon flag-icon-fr"></span>FR</a></li>
+                            <li><a href="#"><span class="flag-icon flag-icon-tr"></span>TR</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Mobile Menu-->
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/ed60a6a57c.js" crossorigin="anonymous"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/main.js" crossorigin="anonymous"></script>
+<script src="assets/js/jquery.maskedinput.js"></script>
+<script src="assets/js/telinput/js/utils.js"></script>
+<script src="assets/js/telinput/js/intlTelInput.min.js"></script>
+<script type="text/javascript" src="assets/js/t-datepicker.min.js"></script>
+<script type="text/javascript" src="assets/js/select2.full.min.js"></script>
+<script type="text/javascript" src="assets/js/aos.js"></script>
+
+<!--Sayfaya Özel JS-->
+<script src='//cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js'></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEYFUkKH__LkvZuBfMGooKA_ayuLCeCjw&callback=initMap&libraries=&v=weekly"
+        async></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        /*Checkin-out days*/
+        var CheckinOutDay = {
+            '2021-04-20': 'Giriş/Çıkış Günü',
+            '2021-03-25': 'Giriş/Çıkış Günü',
+        };
+        /*Datepicker*/
+        $('.detail-picker').tDatePicker({
+            dateDisabled: ['2021-04-25', '2021-04-26', '2021-04-27', '2021-04-28', '2021-04-29', '2021-04-30'],
+            iconDate: '',
+            numCalendar: 1,
+            limitNextMonth: 12,
+            fnDataEvent: CheckinOutDay,
+            mergeDataEvent: true,
+            valiDation: true,
+            daysOfWeekHighlighted: [],
+            titleCheckIn: 'Tarih Ekleyin',
+            titleCheckOut: 'Tarih Ekleyin',
+            titleDateRange: 'Gece',
+            titleDateRanges: 'Gece',
+            titleToday: 'Bugün',
+            titleDays: ['Pt', 'Sa', 'Ça', 'Pe', 'Cu', 'Ct', 'Pz'],
+            titleMonths: ['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs',
+                'Haziran', 'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık'],
+        });
+
+        /*Fixed Mobile Bottom*/
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > $(".col-lg-8").offset().top * 12) {
+                $(".bottom-detail-page").addClass("d-none", "m-menu-show2");
+            } else {
+                $(".bottom-detail-page").removeClass("d-none");
+            }
+        });
+
+        $(window).scroll(function () {
+            var hTop = $(".bottom-detail-page");
+            if ($(this).scrollTop() >= hTop.outerHeight() * 1) {
+                hTop.addClass("m-menu-show2");
+            } else {
+                hTop.removeClass("m-menu-show2");
+            }
+        });
+        /*Fixed Mobile Bottom*/
+
+
+        <!-- swipe start -->
+        $(".carousel").swipe({
+            swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
+                if (direction == 'left') $(this).carousel('next');
+                if (direction == 'right') $(this).carousel('prev');
+            },
+            allowPageScroll: "vertical"
+        });
+        <!-- swipe end -->
+
+        /*Advert Map*/
+        function initialise() {
+            var myLatlng = new google.maps.LatLng(36.200441118091454, 29.640150856372067);
+            var mapOptions = {
+                zoom: 15,
+                minZoom: 6,
+                maxZoom: 17,
+                zoomControl: true,
+                zoomControlOptions: {
+                    style: google.maps.ZoomControlStyle.DEFAULT
+                },
+                center: myLatlng,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                scrollwheel: false,
+                panControl: false,
+                mapTypeControl: false,
+                scaleControl: false,
+                streetViewControl: false,
+                overviewMapControl: false,
+                rotateControl: false
+            }
+            var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+            var image = new google.maps.MarkerImage("assets/images/icons/map-mark.svg", null, null, null, new google.maps.Size(110, 110));
+            var marker = new google.maps.Marker({
+                position: myLatlng,
+                icon: image,
+                map: map,
+            });
+            google.maps.event.addDomListener(window, 'resize', function () {
+                map.setCenter(myLatlng);
+            });
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialise);
+        /*Advert Map*/
+    });
+</script>
+<!--Sayfaya Özel JS-->
+</body>
+</html>

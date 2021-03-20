@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_2333" data-name="Rectangle 2333" width="20" height="20" transform="translate(1111 994)" fill="#222"/>
+    </clipPath>
+  </defs>
+  <g id="chat-black-icon" transform="translate(-1111 -994)" clip-path="url(#clip-path)">
+    <g id="fi-rr-comment-alt" transform="translate(1111 994)">
+      <path id="Path_12432" data-name="Path 12432" d="M16.667,0H3.333A3.333,3.333,0,0,0,0,3.333v10a3.333,3.333,0,0,0,3.333,3.333H5.75L9.459,19.8a.833.833,0,0,0,1.077,0l3.714-3.136h2.417A3.333,3.333,0,0,0,20,13.333v-10A3.333,3.333,0,0,0,16.667,0Zm1.667,13.333A1.667,1.667,0,0,1,16.667,15H14.25a1.667,1.667,0,0,0-1.076.394L10,18.075,6.827,15.394h0A1.667,1.667,0,0,0,5.75,15H3.333a1.667,1.667,0,0,1-1.667-1.667v-10A1.667,1.667,0,0,1,3.333,1.667H16.667a1.667,1.667,0,0,1,1.667,1.667Z" fill="#222"/>
+      <path id="Path_12433" data-name="Path 12433" d="M5.833,5.833H10a.833.833,0,0,0,0-1.667H5.833a.833.833,0,0,0,0,1.667Z" fill="#222"/>
+      <path id="Path_12434" data-name="Path 12434" d="M14.167,7.5H5.833a.833.833,0,1,0,0,1.667h8.333a.833.833,0,1,0,0-1.667Z" fill="#222"/>
+      <path id="Path_12435" data-name="Path 12435" d="M14.167,10.833H5.833a.833.833,0,0,0,0,1.667h8.333a.833.833,0,1,0,0-1.667Z" fill="#222"/>
+    </g>
+  </g>
+</svg>

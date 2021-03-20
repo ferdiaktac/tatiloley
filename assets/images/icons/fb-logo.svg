@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_2275" data-name="Rectangle 2275" width="24" height="24" fill="#1876f1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_28" data-name="Mask Group 28" clip-path="url(#clip-path)">
+    <g id="facebook-logo-in-circular-shape" transform="translate(0 0.08)">
+      <path id="Path_12394" data-name="Path 12394" d="M24,12.08a12,12,0,0,1-9.327,11.691V13.8h2.884V10.473H14.643V9.73c0-1.427.624-2.586,2.11-2.586a4.9,4.9,0,0,1,1.458.208l.177-3.478a8.675,8.675,0,0,0-2.407-.3A5.891,5.891,0,0,0,11.97,5.034a6.626,6.626,0,0,0-1.843,4.874v.564h-1.9V13.8h1.9V23.92A11.994,11.994,0,1,1,24,12.08Z" transform="translate(0 -0.08)" fill="#1876f1"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_2316" data-name="Rectangle 2316" width="24" height="24" transform="translate(128 834)" fill="#222"/>
+    </clipPath>
+  </defs>
+  <g id="iron" transform="translate(-128 -834)" clip-path="url(#clip-path)">
+    <g id="steam-iron" transform="translate(128 834)">
+      <path id="Path_12471" data-name="Path 12471" d="M24,15.529A11.552,11.552,0,0,0,12.447,4.235H3.529V5.647H0V9.882H3.529v1.825L1.412,13.825v3.116H4.235a1.412,1.412,0,0,1,1.331,1.882l-.333.941H24V15.529ZM1.412,8.471V7.059H3.529V8.471Zm2.824,7.059H2.824V14.41l2.118-2.118V5.647h7.506a10.154,10.154,0,0,1,10.138,9.882Zm18.353,2.824H7.059a2.807,2.807,0,0,0-.379-1.412H22.588Z"/>
+      <path id="Path_12472" data-name="Path 12472" d="M13.412,7.059H6.353v4.235h7.059a2.118,2.118,0,1,0,0-4.235Zm0,2.824H7.765V8.471h5.647a.706.706,0,0,1,0,1.412Z"/>
+      <path id="Path_12473" data-name="Path 12473" d="M19.059,12.706h1.412v1.412H19.059Z"/>
+      <path id="Path_12474" data-name="Path 12474" d="M16.235,12.706h1.412v1.412H16.235Z"/>
+      <path id="Path_12475" data-name="Path 12475" d="M13.412,12.706h1.412v1.412H13.412Z"/>
+    </g>
+  </g>
+</svg>

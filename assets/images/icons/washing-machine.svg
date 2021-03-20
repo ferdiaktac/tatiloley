@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_2316" data-name="Rectangle 2316" width="24" height="24" transform="translate(128 834)" fill="#222"/>
+    </clipPath>
+  </defs>
+  <g id="washing-machine" transform="translate(-128 -834)" clip-path="url(#clip-path)">
+    <g id="washing-machine-2" data-name="washing-machine" transform="translate(128 834)">
+      <g id="Group_3601" data-name="Group 3601">
+        <g id="Group_3600" data-name="Group 3600">
+          <path id="Path_12452" data-name="Path 12452" d="M20.07,0H3.93A2.036,2.036,0,0,0,1.9,2.034V21.966A2.036,2.036,0,0,0,3.93,24H20.07A2.036,2.036,0,0,0,22.1,21.966V2.034A2.036,2.036,0,0,0,20.07,0ZM3.329,2.034a.6.6,0,0,1,.6-.6H20.07a.6.6,0,0,1,.6.6V5.085H3.329ZM20.671,21.966h0a.6.6,0,0,1-.6.6H3.93a.6.6,0,0,1-.6-.6V6.517H20.671V21.966Z"/>
+        </g>
+      </g>
+      <g id="Group_3603" data-name="Group 3603">
+        <g id="Group_3602" data-name="Group 3602">
+          <path id="Path_12453" data-name="Path 12453" d="M12,8.366a6.176,6.176,0,1,0,6.176,6.176A6.183,6.183,0,0,0,12,8.366ZM12,9.8a4.749,4.749,0,0,1,4.73,4.389c-2.146,1.5-3.206.653-4.064-.034-.08-.064-.155-.124-.23-.182s-.133-.1-.205-.162a4.051,4.051,0,0,0-4.753-.694A4.751,4.751,0,0,1,12,9.8Zm0,9.486A4.749,4.749,0,0,1,7.27,14.9c2.146-1.5,3.206-.653,4.064.034.08.064.155.124.23.182s.133.1.205.162a4.4,4.4,0,0,0,2.806,1.179,4.477,4.477,0,0,0,1.947-.484A4.751,4.751,0,0,1,12,19.285Z"/>
+        </g>
+      </g>
+      <g id="Group_3605" data-name="Group 3605">
+        <g id="Group_3604" data-name="Group 3604">
+          <path id="Path_12454" data-name="Path 12454" d="M18.942,2.542H17.885a.716.716,0,0,0,0,1.433h1.057a.716.716,0,0,0,0-1.433Z"/>
+        </g>
+      </g>
+      <g id="Group_3607" data-name="Group 3607">
+        <g id="Group_3606" data-name="Group 3606">
+          <path id="Path_12455" data-name="Path 12455" d="M15.763,2.542H14.706a.716.716,0,1,0,0,1.433h1.057a.716.716,0,0,0,0-1.433Z"/>
+        </g>
+      </g>
+      <g id="Group_3609" data-name="Group 3609">
+        <g id="Group_3608" data-name="Group 3608">
+          <path id="Path_12456" data-name="Path 12456" d="M8.551,2.542H5.058a.716.716,0,1,0,0,1.433H8.551a.716.716,0,0,0,0-1.433Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

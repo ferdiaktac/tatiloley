@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_2305" data-name="Rectangle 2305" width="18" height="18" transform="translate(860 455)" fill="#e15068"/>
+    </clipPath>
+  </defs>
+  <g id="share-icon" transform="translate(-860 -455)" clip-path="url(#clip-path)">
+    <g id="fi-sr-upload" transform="translate(860 455)">
+      <path id="Path_12407" data-name="Path 12407" d="M14.056,12.639v2.556a.639.639,0,0,1-.639.639H1.917a.639.639,0,0,1-.639-.639V12.639A.639.639,0,0,0,.639,12h0A.639.639,0,0,0,0,12.639v2.556a1.917,1.917,0,0,0,1.917,1.917h11.5a1.917,1.917,0,0,0,1.917-1.917V12.639A.639.639,0,0,0,14.7,12h0A.639.639,0,0,0,14.056,12.639Z" transform="translate(1.333 0.888)" fill="#e15068"/>
+      <path id="Path_12408" data-name="Path 12408" d="M12.508,3.49,9.578.559a1.921,1.921,0,0,0-2.71,0L3.937,3.49a.639.639,0,1,0,.9.9L7.583,1.651V11.5a.639.639,0,1,0,1.278,0V1.65L11.6,4.393a.639.639,0,1,0,.9-.9Z" transform="translate(0.777 2.665)" fill="#e15068"/>
+    </g>
+  </g>
+</svg>

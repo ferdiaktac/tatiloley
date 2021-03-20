@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_2316" data-name="Rectangle 2316" width="24" height="24" transform="translate(128 834)" fill="#222"/>
+    </clipPath>
+  </defs>
+  <g id="elevator" transform="translate(-128 -834)" clip-path="url(#clip-path)">
+    <g id="elevator-2" data-name="elevator" transform="translate(128 834)">
+      <g id="Group_3585" data-name="Group 3585">
+        <g id="Group_3584" data-name="Group 3584">
+          <path id="Path_12438" data-name="Path 12438" d="M0,0V24H24V0ZM9.889,22.594H7.034V7.034H9.89v15.56Zm4.262,0H11.3V7.034h2.856Zm2.815,0H15.558V5.627H5.627V22.594H4.219V4.219H16.966Zm5.627,0H18.373V2.813H2.813V22.594H1.406V1.406H22.594Z"/>
+        </g>
+      </g>
+      <g id="Group_3587" data-name="Group 3587">
+        <g id="Group_3586" data-name="Group 3586">
+          <rect id="Rectangle_2334" data-name="Rectangle 2334" width="1.406" height="1.407" transform="translate(19.781 11.295)"/>
+        </g>
+      </g>
+      <g id="Group_3589" data-name="Group 3589">
+        <g id="Group_3588" data-name="Group 3588">
+          <rect id="Rectangle_2335" data-name="Rectangle 2335" width="1.406" height="1.407" transform="translate(19.781 14.11)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
