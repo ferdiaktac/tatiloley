@@ -7296,3 +7296,28 @@ td.off.disabled {
     border-radius: 0!important;
 }
 
+td.checkoutday.available:before {
+    content: '';
+    border-style: none !important;
+    position: absolute !important;
+    z-index: -1 !important;
+    top: 0 !important;
+    right: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    border-top: 70px solid transparent !important;
+    border-right: 70px solid transparent !important;
+    border-top-color: #ededed !important;
+}
+
+td.checkoutday.available{
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border-radius: 0!important;
+}
+
+td.active.checkoutday.available,
+td.checkoutday.available{
+    color: #222222!important;
+}

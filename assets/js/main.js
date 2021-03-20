@@ -318,3 +318,5 @@ function copyClipboard() {
     document.execCommand("copy");
 }
 
+// Checkout dates add class
+
