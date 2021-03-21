@@ -1332,7 +1332,11 @@
 
     .show-all-gallery a {
         font-size: 10px;
-        padding: 5px 15px;
+        padding: 5px 20px;
+    }
+
+    .show-all-gallery {
+        left: 6px;
     }
 
     #GalleryModal .carousel-inner img {
@@ -1667,7 +1671,8 @@
     }
 
     .room-modal .modal-body {
-        padding: 15px
+        padding: 15px;
+        overflow-x: auto;
     }
 
     .room-modal .owl-carousel.owl-carousel-advert-img img {
@@ -1737,8 +1742,23 @@
         margin-top: 15px;
     }
 
-    .default-picker{
+    .default-picker {
         display: flex;
+    }
+
+    .room-modal {
+        overflow: hidden !important;
+        padding-right: 0 !important;
+    }
+
+    .room-modal .modal-dialog {
+        height: 100vh;
+        margin-bottom: 0;
+    }
+
+    .room-modal .modal-content {
+        max-height: unset;
+        height: 100%;
     }
 
 
