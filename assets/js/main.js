@@ -337,4 +337,3 @@ $(".advert-item").each(function () {
         prevVal = val;
     });
 });
-
