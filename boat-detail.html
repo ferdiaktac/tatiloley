@@ -1766,20 +1766,21 @@
 <script type="text/javascript">
     $(document).ready(function () {
         // Daterange Picker
+        let disabledDays = ["24-04-2021","25-04-2021","26-04-2021","27-04-2021",];
+
         if ($('#search_checkin, #search_checkout').length) {
             var currentDate = moment().format("DD MMMM YYYY");
-
             moment.locale('tr');
             $('#search_checkin, #search_checkout').daterangepicker({
                 // Disabled dates
-                isInvalidDate: function (ele) {
+                isInvalidDate: function(ele) {
                     var currDate = moment(ele._d).format('DD-MM-YYYY');
-                    return ["24-04-2021", "25-04-2021", "26-04-2021", "27-04-2021",].indexOf(currDate) !== -1;
+                    return disabledDays.indexOf(currDate) !== -1;
                 },
                 // Checkout dates
-                isCustomDate: function (e) {
+                isCustomDate: function(e) {
                     var dataCell = moment(e._d).format("DD-MM-YYYY");
-                    if (dataCell === "28-04-2021") {
+                    if ( dataCell === "28-04-2021" )  {
                         return 'checkoutday';
                     }
                 },
@@ -1801,6 +1802,7 @@
                 var selectedStartDate = start.format('DD MMMM YYYY'); // selected start
                 var selectedEndDate = end.format('DD MMMM YYYY'); // selected end
 
+
                 $checkinInput = $('#search_checkin');
                 $checkoutInput = $('#search_checkout');
 
@@ -1815,8 +1817,20 @@
                 var checkInPicker = $checkinInput.data('daterangepicker');
                 checkInPicker.setStartDate(selectedStartDate);
                 checkInPicker.setEndDate(selectedEndDate);
-            });
 
+            });
+            $('#search_checkin').on('apply.daterangepicker', function(ev, picker) {
+                var d1 = picker.startDate.format('YYYY-MM-DD');
+                var d2 = picker.endDate.format('YYYY-MM-DD');
+
+                if(moment('2021-04-24').isBetween(d1, d2)) {
+                    $('#search_checkin').click();
+                    setTimeout(() => {
+                        $('#search_checkout').val('');
+                        $('.total-night-calc').text('0')
+                    }, 250);
+                }
+            });
         }
         // End Daterange Picker
 
