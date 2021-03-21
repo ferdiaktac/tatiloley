@@ -7113,14 +7113,14 @@ td.t-disabled {
     height: 32px;
 }
 
-.advert-rooms .room-details h3{
+.advert-rooms .room-details h3 {
     font-size: 18px;
     font-weight: 900;
     margin-bottom: 15px;
     min-height: 30px;
 }
 
-.room-bed-type{
+.room-bed-type {
     font-size: 12px;
     font-weight: 500;
     font-stretch: normal;
@@ -7131,21 +7131,21 @@ td.t-disabled {
     align-items: center;
 }
 
-.room-bed-type img{
+.room-bed-type img {
     margin-right: 5px;
 }
 
-.room-details .pax-details{
+.room-details .pax-details {
     font-size: 13px;
     font-weight: 500;
     margin: 15px 0;
 }
 
-.room-details .pax-details span{
+.room-details .pax-details span {
     color: #2e7dbf;
 }
 
-.room-details .bottom ul{
+.room-details .bottom ul {
     font-size: 12px;
     font-weight: normal;
     font-stretch: normal;
@@ -7161,22 +7161,22 @@ td.t-disabled {
     column-gap: 15px;
 }
 
-.room-details .bottom ul.green-checklist li{
-    margin-bottom:6px;
+.room-details .bottom ul.green-checklist li {
+    margin-bottom: 6px;
 }
 
-.room-details .bottom ul.green-checklist li:before{
+.room-details .bottom ul.green-checklist li:before {
     background-size: 14px;
     margin-right: 5px;
     padding: 8px;
 }
 
-.room-details .bottom a{
+.room-details .bottom a {
     font-size: 13px;
     font-weight: bold;
 }
 
-.room-details{
+.room-details {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -7184,7 +7184,7 @@ td.t-disabled {
     padding-right: 10px;
 }
 
-.advert-room-wrapper .price-cont .notice{
+.advert-room-wrapper .price-cont .notice {
     font-size: 13px;
     font-weight: 500;
     font-stretch: normal;
@@ -7197,24 +7197,24 @@ td.t-disabled {
     padding: 5px 10px;
 }
 
-.advert-room-wrapper .price-cont{
+.advert-room-wrapper .price-cont {
     border-right: 1px solid #F5F5F5;
     border-left: 1px solid #F5F5F5;
     padding: 0 10px;
 }
 
-.advert-room-wrapper .price-cont .total-price{
+.advert-room-wrapper .price-cont .total-price {
     margin-top: 50%;
 }
 
-.advert-room-wrapper .price-cont .total-price span{
+.advert-room-wrapper .price-cont .total-price span {
     font-size: 20px;
     font-weight: 900;
     padding-top: 8px;
     display: block;
 }
 
-.room-select-form select{
+.room-select-form select {
     width: 88px;
     height: 38px;
     border-radius: 8px;
@@ -7232,68 +7232,68 @@ td.t-disabled {
     flex-direction: column;
 }
 
-.room-select-form select:focus{
+.room-select-form select:focus {
     outline: 0;
 }
 
-.room-select-form label{
+.room-select-form label {
     font-size: 13px;
 }
 
 .daterangepicker.opensright:before,
-.daterangepicker.opensright:after{
-    display: none!important;
+.daterangepicker.opensright:after {
+    display: none !important;
 }
 
-.daterangepicker .calendar-table th, .daterangepicker .calendar-table td{
-    min-width: 40px!important;
-    width: 40px!important;
-    height: 40px!important;
-    font-size: 14px!important;
-    border: 2px solid white!important;
+.daterangepicker .calendar-table th, .daterangepicker .calendar-table td {
+    min-width: 40px !important;
+    width: 40px !important;
+    height: 40px !important;
+    font-size: 14px !important;
+    border: 2px solid white !important;
 }
 
-.daterangepicker .drp-calendar{
-    max-width: max-content!important;
+.daterangepicker .drp-calendar {
+    max-width: max-content !important;
 }
 
 .daterangepicker td.in-range {
-    background-color: #fff0f2!important;
+    background-color: #fff0f2 !important;
 }
 
 
-.daterangepicker td.active, .daterangepicker td.active:hover{
-    background-color: #E15068!important;
+.daterangepicker td.active, .daterangepicker td.active:hover {
+    background-color: #E15068 !important;
 }
 
 .daterangepicker td.start-date,
 .daterangepicker td.start-date.end-date,
-.daterangepicker td.end-date{
-    border-radius: 0!important;
+.daterangepicker td.end-date {
+    border-radius: 0 !important;
 }
 
-.daterangepicker{
-    border-radius: 12px!important;
+.daterangepicker {
+    border-radius: 12px !important;
     box-shadow: 0 7px 15px rgba(0, 0, 0, .3);
 }
 
-.detail-picker .search-container .search-box input{
+.detail-picker .search-container .search-box input {
     height: 54px;
     padding: 20px 16px 0;
 }
 
 .detail-picker {
-    margin-top:20px;
+    margin-top: 20px;
 }
 
 .daterangepicker.openscenter:after,
-.daterangepicker.openscenter:before{
+.daterangepicker.openscenter:before {
     display: none;
 }
 
 td.off.disabled {
-    background: #ededed!important;
-    border-radius: 0!important;
+    background: #ededed !important;
+    border-radius: 0 !important;
 }
 
 td.checkoutday.available:before {
@@ -7310,14 +7310,144 @@ td.checkoutday.available:before {
     border-top-color: #ededed !important;
 }
 
-td.checkoutday.available{
+td.checkoutday.available {
     position: relative;
     overflow: hidden;
     z-index: 1;
-    border-radius: 0!important;
+    border-radius: 0 !important;
 }
 
 td.active.checkoutday.available,
-td.checkoutday.available{
-    color: #222222!important;
+td.checkoutday.available {
+    color: #222222 !important;
+}
+
+.room-modal .modal-checklists {
+    margin-top: 10px;
+}
+
+.room-modal .modal-body {
+    padding: 26px 0;
+}
+
+.room-modal .owl-carousel.owl-carousel-advert-img img {
+    height: 338px;
+}
+
+.room-modal .room-desc {
+    margin-top: 24px;
+}
+
+.room-modal .modal-lg {
+    max-width: 690px;
+}
+
+.notice-not-available {
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: normal;
+    text-align: center;
+    color: #e15068;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    border-right: 1px solid #F5F5F5;
+    border-left: 1px solid #F5F5F5;
+    padding: 0 10px;
+}
+
+.notice-not-available img {
+    margin-bottom: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+.notice-not-available .custom-button-red {
+    font-size: 13px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    padding: 8px 22px;
+    border-radius: 8px;
+    background-color: #e15068;
+    text-decoration: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.search-box-wrapper.hotel-detail-search {
+    border-radius: 41px;
+    box-shadow: 0 10px 16px 0 rgb(0 0 0 / 5%);
+    border: solid 1px #dddddd;
+    background-color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.search-box-wrapper.hotel-detail-search .li-item .search-btn {
+    border-radius: 30px;
+    background-color: #e15068;
+    min-width: 159px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0;
+    right: 0;
+    float: right;
+}
+
+.search-box-wrapper.hotel-detail-search li.li-item.li-item-calendar,
+.search-box-wrapper.hotel-detail-search li.li-item.li-item-guest-select,
+.search-box-wrapper.hotel-detail-search li.li-item.li-item-button {
+    width: auto;
+    flex: 0.5 auto;
+}
+
+.search-box-wrapper.hotel-detail-search .ul-block {
+    justify-content: space-between;
+}
+
+.search-box-wrapper.hotel-detail-search li.li-item.li-item-button {
+    margin-right: 10px;
+}
+
+.search-box-wrapper.hotel-detail-search .li-item.li-item-guest-select .search-container .search-box:after {
+    display: none;
+}
+
+.hotel-detail-search.sticky-top {
+    top: 100px !important;
+    z-index: 22;
+}
+
+td.in-range-min-span {
+    cursor: not-allowed !important;
+}
+
+.advert-item.border-0 {
+    border: solid 1px #dddddd;
+}
+
+.advert-item.border-1,
+.advert-item.border-2,
+.advert-item.border-3,
+.advert-item.border-4,
+.advert-item.border-5,
+.advert-item.border-6,
+.advert-item.border-7,
+.advert-item.border-8,
+.advert-item.border-9,
+.advert-item.border-10 {
+    border: solid 2px #2ebf8e;
 }

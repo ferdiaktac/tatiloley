@@ -974,9 +974,9 @@
                                         <strong id="after-price">1.320,00 ₺</strong>
                                     </div>
                                     <div class="price-item total">
-                                        <span>Toplam <span id="total-night">(6 gece)</span></span>
-                                        <strong id="total-price">2.200,00 ₺</strong>
-                                    </div>
+                                        <span>Toplam (<span class="total-night-calc">0</span> gece)</span>
+                                    <strong id="total-price">2.200,00 ₺</strong>
+                                </div>
                                 </div>
                                 <button type="submit" class="search-btn" id="search-btn" value="Hemen Rezervasyon Yap">
                                     Hemen Rezervasyon Yap
@@ -2093,6 +2093,10 @@
                 },
                 locale: {
                     format: 'DD MMMM YYYY',
+                },
+                /*Mininmum Night*/
+                "minSpan": {
+                    "days": 5
                 },
                 "alwaysShowCalendars": true,
                 "minDate": currentDate,

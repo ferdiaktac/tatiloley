@@ -318,5 +318,23 @@ function copyClipboard() {
     document.execCommand("copy");
 }
 
-// Checkout dates add class
+// Trigger Datepicker
+function calendar() {
+    $('input[name="datepicker-in"]').focus();
+}
+
+// Datepicker Night Calc
+$('#search_checkin').on('apply.daterangepicker', function (ev, picker) {
+    $('.total-night-calc').text(picker.endDate.diff(picker.startDate, "days"));
+});
+
+// Add border color selected rooms
+var prevVal;
+$(".advert-item").each(function () {
+    $(".advert-item").on("change", function () {
+        var val = $(this).find('option:selected').val();
+        $(this).removeClass(`border-${prevVal}`).addClass(`border-${val}`);
+        prevVal = val;
+    });
+});
 

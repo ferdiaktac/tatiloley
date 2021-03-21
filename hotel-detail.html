@@ -14,8 +14,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/js/telinput/css/intlTelInput.css">
-    <link rel="stylesheet" href="assets/css/t-datepicker-main.css">
-    <link rel="stylesheet" href="assets/css/t-datepicker.min.css">
+    <link rel="stylesheet" href="assets/css/daterangepicker.css">
     <link rel="stylesheet" href="assets/css/select2.min.css">
     <link rel="stylesheet" href="assets/css/aos.css">
 </head>
@@ -220,7 +219,7 @@
                             </ul>
                         </div>
                         <div class="col-lg-4">
-                            <a href="#detail-sidebar" class="custom-button-red">Rezervasyon Yap</a>
+                            <a href="#hotel-detail-search" class="custom-button-red">Rezervasyon Yap</a>
                         </div>
                     </div>
                     <p class="description">
@@ -236,6 +235,86 @@
                 </div>
             </div>
             <div class="col-lg-9">
+                <div class="search-box-wrapper hotel-detail-search sticky-top" id="hotel-detail-search">
+                    <form>
+                        <ul class="ul-block">
+                            <div class="default-picker">
+                                <li class="li-item li-item-calendar">
+                                    <div class="search-container">
+                                        <div class="search-box">
+                                            <label class="label">Giriş</label>
+                                            <input type="text" name="datepicker-in" id="search_checkin" value=""
+                                                   placeholder="Tarih Ekleyin"
+                                                   readonly>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="li-item li-item-calendar">
+                                    <div class="search-container">
+                                        <div class="search-box">
+                                            <label class="label">Çıkış</label>
+                                            <input type="text" name="datepicker-out" id="search_checkout" value=""
+                                                   placeholder="Tarih Ekleyin"
+                                                   readonly>
+                                        </div>
+                                    </div>
+                                </li>
+                            </div>
+                            <li class="li-item li-item-guest-select">
+                                <div class="search-container">
+                                    <div class="search-box">
+                                        <label class="label" for="pax">Misafir</label>
+                                        <span class="trigger">
+                                <input type="text" name="pax" id="pax" class="form-control" data-adults="1"
+                                       data-children="0" data-baby="0" data-total="1"
+                                       placeholder="1 Yetişkin, 1 Çocuk, 0 Bebek" disabled></span>
+                                        <div class="popover-content d-none">
+                                            <div class="form-group">
+                                                <label for="adult">Yetişkinler <i>13 ve üzeri yaştakiler</i></label>
+                                                <div class="input-group number-spinner">
+                                                    <a class="btn btn-minus" data-dir="dwn"><i class="fas fa-minus"></i></a>
+                                                    <input type="text" name="adult" id="adult"
+                                                           class="form-control text-center" value="0" max="9" min="1"
+                                                           disabled>
+                                                    <a class="btn btn-plus" data-dir="up"><i
+                                                            class="fas fa-plus"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="child">Çocuklar <i>Yaş aralığı 2-12</i></label>
+                                                <div class="input-group number-spinner">
+                                                    <a class="btn btn-minus" data-dir="dwn"><i class="fas fa-minus"></i></a>
+                                                    <input type="text" name="child" id="child"
+                                                           class="form-control text-center" value="0" max="9" min="0"
+                                                           disabled>
+                                                    <a class="btn btn-plus" data-dir="up"><i
+                                                            class="fas fa-plus"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="form-group m-0">
+                                                <label for="baby">Bebekler <i>2 yaş ve altı</i></label>
+                                                <div class="input-group number-spinner">
+                                                    <a class="btn btn-minus" data-dir="dwn"><i class="fas fa-minus"></i></a>
+                                                    <input type="text" name="baby" id="baby"
+                                                           class="form-control text-center" value="0" max="3" min="0"
+                                                           disabled>
+                                                    <a class="btn btn-plus" data-dir="up"><i
+                                                            class="fas fa-plus"></i></a>
+                                                </div>
+                                            </div>
+                                            <a class="btn dismiss">Uygula</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="li-item li-item-button">
+                                <button type="submit" class="search-btn" id="search-btn" value="">
+                                    Ara
+                                </button>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
                 <div class="advert-rooms part-space">
                     <div class="col-lg-12 col-md-6 advert-room-wrapper">
                         <div class="row">
@@ -244,7 +323,7 @@
                                     <div class="col-lg-4 col-md-6 advert-images-area">
                                         <div class="room-label blue">Herşey Dahil</div>
                                         <div class="room-label red">Son 7 güne kadar %50 ceza ile iptal</div>
-                                        <a href="#" class="magnifying" data-toggle="modal" data-target="#"><img
+                                        <a href="#" class="magnifying" data-toggle="modal" data-target="#room1"><img
                                                 src="assets/images/icons/magnifying.svg"></a>
                                         <div class="owl-carousel owl-theme owl-carousel-advert-img">
                                             <img class="owl-lazy" data-src="assets/images/others/demo-room-1.png"
@@ -278,7 +357,7 @@
                                                     <li>Duşakabin</li>
                                                     <li>Minibar</li>
                                                 </ul>
-                                                <a href="#" data-toggle="modal" data-target="#">
+                                                <a href="#" data-toggle="modal" data-target="#room1">
                                                     Odanın Tüm Özelliklerini Göster</a>
                                             </div>
                                         </div>
@@ -295,7 +374,220 @@
                                     <div class="col-lg-2 p-0">
                                         <div class="room-select-form">
                                             <label>Oda Sayısı</label>
-                                            <select>
+                                            <select class="room-select">
+                                                <option value="0" selected>0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-6 advert-room-wrapper">
+                        <div class="row">
+                            <div class="col-lg-12 advert-item">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 advert-images-area">
+                                        <div class="room-label blue">Herşey Dahil</div>
+                                        <div class="room-label red">Son 14 güne kadar ücretsiz iptal</div>
+                                        <a href="#" class="magnifying" data-toggle="modal" data-target="#room1"><img
+                                                src="assets/images/icons/magnifying.svg"></a>
+                                        <div class="owl-carousel owl-theme owl-carousel-advert-img">
+                                            <img class="owl-lazy" data-src="assets/images/others/demo-room-2.png"
+                                                 alt="" src="">
+                                            <img class="owl-lazy" data-src="assets/images/others/demo-room-1.png"
+                                                 alt="" src="">
+                                            <img class="owl-lazy" data-src="assets/images/others/demo-room-3.png"
+                                                 alt="" src="">
+                                            <img class="owl-lazy" data-src="assets/images/others/demo-room-4.png"
+                                                 alt="" src="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 p-0">
+                                        <div class="room-details">
+                                            <div class="top">
+                                                <h3 class="room-name">Superior Deniz Manzaralı Oda</h3>
+                                                <div class="room-bed-type">
+                                                    <img src="assets/images/icons/room-bed-type.png" alt="">
+                                                    1 Çift kişilik Yatak, 1 Tek kişilik
+                                                </div>
+                                                <div class="pax-details">
+                                                    <span>En az 2 Yetişkin</span> veya
+                                                    <span>en fazla 2 yetişkin + 2 çocuk</span> veya <span>3 yetişkin + 1 çocuk + 1
+                                                bebek</span>
+                                                </div>
+                                            </div>
+                                            <div class="bottom">
+                                                <ul class="green-checklist">
+                                                    <li>Oda Genişliği 64 m2</li>
+                                                    <li>Balkon</li>
+                                                    <li>Duşakabin</li>
+                                                    <li>Minibar</li>
+                                                </ul>
+                                                <a href="#" data-toggle="modal" data-target="#room1">
+                                                    Odanın Tüm Özelliklerini Göster</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 p-0">
+                                        <div class="price-cont">
+                                            <div class="total-price">
+                                                <p>4 Gecelik Fiyat</p>
+                                                <span>1.250,00₺</span>
+                                            </div>
+                                            <div class="notice">Son 1 Oda Kaldı!</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 p-0">
+                                        <div class="room-select-form">
+                                            <label>Oda Sayısı</label>
+                                            <select class="room-select">
+                                                <option value="0" selected>0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-6 advert-room-wrapper">
+                        <div class="row">
+                            <div class="col-lg-12 advert-item">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 advert-images-area">
+                                        <div class="room-label blue">Herşey Dahil</div>
+                                        <div class="room-label red">Son 7 güne kadar %50 ceza ile iptal</div>
+                                        <a href="#" class="magnifying" data-toggle="modal" data-target="#room1"><img
+                                                src="assets/images/icons/magnifying.svg"></a>
+                                        <div class="owl-carousel owl-theme owl-carousel-advert-img">
+                                            <img class="owl-lazy" data-src="assets/images/others/demo-room-3.png"
+                                                 alt="" src="">
+                                            <img class="owl-lazy" data-src="assets/images/others/demo-room-2.png"
+                                                 alt="" src="">
+                                            <img class="owl-lazy" data-src="assets/images/others/demo-room-1.png"
+                                                 alt="" src="">
+                                            <img class="owl-lazy" data-src="assets/images/others/demo-room-4.png"
+                                                 alt="" src="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 p-0">
+                                        <div class="room-details">
+                                            <div class="top">
+                                                <h3 class="room-name">Dublex Family Kara Manzaralı</h3>
+                                                <div class="room-bed-type">
+                                                    <img src="assets/images/icons/room-bed-type.png" alt="">
+                                                    1 Çift kişilik Yatak, 1 Tek kişilik
+                                                </div>
+                                                <div class="pax-details">
+                                                    <span>En az 2 Yetişkin</span> veya
+                                                    <span>en fazla 2 yetişkin + 2 çocuk</span> veya <span>3 yetişkin + 1 çocuk + 1
+                                                bebek</span>
+                                                </div>
+                                            </div>
+                                            <div class="bottom">
+                                                <ul class="green-checklist">
+                                                    <li>Oda Genişliği 64 m2</li>
+                                                    <li>Balkon</li>
+                                                    <li>Duşakabin</li>
+                                                    <li>Minibar</li>
+                                                </ul>
+                                                <a href="#" data-toggle="modal" data-target="#room1">
+                                                    Odanın Tüm Özelliklerini Göster</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 p-0">
+                                        <div class="price-cont">
+                                            <div class="total-price">
+                                                <p>4 Gecelik Fiyat</p>
+                                                <span>1.250,00₺</span>
+                                            </div>
+                                            <div class="notice">Son 1 Oda Kaldı!</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 p-0">
+                                        <div class="room-select-form">
+                                            <label>Oda Sayısı</label>
+                                            <select class="room-select">
+                                                <option value="0" selected>0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-6 advert-room-wrapper">
+                        <div class="row">
+                            <div class="col-lg-12 advert-item">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 advert-images-area">
+                                        <div class="room-label blue">Herşey Dahil</div>
+                                        <div class="room-label red">Son 7 güne kadar %50 ceza ile iptal</div>
+                                        <a href="#" class="magnifying" data-toggle="modal" data-target="#room1"><img
+                                                src="assets/images/icons/magnifying.svg"></a>
+                                        <div class="owl-carousel owl-theme owl-carousel-advert-img">
+                                            <img class="owl-lazy" data-src="assets/images/others/demo-room-4.png"
+                                                 alt="" src="">
+                                            <img class="owl-lazy" data-src="assets/images/others/demo-room-2.png"
+                                                 alt="" src="">
+                                            <img class="owl-lazy" data-src="assets/images/others/demo-room-3.png"
+                                                 alt="" src="">
+                                            <img class="owl-lazy" data-src="assets/images/others/demo-room-1.png"
+                                                 alt="" src="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 p-0">
+                                        <div class="room-details">
+                                            <div class="top">
+                                                <h3 class="room-name">Aile Odası Ara Kapılı Kara Manzaralı</h3>
+                                                <div class="room-bed-type">
+                                                    <img src="assets/images/icons/room-bed-type.png" alt="">
+                                                    1 Çift kişilik Yatak, 1 Tek kişilik
+                                                </div>
+                                                <div class="pax-details">
+                                                    <span>En az 2 Yetişkin</span> veya
+                                                    <span>en fazla 2 yetişkin + 2 çocuk</span> veya <span>3 yetişkin + 1 çocuk + 1
+                                                bebek</span>
+                                                </div>
+                                            </div>
+                                            <div class="bottom">
+                                                <ul class="green-checklist">
+                                                    <li>Oda Genişliği 64 m2</li>
+                                                    <li>Balkon</li>
+                                                    <li>Duşakabin</li>
+                                                    <li>Minibar</li>
+                                                </ul>
+                                                <a href="#" data-toggle="modal" data-target="#room1">
+                                                    Odanın Tüm Özelliklerini Göster</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 p-0">
+                                        <div class="notice-not-available">
+                                            <img src="assets/images/icons/info-red.svg">
+                                            Seçtiğiniz tarihler için oda fiyat bilgisi bulunamadı.
+                                            <button onclick="calendar()" class="custom-button-red">
+                                                Tarih Değiştir
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 p-0">
+                                        <div class="room-select-form">
+                                            <label>Oda Sayısı</label>
+                                            <select class="room-select" disabled>
                                                 <option value="0" selected>0</option>
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
@@ -566,8 +858,8 @@
                         <div class="col-lg-12">
                             <h3 class="part-title">Rezervasyon Bilgileri</h3>
                             <div class="selected-room">
-                                <div><span>1</span> x Superior Kara Manzaralı Oda</div>
-                                <div><span>1</span> x Superior Kara Manzaralı Oda</div>
+                                <div><span id="room-count">1 x</span>
+                                    <span id="room-name">Superior Kara Manzaralı Oda</span></div>
                             </div>
                         </div>
                     </div>
@@ -587,13 +879,13 @@
                                     <strong id="after-price">1.320,00 ₺</strong>
                                 </div>
                                 <div class="price-item total">
-                                    <span>Toplam <span id="total-night">(6 gece
-                                        <span id="total-room">, 2 oda)</span></span>
+                                    <span>Toplam (<span class="total-night-calc">0</span> gece,
+                                        <span class="total-room-calc">0</span> oda)
                                     </span>
                                     <strong id="total-price">2.200,00 ₺</strong>
                                 </div>
                             </div>
-                            <button type="submit" class="search-btn" id="search-btn" value="Hemen Rezervasyon Yap">
+                            <button type="submit" class="search-btn" id="search-res" value="Hemen Rezervasyon Yap">
                                 Hemen Rezervasyon Yap
                             </button>
                             <p class="button-bottom-info">Bu adımda ödeme yapmayacaksınız</p>
@@ -908,12 +1200,61 @@
 <!--List Mobile Bottom Menu-->
 <div class="bottom-detail-page">
     <div class="price">
-        <strong>550,00₺</strong><span>/ gece</span>
-        <p>'den başlayan</p>
+        <p>Seçiminiz</p>
+        <strong><span class="total-night-calc">0</span> gece,
+            <span class="total-room-calc">0</span> oda</strong><span></span>
     </div>
-    <a href="#detail-sidebar">Uygunluk Durumunu Kontrol Edin</a>
+    <a href="#detail-sidebar">Seçiminizi Görüntüleyin</a>
 </div>
 <!--List Mobile Bottom Menu-->
+
+<!--Room Detail Modal-->
+<div class="modal fade room-modal" id="room1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/icons/close-icon.svg">
+                </button>
+                <h2 class="bordered-title">Superior Kara Manzaralı Oda</h2>
+            </div>
+            <div class="modal-body">
+                <div class="owl-carousel owl-theme owl-carousel-advert-img">
+                    <img class="owl-lazy" data-src="assets/images/others/demo-room-1.png"
+                         alt="" src="">
+                    <img class="owl-lazy" data-src="assets/images/others/demo-room-2.png"
+                         alt="" src="">
+                    <img class="owl-lazy" data-src="assets/images/others/demo-room-3.png"
+                         alt="" src="">
+                    <img class="owl-lazy" data-src="assets/images/others/demo-room-4.png"
+                         alt="" src="">
+                </div>
+                <p class="room-desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                    tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                    et ea rebum. Stet clita kasd gubergren, no sea.</p>
+                <strong>Oda Özellikleri</strong>
+                <div class="modal-checklists d-flex justify-content-center">
+                    <ul class="green-checklist">
+                        <li>Küvetli Banyo</li>
+                        <li>Sigara İçilebilir</li>
+                        <li>Çocuk Yatağı (ücretli)</li>
+                        <li>Küvetli Banyo</li>
+                        <li>Sigara İçilebilir</li>
+                        <li>Çocuk Yatağı (ücretli)</li>
+                        <li>Küvetli Banyo</li>
+                        <li>Sigara İçilebilir</li>
+                        <li>Çocuk Yatağı (ücretli)</li>
+                        <li>Küvetli Banyo</li>
+                        <li>Sigara İçilebilir</li>
+                        <li>Çocuk Yatağı (ücretli)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Room Detail Modal-->
 
 <!--Reviews Modal-->
 <div class="modal fade" id="reviewsModal" tabindex="-1" role="dialog" aria-hidden="true">
@@ -1671,7 +2012,6 @@
 </div>
 <!--Mobile Menu-->
 
-
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
@@ -1681,9 +2021,10 @@
 <script src="assets/js/jquery.maskedinput.js"></script>
 <script src="assets/js/telinput/js/utils.js"></script>
 <script src="assets/js/telinput/js/intlTelInput.min.js"></script>
-<script type="text/javascript" src="assets/js/t-datepicker.min.js"></script>
 <script type="text/javascript" src="assets/js/select2.full.min.js"></script>
 <script type="text/javascript" src="assets/js/aos.js"></script>
+<script type="text/javascript" src="assets/js/moment-with-locales.min.js"></script>
+<script type="text/javascript" src="assets/js/daterangepicker.js"></script>
 
 <!--Sayfaya Özel JS-->
 <script src='//cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js'></script>
@@ -1691,30 +2032,60 @@
         async></script>
 <script type="text/javascript">
     $(document).ready(function () {
-        /*Checkin-out days*/
-        var CheckinOutDay = {
-            '2021-04-20': 'Giriş/Çıkış Günü',
-            '2021-03-25': 'Giriş/Çıkış Günü',
-        };
-        /*Datepicker*/
-        $('.detail-picker').tDatePicker({
-            dateDisabled: ['2021-04-25', '2021-04-26', '2021-04-27', '2021-04-28', '2021-04-29', '2021-04-30'],
-            iconDate: '',
-            numCalendar: 1,
-            limitNextMonth: 12,
-            fnDataEvent: CheckinOutDay,
-            mergeDataEvent: true,
-            valiDation: true,
-            daysOfWeekHighlighted: [],
-            titleCheckIn: 'Tarih Ekleyin',
-            titleCheckOut: 'Tarih Ekleyin',
-            titleDateRange: 'Gece',
-            titleDateRanges: 'Gece',
-            titleToday: 'Bugün',
-            titleDays: ['Pt', 'Sa', 'Ça', 'Pe', 'Cu', 'Ct', 'Pz'],
-            titleMonths: ['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs',
-                'Haziran', 'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık'],
-        });
+        // Daterange Picker
+        if ($('#search_checkin, #search_checkout').length) {
+            var currentDate = moment().format("DD MMMM YYYY");
+
+            moment.locale('tr');
+            $('#search_checkin, #search_checkout').daterangepicker({
+                // Disabled dates
+                isInvalidDate: function (ele) {
+                    var currDate = moment(ele._d).format('DD-MM-YYYY');
+                    return ["24-04-2021", "25-04-2021", "26-04-2021", "27-04-2021",].indexOf(currDate) !== -1;
+                },
+                // Checkout dates
+                isCustomDate: function (e) {
+                    var dataCell = moment(e._d).format("DD-MM-YYYY");
+                    if (dataCell === "28-04-2021") {
+                        return 'checkoutday';
+                    }
+                },
+                locale: {
+                    format: 'DD MMMM YYYY',
+                },
+                /*Mininmum Night*/
+                "minSpan": {
+                    "days": 5
+                },
+                "alwaysShowCalendars": true,
+                "minDate": currentDate,
+                "maxDate": moment().add('months', 12),
+                "opens": "right",
+
+                autoApply: true,
+                autoUpdateInput: false
+            }, function (start, end, label) {
+                var selectedStartDate = start.format('DD MMMM YYYY'); // selected start
+                var selectedEndDate = end.format('DD MMMM YYYY'); // selected end
+
+                $checkinInput = $('#search_checkin');
+                $checkoutInput = $('#search_checkout');
+
+                // Updating Fields with selected dates
+                $checkinInput.val(selectedStartDate);
+                $checkoutInput.val(selectedEndDate);
+
+                var checkOutPicker = $checkoutInput.data('daterangepicker');
+                checkOutPicker.setStartDate(selectedStartDate);
+                checkOutPicker.setEndDate(selectedEndDate);
+
+                var checkInPicker = $checkinInput.data('daterangepicker');
+                checkInPicker.setStartDate(selectedStartDate);
+                checkInPicker.setEndDate(selectedEndDate);
+            });
+        }
+        // End Daterange Picker
+
 
         /*Fixed Mobile Bottom*/
         $(window).scroll(function () {
@@ -1734,7 +2105,6 @@
             }
         });
         /*Fixed Mobile Bottom*/
-
 
         <!-- swipe start -->
         $(".carousel").swipe({

@@ -1654,16 +1654,87 @@
         max-width: 160px;
     }
 
-    .daterangepicker .drp-calendar.right{
-        display: none!important;
+    .daterangepicker .drp-calendar.right {
+        display: none !important;
     }
 
-    .daterangepicker{
-        width: auto!important;
+    .daterangepicker {
+        width: auto !important;
     }
 
     .daterangepicker .drp-calendar.left {
-        padding:8px!important;
+        padding: 8px !important;
+    }
+
+    .room-modal .modal-body {
+        padding: 15px
+    }
+
+    .room-modal .owl-carousel.owl-carousel-advert-img img {
+        height: 200px;
+    }
+
+    .room-modal .modal-checklists .green-checklist li {
+        width: 45%;
+        display: inline-flex;
+        align-items: center;
+        margin-right: 10px;
+    }
+
+    .advert-room-wrapper .advert-item {
+        padding: 15px;
+    }
+
+    .advert-rooms .room-details h3 {
+        min-height: auto;
+        font-size: 15px;
+    }
+
+    .advert-room-wrapper .price-cont .total-price {
+        display: block;
+        margin-top: 0;
+    }
+
+    .advert-room-wrapper .price-cont {
+        padding: 0;
+        border: 0;
+    }
+
+    .room-select-form {
+        flex-direction: inherit;
+    }
+
+    .room-select-form label {
+        padding-right: 13px;
+        margin-bottom: 0;
+    }
+
+    .advert-head-area .custom-button-red {
+        display: none;
+    }
+
+    .hotel-detail-search.sticky-top {
+        top: initial;
+        z-index: initial;
+        position: initial;
+    }
+
+    .search-box-wrapper.hotel-detail-search li.li-item.li-item-calendar, .search-box-wrapper.hotel-detail-search li.li-item.li-item-guest-select, .search-box-wrapper.hotel-detail-search li.li-item.li-item-button {
+        width: 100%;
+        flex: auto;
+    }
+
+    .hotel-detail-search .default-picker {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .search-box-wrapper.hotel-detail-search {
+        border-radius: 15px;
+    }
+
+    .search-box-wrapper.hotel-detail-search .li-item .search-btn {
+        margin-top: 15px;
     }
 
 
