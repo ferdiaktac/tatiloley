@@ -354,4 +354,10 @@ $(document).on('input', '.js-room-select', function() {
             </div>
         `);
     }
+
+    let total = 0;
+    $('.js-selected-rooms div').each((i, item) => {
+        total = total + parseInt($(item).find('#room-count')[0].innerHTML.split(' ')[0]);
+        $('.total-room-calc').text(total);
+    });
 });
