@@ -1737,6 +1737,10 @@
         margin-top: 15px;
     }
 
+    .default-picker{
+        display: flex;
+    }
+
 
 }
 
