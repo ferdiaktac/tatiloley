@@ -337,3 +337,21 @@ $(".advert-item").each(function () {
         prevVal = val;
     });
 });
+
+$(document).on('input', '.js-room-select', function() {
+    if($(this).val() == 0) {
+        setTimeout(() => {
+            $('.js-selected-rooms div[data-name="'+ $(this).closest('.advert-item').find('.room-name').text() +'"]').remove();
+        }, 0);
+    }
+    if($('.js-selected-rooms div[data-name="'+ $(this).closest('.advert-item').find('.room-name').text() +'"]').length) {
+        $('.js-selected-rooms div[data-name="'+ $(this).closest('.advert-item').find('.room-name').text() +'"] #room-count').text(`${$(this).val()} x`);
+    } else {
+        $('.js-selected-rooms').append(`
+            <div class="js-selected-room" data-name="${$(this).closest('.advert-item').find('.room-name').text()}">
+                <span id="room-count">${$(this).val()} x</span>
+                <span id="room-name">${$(this).closest('.advert-item').find('.room-name').text()}</span>
+            </div>
+        `);
+    }
+});

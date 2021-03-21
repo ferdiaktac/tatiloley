@@ -374,7 +374,7 @@
                                     <div class="col-lg-2 p-0">
                                         <div class="room-select-form">
                                             <label>Oda Sayısı</label>
-                                            <select class="room-select">
+                                            <select class="room-select js-room-select">
                                                 <option value="0" selected>0</option>
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
@@ -445,7 +445,7 @@
                                     <div class="col-lg-2 p-0">
                                         <div class="room-select-form">
                                             <label>Oda Sayısı</label>
-                                            <select class="room-select">
+                                            <select class="room-select js-room-select">
                                                 <option value="0" selected>0</option>
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
@@ -516,7 +516,7 @@
                                     <div class="col-lg-2 p-0">
                                         <div class="room-select-form">
                                             <label>Oda Sayısı</label>
-                                            <select class="room-select">
+                                            <select class="room-select js-room-select">
                                                 <option value="0" selected>0</option>
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
@@ -857,9 +857,8 @@
                     <div class="row hotel-summary">
                         <div class="col-lg-12">
                             <h3 class="part-title">Rezervasyon Bilgileri</h3>
-                            <div class="selected-room">
-                                <div><span id="room-count">1 x</span>
-                                    <span id="room-name">Superior Kara Manzaralı Oda</span></div>
+                            <div class="selected-room js-selected-rooms">
+                                
                             </div>
                         </div>
                     </div>
@@ -2084,6 +2083,18 @@
                 checkInPicker.setStartDate(selectedStartDate);
                 checkInPicker.setEndDate(selectedEndDate);
             });
+
+            $('#search_checkin').on('apply.daterangepicker', function(ev, picker) {
+                var d1 = picker.startDate.format('YYYY-MM-DD');
+                var d2 = picker.endDate.format('YYYY-MM-DD');
+
+                if(moment('2021-04-24').isBetween(d1, d2)) {
+                    $('#search_checkin').click();   
+                    setTimeout(() => {
+                        $('#search_checkout').val('');
+                    }, 250);
+                }
+            });            
         }
         // End Daterange Picker
 
