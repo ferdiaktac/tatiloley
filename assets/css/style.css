@@ -7436,7 +7436,7 @@ td.in-range-min-span {
 }
 
 .advert-item.border-0 {
-    border: solid 1px #dddddd;
+    border: solid 1px #dddddd!important;
 }
 
 .advert-item.border-1,
