@@ -40,17 +40,6 @@ $(document).ready(function () {
         }
     });
 
-    // Tel input
-    $("#tel_number").intlTelInput({
-        utilsScript: "assets/js/telinput/js/utils.js",
-        initialCountry: "tr"
-    });
-
-    $("#tel_number_mobile").intlTelInput({
-        utilsScript: "assets/js/telinput/js/utils.js",
-        initialCountry: "tr"
-    });
-
     // Select2
     $('.destination').select2({
         language: "tr",

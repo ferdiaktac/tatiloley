@@ -206,7 +206,7 @@
 
         if (typeof options.cancelClass === 'string') //backwards compat
             this.cancelButtonClasses = options.cancelClass;
-        
+
         if (typeof options.minSpan === 'object')
             this.minSpan = options.minSpan;
 
@@ -505,7 +505,7 @@
 
             if (this.maxDate && this.endDate.isAfter(this.maxDate))
                 this.endDate = this.maxDate.clone();
-            
+
             if (this.minSpan && this.startDate.clone().add(this.minSpan).isAfter(this.endDate))
                 this.endDate = this.startDate.clone().add(this.minSpan);
 
@@ -811,7 +811,7 @@
                     //don't allow selection of dates after the maximum date
                     if (maxDate && calendar[row][col].isAfter(maxDate, 'day'))
                         classes.push('off', 'disabled');
-                    
+
                     //don't allow selection of dates between startDate and minSpan
                     if (this.minSpan && this.startDate && calendar[row][col].isAfter(this.startDate, 'day') && calendar[row][col].isBefore(this.startDate.clone().add(this.minSpan), 'day'))
                         classes.push('off', 'in-range-min-span');
@@ -850,7 +850,12 @@
                     if (!disabled)
                         cname += 'available';
 
-                    html += '<td class="' + cname.replace(/^\s+|\s+$/g, '') + '" data-title="' + 'r' + row + 'c' + col + '">' + calendar[row][col].date() + '</td>';
+                    let labelText = '';
+                    if(typeof this.isCustomDate(calendar[row][col]) === 'string') {
+                        labelText = this.isCustomDate(calendar[row][col]).split('-')[1];
+                    }
+
+                    html += '<td class="' + cname.replace(/^\s+|\s+$/g, '') + '" data-value="'+ labelText +'"  data-title="' + 'r' + row + 'c' + col + '">' + calendar[row][col].date() + '</td>';
 
                 }
                 html += '</tr>';

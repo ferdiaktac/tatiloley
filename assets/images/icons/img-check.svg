@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="img-check" width="80" height="80" viewBox="0 0 80 80">
+    <defs>
+        <style>
+            .cls-1{fill:#2ebf8e}
+        </style>
+    </defs>
+    <g id="Group_2391">
+        <g id="Group_2390">
+            <path id="Path_10133" d="M40 0a40 40 0 1 0 40 40A40.046 40.046 0 0 0 40 0zm0 76.522A36.522 36.522 0 1 1 76.522 40 36.562 36.562 0 0 1 40 76.522z" class="cls-1"/>
+        </g>
+    </g>
+    <g id="Group_2393" transform="translate(15.651 26.09)">
+        <g id="Group_2392">
+            <path id="Path_10134" d="M144.179 160.525a1.74 1.74 0 0 0-2.459 0l-26.595 26.595-16.163-16.16a1.739 1.739 0 0 0-2.459 2.459l17.391 17.391a1.742 1.742 0 0 0 2.459 0l27.826-27.826a1.74 1.74 0 0 0 0-2.459z" class="cls-1" transform="translate(-95.994 -160.016)"/>
+        </g>
+    </g>
+</svg>

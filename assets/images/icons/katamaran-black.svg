@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="Rectangle_2428" d="M0 0H40V40H0z" class="cls-1" transform="translate(14)"/>
+        </clipPath>
+        <style>
+            .cls-1{fill:#000}
+        </style>
+    </defs>
+    <g id="katamaran-white" clip-path="url(#clip-path)" transform="translate(-14)">
+        <g id="catamaran" transform="translate(14)">
+            <g id="Group_4232">
+                <path id="Path_13542" d="M29 29.661l-2.5-4.167h-5.328v-1.822h9.313l-.648-5.51a27.518 27.518 0 0 0-8.665-17.013V0h-2.344v5.315a27.518 27.518 0 0 0-8.664 17.014l-.648 5.51H12.1L11 29.661H3.7L4.777 40h9.5l.833-3.828h9.778L25.722 40h9.5L36.3 29.661zM21.172 4.476a25.176 25.176 0 0 1 6.337 13.96l.34 2.892h-6.677zM12.491 22.6a25.176 25.176 0 0 1 6.337-13.96v16.855h-6.677zm6.337 5.236v1.823h-5.092l1.094-1.823zm14.282 9.818h-1.5v-1.821h-2.339v1.823h-1.66l-.833-3.828H13.222l-.833 3.828h-1.66v-1.823H8.385v1.823h-1.5L6.3 32.005h14.872v-4.166h4l2.5 4.167H33.7z" class="cls-1"/>
+            </g>
+        </g>
+    </g>
+</svg>

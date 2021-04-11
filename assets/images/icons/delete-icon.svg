@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="Rectangle_2425" fill="#fff" stroke="#ddd" d="M0 0H15V15H0z" transform="translate(612.515 607.515)"/>
+        </clipPath>
+        <style>
+            .cls-4{fill:#fff}
+        </style>
+    </defs>
+    <g id="delete-icon" transform="translate(-607 -602)">
+        <rect id="Rectangle_2424" width="29" height="29" fill="#ff4e4e" rx="8" transform="translate(607 602)"/>
+        <g id="Mask_Group_139" clip-path="url(#clip-path)" transform="translate(1.485 1.485)">
+            <g id="fi-rr-trash" transform="translate(614.169 608)">
+                <path id="Path_13536" d="M12.523 2.338h-1.812A2.928 2.928 0 0 0 7.847 0H6.678a2.928 2.928 0 0 0-2.865 2.338H2a.585.585 0 1 0 0 1.169h.585v7.6a2.926 2.926 0 0 0 2.923 2.923h3.508a2.926 2.926 0 0 0 2.923-2.923v-7.6h.585a.585.585 0 0 0 0-1.169zM6.678 1.169h1.169A1.757 1.757 0 0 1 9.5 2.338H5.024a1.757 1.757 0 0 1 1.654-1.169zm4.092 9.937a1.754 1.754 0 0 1-1.754 1.754H5.509a1.754 1.754 0 0 1-1.754-1.754v-7.6h7.015z" class="cls-4" transform="translate(-1.417)"/>
+                <path id="Path_13537" d="M6.96 11.76a.585.585 0 0 0 .585-.585V7.668a.585.585 0 1 0-1.169 0v3.507a.585.585 0 0 0 .584.585z" class="cls-4" transform="translate(-2.283 -1.238)"/>
+                <path id="Path_13538" d="M9.793 11.76a.585.585 0 0 0 .585-.585V7.668a.585.585 0 1 0-1.169 0v3.507a.585.585 0 0 0 .584.585z" class="cls-4" transform="translate(-2.778 -1.238)"/>
+            </g>
+        </g>
+    </g>
+</svg>
