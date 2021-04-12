@@ -341,7 +341,7 @@
                   <div class="fields">
                     <label>
                       Fotoğraf Açıklaması Giriniz
-                      <input type="text" placeholder="Örn; Lüks kamaramız..." />
+                      <input type="text" placeholder="Örn; Lüks kamaramız..." maxlength="140" />
                       <p class="input-note">Max. 140 Karakter</p>
                     </label>
                   </div>
@@ -788,7 +788,7 @@
       });
       $(document).on('click', '.item.dz-image-preview', function() {
         $('.item.dz-image-preview .image > .label').hide();
-        $(this).find('.image > .label').show();
+        $(this).closest('.image').find('.label').show();
       });
   });
 

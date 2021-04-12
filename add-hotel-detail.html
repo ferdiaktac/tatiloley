@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="assets/css/daterangepicker.css">
     <link rel="stylesheet" href="assets/css/select2.min.css">
     <link rel="stylesheet" href="assets/css/aos.css">
-    <link rel="stylesheet" href="assets/css/dropzone.min.css">
     <link rel="stylesheet" href="assets/css/add-steps.css">
 </head>
 <body>
@@ -129,7 +128,7 @@
     <div class="container">
 
       <div class="steps-area">
-        <div class="filled-area" style="width: 60%;"></div>
+        <div class="filled-area" style="width: 37%;"></div>
         <div class="filled">
           <span></span>
           Villa İlanı
@@ -142,15 +141,15 @@
           <span></span>
           Adres
         </div>
-        <div class="filled">
+        <div class="active">
           <span></span>
           Özellikler
         </div>
-        <div class="filled">
+        <div>
           <span></span>
           Detaylar
         </div>
-        <div class="active">
+        <div>
           <span></span>
           Fotoğraflar
         </div>
@@ -169,32 +168,352 @@
       </div>
       <div class="row">
         <div class="col-sm-8 offset-sm-2">
-          <div class="add-images">
-            <div class="hero">
-              İlanınıza Fotoğraf Ekleyin
-            </div>
-            <div class="desc">
-              Yüklediğiniz fotoğraflardan ilk sıraya sürükleyerek bir kapak fotoğrafı belirleyebilir, 30 adete kadar yeni fotoğraflar ekleyebilir,
-              yüklediğiniz fotoğraflardan istediklerinizi silebilirsiniz.
-            </div>
-            <div class="add-image-hero">
-              <strong>İlanınıza Villa Kat Planı ekleyerek daha fazla talep alabilirsiniz!</strong>
-              <p>Yüklediğiniz fotoğraf üzerindeki <img src="assets/images/icons/edit-icon.svg"> ikonuna tıklayarak, ilgili fotoğrafa açıklama ekleyebilir, Villa Kat Planını ekleyerek her bir fotoğrafın özelliklerini belirleyebilirsiniz.</p>
-            </div>
-            <form action="/" class="dropzone" id="dropzone-area">
-                <div class="photos-area">
-                <div class="dz-message" data-dz-message><span><a href="#" class="toggle">Fotoğraf Ekle</a></span></div>
-                  <div class="photos">
-                    <div class="item add-item">
-                      <div class="add">
-                        <img src="assets/images/icons/add-photo.svg">
-                        Fotoğraf Ekle
-                      </div>
+          <div class="select-properties">
+            <div class="hero">Otelin Genel Özelliklerini Belirtiniz</div>
+            <div class="fields">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="types">
+                    <label>
+                      Otel Tipi Seçiniz
+                      <select>
+                        <option>Lütfen Seçiniz</option>
+                      </select>
+                    </label>
+                  </div>
+                  <div class="seperate-hero">
+                    Mesafeler
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <label>
+                        Havaalanı Mesafesi (m)
+                        <input type="text" placeholder="Giriniz" />
+                      </label>
+                    </div>
+                    <div class="col-sm-6">
+                      <label>
+                        Deniz Mesafesi (m)
+                        <input type="text" placeholder="Giriniz" />
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <label>
+                        Market Misafisi (m)
+                        <input type="text" placeholder="Giriniz" />
+                      </label>
+                    </div>
+                    <div class="col-sm-6">
+                      <label>
+                        Hastane Mesafesi (m)
+                        <input type="text" placeholder="Giriniz" />
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <label>
+                        Restaurant Mesafesi (m)
+                        <input type="text" placeholder="Giriniz" />
+                      </label>
+                    </div>
+                    <div class="col-sm-6">
+                      <label>
+                        Merkez Mesafesi (m)
+                        <input type="text" placeholder="Giriniz" />
+                      </label>
+                    </div>
+                  </div>
+                  <div class="concept">
+                    <div class="seperate-hero">
+                      Otel Konsepti
+                    </div>
+                    <div class="items items--block">
+                      <ul>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Balayı Villası</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Deniz Manzaralı Villalar</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Lüks Tatil Villaları</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Merkezi Konumdaki Villalar</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Muhafazakar Villalar</span>
+                          </label>
+                        </li>
+                        <li></li>
+                      </ul>
                     </div>
                   </div>
                 </div>
-            </form>
-
+                <div class="col-sm-6">
+                  <div class="overflow">
+                    <div class="label">Genel Olanaklar</div>
+                    <div class="list">
+                      <ul>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Küvetli Banyo</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Klima</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Çocuk Havuzu</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Kapalı Havuz</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Ortak Havuz</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Denize Yakın</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Küvetli Banyo</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Klima</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Çocuk Havuzu</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Kapalı Havuz</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Ortak Havuz</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Denize Yakın</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Küvetli Banyo</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Klima</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Çocuk Havuzu</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Kapalı Havuz</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Ortak Havuz</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Denize Yakın</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Kapalı Havuz</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Ortak Havuz</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Denize Yakın</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Küvetli Banyo</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Klima</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Çocuk Havuzu</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Kapalı Havuz</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Ortak Havuz</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Denize Yakın</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Küvetli Banyo</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Klima</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Çocuk Havuzu</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Kapalı Havuz</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Ortak Havuz</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Denize Yakın</span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="centered-button flex">
               <button>
                 Geri Dön
@@ -210,22 +529,6 @@
     </div>
 </section>
 
-<div class="dropzone-template" style="display: none">
-  <div class="item photo-item">
-    <div class="image">
-      <div class="label hide">Kapak Fotoğrafı</div>
-      <img data-dz-thumbnail />
-      <div class="buttons">
-        <a href="#" data-toggle="modal" data-target="#photoDetailModal">
-          <img src="assets/images/icons/edit-icon.svg">
-        </a>
-        <a href="#" data-dz-remove>
-          <img src="assets/images/icons/delete-icon.svg">
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
 <footer>
     <div class="app-section">
         <div class="container">
@@ -325,328 +628,6 @@
     </ul>
 </div>
 <!--Mobile Bottom Menu-->
-
-<!--Add On Map-->
-<div class="modal fade" id="photoDetailModal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-dialog--map modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <img src="assets/images/icons/close-icon.svg">
-                </button>
-                <h2 class="bordered-title">Fotoğraf Açıklaması ve Ekle</h2>
-            </div>
-            <div class="modal-form d-flex justify-content-center flex-column">
-                <div class="modal-form-inner">
-                  <div class="fields">
-                    <label>
-                      Fotoğraf Açıklaması Giriniz
-                      <input type="text" placeholder="Örn; Burası tüm akdenizi görebileceğiniz muhteşem verandamız." maxlength="140" />
-                      <p class="input-note">Max. 140 Karakter</p>
-                    </label>
-                    <div class="row margin-top">
-                        <div class="col-sm-6">
-                            <div class="hero">Fotoğrafa ait özellikler</div>
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <label>
-                                      Bulunduğu Kat
-                                      <select>
-                                        <option>Zemin Kat</option>
-                                      </select>
-                                    </label>
-                                </div>
-                                <div class="col-sm-6">
-                                    <label>
-                                      Hangi Oda
-                                      <select class="js-room-type-select">
-                                        <option value="1">Oda Alanı</option>
-                                        <option value="2">Balkon Alanı</option>
-                                        <option value="3">Havuz Alanı</option>
-                                      </select>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="row js-sizes-row">
-                                <div class="col-sm-12">
-                                    <div class="fields-label">Havuz Boyutları</div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <label>
-                                      En (cm)
-                                      <input type="text" placeholder="Giriniz" />
-                                    </label>
-                                </div>
-                                <div class="col-sm-4">
-                                    <label>
-                                      Boy (cm)
-                                      <input type="text" placeholder="Giriniz" />
-                                    </label>
-                                </div>
-                                <div class="col-sm-4">
-                                    <label>
-                                      Derinlik (cm)
-                                      <input type="text" placeholder="Giriniz" />
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="overflow">
-                              <div class="label">Olanaklar</div>
-                              <div class="list">
-                                <ul>
-                                  <li>
-                                    <label class="checkbox-item">
-                                      <input type="checkbox" />
-                                      <div class="checkbox"></div>
-                                      <span>Küvetli Banyo</span>
-                                    </label>
-                                  </li>
-                                  <li>
-                                    <label class="checkbox-item">
-                                      <input type="checkbox" />
-                                      <div class="checkbox"></div>
-                                      <span>Klima</span>
-                                    </label>
-                                  </li>
-                                  <li>
-                                    <label class="checkbox-item">
-                                      <input type="checkbox" />
-                                      <div class="checkbox"></div>
-                                      <span>Çocuk Havuzu</span>
-                                    </label>
-                                  </li>
-                                  <li>
-                                    <label class="checkbox-item">
-                                      <input type="checkbox" />
-                                      <div class="checkbox"></div>
-                                      <span>Kapalı Havuz</span>
-                                    </label>
-                                  </li>
-                                  <li>
-                                    <label class="checkbox-item">
-                                      <input type="checkbox" />
-                                      <div class="checkbox"></div>
-                                      <span>Ortak Havuz</span>
-                                    </label>
-                                  </li>
-                                  <li>
-                                    <label class="checkbox-item">
-                                      <input type="checkbox" />
-                                      <div class="checkbox"></div>
-                                      <span>Denize Yakın</span>
-                                    </label>
-                                  </li>
-                                  <li>
-                                    <label class="checkbox-item">
-                                      <input type="checkbox" />
-                                      <div class="checkbox"></div>
-                                      <span>Küvetli Banyo</span>
-                                    </label>
-                                  </li>
-                                  <li>
-                                    <label class="checkbox-item">
-                                      <input type="checkbox" />
-                                      <div class="checkbox"></div>
-                                      <span>Klima</span>
-                                    </label>
-                                  </li>
-                                  <li>
-                                    <label class="checkbox-item">
-                                      <input type="checkbox" />
-                                      <div class="checkbox"></div>
-                                      <span>Çocuk Havuzu</span>
-                                    </label>
-                                  </li>
-                                  <li>
-                                    <label class="checkbox-item">
-                                      <input type="checkbox" />
-                                      <div class="checkbox"></div>
-                                      <span>Kapalı Havuz</span>
-                                    </label>
-                                  </li>
-                                  <li>
-                                    <label class="checkbox-item">
-                                      <input type="checkbox" />
-                                      <div class="checkbox"></div>
-                                      <span>Ortak Havuz</span>
-                                    </label>
-                                  </li>
-                                  <li>
-                                    <label class="checkbox-item">
-                                      <input type="checkbox" />
-                                      <div class="checkbox"></div>
-                                      <span>Denize Yakın</span>
-                                    </label>
-                                  </li>
-                                  <li>
-                                    <label class="checkbox-item">
-                                      <input type="checkbox" />
-                                      <div class="checkbox"></div>
-                                      <span>Küvetli Banyo</span>
-                                    </label>
-                                  </li>
-                                  <li>
-                                    <label class="checkbox-item">
-                                      <input type="checkbox" />
-                                      <div class="checkbox"></div>
-                                      <span>Klima</span>
-                                    </label>
-                                  </li>
-                                  <li>
-                                    <label class="checkbox-item">
-                                      <input type="checkbox" />
-                                      <div class="checkbox"></div>
-                                      <span>Çocuk Havuzu</span>
-                                    </label>
-                                  </li>
-                                  <li>
-                                    <label class="checkbox-item">
-                                      <input type="checkbox" />
-                                      <div class="checkbox"></div>
-                                      <span>Kapalı Havuz</span>
-                                    </label>
-                                  </li>
-                                  <li>
-                                    <label class="checkbox-item">
-                                      <input type="checkbox" />
-                                      <div class="checkbox"></div>
-                                      <span>Ortak Havuz</span>
-                                    </label>
-                                  </li>
-                                  <li>
-                                    <label class="checkbox-item">
-                                      <input type="checkbox" />
-                                      <div class="checkbox"></div>
-                                      <span>Denize Yakın</span>
-                                    </label>
-                                  </li>
-                                  <li>
-                                    <label class="checkbox-item">
-                                      <input type="checkbox" />
-                                      <div class="checkbox"></div>
-                                      <span>Kapalı Havuz</span>
-                                    </label>
-                                  </li>
-                                  <li>
-                                    <label class="checkbox-item">
-                                      <input type="checkbox" />
-                                      <div class="checkbox"></div>
-                                      <span>Ortak Havuz</span>
-                                    </label>
-                                  </li>
-                                  <li>
-                                    <label class="checkbox-item">
-                                      <input type="checkbox" />
-                                      <div class="checkbox"></div>
-                                      <span>Denize Yakın</span>
-                                    </label>
-                                  </li>
-                                  <li>
-                                    <label class="checkbox-item">
-                                      <input type="checkbox" />
-                                      <div class="checkbox"></div>
-                                      <span>Küvetli Banyo</span>
-                                    </label>
-                                  </li>
-                                  <li>
-                                    <label class="checkbox-item">
-                                      <input type="checkbox" />
-                                      <div class="checkbox"></div>
-                                      <span>Klima</span>
-                                    </label>
-                                  </li>
-                                  <li>
-                                    <label class="checkbox-item">
-                                      <input type="checkbox" />
-                                      <div class="checkbox"></div>
-                                      <span>Çocuk Havuzu</span>
-                                    </label>
-                                  </li>
-                                  <li>
-                                    <label class="checkbox-item">
-                                      <input type="checkbox" />
-                                      <div class="checkbox"></div>
-                                      <span>Kapalı Havuz</span>
-                                    </label>
-                                  </li>
-                                  <li>
-                                    <label class="checkbox-item">
-                                      <input type="checkbox" />
-                                      <div class="checkbox"></div>
-                                      <span>Ortak Havuz</span>
-                                    </label>
-                                  </li>
-                                  <li>
-                                    <label class="checkbox-item">
-                                      <input type="checkbox" />
-                                      <div class="checkbox"></div>
-                                      <span>Denize Yakın</span>
-                                    </label>
-                                  </li>
-                                  <li>
-                                    <label class="checkbox-item">
-                                      <input type="checkbox" />
-                                      <div class="checkbox"></div>
-                                      <span>Küvetli Banyo</span>
-                                    </label>
-                                  </li>
-                                  <li>
-                                    <label class="checkbox-item">
-                                      <input type="checkbox" />
-                                      <div class="checkbox"></div>
-                                      <span>Klima</span>
-                                    </label>
-                                  </li>
-                                  <li>
-                                    <label class="checkbox-item">
-                                      <input type="checkbox" />
-                                      <div class="checkbox"></div>
-                                      <span>Çocuk Havuzu</span>
-                                    </label>
-                                  </li>
-                                  <li>
-                                    <label class="checkbox-item">
-                                      <input type="checkbox" />
-                                      <div class="checkbox"></div>
-                                      <span>Kapalı Havuz</span>
-                                    </label>
-                                  </li>
-                                  <li>
-                                    <label class="checkbox-item">
-                                      <input type="checkbox" />
-                                      <div class="checkbox"></div>
-                                      <span>Ortak Havuz</span>
-                                    </label>
-                                  </li>
-                                  <li>
-                                    <label class="checkbox-item">
-                                      <input type="checkbox" />
-                                      <div class="checkbox"></div>
-                                      <span>Denize Yakın</span>
-                                    </label>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="centered-button flex">
-                    <button data-toggle="modal" data-target="#photoDetailModal" onclick="$('#photoDetailModal').modal('hide')" >
-                      Vazgeç
-                    </button>
-                    <button>
-                      Kaydet
-                    </button>
-                  </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--Add On Map end-->
 
 <!--Login-->
 <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
@@ -1037,50 +1018,5 @@
 <script type="text/javascript" src="assets/js/aos.js"></script>
 <script type="text/javascript" src="assets/js/moment-with-locales.min.js"></script>
 <script type="text/javascript" src="assets/js/daterangepicker.js"></script>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=geometry,places&ext=.js"></script>
-<script type="text/javascript" src="assets/js/dropzone.min.js"></script>
-<script>
-  Dropzone.autoDiscover = false;
-  $(document).ready(function() {
-    $(document).on('change', '.js-room-type-select', function() {
-      if($(this).val() == "3") {
-          $('.js-sizes-row').css('display', 'flex');
-      } else {
-          $('.js-sizes-row').hide();
-      }
-    })
-
-      var myDropzone = new Dropzone('#dropzone-area',{
-          url: "/test",
-          previewTemplate: document.querySelector('.dropzone-template').innerHTML,
-          previewsContainer: ".photos-area .photos"
-      });
-
-      myDropzone.on("addedfile", function(file) {
-        setTimeout(() => {
-            $('.dz-message span').hide();
-            $('.item.add-item').show();
-            $('.item.add-item').css('order', ($('.item.dz-image-preview').length + 1));
-        }, 100);
-      });
-
-
-      myDropzone.on("removedfile", function(file) {
-        setTimeout(() => {
-            if($('.item.dz-image-preview').length == 0) {
-                $('.dz-message span').show();
-                $('.item.add-item').hide();
-            }
-            $('.item.add-item').css('order', ($('.item.dz-image-preview').length + 1));
-        }, 100);
-      });
-      $(document).on('click', '.item.dz-image-preview .image > img', function() {
-        $('.item.dz-image-preview .image > .label').hide();
-        $(this).closest('.image').find('.label').show();
-      });
-  });
-
-
-</script>
 </body>
 </html>

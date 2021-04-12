@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="assets/css/daterangepicker.css">
     <link rel="stylesheet" href="assets/css/select2.min.css">
     <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/js/datepicker/daterangepicker.min.css">
     <link rel="stylesheet" href="assets/css/add-steps.css">
 </head>
 <body>
@@ -213,9 +214,9 @@
               </div>
               <div class="row">
                 <div class="col-sm-6">
-                  <div class="price-calendar-container-area price-calendar-day-container-area"></div>
-                  <div style="clear:both"></div>
-                  <input type="text" id="datepicker" style="display: none;" />
+                  <div class="calendar-container-area single">
+                      <input type="hidden" class="js-datepicker-inline-area" />
+                  </div>
                 </div>
                 <div class="col-sm-6">
                   <div class="buttons">
@@ -224,7 +225,7 @@
                         <a href="#" data-toggle="modal" data-target="#addDateModal">Özel Gün Ekle</a>
                       </div>
                       <div class="col-sm-6">
-                        <a href="#">Özel Gün Kaldır</a>
+                        <a href="#" data-toggle="modal" data-target="#removeDateModal">Özel Fiyat Kaldır</a>
                       </div>
                     </div>
                   </div>
@@ -373,7 +374,7 @@
 </div>
 <!--Mobile Bottom Menu-->
 
-<!--Price Modal-->
+<!--DAte Modal-->
 <div class="modal fade" id="addDateModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog--map modal-dialog-centered" role="document">
         <div class="modal-content">
@@ -394,7 +395,7 @@
                       <div class="col-sm-6">
                         <label>
                           Tarih Aralığı
-                          <input type="text" placeholder="Giriniz" id="block-datepicker" />
+                          <input type="text" placeholder="Giriniz" class="js-drop-datepicker" />
                         </label>
                       </div>
                       <div class="col-sm-6">
@@ -410,7 +411,7 @@
                     </div>
                   </div>
                   <div class="centered-button flex">
-                    <button class="js-clear-special-day">
+                    <button onclick="$('#addDateModal').modal('hide')">
                       Kapat
                     </button>
                     <button class="js-save-special-day">
@@ -422,7 +423,45 @@
         </div>
     </div>
 </div>
-<!--Price Modal end-->
+<div class="modal fade" id="removeDateModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog--map modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/icons/close-icon.svg">
+                </button>
+                <h2 class="bordered-title">Tarihe Göre Minimum Konaklama Süresi Belirle</h2>
+            </div>
+            <div class="modal-form d-flex justify-content-center flex-column">
+                <div class="modal-form-inner">
+                  <div class="price-modal-fields">
+                    <ul class="notices">
+                      <li>Özel minimum konaklama tanımı bulunan günler takvimde kırmızı nokta ile işaretlenmiştir.</li>
+                      <li>Seçtiğiniz tarih aralığındaki var olan konaklama süresi tanımları yeni belirlediğiniz minimum konaklama süresi ile değiştirilir.</li>
+                    </ul>
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <label>
+                          Tarih Aralığı
+                          <input type="text" placeholder="Giriniz" class="js-drop-datepicker2" />
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="centered-button flex">
+                    <button onclick="$('#removeDateModal').modal('hide')">
+                      Kapat
+                    </button>
+                    <button class="js-clear-special-day">
+                      Kaydet
+                    </button>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Date Modal end-->
 
 <!--Login-->
 <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
@@ -812,96 +851,130 @@
 <script type="text/javascript" src="assets/js/select2.full.min.js"></script>
 <script type="text/javascript" src="assets/js/aos.js"></script>
 <script type="text/javascript" src="assets/js/moment-with-locales.min.js"></script>
-<script type="text/javascript" src="assets/js/daterangepicker.js"></script>
+<script type="text/javascript" src="assets/js/datepicker/jquery.daterangepicker.js"></script>
 <script>
-    let days = [];
-    let selectedDays = [];
-  var currentDate = moment().format("DD MMMM YYYY");
-  moment.locale('tr');
+    let defaultNights = '';
+    let inputNights = '';
+    let highlightDate = []
+    let selectedForHighlightDate = [];
+    moment.locale('tr');
+    var enumerateDaysBetweenDates = function(startDate, endDate) {
+        var dates = [];
+        var currDate = moment(startDate).startOf('day');
+        var lastDate = moment(endDate).startOf('day');
+        while(currDate.add(1, 'days').diff(lastDate) < 0) {
+            dates.push(moment(currDate.clone().toDate()).format('DD/MM/YYYY'));
+        }
+        return dates;
+    };
 
-  function displayDatePicker(specialDays) {
-    var picker = $('#datepicker').daterangepicker({
-        "parentEl": ".price-calendar-container-area",
-        isCustomDate: function(e) {
-            var dataCell = moment(e._d).format("DD-MM-YYYY");
-            let onlyDates = specialDays.map(item => item.date);
-            if (onlyDates.indexOf(dataCell) !== -1)  {
-                return 'daycolumn daycolumn-' + specialDays[onlyDates.indexOf(dataCell)].price + ' Gece';
-            } else {
-                return "";
+    $('.js-drop-datepicker').dateRangePicker({
+        startOfWeek: 'monday',
+        language: 'tr',
+        autoClose: true,
+        beforeShowDay: function(t){
+            var valid = true;
+            var _class = '';
+            var _tooltip = valid ? '' : '';
+
+            if (highlightDate.filter(e => e.day === moment(t).format('DD/MM/YYYY')).length > 0) {
+              _class += 'add-dot-days';
+              valid = !(highlightDate.includes(moment(t).format('DD/MM/YYYY')));
             }
+
+            return [valid,_class,_tooltip];
         },
-        "linkedCalendars": false,
-        "alwaysShowCalendars": false,
-        "opens": "center",
-        autoApply: true,
-        autoUpdateInput: false,
-        singleDatePicker: true
-    }, function() {
-        displayDatePicker(days);
+    }).bind('datepicker-change', function(e, obj) {
+        selectedForHighlightDate = [];
+        selectedForHighlightDate.push(moment(obj.date1).format('DD/MM/YYYY'), ...enumerateDaysBetweenDates(obj.date1, obj.date2), moment(obj.date2).format('DD/MM/YYYY'))
     });
 
-    picker.data('daterangepicker').hide = function () {};
-    picker.data('daterangepicker').show();
-  }
-  displayDatePicker(days);
+    $('.js-drop-datepicker2').dateRangePicker({
+        startOfWeek: 'monday',
+        language: 'tr',
+        autoClose: true,
+        beforeShowDay: function(t){
+            var valid = true;
+            var _class = '';
+            var _tooltip = valid ? '' : '';
+
+            if (highlightDate.filter(e => e.day === moment(t).format('DD/MM/YYYY')).length > 0) {
+              _class += 'add-dot-days';
+              valid = !(highlightDate.includes(moment(t).format('DD/MM/YYYY')));
+            }
+
+            return [valid,_class,_tooltip];
+        },
+    }).bind('datepicker-change', function(e, obj) {
+        selectedForHighlightDate = [];
+        selectedForHighlightDate.push(moment(obj.date1).format('DD/MM/YYYY'), ...enumerateDaysBetweenDates(obj.date1, obj.date2), moment(obj.date2).format('DD/MM/YYYY'))
+    });
+
+    $('.js-datepicker-inline-area').dateRangePicker({
+        startOfWeek: 'monday',
+        inline:true,
+        singleMonth: true,
+        singleDate : true,
+        container: '.calendar-container-area',
+        alwaysOpen:true,
+        language: 'tr',
+        showShortcuts: false,
+        beforeShowDay: function(t){
+            var valid = true;
+            var _class = '';
+            var _tooltip = valid ? '' : '';
+
+            if (highlightDate.filter(e => e.day === moment(t).format('DD/MM/YYYY')).length > 0) {
+              _class += 'highlight-days';
+              valid = !(highlightDate.includes(moment(t).format('DD/MM/YYYY')));
+            }
+
+            return [valid,_class,_tooltip];
+        },
+        showDateFilter: function(time, date){
+            const dateFormatted = moment(time).format('DD/MM/YYYY');
+            let price = '';
+            if(defaultNights != '') {
+                price = defaultNights + ' Gece';
+            } else {
+                price = '';
+            }
+
+            if (highlightDate.filter(e => e.day === moment(time).format('DD/MM/YYYY')).length > 0) {
+                price = highlightDate.filter(e => e.day === moment(time).format('DD/MM/YYYY'))[highlightDate.filter(e => e.day === moment(time).format('DD/MM/YYYY')).length - 1].price;
+            }
+            return `<span>${date} <small>${price}</small></span>`
+        }
+    });
 
 
-  var enumerateDaysBetweenDates = function(startDate, endDate) {
-      var dates = [];
-      var currDate = moment(startDate).startOf('day');
-      var lastDate = moment(endDate).startOf('day');
-      while(currDate.add(1, 'days').diff(lastDate) < 0) {
-          dates.push({date: moment(currDate.clone().toDate()).format('DD-MM-YYYY'), price: $('.js-special-day-value option:selected').val()});
-      }
-      return dates;
-  };
+    $('.js-save-special-day').on('click', function() {
+        let mapped = [];
+        selectedForHighlightDate.map(item => {
+            let obj = {};
+            obj['price'] = $('.js-special-day-value').val() + ' Gece';
+            obj['day'] = item
+            mapped.push(obj);
+        });
 
+        highlightDate.push(...mapped);
 
-  let nightText = '';
-  let selectedDaysInput = [];
-  $('.js-special-day-value').on('change', function() {
-    nightText = $('.js-special-day-value option:selected').val();
-  });
-  $('#block-datepicker').daterangepicker({
-      "singleDatePicker": false,
-      "autoApply": true,
-      "linkedCalendars": false,
-      "autoUpdateInput": true,
-      "showCustomRangeLabel": false,
-  }, function(start, end, label) {
-    selectedDaysInput[0] = start;
-    selectedDaysInput[1] = end;
-  });
+        $('.js-datepicker-inline-area').data('dateRangePicker').resetMonthsView();
+        $('#addDateModal').modal('hide');
 
-  $('.js-save-special-day').on('click', function() {
-    $('#addDateModal').modal('hide');
-    selectedDays = [];
-    selectedDays.push(
-        {date: moment(selectedDaysInput[0]).format('DD-MM-YYYY'), price: $('.js-special-day-value option:selected').val()},
-        ...enumerateDaysBetweenDates(selectedDaysInput[0], selectedDaysInput[1]),
-        {date: moment(selectedDaysInput[1]).format('DD-MM-YYYY'), price: $('.js-special-day-value option:selected').val()});
-    days = [...days, ...selectedDays];
-    console.log(selectedDays[0].date)
+    });
 
-    $('.summary').show();
-    $('.js-selected-days').append(`
-        <tr>
-          <td>${moment(selectedDays[0].date.split('-')[1]).format('MMMM')} 2021</td>
-          <td>${selectedDays.length} Gün x ${$('.js-special-day-value option:selected').val() + " Gece"}</td>
-        </tr>
-    `);
+    $('.js-clear-special-day').on('click', function() {
+        const filteredItems = highlightDate.filter(function(item) {
+          return !selectedForHighlightDate.includes(item.day)
+        })
 
-    displayDatePicker(days);
-  });
-  $('.js-clear-special-day').on('click', function() {
-    $('#addDateModal').modal('hide')
-  });
-  $('.js-clear-prices').on('click', function() {
-    displayDatePicker([]);
-    $('.js-selected-days').html('');
-  });
+        highlightDate = filteredItems;
 
+        $('.js-datepicker-inline-area').data('dateRangePicker').resetMonthsView();
+        $('#removeDateModal').modal('hide');
+
+    });
 </script>
 </body>
 </html>

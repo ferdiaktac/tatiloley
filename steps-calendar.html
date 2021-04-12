@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/js/telinput/css/intlTelInput.css">
-    <link rel="stylesheet" href="assets/css/daterangepicker.css">
     <link rel="stylesheet" href="assets/css/select2.min.css">
     <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/js/datepicker/daterangepicker.min.css">
     <link rel="stylesheet" href="assets/css/add-steps.css">
 </head>
 <body>
@@ -180,7 +180,7 @@
               <div class="buttons">
                 <div class="row">
                   <div class="col-sm-6">
-                    <input type="text" placeholder="Tarih Seçiniz" id="block-datepicker" />
+                    <input type="text" placeholder="Tarih Seçiniz" class="js-drop-datepicker" />
                   </div>
                   <div class="col-sm-6">
                     <div class="row">
@@ -208,9 +208,9 @@
                     </li>
                   </ul>
                 </div>
-                <div class="calendar-container-area"></div>
-                <div style="clear:both"></div>
-                <input type="text" id="datepicker" style="display: none;" />
+                <div class="calendar-container-area">
+                    <input type="hidden" class="js-datepicker-inline-area" />
+                </div>
               </div><br />
               <div class="hero">
                 <div>iCalendar</div>
@@ -761,77 +761,91 @@
 <script type="text/javascript" src="assets/js/select2.full.min.js"></script>
 <script type="text/javascript" src="assets/js/aos.js"></script>
 <script type="text/javascript" src="assets/js/moment-with-locales.min.js"></script>
-<script type="text/javascript" src="assets/js/daterangepicker.js"></script>
+<script type="text/javascript" src="assets/js/datepicker/jquery.daterangepicker.js"></script>
 
 <script>
-  let selectedDays = [];
-  let fullDays = [];
-  let disabledDays = ["01-04-2021","02-04-2021","03-04-2021","04-04-2021"];
-  var currentDate = moment().format("DD MMMM YYYY");
-  moment.locale('tr');
+    const reservedDays = ["01/04/2021","02/04/2021","03/04/2021","04/04/2021","05/04/2021"]
+    let blockedDays = []
+    let selectedForBlockingDays = [];
+    var enumerateDaysBetweenDates = function(startDate, endDate) {
+        var dates = [];
+        var currDate = moment(startDate).startOf('day');
+        var lastDate = moment(endDate).startOf('day');
+        while(currDate.add(1, 'days').diff(lastDate) < 0) {
+            dates.push(moment(currDate.clone().toDate()).format('DD/MM/YYYY'));
+        }
+        return dates;
+    };
 
-  function displayDatePicker(disableds) {
-    var picker = $('#datepicker').daterangepicker({
-        "parentEl": ".calendar-container-area",
-        isInvalidDate: function(ele) {
-            var currDate = moment(ele._d).format('DD-MM-YYYY');
-            return disabledDays.indexOf(currDate) !== -1;
+    $('.js-drop-datepicker').dateRangePicker({
+        startOfWeek: 'monday',
+        language: 'tr',
+        autoClose: true,
+        beforeShowDay: function(t){
+            var valid = true;
+            var _class = '';
+            var _tooltip = valid ? '' : '';
+
+            if(reservedDays.includes(moment(t).format('DD/MM/YYYY'))) {
+                _class += 'reserved-days';
+                valid = !(reservedDays.includes(moment(t).format('DD/MM/YYYY')));
+            }
+            if(moment(t).format('DD/MM/YYYY') == reservedDays[reservedDays.length -1]) {
+                _class += ' half';
+            }
+
+            return [valid,_class,_tooltip];
+        }
+    }).bind('datepicker-change', function(e, obj) {
+        selectedForBlockingDays = [];
+        selectedForBlockingDays.push(moment(obj.date1).format('DD/MM/YYYY'), ...enumerateDaysBetweenDates(obj.date1, obj.date2), moment(obj.date2).format('DD/MM/YYYY'))
+    });;
+
+    $('.js-datepicker-inline-area').dateRangePicker({
+        startOfWeek: 'monday',
+        inline:true,
+        singleDate : true,
+        container: '.calendar-container-area',
+        alwaysOpen:true,
+        language: 'tr',
+        showShortcuts: false,
+        beforeShowDay: function(t){
+            var valid = true;
+            var _class = '';
+            var _tooltip = valid ? '' : '';
+
+            if(reservedDays.includes(moment(t).format('DD/MM/YYYY'))) {
+                _class += 'reserved-days';
+                valid = !(reservedDays.includes(moment(t).format('DD/MM/YYYY')));
+            }
+            if(moment(t).format('DD/MM/YYYY') == reservedDays[reservedDays.length -1]) {
+                _class += ' half';
+            }
+
+            if(blockedDays.includes(moment(t).format('DD/MM/YYYY'))) {
+                _class += 'blocked-days';
+                valid = !(blockedDays.includes(moment(t).format('DD/MM/YYYY')));
+            }
+
+            return [valid,_class,_tooltip];
         },
-        isCustomDate: function(e) {
-            var dataCell = moment(e._d).format("DD-MM-YYYY");
-            if ( dataCell === "05-04-2021" )  {
-                return 'checkoutday';
-            }
-            if(disabledDays.indexOf(dataCell) !== -1) {
-              return 'off disabled';
-            }
-            if(disableds.indexOf(dataCell) !== -1) {
-              return 'off disabled black';
-            }
-        },
-        "linkedCalendars": false,
-        "alwaysShowCalendars": true,
-        "opens": "center",
-        autoApply: true,
-        autoUpdateInput: true
+        showDateFilter: function(time, date){
+            return `<span>${date}</span>`
+        }
     });
 
-    picker.data('daterangepicker').hide = function () {};
-    picker.data('daterangepicker').show();
-  }
-  displayDatePicker(disabledDays);
+    $('.js-apply-disabled-days').on('click', function() {
+        blockedDays.push(...selectedForBlockingDays);
 
-  var enumerateDaysBetweenDates = function(startDate, endDate) {
-      var dates = [];
+        $('.js-datepicker-inline-area').data('dateRangePicker').resetMonthsView();
+    });
 
-      var currDate = moment(startDate).startOf('day');
-      var lastDate = moment(endDate).startOf('day');
+    $('.js-clear-disabled-days').on('click', function() {
+        console.log(selectedForBlockingDays, blockedDays)
+        blockedDays = blockedDays.filter(item => !selectedForBlockingDays.includes(item))
 
-      while(currDate.add(1, 'days').diff(lastDate) < 0) {
-          dates.push(moment(currDate.clone().toDate()).format('DD-MM-YYYY'));
-      }
-
-      return dates;
-  };
-  $('#block-datepicker').daterangepicker({
-      "singleDatePicker": false,
-      "autoApply": true,
-      "linkedCalendars": false,
-      "autoUpdateInput": true,
-      "showCustomRangeLabel": false,
-  }, function(start, end, label) {
-    selectedDays = [];
-    selectedDays.push(moment(start).format('DD-MM-YYYY'), ...enumerateDaysBetweenDates(start, end), moment(end).format('DD-MM-YYYY'));
-    fullDays = [...fullDays, ...selectedDays];
-  });
-
-  $('.js-apply-disabled-days').on('click', function() {
-    displayDatePicker(fullDays);
-  });
- $('.js-clear-disabled-days').on('click', function() {
-    fullDays = fullDays.filter(item => !selectedDays.includes(item))
-    displayDatePicker(fullDays);
- });
+        $('.js-datepicker-inline-area').data('dateRangePicker').resetMonthsView();
+    });
 </script>
 </body>
 </html>
