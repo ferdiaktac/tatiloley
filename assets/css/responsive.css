@@ -33,6 +33,8 @@
         -webkit-transform: initial !important;
         -moz-transform: initial !important;
         -ms-transform: initial !important;
+        min-height: initial!important;
+        float: initial!important;
     }
 }
 
