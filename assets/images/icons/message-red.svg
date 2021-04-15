@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="Rectangle_2369" d="M0 0H20V20H0z" class="cls-1" transform="translate(900 466)"/>
+        </clipPath>
+        <style>
+            .cls-1{fill:#e15068}
+        </style>
+    </defs>
+    <g id="Mask_Group_102" clip-path="url(#clip-path)" transform="translate(-900 -466)">
+        <g id="Layer_2" transform="translate(900 466.772)">
+            <g id="Layer_1">
+                <g id="message-">
+                    <path id="Path_12494" d="M18.871 18.454a.851.851 0 0 1-.258-.041l-4.536-1.464a.847.847 0 1 1 .519-1.614l2.983.959-.786-2.536a.849.849 0 0 1 1.62-.505l1.268 4.1a.834.834 0 0 1-.214.851.847.847 0 0 1-.6.247z" class="cls-1"/>
+                    <path id="Path_12495" d="M10 17.966c-5.515 0-10-4.031-10-8.983S4.485 0 10 0s10 4.031 10 8.983a8.315 8.315 0 0 1-1.722 5.041.847.847 0 0 1-1.356-1.017 6.634 6.634 0 0 0 1.383-4.024c0-4.02-3.729-7.288-8.305-7.288S1.695 4.963 1.695 8.983 5.424 16.271 10 16.271a9.237 9.237 0 0 0 3.969-.885.848.848 0 1 1 .732 1.529A10.953 10.953 0 0 1 10 17.966z" class="cls-1"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="Rectangle_2444" fill="#e15068" stroke="#707070" d="M0 0H19V19H0z" transform="translate(797 177)"/>
+        </clipPath>
+        <style>
+            .cls-3{fill:#e15068}
+        </style>
+    </defs>
+    <g id="del-icon" clip-path="url(#clip-path)" transform="translate(-797 -177)">
+        <g id="fi-rr-trash" transform="translate(797 177)">
+            <path id="Path_13595" d="M16.625 3.167h-2.454A3.965 3.965 0 0 0 10.292 0H8.708a3.965 3.965 0 0 0-3.879 3.167H2.375a.792.792 0 1 0 0 1.583h.792v10.292A3.963 3.963 0 0 0 7.125 19h4.75a3.963 3.963 0 0 0 3.958-3.958V4.75h.792a.792.792 0 1 0 0-1.583zM8.708 1.583h1.583a2.38 2.38 0 0 1 2.24 1.583H6.469a2.38 2.38 0 0 1 2.24-1.583zm5.542 13.459a2.375 2.375 0 0 1-2.375 2.375h-4.75a2.375 2.375 0 0 1-2.375-2.375V4.75h9.5z" class="cls-3"/>
+            <path id="Path_13596" d="M7.917 14.25a.792.792 0 0 0 .792-.792v-4.75a.792.792 0 0 0-1.583 0v4.75a.792.792 0 0 0 .791.792z" class="cls-3"/>
+            <path id="Path_13597" d="M11.083 14.25a.792.792 0 0 0 .792-.792v-4.75a.792.792 0 1 0-1.583 0v4.75a.792.792 0 0 0 .791.792z" class="cls-3"/>
+        </g>
+    </g>
+</svg>

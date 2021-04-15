@@ -1761,6 +1761,558 @@
         height: 100%;
     }
 
+    .company-info-container {
+        margin-top: 20px;
+    }
+
+    .contact-form-wrapper .custom-button-red {
+        margin-bottom: 50px;
+    }
+
+    .company-info-container .left-text {
+        margin-right: 30px;
+    }
+
+    .call-center-number {
+        font-size: 20px;
+    }
+
+    .about-info {
+        padding: 15px;
+        flex-direction: column;
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    .about-info img {
+        padding-right: 0;
+        margin-bottom: 10px;
+        height: 50px;
+    }
+
+    .certification-wrapper img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .pad-cont {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .page-content-two h2 {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+
+    .travels-wrapper .travel-nav ul li a {
+        font-size: 16px;
+    }
+
+    .travels-wrapper .travel-nav ul li {
+        padding-right: inherit;
+    }
+
+    .travels-wrapper .travel-nav ul {
+        justify-content: space-between;
+    }
+
+    .travels-wrapper .travel-nav ul li:hover a {
+        color: inherit;
+        transition: all 0.3s;
+        border-bottom: inherit;
+    }
+
+    .travels-container .advert-cont .title {
+        margin-bottom: 10px;
+    }
+
+    .travels-container span.advert-location {
+        padding-top: 10px;
+    }
+
+    .travels-container .advert-images-area {
+        height: 150px;
+    }
+
+    .travels-container .buttons-area {
+        display: flex;
+        width: 100%;
+    }
+
+    .travels-container .buttons-area a {
+        margin: 8px;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .travels-container .buttons-area a img {
+        width: 13px;
+    }
+
+    .travels-container .price-cont.buttons-cont {
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .travels-container .price-cont p {
+        text-align: center;
+    }
+
+    .travels-container .price-cont.buttons-cont .buttons-area a {
+        margin-top: 10px;
+    }
+
+    .review-modal-wrapper .advert-cont .top {
+        padding: 15px !important;
+    }
+
+    .review-modal-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .review-modal-wrapper .advert-number-review {
+        width: 100%;
+        display: flex;
+    }
+
+    .review-modal-wrapper .advert-cont .advert-number-review {
+        padding-top: 24px;
+    }
+
+    .review-modal-wrapper .advert-cont .advert-number-review .advert-review {
+        padding-top: 0;
+    }
+
+    div#reviewmodal,
+    div#changedate {
+        padding-right: 0 !important;
+    }
+
+    #reviewsModal .modal-dialog.modal-lg.modal-dialog-centered,
+    #changedate .modal-dialog.modal-lg.modal-dialog-centered {
+        margin-bottom: 0 !important;
+    }
+
+    .review-modal-wrapper .advert-cont {
+        padding-top: 0;
+    }
+
+    .custom-title-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .custom-title-wrapper {
+        margin-bottom: 24px;;
+    }
+
+    .custom-title-wrapper h3 {
+        margin-bottom: 24px;
+        width: 100%;
+    }
+
+    .custom-title-wrapper .res-cancel {
+        width: 100%;
+        text-align: center;
+    }
+
+    .travel-detail-wrapper .advert-owner {
+        margin-bottom: 15px;
+    }
+
+    .travel-detail-wrapper .advert-location span.map-info {
+        left: 24px;
+    }
+
+    .custom-title-wrapper .p-back {
+        display: none;
+    }
+
+    #reservation_canc .modal-content,
+    #success_alert .modal-content {
+        border-radius: 24px !important;
+        padding: 15px;
+    }
+
+    .chat-notice {
+        padding: 15px;
+        font-size: 13px;
+    }
+
+    .chat-container {
+        padding: 15px;
+        overflow-x: hidden;
+    }
+
+    .chat-wrapper .message-area {
+        padding: 0 15px 15px 15px;
+    }
+
+    .message-wrapper {
+        flex-direction: column;
+    }
+
+    .message-area .custom-button-red {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 10px;
+        height: 40px;
+        border-radius: 10px;
+    }
+
+    .message-wrapper textarea {
+        width: 100%;
+    }
+
+    .chat-container li.chat-left,
+    .chat-container li.chat-right {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .chat-container li img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .chat-container li.chat-left .chat-avatar {
+        margin: 0 0 5px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .chat-container li.chat-left .chat-hour {
+        justify-content: flex-end;
+    }
+
+    .chat-container li.chat-left .chat-name {
+        margin-left: 5px;
+    }
+
+    .chat-container li.chat-right .chat-avatar {
+        order: -1;
+        margin: 0 0 5px 0;
+        align-items: center;
+        display: flex;
+        justify-content: right;
+        flex-direction: row-reverse;
+    }
+
+    .chat-container li.chat-right .chat-hour {
+        justify-content: flex-start;
+        order: 2;
+    }
+
+    .chat-container li.chat-right .chat-name {
+        margin-right: 5px;
+    }
+
+    .chat-container li .chat-text {
+        font-size: .8rem;
+    }
+
+    .dashboard-sidebar {
+        margin-bottom: 30px;
+    }
+
+    .dashboard-title-wrapper {
+        flex-direction: column-reverse;
+        margin-bottom: 0;
+    }
+
+    .dashboard-title-wrapper .add-property-btn {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .dashboard-summary .summary-item {
+        margin-bottom: 15px;
+    }
+
+    .dashboard-summary {
+        margin-bottom: 24px;
+    }
+
+    section.dashboard .price-cont.buttons-cont {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    section.dashboard .buttons-area {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    section.dashboard .price-cont.buttons-cont .buttons-area a {
+        margin-top: 8px;
+    }
+
+    section.dashboard .price-cont p {
+        text-align: center;
+    }
+
+    section.dashboard a.custom-button-red.iconic-btn img {
+        display: none;
+    }
+
+    section.dashboard .price-cont.buttons-cont .buttons-area .custom-button-red {
+        margin-top: 10px;
+    }
+
+
+    .dashboard-title-wrapper a.p-back {
+        display: none;
+    }
+
+    .favorite-list {
+        margin: 30px 0;
+        padding: 15px;
+    }
+
+    .favorite-list .title {
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .favorite-list .view {
+        display: block;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .favorites-nav {
+        flex-direction: column;
+    }
+
+    .favorites-nav ul li {
+        justify-content: space-between;
+        padding-right: 0;
+    }
+
+    .favorites-nav span {
+        padding-bottom: 24px;
+    }
+
+    .favorite-empty-wrapper {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .favorite-empty-wrapper .right img {
+        margin-bottom: 24px;
+    }
+
+    .favorite-empty-wrapper .custom-button-red {
+        width: 100%;
+    }
+
+    .form-head-content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    section.page-content-two.influencer-form-section .influencer-form-content {
+        margin-top: 30px;
+        display: inline-block;
+    }
+
+    section.page-content-two.influencer-form-section .influencer-form-content {
+        padding: 15px;
+    }
+
+    .influencer-form-section h3.part-title {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .influencer-form-section input.form-control.custom-button-red {
+        margin: 30px 0;
+    }
+
+    #renamemodal,
+    #sharelist,
+    #warning_alert,
+    #success_alert {
+        padding-right: 0 !important;
+    }
+
+    #renamemodal .modal-content,
+    #sharelist .modal-content,
+    #warning_alert .modal-content,
+    #success_alert .modal-content {
+        padding: 15px;
+        border-radius: 24px !important;
+    }
+
+    .affiliate-item ul.details {
+        display: block;
+    }
+
+    .affiliate-item .details li {
+        border-right: 0;
+        display: flex;
+        flex-direction: unset;
+        align-items: center;
+        padding: 0 0 10px;
+        width: 100%;
+    }
+
+    .affiliate-item .details .detail-item p {
+        margin-bottom: 0;
+        width: 50%;
+        text-align: left;
+    }
+
+    .affiliate-item .details .detail-item span:before {
+        content: ": ";
+        display: inline-block;
+        padding-right: 10px;
+        color: #717171;
+    }
+
+    .active-programs .alternative-affiliate-item .toggle-area .top {
+        width: 90%;
+    }
+
+    .affiliate-item .view {
+        justify-content: center;
+        margin: 10px 0;
+    }
+
+    .affiliate-item .title {
+        margin-bottom: 20px;
+        display: inline-block;
+    }
+
+    .alternative-affiliate-item.expandable {
+        height: 458px;
+    }
+
+    input.favorite-list-link {
+        width: 69%;
+    }
+
+    .alternative-affiliate-item .affiliate-item {
+        border: 0;
+    }
+
+    .login-redirect-wrapper {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .right .custom-button-bordered {
+        min-width: 120px;
+        max-width: initial;
+    }
+
+    .login-redirect-wrapper .right {
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .payment-option {
+        margin-bottom: 24px;
+    }
+
+    .reservation-details {
+        padding: 15px;
+    }
+
+    .reservation-image .name {
+        padding: 15px;
+    }
+
+    .reservation-details .submit .custom-button-green {
+        margin: 15px 0;
+    }
+
+    div#reservationAgreementModal .modal-form-inner {
+        padding: 0 15px;
+    }
+
+    div#reservationAgreementModal {
+        padding-right: 0 !important;
+    }
+
+    div#reservationAgreementModal .modal-dialog.modal-dialog-centered {
+        margin-bottom: 0;
+    }
+
+    .bottom-detail-page .price div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .bottom-detail-page .price div span {
+        padding-right: 5px;
+    }
+
+    .bottom-detail-page .custom-button-green {
+        background-color: #2ebf8e;
+        width: 50%;
+        text-align: center;
+    }
+
+    .guest-form .birthday-select {
+        margin-bottom: 1rem;
+    }
+
+    .reservation-success-wrapper {
+        padding: 0;
+    }
+
+    .reservation-success-wrapper .reservation-success h1 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .reservation-success-wrapper .reservation-success {
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    .reservation-success-wrapper .reservation-success strong {
+        font-size: 13px;
+    }
+
+    .reservation-success-wrapper .reservation-success span {
+        padding-top: 8px;
+    }
+
+    .reservation-success-wrapper .reservation-success-info {
+        border-radius: 10px;
+        padding: 15px;
+        margin-bottom: 24px;
+    }
+
+    .reservation-success-wrapper .payment-option {
+        height: 124px;
+        padding: 10px;
+        margin-bottom: 24px;
+    }
+
+    section.special-feature {
+        padding: 50px 0;
+    }
+
+    .special-feature .special-feature-item strong {
+        font-size: 13px;
+    }
+
 
 }
 

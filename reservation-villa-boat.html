@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Tatiloley</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+          rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="assets/images/icons/favicon.png"/>
+    <link rel="stylesheet" href="assets/css/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl-carousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/js/telinput/css/intlTelInput.css">
+    <link rel="stylesheet" href="assets/css/daterangepicker.css">
+    <link rel="stylesheet" href="assets/css/select2.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+</head>
+<body>
+
+<header class="header pages">
+    <div class="container">
+        <div class="row">
+            <!--Logo-->
+            <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                <div class="logo">
+                    <a href="#" title="Tatiloley">
+                        <img src="assets/images/header/logo.svg" title="Tatiloley" alt="Tatiloley">
+                    </a>
+                </div>
+            </div>
+            <!--Logo-->
+            <!--Menu-->
+            <div class="col-lg-9 col-md-9 col-sm-6 col-6">
+                <div class="main-menu">
+                    <ul>
+                        <li><a href="#">Yardım</a></li>
+                        <li class="nav-select-lang">
+                            <div><span class="flag-icon flag-icon-tr"></span>TR</div>
+                            <ul>
+                                <li><a href="#"><span class="flag-icon flag-icon-us"></span>EN</a></li>
+                                <li><a href="#"><span class="flag-icon flag-icon-fr"></span>FR</a></li>
+                                <li><a href="#"><span class="flag-icon flag-icon-tr"></span>TR</a></li>
+                            </ul>
+                        </li>
+                        <li class="header-phone animation-tooltip rotation-yaxis">
+                            <a href="tel:08500000000" class="animation-title">
+                                <span>Destek Hattı</span>0850 000 00 00
+                                <div class="animation-tooltip-text">Deneyimli tatil danışmanlarımız ile iletişime geçin.
+                                </div>
+                            </a>
+                        </li>
+                        <li class="add-property">
+                            <a href="#">İlan Veren Panosu</a>
+                        </li>
+                        <!--If Not logged in-->
+                        <!--<li class="login has-dropdown">
+                            <a href="#">Giriş Yap</a>
+                            <div class="dropdown-container">
+                                <ul>
+                                    <li><a data-toggle="modal" data-target="#loginModal" href="#">Giriş Yap</a></li>
+                                    <li><a data-toggle="modal" data-target="#registerModal" href="#">Üye Ol</a></li>
+                                </ul>
+                            </div>
+                        </li>-->
+                        <!--If Not logged in-->
+
+                        <!--If logged in-->
+                        <li class="logged-in has-dropdown">
+                            <div class="logged-in-area">
+                                <span class="menu-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="13" viewBox="0 0 20 13">
+                                    <g id="fi-rr-menu-burger" transform="translate(0 -4)">
+                                    <rect id="Rectangle_2385" data-name="Rectangle 2385" width="20" height="1.625"
+                                          rx="0.813" transform="translate(0 9.688)" fill="#fff"/>
+                                    <rect id="Rectangle_2386" data-name="Rectangle 2386" width="20" height="1.625"
+                                          rx="0.813" transform="translate(0 4)" fill="#fff"/>
+                                    <rect id="Rectangle_2387" data-name="Rectangle 2387" width="20" height="1.625"
+                                          rx="0.813" transform="translate(0 15.375)" fill="#fff"/>
+                                    </g></svg></span>
+                                <span class="pp">
+                                    <img src="assets/images/header/default-pp.png" alt="">
+                                </span>
+                            </div>
+                            <div class="dropdown-container">
+                                <ul>
+                                    <li><a href="#">Seyahatlerim</a></li>
+                                    <li><a href="#">Beğendiklerim</a></li>
+                                    <li><a href="#">Profilim</a></li>
+                                    <li><a href="#">İlan Veren Bilgilerim</a></li>
+                                    <li><a href="#">İlan Veren Panosu</a></li>
+                                    <li><a href="#">Çıkış Yap</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!--If logged in-->
+                    </ul>
+                </div>
+
+                <div class="mobile-menu">
+                    <div class="logged-in">
+                        <div class="logged-in-area" data-toggle="modal" data-target="#mobile_menu">
+                                <span class="menu-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="13" viewBox="0 0 20 13">
+                                    <g id="fi-rr-menu-burger" transform="translate(0 -4)">
+                                    <rect id="Rectangle_2385" data-name="Rectangle 2385" width="20" height="1.625"
+                                          rx="0.813" transform="translate(0 9.688)" fill="#fff"/>
+                                    <rect id="Rectangle_2386" data-name="Rectangle 2386" width="20" height="1.625"
+                                          rx="0.813" transform="translate(0 4)" fill="#fff"/>
+                                    <rect id="Rectangle_2387" data-name="Rectangle 2387" width="20" height="1.625"
+                                          rx="0.813" transform="translate(0 15.375)" fill="#fff"/>
+                                    </g></svg></span>
+                            <span class="pp">
+                                    <img src="assets/images/header/default-pp.png" alt="">
+                                </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--Menu-->
+    </div>
+</header>
+
+<section class="page-content-two">
+    <div class="container">
+        <h2>Rezervasyon isteğinizi tamamlayın</h2>
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="login-redirect-wrapper">
+                    <div class="left">Oturum açarak daha hızlı ilerleyebilirsiniz!</div>
+                    <div class="right hidden-m">
+                        <a href="#" class="custom-button-bordered" data-toggle="modal" data-target="#loginModal">Giriş
+                            Yap</a>
+                        <span>veya</span>
+                        <a href="#" class="custom-button-bordered" data-toggle="modal" data-target="#registerModal">Üye
+                            Ol</a>
+                    </div>
+                    <div class="right hidden-d">
+                        <a href="#" class="custom-button-bordered" data-toggle="modal" data-target="#mobile_login">Giriş
+                            Yap</a>
+                        <span>veya</span>
+                        <a href="#" class="custom-button-bordered" data-toggle="modal" data-target="#mobile_register">Üye
+                            Ol</a>
+                    </div>
+                </div>
+                <div class="reservation-forms part-space">
+                    <h3 class="part-title">Kişisel Bilgiler</h3>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Adınız ve Soyadınız" required>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <input type="tel" class="form-control" id="phone" placeholder="Telefon Numaranız"
+                                       required>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="E-mail adresiniz" required>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="tc" placeholder="T.C. Kimlik Numaranız"
+                                       required>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <textarea class="form-control" rows="2" placeholder="Notunuz (varsa)"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="billing-form-wrapper">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="billing_check"
+                                           value="user_agreement">
+                                    <label class="custom-control-label" for="billing_check">Fatura bilgilerimi girmek
+                                        istiyorum.</label>
+                                </div>
+                                <div class="billing-forms" style="display: none;">
+                                    <div class="form-group">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" class="custom-control-input" id="individual"
+                                                   name="billing-type" checked>
+                                            <label class="custom-control-label" for="individual">Bireysel</label>
+                                        </div>
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" class="custom-control-input" id="corporate"
+                                                   name="billing-type">
+                                            <label class="custom-control-label" for="corporate">Kurumsal</label>
+                                        </div>
+                                    </div>
+                                    <div class="individual">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="Adınız"
+                                                           required>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="Soyadınız"
+                                                           required>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control"
+                                                           placeholder="T.C. Kimlik Numaranız" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <select class="form-control">
+                                                        <option value="" selected disabled>Şehir seçiniz</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <select class="form-control">
+                                                        <option value="" selected disabled>İlçe seçiniz</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <textarea rows="2" class="form-control"
+                                                              placeholder="Fatura Adresi"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="corporate">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="Adınız"
+                                                           required>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="Soyadınız"
+                                                           required>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control"
+                                                           placeholder="Vergi Numaranız" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="Vergi Dairesi"
+                                                           required>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="form-group">
+                                                    <select class="form-control">
+                                                        <option value="" selected disabled>Şehir seçiniz</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="form-group">
+                                                    <select class="form-control">
+                                                        <option value="" selected disabled>İlçe seçiniz</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <textarea rows="2" class="form-control"
+                                                              placeholder="Fatura Adresi"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="form-info">Firmamız kazancı tutarında komisyon bedeli faturası kesmektedir. Kalan tutar için mülk girişinde mülk sahibiyle görüşebilirsiniz.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="payment-options part-space">
+                    <h3 class="part-title">Ödeme Yöntemleri</h3>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="payment-option">
+                                <div class="left">
+                                    <img src="assets/images/icons/credit-card-icon.svg">
+                                </div>
+                                <div class="right">
+                                    <strong>Kredi Kartı İle Ödeme</strong>
+                                    <span>Bu Rezervasyonun ödemesini <b>Kredi Kartı</b> ile gerçekleştirebilirsiniz.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="payment-option">
+                                <div class="left">
+                                    <img src="assets/images/icons/eft-icon.svg">
+                                </div>
+                                <div class="right">
+                                    <strong>Havale ya da EFT ile ödeme</strong>
+                                    <span>Bu Rezervasyonun ödemesini <b>Havale</b> veya <b>EFT</b> ile gerçekleştirebilirsiniz.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="payment-option">
+                                <div class="left">
+                                    <img src="assets/images/icons/partial-payment-icon.svg">
+                                </div>
+                                <div class="right">
+                                    <strong>Parçalı Ödeme</strong>
+                                    <span>Bu Rezervasyonun ödemesini birden fazla Kredi Kartı veya Havale/EFT ile gerçekleştirebilirsiniz.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rules">
+                    <h3 class="part-title">Girişte Dikkat Edilmesi Gerekenler</h3>
+                    <ul>
+                        <li><img src="assets/images/icons/check-in.svg">
+                            <p>Giriş:<strong>14:00 'dan itibaren</strong></p>
+                        </li>
+                        <li><img src="assets/images/icons/check-out.svg">
+                            <p>Çıkış:<strong>16:00</strong></p>
+                        </li>
+                        <li><img src="assets/images/icons/deposit.svg">
+                            <p>Hasar Depozitosu:<strong>500,00 ₺</strong></p>
+                        </li>
+                        <li><img src="assets/images/icons/check-green.svg">
+                            <p>Bebeklere uygun<span>0 - 2 yaş</span></p>
+                        </li>
+                        <li><img src="assets/images/icons/check-green.svg">
+                            <p>Çocuklara uygun<span>2 - 12 yaş</span></p>
+                        </li>
+                        <li><img src="assets/images/icons/check-green.svg">
+                            <p>Evcil hayvanlara uygun</p>
+                        </li>
+                        <li><img src="assets/images/icons/check-green.svg">
+                            <p>Etkinlik düzenlenebilir</p>
+                        </li>
+                        <li><img src="assets/images/icons/restriction.svg">
+                            <p>Sigara içilemez</p>
+                        </li>
+                    </ul>
+                    <div class="rules-desc">
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt
+                            ut labore et dolore.</p>
+
+                        <p>aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                            Stet
+                            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+                            dolor
+                            sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                            et ea
+                            rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                            amet.</p>
+
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt
+                            ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
+                            duo
+                            dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+                            dolor
+                            sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                            tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                            et
+                            justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                            ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 pl-lg-4">
+                <div class="reservation-summary sticky-top" id="reservation-summary">
+                    <div class="reservation-image"
+                         style="background-image: linear-gradient(to bottom, rgba(225, 80, 104, 0) 10%, #e15068), url('assets/images/others/otel-detay-1.png');">
+                        <div class="name">Kalkan Patara'da Muhteşem Manzaralı, Özel Havuzlu, Tasarım Villa</div>
+                    </div>
+                    <div class="reservation-details">
+                        <div class="pax">
+                            <div class="total-pax">
+                                <img src="assets/images/icons/pax-gray.svg">
+                                1 Yetişkin, 2 Çocuk, 0 Bebek
+                            </div>
+                            <a href="#" class="change-reservation">Değiştir</a>
+                        </div>
+                        <div class="dates">
+                            <div class="date checkin-dates">
+                                <div class="left">
+                                    <span class="month">Mart</span>
+                                    <span class="day">09</span>
+                                </div>
+                                <div class="right">
+                                    <span>09-03-2021</span>
+                                    <span>Salı</span>
+                                </div>
+                            </div>
+                            <div class="divider-arrow">
+                                <img src="assets/images/icons/arrow-right-gray.svg">
+                            </div>
+                            <div class="date checkout-dates">
+                                <div class="left">
+                                    <span class="month">Mart</span>
+                                    <span class="day">20</span>
+                                </div>
+                                <div class="right">
+                                    <span>09-03-2021</span>
+                                    <span>Salı</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prices">
+                            <ul>
+                                <li>
+                                    <div class="desc">350,00 ₺ x 11 Gece</div>
+                                    <div class="price">3.850,00 ₺</div>
+                                </li>
+                                <li>
+                                    <div class="desc">Ön Ödeme</div>
+                                    <div class="price">1.540,00 ₺</div>
+                                </li>
+                                <li>
+                                    <div class="desc">Girişte Ödeme</div>
+                                    <div class="price">2.310,00 ₺</div>
+                                </li>
+                                <li class="total">
+                                    <div class="desc">Toplam</div>
+                                    <div class="price">3.850,00 ₺</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="submit">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="reservation_agreement"
+                                       value="reservation_agreement">
+                                <label class="custom-control-label" for="reservation_agreement">
+                                    <a href="#" data-toggle="modal" data-target="#reservationAgreementModal">
+                                        Rezervasyon Koşullarını</a> okudum, onaylıyorum.
+                                </label>
+                            </div>
+                            <button type="submit" class="custom-button-green">Rezervasyonu Tamamla</button>
+                            <div>Bu adımda ödeme yapmayacaksınız</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="app-section">
+        <div class="container">
+            <div class="app-area">
+                <div class="left col-lg-6 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000"
+                     data-aos-delay="200">
+                    <h2>Tatiloley Uygulamasını İndirin</h2>
+                    <span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.</span>
+                    <div class="app-logo">
+                        <a href="#"><img src="assets/images/footer/appstore-white.svg"></a>
+                        <a href="#"><img src="assets/images/footer/gplay-white.svg"></a>
+                    </div>
+                </div>
+                <div class="right col-lg-6 aos-init aos-animate" data-aos="fade-left" data-aos-duration="1000"
+                     data-aos-delay="400">
+                    <img src="assets/images/footer/footer-img.png" alt="Tatiloley Uygulamasını İndirin">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-area">
+                <div class="row">
+                    <div class="left col-lg-7 aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000"
+                         data-aos-delay="200">
+                        <h2>Sorunuz mu var?</h2>
+                        <p>Deneyimli tatil danışmanlarımız haftanın 7 günü size yardımcı olmak için sorularınızı
+                            bekliyorlar.</p>
+                        <span><a href="tel:085000000000">0850 000 00 00</a></span>
+                    </div>
+                    <div class="right col-lg-5 aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000"
+                         data-aos-delay="400">
+                        <h2>Kampanyaları Kaçırma</h2>
+                        <p>Kampanyalardan anında haberdar olmak için hemen kaydolun.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="E-posta adresiniz" class="email-text">
+                            <input type="submit" class="email-send" value="Kaydol">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="footer-top-links">
+                        <li>
+                            <a href="#">Hakkımızda</a>
+                            <a href="#">Yardım</a>
+                            <a href="#">Kullanım Şartları</a>
+                            <a href="#">KVKK</a>
+                            <a href="#">İptal Politikaları</a>
+                            <a href="#">Basın</a>
+                            <a href="#">İletişim</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-12">
+                    <div class="footer-bottom">
+                        <div class="social-links">
+                            <ul>
+                                <li><a href="#" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i>
+                                </a></li>
+                                <li><a href="#" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i> </a>
+                                </li>
+                                <li><a href="#" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i> </a>
+                                </li>
+                                <li><a href="#" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                                </a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-logo"><img src="assets/images/footer/footer-logos.png" alt=""></div>
+                        <div class="copyright">© 2021 Tatiloley.com - Tüm Hakları Sakldır</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tursab-section">
+        <div class="container">
+            <span>TatilOley.com Turizm Seyahat Acentası TÜRSAB 10504 Numaralı Belge ile Turizm Bakanlığına bağlıdır.</span>
+        </div>
+    </div>
+</footer>
+
+<!--Reservation Mobile Bottom Menu-->
+<div class="bottom-detail-page">
+    <div class="price">
+        <div class="div"><span>Ön Ödeme: </span><strong>1.540,00 ₺</strong></div>
+        <div class="div"><span>Toplam Ödeme: </span><strong>3.850,00 ₺</strong></div>
+    </div>
+    <a class="custom-button-green" href="#reservation-summary">Rezervasyonu Tamamla</a>
+</div>
+<!--Reservation Mobile Bottom Menu-->
+
+<!--Reservation Agreement-->
+<div class="modal fade" id="reservationAgreementModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/icons/close-icon.svg">
+                </button>
+                <h2 class="bordered-title">Rezervasyon Koşulları</h2>
+            </div>
+            <div class="modal-form d-flex justify-content-center flex-column">
+                <div class="modal-form-inner">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et risus tempus, vehicula lacus
+                        pulvinar, facilisis ipsum. Vestibulum tristique magna sagittis dictum hendrerit. Nunc bibendum
+                        convallis velit, a lacinia augue ornare eget. Proin accumsan nec felis in placerat. Vestibulum
+                        sed mollis tellus, et mattis tortor. Donec suscipit purus nec neque consectetur, eget imperdiet
+                        magna fringilla. Praesent finibus posuere ex, sed ultrices odio scelerisque quis.
+                    </p>
+                    <p>
+                        Nam at tincidunt lorem. Nulla scelerisque ullamcorper aliquet. Etiam eget nulla in eros
+                        condimentum dapibus. Aenean blandit mauris odio, vel cursus nibh aliquet sit amet. Nunc lobortis
+                        egestas arcu, sit amet bibendum metus pulvinar vitae. Proin tempus eleifend massa sit amet
+                        gravida. Proin sed odio a lectus consectetur convallis. In lorem velit, vulputate quis nibh vel,
+                        accumsan fringilla sapien. Fusce volutpat diam vel turpis consequat suscipit vel quis arcu.
+                        Nulla ac tortor eget nulla cursus laoreet. Pellentesque habitant morbi tristique senectus et
+                        netus et malesuada fames ac turpis egestas. Maecenas vitae lorem eget erat vestibulum suscipit.
+                        Suspendisse lectus turpis, consequat a metus sed, pulvinar fringilla quam. Nulla facilisi.
+                        Pellentesque porttitor auctor cursus.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Reservation Agreement End-->
+
+<!--Login-->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/icons/close-icon.svg">
+                </button>
+                <h2 class="bordered-title">Giriş Yap</h2>
+            </div>
+            <div class="modal-form d-flex justify-content-center flex-column">
+                <div class="modal-form-inner">
+                    <form action="">
+                        <div class="iconed-control">
+                            <div class="input"><input type="email" placeholder="E-posta" required name="email"></div>
+                            <div class="icon"><img src="assets/images/icons/email.svg"></div>
+                        </div>
+                        <div class="iconed-control">
+                            <div class="input"><input type="password" placeholder="Şifre" required name="password">
+                            </div>
+                            <div class="icon"><img src="assets/images/icons/password.svg"></div>
+                        </div>
+                        <div class="login-form-group">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="remember_me"
+                                       value="remember_me">
+                                <label class="custom-control-label" for="remember_me">Beni Hatırla</label>
+                            </div>
+                            <div><a href="#" data-toggle="modal" data-target="#forgetpasswordModal"
+                                    onclick="$('#loginModal').modal('hide')">Şifremi Unuttum</a></div>
+                        </div>
+                        <button class="custom-button">Giriş Yap</button>
+                    </form>
+                    <div class="login-register">Hesabınız yok mu?<a data-toggle="modal" data-target="#registerModal"
+                                                                    onclick="$('#loginModal').modal('hide')" href="#">Hemen
+                        Kaydolun</a></div>
+                    <div class="login-social">
+                        <p><span>veya</span></p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="social-btn">
+                                    <a href="#"><img src="assets/images/icons/fb-logo.svg" alt="">
+                                        <span>Facebook ile devam et</span></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="social-btn">
+                                    <a href="#"><img src="assets/images/icons/g-logo.svg" alt="">
+                                        <span>Google ile devam et</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Login end-->
+
+<!--Register-->
+<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/icons/close-icon.svg">
+                </button>
+                <h2 class="bordered-title">Üye Ol</h2>
+            </div>
+            <div class="modal-form d-flex justify-content-center flex-column">
+                <div class="modal-form-inner">
+                    <form action="">
+                        <div class="iconed-control">
+                            <div class="input"><input type="text" placeholder="Adınız" required name="text"></div>
+                            <div class="icon"><img src="assets/images/icons/user.svg"></div>
+                        </div>
+                        <div class="iconed-control">
+                            <div class="input"><input type="text" placeholder="Soyadınız" required name="surname"></div>
+                            <div class="icon"><img src="assets/images/icons/user.svg"></div>
+                        </div>
+                        <div class="iconed-control">
+                            <div class="input"><input type="email" placeholder="E-posta" required name="email"></div>
+                            <div class="icon"><img src="assets/images/icons/email.svg"></div>
+                        </div>
+                        <div class="iconed-control">
+                            <div class="input"><input type="tel" id="tel_number" required name="tel_number"></div>
+                            <div class="icon"><img src="assets/images/icons/phone.svg"></div>
+                        </div>
+                        <div class="iconed-control">
+                            <div class="input"><input type="password" placeholder="Şifre" required name="password">
+                            </div>
+                            <div class="icon"><img src="assets/images/icons/password.svg"></div>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="user_agreement"
+                                   value="user_agreement" required>
+                            <label class="custom-control-label" for="user-agreement"><a data-toggle="modal"
+                                                                                        data-target="#userAgreementModal"
+                                                                                        href="#">Üyelik sözleşmesini</a>
+                                ve <a href="#">Kişisel verilerin korunması</a> ve gizlilik politikasını okudum
+                                ve kabul ediyorum.</label>
+                        </div>
+                        <button class="custom-button">Üye Ol</button>
+                    </form>
+                    <div class="login-register">Zaten bir hesabınız mı var?<a data-toggle="modal"
+                                                                              data-target="#loginModal"
+                                                                              onclick="$('#registerModal').modal('hide')"
+                                                                              href="#">Giriş Yapın</a></div>
+                    <div class="login-social">
+                        <p><span>veya</span></p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="social-btn">
+                                    <a href="#"><img src="assets/images/icons/fb-logo.svg" alt="">
+                                        <span>Facebook ile devam et</span></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="social-btn">
+                                    <a href="#"><img src="assets/images/icons/g-logo.svg" alt="">
+                                        <span>Google ile devam et</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Register end-->
+
+<!--Forget Password-->
+<div class="modal fade" id="forgetpasswordModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/icons/close-icon.svg">
+                </button>
+                <h2 class="bordered-title">Şifremi Unuttum</h2>
+            </div>
+            <div class="modal-form d-flex justify-content-center flex-column">
+                <div class="modal-form-inner">
+                    <form action="">
+                        <div class="iconed-control">
+                            <div class="input"><input type="email" placeholder="E-posta Adresiniz" required
+                                                      name="email"></div>
+                            <div class="icon"><img src="assets/images/icons/email.svg"></div>
+                        </div>
+                        <button class="custom-button">Şifremi Gönder</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Forget Password end-->
+
+<!--User Agreement-->
+<div class="modal fade" id="userAgreementModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/icons/close-icon.svg">
+                </button>
+                <h2 class="bordered-title">Üyelik Sözleşmesi</h2>
+            </div>
+            <div class="modal-form d-flex justify-content-center flex-column">
+                <div class="modal-form-inner">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et risus tempus, vehicula lacus
+                        pulvinar, facilisis ipsum. Vestibulum tristique magna sagittis dictum hendrerit. Nunc bibendum
+                        convallis velit, a lacinia augue ornare eget. Proin accumsan nec felis in placerat. Vestibulum
+                        sed mollis tellus, et mattis tortor. Donec suscipit purus nec neque consectetur, eget imperdiet
+                        magna fringilla. Praesent finibus posuere ex, sed ultrices odio scelerisque quis.
+                    </p>
+                    <p>
+                        Nam at tincidunt lorem. Nulla scelerisque ullamcorper aliquet. Etiam eget nulla in eros
+                        condimentum dapibus. Aenean blandit mauris odio, vel cursus nibh aliquet sit amet. Nunc lobortis
+                        egestas arcu, sit amet bibendum metus pulvinar vitae. Proin tempus eleifend massa sit amet
+                        gravida. Proin sed odio a lectus consectetur convallis. In lorem velit, vulputate quis nibh vel,
+                        accumsan fringilla sapien. Fusce volutpat diam vel turpis consequat suscipit vel quis arcu.
+                        Nulla ac tortor eget nulla cursus laoreet. Pellentesque habitant morbi tristique senectus et
+                        netus et malesuada fames ac turpis egestas. Maecenas vitae lorem eget erat vestibulum suscipit.
+                        Suspendisse lectus turpis, consequat a metus sed, pulvinar fringilla quam. Nulla facilisi.
+                        Pellentesque porttitor auctor cursus.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--User Agreement End-->
+
+<!--Mobile Register-->
+<div class="modal modal-bottom fade" id="mobile_register" tabindex="-1" role="dialog">
+    <div class="modal-dialog " role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/icons/close-mobile-icon.svg">
+                </button>
+                <h2 class="bordered-title">Üye Ol</h2>
+            </div>
+            <div class="modal-body">
+                <div class="modal-form-inner">
+                    <form action="">
+                        <div class="iconed-control">
+                            <div class="input"><input type="text" placeholder="Adınız" required name="text"></div>
+                            <div class="icon"><img src="assets/images/icons/user.svg"></div>
+                        </div>
+                        <div class="iconed-control">
+                            <div class="input"><input type="text" placeholder="Soyadınız" required name="surname"></div>
+                            <div class="icon"><img src="assets/images/icons/user.svg"></div>
+                        </div>
+                        <div class="iconed-control">
+                            <div class="input"><input type="email" placeholder="E-posta" required name="email"></div>
+                            <div class="icon"><img src="assets/images/icons/email.svg"></div>
+                        </div>
+                        <div class="iconed-control">
+                            <div class="input"><input type="tel" id="tel_number_mobile" required
+                                                      name="tel_number_mobile"></div>
+                            <div class="icon"><img src="assets/images/icons/phone.svg"></div>
+                        </div>
+                        <div class="iconed-control">
+                            <div class="input"><input type="password" placeholder="Şifre" required name="password">
+                            </div>
+                            <div class="icon"><img src="assets/images/icons/password.svg"></div>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="mobile_user-agreement"
+                                   value="user_agreement" required>
+                            <label class="custom-control-label" for="mobile_user-agreement"><a data-toggle="modal"
+                                                                                               data-target="#userAgreementModal"
+                                                                                               href="#">Üyelik
+                                sözleşmesini</a>
+                                ve <a href="#">Kişisel verilerin korunması</a> ve gizlilik politikasını okudum
+                                ve kabul ediyorum.</label>
+                        </div>
+                        <button class="custom-button">Üye Ol</button>
+                    </form>
+                    <div class="login-register">Zaten bir hesabınız mı var?<a data-toggle="modal"
+                                                                              data-target="#mobile_login"
+                                                                              onclick="$('#mobile_register').modal('hide')"
+                                                                              href="#">Giriş Yapın</a></div>
+                    <div class="login-social">
+                        <p><span>veya</span></p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="social-btn">
+                                    <a href="#"><img src="assets/images/icons/fb-logo.svg" alt="">
+                                        <span>Facebook ile devam et</span></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="social-btn">
+                                    <a href="#"><img src="assets/images/icons/g-logo.svg" alt="">
+                                        <span>Google ile devam et</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Mobile Register-->
+
+<!--Mobile Login-->
+<div class="modal modal-bottom fade" id="mobile_login" tabindex="-1" role="dialog">
+    <div class="modal-dialog " role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/icons/close-mobile-icon.svg">
+                </button>
+                <h2 class="bordered-title">Giriş Yap</h2>
+            </div>
+            <div class="modal-body">
+                <div class="modal-form-inner">
+                    <form action="">
+                        <div class="iconed-control">
+                            <div class="input"><input type="email" placeholder="E-posta" required name="email"></div>
+                            <div class="icon"><img src="assets/images/icons/email.svg"></div>
+                        </div>
+                        <div class="iconed-control">
+                            <div class="input"><input type="password" placeholder="Şifre" required name="password">
+                            </div>
+                            <div class="icon"><img src="assets/images/icons/password.svg"></div>
+                        </div>
+                        <div class="login-form-group">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="mobile_remember_me"
+                                       value="mobile_remember_me">
+                                <label class="custom-control-label" for="mobile_remember_me">Beni Hatırla</label>
+                            </div>
+                            <div><a href="#" data-toggle="modal" data-target="#forgetpasswordModal">Şifremi Unuttum</a>
+                            </div>
+                        </div>
+                        <button class="custom-button">Giriş Yap</button>
+                    </form>
+                    <div class="login-register">Hesabınız yok mu?<a data-toggle="modal" data-target="#mobile_register"
+                                                                    onclick="$('#mobile_login').modal('hide')" href="#">Hemen
+                        Kaydolun</a></div>
+                    <div class="login-social">
+                        <p><span>veya</span></p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="social-btn">
+                                    <a href="#"><img src="assets/images/icons/fb-logo.svg" alt="">
+                                        <span>Facebook ile devam et</span></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="social-btn">
+                                    <a href="#"><img src="assets/images/icons/g-logo.svg" alt="">
+                                        <span>Google ile devam et</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Mobile Login-->
+
+<!--Mobile Menu-->
+<div class="modal modal-bottom fade" id="mobile_menu" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/icons/close-mobile-icon.svg">
+                </button>
+                <h2 class="bordered-title">Menu</h2>
+            </div>
+            <div class="modal-body">
+                <ul class="mobile-menu-list">
+                    <li><a href="#">Seyahatlerim</a></li>
+                    <li><a href="#">Beğendiklerim</a></li>
+                    <li><a href="#">Profilim</a></li>
+                    <li><a href="#">İlan Veren Bilgilerim</a></li>
+                    <li><a href="#">İlan Veren Panosu</a></li>
+                    <li><a href="#">Çıkış Yap</a></li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <ul>
+                    <li class="header-phone">
+                        <a href="tel:08500000000">
+                            <span>Destek Hattı</span>
+                            0850 000 00 00
+                        </a>
+                    </li>
+                    <li><a href="#">Yardım</a></li>
+                    <li class="nav-select-lang">
+                        <div><span class="flag-icon flag-icon-tr"></span>TR</div>
+                        <ul>
+                            <li><a href="#"><span class="flag-icon flag-icon-us"></span>EN</a></li>
+                            <li><a href="#"><span class="flag-icon flag-icon-fr"></span>FR</a></li>
+                            <li><a href="#"><span class="flag-icon flag-icon-tr"></span>TR</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Mobile Menu-->
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"/>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/main.js" crossorigin="anonymous"></script>
+<script src="assets/js/jquery.maskedinput.js"></script>
+<script src="assets/js/telinput/js/utils.js"></script>
+<script src="assets/js/telinput/js/intlTelInput.min.js"></script>
+<script type="text/javascript" src="assets/js/select2.full.min.js"></script>
+<script type="text/javascript" src="assets/js/aos.js"></script>
+<script type="text/javascript" src="assets/js/moment-with-locales.min.js"></script>
+<script type="text/javascript" src="assets/js/daterangepicker.js"></script>
+<script>
+    jQuery(function ($) {
+        $("#tc").mask("99999999999", {placeholder: "___________"});
+
+        $(function () {
+            var input = document.querySelector("#phone");
+            window.intlTelInput(input, {
+                utilsScript: "assets/js/telinput/js/utils.js",
+                initialCountry: "tr"
+            });
+        });
+
+        var ckbox = $('#billing_check');
+        $('input').on('click', function () {
+            if (ckbox.is(':checked')) {
+                $('.billing-forms').fadeIn();
+                $('.billing-forms').show()
+            } else {
+                $('.billing-forms').fadeOut();
+                $('.billing-forms').hide();
+            }
+        });
+
+        var rdbox = $('#corporate');
+        $('input').on('click', function () {
+            if (rdbox.is(':checked')) {
+                $('.corporate').fadeIn();
+                $('.corporate').show();
+                $('.individual').fadeOut();
+                $('.individual').hide()
+            } else {
+                $('.corporate').fadeOut();
+                $('.corporate').hide();
+                $('.individual').fadeIn();
+                $('.individual').show()
+            }
+        });
+
+        /*Fixed Mobile Bottom*/
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > $(".col-lg-8").offset().top * 12) {
+                $(".bottom-detail-page").addClass("d-none", "m-menu-show2");
+            } else {
+                $(".bottom-detail-page").removeClass("d-none");
+            }
+        });
+
+        $(window).scroll(function () {
+            var hTop = $(".bottom-detail-page");
+            if ($(this).scrollTop() >= hTop.outerHeight() * 1) {
+                hTop.addClass("m-menu-show2");
+            } else {
+                hTop.removeClass("m-menu-show2");
+            }
+        });
+        /*Fixed Mobile Bottom*/
+
+    });
+</script>
+</body>
+</html>

@@ -327,14 +327,14 @@ $(".advert-item").each(function () {
     });
 });
 
-$(document).on('input', '.js-room-select', function() {
-    if($(this).val() == 0) {
+$(document).on('input', '.js-room-select', function () {
+    if ($(this).val() == 0) {
         setTimeout(() => {
-            $('.js-selected-rooms div[data-name="'+ $(this).closest('.advert-item').find('.room-name').text() +'"]').remove();
+            $('.js-selected-rooms div[data-name="' + $(this).closest('.advert-item').find('.room-name').text() + '"]').remove();
         }, 0);
     }
-    if($('.js-selected-rooms div[data-name="'+ $(this).closest('.advert-item').find('.room-name').text() +'"]').length) {
-        $('.js-selected-rooms div[data-name="'+ $(this).closest('.advert-item').find('.room-name').text() +'"] #room-count').text(`${$(this).val()} x`);
+    if ($('.js-selected-rooms div[data-name="' + $(this).closest('.advert-item').find('.room-name').text() + '"]').length) {
+        $('.js-selected-rooms div[data-name="' + $(this).closest('.advert-item').find('.room-name').text() + '"] #room-count').text(`${$(this).val()} x`);
     } else {
         $('.js-selected-rooms').append(`
             <div class="js-selected-room" data-name="${$(this).closest('.advert-item').find('.room-name').text()}">
@@ -350,3 +350,81 @@ $(document).on('input', '.js-room-select', function() {
         $('.total-room-calc').text(total);
     });
 });
+
+// Accordion
+$(document).ready(function () {
+    var allPanels = $('.accordion > dd').hide();
+
+    $('.accordion > dt > a').click(function (e) {
+        e.preventDefault();
+
+        $this = $(this);
+        $target = $this.parent().next();
+
+        if (!$target.hasClass('active')) {
+            allPanels.removeClass('active').slideUp();
+            $target.addClass('active').slideDown();
+        }
+
+        $('.accordion > dt > a').attr("aria-expanded", false);
+
+        if ($this.attr('aria-expanded') === true) {
+            $this.attr('aria-expanded', false);
+        } else {
+            $this.attr('aria-expanded', true)
+        }
+    });
+});
+
+// Register Tel Input
+$(function() {
+    var input = document.querySelector("#tel_number");
+    window.intlTelInput(input, {
+        utilsScript: "assets/js/telinput/js/utils.js",
+        initialCountry: "tr"
+    });
+});
+
+$(function() {
+    var input = document.querySelector("#tel_number_mobile");
+    window.intlTelInput(input, {
+        utilsScript: "assets/js/telinput/js/utils.js",
+        initialCountry: "tr"
+    });
+});
+
+$( ".chat-container" ).scrollTop( 99999 );
+
+// Switch Toogle
+var switchtoggle = $('.switch-checkbox');
+
+switchtoggle.on('change', function () {
+    const containerelement=$(this).closest('.toggle-wrapper');
+    if ($(this).is(':checked')) {
+        containerelement.find(".toggle-off").removeClass("active");
+        containerelement.find(".toggle-on").addClass("active");
+        containerelement.find(".toggle-on-content").show();
+        containerelement.find(".toggle-off-content").hide();
+    } else {
+        containerelement.find(".toggle-on").removeClass("active");
+        containerelement.find(".toggle-off").addClass("active");
+        containerelement.find(".toggle-on-content").hide();
+        containerelement.find(".toggle-off-content").show();
+    }
+});
+
+switchtoggle.each((i, item) => {
+    const containerelement=$(item).closest('.toggle-wrapper');
+    if ($(item).is(':checked')) {
+        containerelement.find(".toggle-off").removeClass("active");
+        containerelement.find(".toggle-on").addClass("active");
+        containerelement.find(".toggle-on-content").show();
+        containerelement.find(".toggle-off-content").hide();
+    } else {
+        containerelement.find(".toggle-on").removeClass("active");
+        containerelement.find(".toggle-off").addClass("active");
+        containerelement.find(".toggle-on-content").hide();
+        containerelement.find(".toggle-off-content").show();
+    }
+});
+
