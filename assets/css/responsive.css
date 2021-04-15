@@ -8,6 +8,32 @@
         -moz-column-count: 4;
         column-count: 4;
     }
+
+    .owl-carousel-dest-cats .owl-stage,
+    .owl-carousel-specs .owl-stage{
+        width: 100% !important;
+        column-count: 4;
+    }
+
+    .owl-carousel-dest-cats .owl-item.active .col-lg-3,
+    .owl-carousel-specs .owl-item.active .col-lg-3 {
+        max-width: 100%;
+    }
+
+    .owl-carousel-dest-cats .owl-item.active,
+    .owl-carousel-specs .owl-item.active{
+        width: 100% !important;
+    }
+
+    .owl-carousel.owl-carousel-dest-cats .owl-item,
+    .owl-carousel.owl-carousel-specs .owl-item{
+        -webkit-backface-visibility: initial !important;
+        -moz-backface-visibility: initial !important;
+        -ms-backface-visibility: initial !important;
+        -webkit-transform: initial !important;
+        -moz-transform: initial !important;
+        -ms-transform: initial !important;
+    }
 }
 
 /*Max 1280 Fix*/
