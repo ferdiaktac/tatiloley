@@ -1496,77 +1496,74 @@
         }
         // End Daterange Picker
 
-
         // Carousels
-        var isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
-        var isDesktop = window.matchMedia("only screen and (min-width: 1200px)").matches;
-        var isTablet = window.matchMedia("only screen and (max-width: 1280px)").matches;
-
-        if (isMobile) {
-            $(".owl-carousel-dest-cats").each(function () {
-                $(this).owlCarousel({
-                    items: 1,
-                    margin: -140,
-                    loop: false,
-                    stagePadding: 0,
-                    padding: 0
+        // Mobile
+            if($(window).width() < 760) {
+                $(".owl-carousel-dest-cats").each(function () {
+                    $(this).owlCarousel({
+                        items: 1,
+                        margin: -140,
+                        loop: false,
+                        stagePadding: 0,
+                        padding: 0
+                    });
                 });
-            });
 
-            $(".owl-carousel-campaigns").each(function () {
-                $(this).owlCarousel({
-                    items: 1,
-                    margin: 0,
-                    loop: false,
-                    stagePadding: 20,
+                $(".owl-carousel-campaigns").each(function () {
+                    $(this).owlCarousel({
+                        items: 1,
+                        margin: 0,
+                        loop: false,
+                        stagePadding: 20,
+                    });
                 });
-            });
 
-            $(".owl-carousel-specs").each(function () {
-                $(this).owlCarousel({
-                    items: 1,
-                    margin: -10,
-                    loop: false,
-                    stagePadding: 15,
-                    padding: 0
+                $(".owl-carousel-specs").each(function () {
+                    $(this).owlCarousel({
+                        items: 1,
+                        margin: -10,
+                        loop: false,
+                        stagePadding: 15,
+                        padding: 0
+                    });
                 });
-            });
 
-            $(".owl-carousel-hotel").each(function () {
-                $(this).owlCarousel({
-                    items: 1,
-                    margin: 10,
-                    stagePadding: 30,
-                    loop: true,
-                    dots: false,
-                    nav: false,
+                $(".owl-carousel-hotel").each(function () {
+                    $(this).owlCarousel({
+                        items: 1,
+                        margin: 10,
+                        stagePadding: 30,
+                        loop: true,
+                        dots: false,
+                        nav: false,
+                    });
                 });
-            });
 
-            $(".owl-carousel-villa").each(function () {
-                $(this).owlCarousel({
-                    items: 1,
-                    margin: 10,
-                    stagePadding: 30,
-                    loop: true,
-                    dots: false,
-                    nav: false,
+                $(".owl-carousel-villa").each(function () {
+                    $(this).owlCarousel({
+                        items: 1,
+                        margin: 10,
+                        stagePadding: 30,
+                        loop: true,
+                        dots: false,
+                        nav: false,
+                    });
                 });
-            });
 
-            $(".owl-carousel-boat").each(function () {
-                $(this).owlCarousel({
-                    items: 1,
-                    margin: 10,
-                    stagePadding: 30,
-                    loop: true,
-                    dots: false,
-                    nav: false,
+                $(".owl-carousel-boat").each(function () {
+                    $(this).owlCarousel({
+                        items: 1,
+                        margin: 10,
+                        stagePadding: 30,
+                        loop: true,
+                        dots: false,
+                        nav: false,
+                    });
                 });
-            });
-        }
+            }
 
-        if (isTablet) {
+        //Tablet
+        if($(window).width() < 1280) {
             $(".owl-carousel-dest-cats").each(function () {
                 $(this).owlCarousel({
                     items: 2,
@@ -1629,7 +1626,8 @@
             });
         }
 
-        if (isDesktop) {
+        // Desktop
+        if($(window).width() > 1200) {
             $(".owl-carousel-campaigns").each(function () {
                 let $this = $(this);
                 $(this).owlCarousel({
