@@ -905,6 +905,7 @@
                 price = '';
             }
 
+            console.log(highlightDate)
             if (highlightDate.filter(e => e.day === moment(time).format('DD/MM/YYYY')).length > 0) {
                 price = highlightDate.filter(e => e.day === moment(time).format('DD/MM/YYYY'))[highlightDate.filter(e => e.day === moment(time).format('DD/MM/YYYY')).length - 1].price;
             }
@@ -920,7 +921,19 @@
       }, {});
 
     function calculateNightsSidebar() {
+        const groupByMonth = groupBy('price');
 
+        $('.js-selected-prices').html('');
+
+        $.map(groupByMonth(highlightDate), function(value, index) {
+            $('.summary').show();
+            $('.js-selected-prices').append(`
+                <tr>
+                    <td>${value[0].month}</td>
+                    <td>${value.length} Gece x ${index}</td>
+                </tr>
+            `);
+        });
     }
 
 
@@ -935,13 +948,31 @@
                 mapped.push(obj);
             });
 
+
+            let willDelete = [];
+
+            if($('.summary tr').length > 0) {
+                highlightDate.map((item, idx) => {
+                    if(selectedForHighlightDate.indexOf(item.day) > -1) {
+                        willDelete.push(idx);
+                    }
+                });
+            }
+
+            for (var i = willDelete.length -1; i >= 0; i--)
+                highlightDate.splice(willDelete[i],1);
+
+
             highlightDate.push(...mapped);
+
 
             $('.js-datepicker-inline-area').data('dateRangePicker').resetMonthsView();
 
             $('#addPriceModal').modal('hide');
 
             calculateNightsSidebar();
+
+
         }
 
     });

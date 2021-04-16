@@ -195,9 +195,13 @@
                 </div>
                 <div class="col-sm-6">
                   <label>
-                    Minimum Konaklama
-                    <select>
-                      <option>Lütfen Seçiniz</option>
+                    Konaklama
+                    <select class="js-default-day-select">
+                      <option value="">Lütfen Seçiniz</option>
+                      <option value="1">1</option>
+                      <option value="3">3</option>
+                      <option value="5">5</option>
+                      <option value="7">7</option>
                     </select>
                   </label>
                 </div>
@@ -401,8 +405,9 @@
                       </div>
                       <div class="col-sm-6">
                         <label>
-                          Minimum Konaklama
+                          Konaklama
                           <select class="js-special-day-value">
+                            <option value="">Lütfen Seçiniz</option>
                             <option value="7">7 Gece</option>
                             <option value="14">14 Gece</option>
                             <option value="28">28 Gece</option>
@@ -948,21 +953,57 @@
         }
     });
 
+    const groupBy = key => array =>
+      array.reduce((objectsByKeyValue, obj) => {
+        const value = obj[key];
+        objectsByKeyValue[value] = (objectsByKeyValue[value] || []).concat(obj);
+        return objectsByKeyValue;
+      }, {});
+
+    function calculateNightsSidebar() {
+        const groupByMonth = groupBy('price');
+
+        $('.js-selected-days').html('');
+        $.map(groupByMonth(highlightDate), function(value, index) {
+            $('.summary').show();
+            $('.js-selected-days').append(`
+                <tr>
+                    <td>${value[0].month}</td>
+                    <td>${value.length} Gece x ${index}</td>
+                </tr>
+            `);
+        });
+    }
 
     $('.js-save-special-day').on('click', function() {
         let mapped = [];
         selectedForHighlightDate.map(item => {
             let obj = {};
             obj['price'] = $('.js-special-day-value').val() + ' Gece';
-            obj['day'] = item
+            obj['day'] = item;
+            obj['month'] = moment(item.split('/')[1]).format('MMMM');
             mapped.push(obj);
         });
+
+
+        let willDelete = [];
+
+        if($('.summary tr').length > 0) {
+            highlightDate.map((item, idx) => {
+                if(selectedForHighlightDate.indexOf(item.day) > -1) {
+                    willDelete.push(idx);
+                }
+            });
+        }
+
+        for (var i = willDelete.length -1; i >= 0; i--)
+            highlightDate.splice(willDelete[i],1);
 
         highlightDate.push(...mapped);
 
         $('.js-datepicker-inline-area').data('dateRangePicker').resetMonthsView();
         $('#addDateModal').modal('hide');
-
+        calculateNightsSidebar();
     });
 
     $('.js-clear-special-day').on('click', function() {
@@ -974,7 +1015,12 @@
 
         $('.js-datepicker-inline-area').data('dateRangePicker').resetMonthsView();
         $('#removeDateModal').modal('hide');
+        calculateNightsSidebar();
+    });
 
+    $('.js-default-day-select').on('change', function() {
+        defaultNights = $('.js-default-day-select option:selected').val();
+        $('.js-datepicker-inline-area').data('dateRangePicker').resetMonthsView();
     });
 </script>
 </body>

@@ -787,7 +787,7 @@
             $('.item.add-item').css('order', ($('.item.dz-image-preview').length + 1));
         }, 100);
       });
-      $(document).on('click', '.item.dz-image-preview', function() {
+      $(document).on('click', '.item.dz-image-preview .image > img', function() {
         $('.item.dz-image-preview .image > .label').hide();
         $(this).closest('.image').find('.label').show();
       });

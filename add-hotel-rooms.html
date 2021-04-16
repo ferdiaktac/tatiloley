@@ -1,0 +1,2347 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Tatiloley</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+          rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="assets/images/icons/favicon.png"/>
+    <link rel="stylesheet" href="assets/css/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl-carousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/js/telinput/css/intlTelInput.css">
+    <link rel="stylesheet" href="assets/css/daterangepicker.css">
+    <link rel="stylesheet" href="assets/css/select2.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/js/datepicker/daterangepicker.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/add-steps.css">
+</head>
+<body>
+
+<header class="header pages">
+    <div class="container">
+        <div class="row">
+            <!--Logo-->
+            <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                <div class="logo">
+                    <a href="#" title="Tatiloley">
+                        <img src="assets/images/header/logo.svg" title="Tatiloley" alt="Tatiloley">
+                    </a>
+                </div>
+            </div>
+            <!--Logo-->
+            <!--Menu-->
+            <div class="col-lg-9 col-md-9 col-sm-6 col-6">
+                <div class="main-menu">
+                    <ul>
+                        <li><a href="#">Yardım</a></li>
+                        <li class="nav-select-lang">
+                            <div><span class="flag-icon flag-icon-tr"></span>TR</div>
+                            <ul>
+                                <li><a href="#"><span class="flag-icon flag-icon-us"></span>EN</a></li>
+                                <li><a href="#"><span class="flag-icon flag-icon-fr"></span>FR</a></li>
+                                <li><a href="#"><span class="flag-icon flag-icon-tr"></span>TR</a></li>
+                            </ul>
+                        </li>
+                        <li class="header-phone animation-tooltip rotation-yaxis">
+                            <a href="tel:08500000000" class="animation-title">
+                                <span>Destek Hattı</span>0850 000 00 00
+                                <div class="animation-tooltip-text">Deneyimli tatil danışmanlarımız ile iletişime geçin.
+                                </div>
+                            </a>
+                        </li>
+                        <li class="add-property">
+                            <a href="#">İlan Veren Panosu</a>
+                        </li>
+                        <!--If Not logged in-->
+                        <!--<li class="login has-dropdown">
+                            <a href="#">Giriş Yap</a>
+                            <div class="dropdown-container">
+                                <ul>
+                                    <li><a data-toggle="modal" data-target="#loginModal" href="#">Giriş Yap</a></li>
+                                    <li><a data-toggle="modal" data-target="#registerModal" href="#">Üye Ol</a></li>
+                                </ul>
+                            </div>
+                        </li>-->
+                        <!--If Not logged in-->
+
+                        <!--If logged in-->
+                        <li class="logged-in has-dropdown">
+                            <div class="logged-in-area">
+                                <span class="menu-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="13" viewBox="0 0 20 13">
+                                    <g id="fi-rr-menu-burger" transform="translate(0 -4)">
+                                    <rect id="Rectangle_2385" data-name="Rectangle 2385" width="20" height="1.625" rx="0.813" transform="translate(0 9.688)" fill="#fff"/>
+                                    <rect id="Rectangle_2386" data-name="Rectangle 2386" width="20" height="1.625" rx="0.813" transform="translate(0 4)" fill="#fff"/>
+                                    <rect id="Rectangle_2387" data-name="Rectangle 2387" width="20" height="1.625" rx="0.813" transform="translate(0 15.375)" fill="#fff"/>
+                                    </g></svg></span>
+                                <span class="pp">
+                                    <img src="assets/images/header/default-pp.png" alt="">
+                                </span>
+                            </div>
+                        <div class="dropdown-container">
+                            <ul>
+                                <li><a href="#">Seyahatlerim</a></li>
+                                <li> <a href="#">Beğendiklerim</a></li>
+                                <li> <a href="#">Profilim</a></li>
+                                <li> <a href="#">İlan Veren Bilgilerim</a></li>
+                                <li> <a href="#">İlan Veren Panosu</a></li>
+                                <li> <a href="#">Çıkış Yap</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                        <!--If logged in-->
+                    </ul>
+                </div>
+
+                <div class="mobile-menu">
+                    <div class="logged-in">
+                        <div class="logged-in-area" data-toggle="modal" data-target="#mobile_menu">
+                                <span class="menu-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="13" viewBox="0 0 20 13">
+                                    <g id="fi-rr-menu-burger" transform="translate(0 -4)">
+                                    <rect id="Rectangle_2385" data-name="Rectangle 2385" width="20" height="1.625"
+                                          rx="0.813" transform="translate(0 9.688)" fill="#fff"/>
+                                    <rect id="Rectangle_2386" data-name="Rectangle 2386" width="20" height="1.625"
+                                          rx="0.813" transform="translate(0 4)" fill="#fff"/>
+                                    <rect id="Rectangle_2387" data-name="Rectangle 2387" width="20" height="1.625"
+                                          rx="0.813" transform="translate(0 15.375)" fill="#fff"/>
+                                    </g></svg></span>
+                            <span class="pp">
+                                    <img src="assets/images/header/default-pp.png" alt="">
+                                </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--Menu-->
+    </div>
+</header>
+
+
+<section class="page-content">
+    <div class="container">
+
+      <div class="steps-area">
+        <div class="filled-area" style="width: 37%;"></div>
+        <div class="filled">
+          <span></span>
+          Otel İlanı
+        </div>
+        <div class="filled">
+          <span></span>
+          Rezervasyon Tipi
+        </div>
+        <div class="filled">
+          <span></span>
+          Adres
+        </div>
+        <div class="filled">
+          <span></span>
+          Genel Özellikler
+        </div>
+        <div class="filled">
+          <span></span>
+          Genel Fotoğraflar
+        </div>
+        <div class="active">
+          <span></span>
+          Odalar
+        </div>
+        <div>
+          <span></span>
+          Detaylar
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="add-room-area">
+            <div class="hero">
+              Oda Ekleyin
+            </div>
+            <div class="desc">
+              Aşağıda bulunan Oda Ekle butonu ile istediğiniz kadar oda ekleyebilir, her bir odanın fiyat, takvim, olanaklar ve fotoğraflar gibi detaylarını düzenleyebilirsiniz.
+            </div>
+            <a href="#" class="js-add-room">
+              <i class="fas fa-plus-circle"></i>
+              Oda Ekle
+            </a>
+          </div>
+          <div class="js-all-rooms">
+
+          </div>
+          <div
+            class="select-properties room-container js-room-item js-room-item-template"
+            data-blockedDays=""
+            data-selectedForBlockingDays=""
+            data-defaultPrice=""
+            data-inputPrice=""
+            data-highlightDatePrice="[]"
+            data-selectedForHighlightDatePrice="[]"
+            data-defaultNights=""
+            data-inputNights=""
+            data-highlightDate="[]"
+            data-selectedForHighlightDate="[]"
+            >
+            <div class="room-hero">
+              Oda <span class="js-room-count"></span>
+              <small class="js-room-name"></small>
+            </div>
+            <div class="fields">
+              <div class="sub-hero">Oda Özellikleri</div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="types">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <label>
+                          Oda adını giriniz
+                          <input type="text" placeholder="Giriniz" class="js-room-name" />
+                        </label>
+                      </div>
+                      <div class="col-sm-6">
+                        <label>
+                          Oda Sayısı
+                          <input type="text" placeholder="Giriniz" />
+                        </label>
+                      </div>
+                      <div class="col-sm-6">
+                        <label>
+                          Oda Genişliği (m²)
+                          <input type="text" placeholder="Giriniz" />
+                        </label>
+                      </div>
+                      <div class="col-sm-12">
+                        <label>
+                          Yatak Sayısı
+                          <select class="js-bed-count">
+                            <option>Lütfen Seçiniz</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                          </select>
+                        </label>
+                      </div>
+                      <div class="js-beds" style="display: flex;"></div>
+                      <div class="col-sm-12">
+                        <label>
+                          Oda Özelliği
+                          <select>
+                            <option>Herşey Dahil</option>
+                          </select>
+                        </label>
+                      </div>
+                      <div class="col-sm-12">
+                        <label>
+                          İptal Seçeneği
+                          <select>
+                            <option>Son 14 güne kadar ücretsiz iptal</option>
+                          </select>
+                        </label>
+                      </div>
+                      <div class="col-sm-12">
+                        <label>
+                          Bebek için Kabul Edilecek Yaş Aralığı
+                          <select>
+                            <option>0-2 yaş</option>
+                          </select>
+                        </label>
+                      </div>
+                      <div class="col-sm-12">
+                        <label>
+                          Yetişkin Sayısı (En Az)
+                          <select>
+                            <option>2 Yetişkin</option>
+                          </select>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="overflow">
+                    <div class="label">Odaya Özel Olanaklar</div>
+                    <div class="list">
+                      <ul>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Küvetli Banyo</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Klima</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Çocuk Havuzu</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Kapalı Havuz</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Küvetli Banyo</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Klima</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Çocuk Havuzu</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Kapalı Havuz</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Küvetli Banyo</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Klima</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Çocuk Havuzu</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Kapalı Havuz</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Küvetli Banyo</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Klima</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Çocuk Havuzu</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Kapalı Havuz</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Küvetli Banyo</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Klima</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Çocuk Havuzu</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Kapalı Havuz</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Küvetli Banyo</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Klima</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Çocuk Havuzu</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox-item">
+                            <input type="checkbox" />
+                            <div class="checkbox"></div>
+                            <span>Kapalı Havuz</span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                    <label>
+                      Çocuk için Kabul Edilecek Yaş Aralığı
+                      <select>
+                        <option>3-11 yaş</option>
+                      </select>
+                    </label>
+                    <label>
+                      Ekstra Yetişkin / Çocuk / Bebek Kapasiteleri
+                      <select class="js-tags-area" multiple>
+                        <option>1 yetişkin</option>
+                        <option>1 yetişkin 1 bebek</option>
+                        <option>1 yetişkin 1 çocuk</option>
+                        <option>1 yetişkin 1 çocuk 1 bebek</option>
+                        <option>2 bebek</option>
+                        <option>3 bebek</option>
+                        <option>2 çocuk</option>
+                        <option>3 çocuk</option>
+                        <option>1 çocuk 1 bebek</option>
+                        <option>1 çocuk 2 bebek</option>
+                        <option>2 çocuk 1 bebek</option>
+                        <option>2 çocuk 2 bebek</option>
+                      </select>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <label>
+                Açıklama
+                <textarea></textarea>
+                <p class="input-note">Min. 20 Karakter</p>
+              </label>
+            </div>
+            <div class="concept">
+              <div class="seperate-hero">
+                Kuralları Belirtin
+              </div>
+              <div class="rules">
+                <div class="type-radio">
+                  <label>
+                    <input type="checkbox" name="type" />
+                    <div class="item">
+                      <div class="align">
+                        <img src="assets/images/icons/baby-icon-black.svg" alt="" />
+                        <div class="name">Bebeklere Uygun<br />(0-2)</div>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <div class="type-radio">
+                  <label>
+                    <input type="checkbox" name="type" />
+                    <div class="item">
+                      <div class="align">
+                        <img src="assets/images/icons/child-icon-black.svg" alt="" />
+                        <div class="name">Çocuklara Uygun<br />(2-12)</div>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <div class="type-radio">
+                  <label>
+                    <input type="checkbox" name="type" />
+                    <div class="item">
+                      <div class="align">
+                        <img src="assets/images/icons/party-icon.svg" alt="" />
+                        <div class="name">Etkinlik<br />Düzenlenebilir</div>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <div class="type-radio">
+                  <label>
+                    <input type="checkbox" name="type" />
+                    <div class="item">
+                      <div class="align">
+                        <img src="assets/images/icons/pati-icon-black.svg" alt="" />
+                        <div class="name">Evcil Hayvanlara<br /> Uygun</div>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <div class="type-radio">
+                  <label>
+                    <input type="checkbox" name="type" />
+                    <div class="item">
+                      <div class="align">
+                        <img src="assets/images/icons/smoke-icon-black.svg" alt="" />
+                        <div class="name">Sigara İçilebilir</div>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="add-images">
+              <div class="hero">
+                İlanınıza Fotoğraf Ekleyin
+              </div>
+              <div class="desc">
+                Yüklediğiniz fotoğraflardan ilk sıraya sürükleyerek bir kapak fotoğrafı belirleyebilir, 30 adete kadar yeni fotoğraflar ekleyebilir,
+                yüklediğiniz fotoğraflardan istediklerinizi silebilirsiniz.
+              </div>
+              <form action="/" class="dropzone dropzone-area">
+                  <div class="photos-area">
+                  <div class="dz-message" data-dz-message><span><a href="javascript:void(0)" class="toggle">Fotoğraf Ekle</a></span></div>
+                    <div class="photos">
+                      <div class="item add-item">
+                        <div class="add">
+                          <img src="assets/images/icons/add-photo.svg">
+                          Fotoğraf Ekle
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </form>
+            </div>
+            <div class="calendar-area">
+              <div class="pick-date-area">
+                <div class="hero js-date-calendar-toggle">
+                  <div>Rezervasyon Takvimi</div>
+                  <p>Seçtiğiniz tarih aralığını rezervasyona toptan kapatabilir ya da açabilirsiniz.</p>
+                </div>
+                <div class="calendar-pick-container js-date-calendar-container">
+                  <div class="buttons">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <input type="text" placeholder="Tarih Seçiniz" class="js-drop-datepicker" />
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <a href="#" class="js-apply-disabled-days">Günleri Doldur</a>
+                          </div>
+                          <div class="col-sm-6">
+                            <a href="#" class="js-clear-disabled-days">Günleri Boşalt</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="calendar-container">
+                    <div class="statuses">
+                      <ul>
+                        <li>
+                          Dolu Günler
+                        </li>
+                        <li>
+                          Rezerve Günler
+                        </li>
+                        <li>
+                          Boş Günler
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="calendar-container-area">
+                        <input type="hidden" class="js-datepicker-inline-area" />
+                    </div>
+                  </div><br />
+                  <div class="hero">
+                    <div>iCalendar</div>
+                    <p>Bu ilanın rezervasyonlarını iCalendar ile takip ediyorsanız iCal verisini içe aktarmak için iCal adresini giriniz.</p>
+                  </div>
+                  <div class="field">
+                    <label>
+                      iCal Adresi
+                      <input type="text" placeholder="Giriniz" />
+                    </label>
+                  </div>
+                  <ul class="notices">
+                    <li>Yukarıdaki takvimden dolu olarak işaretlenen günler iCalendar tarafında boşaltılamaz.</li>
+                    <li>iCalendar tarafında dolu olarak işaretlenen günler yukarıdaki takvimden boşaltılamaz.</li>
+                    <li>Karışıklıkların önüne geçmek için iCal kullanıyorsanız zorunda kalmadıkça yukarıdaki takvim ile güncelleme yapmayınız.</li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+            <div class="price-calendar-area price-calendar-container">
+              <div class="price-calendar">
+                <div class="hero js-price-calendar-toggle">
+                  Özel Fiyat Gir <small>(Opsiyonel)</small>
+                </div>
+                <div class="price-calendar-container-details js-price-calendar-container">
+                  <div class="hero">
+                    Fiyatlandırma
+                  </div>
+
+                  <div class="fields">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <label>
+                          Günlük Fiyat (₺)
+                          <input type="text" placeholder="Giriniz" class="js-table-price-input" />
+                          <p>TatilOley'in %5'lik satıcı komisyonu sonrası toplam gecelik kazancınız 950 TL olacaktır.</p>
+                        </label>
+                      </div>
+                      <div class="col-sm-6">
+                        <label>
+                          Aylık % İndirim <small>Opsiyonel</small>
+                          <input type="text" placeholder="Giriniz" />
+                          <p>30 gün ve üzeri konaklamalarda uygulanacak indirim oranı</p>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <ul class="notices">
+                    <li>İsterseniz belirli günler için özel fiyat belirleyebilirsiniz.</li>
+                    <li>Özel fiyat belirlemediğiniz günler için Fiyatlandırma ve Kurallar aşamasında girdiğiniz fiyatlar geçerlidir.</li>
+                  </ul>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="calendar-container-area single">
+                          <input type="hidden" class="js-datepicker-inline-area" />
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="buttons">
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <a href="#" class="js-addPriceModal-toggle">Özel Fiyat Ekle</a>
+                          </div>
+                          <div class="col-sm-6">
+                            <a href="#" class="js-removePriceModal-toggle">Özel Fiyat Kaldır</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="summary">
+                        <div class="label">Kayıtlı Özel Günler</div>
+                        <table class="js-selected-prices">
+
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="price-calendar-area checkin-checkout-container">
+              <div class="price-calendar">
+                <div class="hero js-checkincheckout-calendar-toggle">
+                  Tarihe Göre Minimum Konaklama <small>(Opsiyonel)</small>
+                </div>
+                <div class="checkin-checkout-container-area js-checkincheckout-calendar-container">
+                  <div class="fields">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <label>
+                          Giriş Saati
+                          <select>
+                            <option>Lütfen Seçiniz</option>
+                          </select>
+                        </label>
+                      </div>
+                      <div class="col-sm-6">
+                        <label>
+                          Çıkış Saati
+                          <select>
+                            <option>Lütfen Seçiniz</option>
+                          </select>
+                        </label>
+                      </div>
+                      <div class="col-sm-6">
+                        <label>
+                          Konaklama
+                          <select class="js-default-day-select">
+                            <option value="">Lütfen Seçiniz</option>
+                            <option value="1">1</option>
+                            <option value="3">3</option>
+                            <option value="5">5</option>
+                            <option value="7">7</option>
+                          </select>
+                        </label>
+                      </div>
+                      <div class="col-sm-6">
+                        <label>
+                          Temizlik Ücreti (₺)
+                          <input type="text" placeholder="Giriniz" />
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="calendar-container-area single">
+                          <input type="hidden" class="js-datepicker-inline-area" />
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="buttons">
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <a href="#" class="js-addDateModal-toggle">Özel Gün Ekle</a>
+                          </div>
+                          <div class="col-sm-6">
+                            <a href="#" class="js-removeDateModal-toggle">Özel Fiyat Kaldır</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="summary">
+                        <div class="label">Kayıtlı Özel Günler</div>
+                        <table class="js-selected-days">
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="centered-button centered-button--full flex">
+              <button>
+                Değişiklikleri Kaydet
+              </button>
+            </div>
+            <div class="modal fade" id="photoDetailModal" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog--map modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <img src="assets/images/icons/close-icon.svg">
+                            </button>
+                            <h2 class="bordered-title">Fotoğraf Açıklaması ve Ekle</h2>
+                        </div>
+                        <div class="modal-form d-flex justify-content-center flex-column">
+                            <div class="modal-form-inner">
+                              <div class="fields">
+                                <label>
+                                  Fotoğraf Açıklaması Giriniz
+                                  <input type="text" placeholder="Örn; Burası tüm akdenizi görebileceğiniz muhteşem verandamız." maxlength="140" />
+                                  <p class="input-note">Max. 140 Karakter</p>
+                                </label>
+                                <div class="row margin-top">
+                                    <div class="col-sm-6">
+                                        <div class="hero">Fotoğrafa ait özellikler</div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <label>
+                                                  Bulunduğu Kat
+                                                  <select>
+                                                    <option>Zemin Kat</option>
+                                                  </select>
+                                                </label>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label>
+                                                  Hangi Oda
+                                                  <select class="js-room-type-select">
+                                                    <option value="1">Oda Alanı</option>
+                                                    <option value="2">Balkon Alanı</option>
+                                                    <option value="3">Havuz Alanı</option>
+                                                  </select>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="row js-sizes-row">
+                                            <div class="col-sm-12">
+                                                <div class="fields-label">Havuz Boyutları</div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <label>
+                                                  En (cm)
+                                                  <input type="text" placeholder="Giriniz" />
+                                                </label>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <label>
+                                                  Boy (cm)
+                                                  <input type="text" placeholder="Giriniz" />
+                                                </label>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <label>
+                                                  Derinlik (cm)
+                                                  <input type="text" placeholder="Giriniz" />
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="overflow">
+                                          <div class="label">Olanaklar</div>
+                                          <div class="list">
+                                            <ul>
+                                              <li>
+                                                <label class="checkbox-item">
+                                                  <input type="checkbox" />
+                                                  <div class="checkbox"></div>
+                                                  <span>Küvetli Banyo</span>
+                                                </label>
+                                              </li>
+                                              <li>
+                                                <label class="checkbox-item">
+                                                  <input type="checkbox" />
+                                                  <div class="checkbox"></div>
+                                                  <span>Klima</span>
+                                                </label>
+                                              </li>
+                                              <li>
+                                                <label class="checkbox-item">
+                                                  <input type="checkbox" />
+                                                  <div class="checkbox"></div>
+                                                  <span>Çocuk Havuzu</span>
+                                                </label>
+                                              </li>
+                                              <li>
+                                                <label class="checkbox-item">
+                                                  <input type="checkbox" />
+                                                  <div class="checkbox"></div>
+                                                  <span>Kapalı Havuz</span>
+                                                </label>
+                                              </li>
+                                              <li>
+                                                <label class="checkbox-item">
+                                                  <input type="checkbox" />
+                                                  <div class="checkbox"></div>
+                                                  <span>Ortak Havuz</span>
+                                                </label>
+                                              </li>
+                                              <li>
+                                                <label class="checkbox-item">
+                                                  <input type="checkbox" />
+                                                  <div class="checkbox"></div>
+                                                  <span>Denize Yakın</span>
+                                                </label>
+                                              </li>
+                                              <li>
+                                                <label class="checkbox-item">
+                                                  <input type="checkbox" />
+                                                  <div class="checkbox"></div>
+                                                  <span>Küvetli Banyo</span>
+                                                </label>
+                                              </li>
+                                              <li>
+                                                <label class="checkbox-item">
+                                                  <input type="checkbox" />
+                                                  <div class="checkbox"></div>
+                                                  <span>Klima</span>
+                                                </label>
+                                              </li>
+                                              <li>
+                                                <label class="checkbox-item">
+                                                  <input type="checkbox" />
+                                                  <div class="checkbox"></div>
+                                                  <span>Çocuk Havuzu</span>
+                                                </label>
+                                              </li>
+                                              <li>
+                                                <label class="checkbox-item">
+                                                  <input type="checkbox" />
+                                                  <div class="checkbox"></div>
+                                                  <span>Kapalı Havuz</span>
+                                                </label>
+                                              </li>
+                                              <li>
+                                                <label class="checkbox-item">
+                                                  <input type="checkbox" />
+                                                  <div class="checkbox"></div>
+                                                  <span>Ortak Havuz</span>
+                                                </label>
+                                              </li>
+                                              <li>
+                                                <label class="checkbox-item">
+                                                  <input type="checkbox" />
+                                                  <div class="checkbox"></div>
+                                                  <span>Denize Yakın</span>
+                                                </label>
+                                              </li>
+                                              <li>
+                                                <label class="checkbox-item">
+                                                  <input type="checkbox" />
+                                                  <div class="checkbox"></div>
+                                                  <span>Küvetli Banyo</span>
+                                                </label>
+                                              </li>
+                                              <li>
+                                                <label class="checkbox-item">
+                                                  <input type="checkbox" />
+                                                  <div class="checkbox"></div>
+                                                  <span>Klima</span>
+                                                </label>
+                                              </li>
+                                              <li>
+                                                <label class="checkbox-item">
+                                                  <input type="checkbox" />
+                                                  <div class="checkbox"></div>
+                                                  <span>Çocuk Havuzu</span>
+                                                </label>
+                                              </li>
+                                              <li>
+                                                <label class="checkbox-item">
+                                                  <input type="checkbox" />
+                                                  <div class="checkbox"></div>
+                                                  <span>Kapalı Havuz</span>
+                                                </label>
+                                              </li>
+                                              <li>
+                                                <label class="checkbox-item">
+                                                  <input type="checkbox" />
+                                                  <div class="checkbox"></div>
+                                                  <span>Ortak Havuz</span>
+                                                </label>
+                                              </li>
+                                              <li>
+                                                <label class="checkbox-item">
+                                                  <input type="checkbox" />
+                                                  <div class="checkbox"></div>
+                                                  <span>Denize Yakın</span>
+                                                </label>
+                                              </li>
+                                              <li>
+                                                <label class="checkbox-item">
+                                                  <input type="checkbox" />
+                                                  <div class="checkbox"></div>
+                                                  <span>Kapalı Havuz</span>
+                                                </label>
+                                              </li>
+                                              <li>
+                                                <label class="checkbox-item">
+                                                  <input type="checkbox" />
+                                                  <div class="checkbox"></div>
+                                                  <span>Ortak Havuz</span>
+                                                </label>
+                                              </li>
+                                              <li>
+                                                <label class="checkbox-item">
+                                                  <input type="checkbox" />
+                                                  <div class="checkbox"></div>
+                                                  <span>Denize Yakın</span>
+                                                </label>
+                                              </li>
+                                              <li>
+                                                <label class="checkbox-item">
+                                                  <input type="checkbox" />
+                                                  <div class="checkbox"></div>
+                                                  <span>Küvetli Banyo</span>
+                                                </label>
+                                              </li>
+                                              <li>
+                                                <label class="checkbox-item">
+                                                  <input type="checkbox" />
+                                                  <div class="checkbox"></div>
+                                                  <span>Klima</span>
+                                                </label>
+                                              </li>
+                                              <li>
+                                                <label class="checkbox-item">
+                                                  <input type="checkbox" />
+                                                  <div class="checkbox"></div>
+                                                  <span>Çocuk Havuzu</span>
+                                                </label>
+                                              </li>
+                                              <li>
+                                                <label class="checkbox-item">
+                                                  <input type="checkbox" />
+                                                  <div class="checkbox"></div>
+                                                  <span>Kapalı Havuz</span>
+                                                </label>
+                                              </li>
+                                              <li>
+                                                <label class="checkbox-item">
+                                                  <input type="checkbox" />
+                                                  <div class="checkbox"></div>
+                                                  <span>Ortak Havuz</span>
+                                                </label>
+                                              </li>
+                                              <li>
+                                                <label class="checkbox-item">
+                                                  <input type="checkbox" />
+                                                  <div class="checkbox"></div>
+                                                  <span>Denize Yakın</span>
+                                                </label>
+                                              </li>
+                                              <li>
+                                                <label class="checkbox-item">
+                                                  <input type="checkbox" />
+                                                  <div class="checkbox"></div>
+                                                  <span>Küvetli Banyo</span>
+                                                </label>
+                                              </li>
+                                              <li>
+                                                <label class="checkbox-item">
+                                                  <input type="checkbox" />
+                                                  <div class="checkbox"></div>
+                                                  <span>Klima</span>
+                                                </label>
+                                              </li>
+                                              <li>
+                                                <label class="checkbox-item">
+                                                  <input type="checkbox" />
+                                                  <div class="checkbox"></div>
+                                                  <span>Çocuk Havuzu</span>
+                                                </label>
+                                              </li>
+                                              <li>
+                                                <label class="checkbox-item">
+                                                  <input type="checkbox" />
+                                                  <div class="checkbox"></div>
+                                                  <span>Kapalı Havuz</span>
+                                                </label>
+                                              </li>
+                                              <li>
+                                                <label class="checkbox-item">
+                                                  <input type="checkbox" />
+                                                  <div class="checkbox"></div>
+                                                  <span>Ortak Havuz</span>
+                                                </label>
+                                              </li>
+                                              <li>
+                                                <label class="checkbox-item">
+                                                  <input type="checkbox" />
+                                                  <div class="checkbox"></div>
+                                                  <span>Denize Yakın</span>
+                                                </label>
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="centered-button flex">
+                                <button data-toggle="modal" data-target="#photoDetailModal" onclick="$('#photoDetailModal').modal('hide')" >
+                                  Vazgeç
+                                </button>
+                                <button>
+                                  Kaydet
+                                </button>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="addPriceModal" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog--map modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <img src="assets/images/icons/close-icon.svg">
+                            </button>
+                            <h2 class="bordered-title">Özel Fiyat Ekle</h2>
+                        </div>
+                        <div class="modal-form d-flex justify-content-center flex-column">
+                            <div class="modal-form-inner">
+                              <div class="price-modal-fields">
+                                <ul class="notices">
+                                  <li>Özel fiyat tanımı bulunan günler takvimde kırmızı nokta ile işaretlenmiştir.</li>
+                                  <li>Seçtiğiniz tarih aralığındaki var olan fiyat tanımları yeni belirlediğiniz fiyat ile değiştirilir.</li>
+                                </ul>
+                                <div class="row">
+                                  <div class="col-sm-6">
+                                    <label>
+                                      Tarih Aralığı
+                                      <input type="text" placeholder="Giriniz" class="js-drop-datepicker-price" />
+                                    </label>
+                                  </div>
+                                  <div class="col-sm-6">
+                                    <label>
+                                      Fiyat (₺)
+                                      <input type="text" placeholder="Giriniz" class="js-special-day-value-price" />
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="centered-button flex">
+                                <button class="js-close-price-modal" onclick="$('#addPriceModal').modal('hide')">
+                                  Kapat
+                                </button>
+                                <button class="js-save-special-day">
+                                  Kaydet
+                                </button>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="removePriceModal" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog--map modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <img src="assets/images/icons/close-icon.svg">
+                            </button>
+                            <h2 class="bordered-title">Özel Fiyat Ekle</h2>
+                        </div>
+                        <div class="modal-form d-flex justify-content-center flex-column">
+                            <div class="modal-form-inner">
+                              <div class="price-modal-fields">
+                                <ul class="notices">
+                                  <li>Özel fiyat tanımı bulunan günler takvimde kırmızı nokta ile işaretlenmiştir.</li>
+                                  <li>Seçtiğiniz tarih aralığındaki var olan fiyat tanımları yeni belirlediğiniz fiyat ile değiştirilir.</li>
+                                </ul>
+                                <div class="row">
+                                  <div class="col-sm-12">
+                                    <label>
+                                      Tarih Aralığı
+                                      <input type="text" placeholder="Giriniz" class="js-drop-datepicker-price2" />
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="centered-button flex">
+                                <button class="js-close-price-modal" onclick="$('#removePriceModal').modal('hide')">
+                                  Kapat
+                                </button>
+                                <button class="js-clear-special-day">
+                                  Kaydet
+                                </button>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="addDateModal" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog--map modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <img src="assets/images/icons/close-icon.svg">
+                            </button>
+                            <h2 class="bordered-title">Tarihe Göre Minimum Konaklama Süresi Belirle</h2>
+                        </div>
+                        <div class="modal-form d-flex justify-content-center flex-column">
+                            <div class="modal-form-inner">
+                              <div class="price-modal-fields">
+                                <ul class="notices">
+                                  <li>Özel minimum konaklama tanımı bulunan günler takvimde kırmızı nokta ile işaretlenmiştir.</li>
+                                  <li>Seçtiğiniz tarih aralığındaki var olan konaklama süresi tanımları yeni belirlediğiniz minimum konaklama süresi ile değiştirilir.</li>
+                                </ul>
+                                <div class="row">
+                                  <div class="col-sm-6">
+                                    <label>
+                                      Tarih Aralığı
+                                      <input type="text" placeholder="Giriniz" class="js-drop-datepicker-date" />
+                                    </label>
+                                  </div>
+                                  <div class="col-sm-6">
+                                    <label>
+                                      Konaklama
+                                      <select class="js-special-day-value">
+                                        <option value="">Lütfen Seçiniz</option>
+                                        <option value="7">7 Gece</option>
+                                        <option value="14">14 Gece</option>
+                                        <option value="28">28 Gece</option>
+                                      </select>
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="centered-button flex">
+                                <button onclick="$('#addDateModal').modal('hide')">
+                                  Kapat
+                                </button>
+                                <button class="js-save-special-day">
+                                  Kaydet
+                                </button>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="removeDateModal" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog--map modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <img src="assets/images/icons/close-icon.svg">
+                            </button>
+                            <h2 class="bordered-title">Tarihe Göre Minimum Konaklama Süresi Belirle</h2>
+                        </div>
+                        <div class="modal-form d-flex justify-content-center flex-column">
+                            <div class="modal-form-inner">
+                              <div class="price-modal-fields">
+                                <ul class="notices">
+                                  <li>Özel minimum konaklama tanımı bulunan günler takvimde kırmızı nokta ile işaretlenmiştir.</li>
+                                  <li>Seçtiğiniz tarih aralığındaki var olan konaklama süresi tanımları yeni belirlediğiniz minimum konaklama süresi ile değiştirilir.</li>
+                                </ul>
+                                <div class="row">
+                                  <div class="col-sm-12">
+                                    <label>
+                                      Tarih Aralığı
+                                      <input type="text" placeholder="Giriniz" class="js-drop-datepicker-date2" />
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="centered-button flex">
+                                <button onclick="$('#removeDateModal').modal('hide')">
+                                  Kapat
+                                </button>
+                                <button class="js-clear-special-day">
+                                  Kaydet
+                                </button>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+</section>
+
+<footer>
+    <div class="app-section">
+        <div class="container">
+            <div class="app-area">
+                <div class="left col-lg-6 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000"
+                     data-aos-delay="200">
+                    <h2>Tatiloley Uygulamasını İndirin</h2>
+                    <span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.</span>
+                    <div class="app-logo">
+                        <a href="#"><img src="assets/images/footer/appstore-white.svg"></a>
+                        <a href="#"><img src="assets/images/footer/gplay-white.svg"></a>
+                    </div>
+                </div>
+                <div class="right col-lg-6 aos-init aos-animate" data-aos="fade-left" data-aos-duration="1000"
+                     data-aos-delay="400">
+                    <img src="assets/images/footer/footer-img.png" alt="Tatiloley Uygulamasını İndirin">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-area">
+                <div class="row">
+                    <div class="left col-lg-7 aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000"
+                         data-aos-delay="200">
+                        <h2>Sorunuz mu var?</h2>
+                        <p>Deneyimli tatil danışmanlarımız haftanın 7 günü size yardımcı olmak için sorularınızı
+                            bekliyorlar.</p>
+                        <span><a href="tel:085000000000">0850 000 00 00</a></span>
+                    </div>
+                    <div class="right col-lg-5 aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000"
+                         data-aos-delay="400">
+                        <h2>Kampanyaları Kaçırma</h2>
+                        <p>Kampanyalardan anında haberdar olmak için hemen kaydolun.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="E-posta adresiniz" class="email-text">
+                            <input type="submit" class="email-send" value="Kaydol">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="footer-top-links">
+                        <li>
+                            <a href="#">Hakkımızda</a>
+                            <a href="#">Yardım</a>
+                            <a href="#">Kullanım Şartları</a>
+                            <a href="#">KVKK</a>
+                            <a href="#">İptal Politikaları</a>
+                            <a href="#">Basın</a>
+                            <a href="#">İletişim</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-12">
+                    <div class="footer-bottom">
+                        <div class="social-links">
+                            <ul>
+                                <li><a href="#" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i>
+                                </a></li>
+                                <li><a href="#" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i> </a>
+                                </li>
+                                <li><a href="#" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i> </a>
+                                </li>
+                                <li><a href="#" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                                </a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-logo"><img src="assets/images/footer/footer-logos.png" alt=""></div>
+                        <div class="copyright">© 2021 Tatiloley.com - Tüm Hakları Sakldır</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tursab-section">
+        <div class="container">
+            <span>TatilOley.com Turizm Seyahat Acentası TÜRSAB 10504 Numaralı Belge ile Turizm Bakanlığına bağlıdır.</span>
+        </div>
+    </div>
+</footer>
+
+<!--Mobile Bottom Menu-->
+<div class="mobile-bottom-fixed-menu">
+    <ul>
+        <li class="home"><a href="#"><i></i>Keşfedin</a></li>
+        <li class="liked"><a href="#"><i></i>Beğendiklerim</a></li>
+        <li class="travels"><a href="#"><i></i>Seyahatler</a></li>
+        <!--<li class="login"><a href="#" data-toggle="modal" data-target="#mobile_login"><i></i>Giriş Yap</a></li>-->
+        <li class="profile"><a href="#"><i></i>Profilim</a></li>
+    </ul>
+</div>
+<!--Mobile Bottom Menu-->
+
+<!--Login-->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/icons/close-icon.svg">
+                </button>
+                <h2 class="bordered-title">Giriş Yap</h2>
+            </div>
+            <div class="modal-form d-flex justify-content-center flex-column">
+                <div class="modal-form-inner">
+                    <form action="">
+                        <div class="iconed-control">
+                            <div class="input"><input type="email" placeholder="E-posta" required name="email"></div>
+                            <div class="icon"><img src="assets/images/icons/email.svg"></div>
+                        </div>
+                        <div class="iconed-control">
+                            <div class="input"><input type="password" placeholder="Şifre" required name="password">
+                            </div>
+                            <div class="icon"><img src="assets/images/icons/password.svg"></div>
+                        </div>
+                        <div class="login-form-group">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="remember_me"
+                                       value="remember_me">
+                                <label class="custom-control-label" for="remember_me">Beni Hatırla</label>
+                            </div>
+                            <div><a href="#" data-toggle="modal" data-target="#forgetpasswordModal"
+                                    onclick="$('#loginModal').modal('hide')">Şifremi Unuttum</a></div>
+                        </div>
+                        <button class="custom-button">Giriş Yap</button>
+                    </form>
+                    <div class="login-register">Hesabınız yok mu?<a data-toggle="modal" data-target="#registerModal"
+                                                                    onclick="$('#loginModal').modal('hide')" href="#">Hemen
+                        Kaydolun</a></div>
+                    <div class="login-social">
+                        <p><span>veya</span></p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="social-btn">
+                                    <a href="#"><img src="assets/images/icons/fb-logo.svg" alt="">
+                                        <span>Facebook ile devam et</span></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="social-btn">
+                                    <a href="#"><img src="assets/images/icons/g-logo.svg" alt="">
+                                        <span>Google ile devam et</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Login end-->
+
+<!--Register-->
+<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/icons/close-icon.svg">
+                </button>
+                <h2 class="bordered-title">Üye Ol</h2>
+            </div>
+            <div class="modal-form d-flex justify-content-center flex-column">
+                <div class="modal-form-inner">
+                    <form action="">
+                        <div class="iconed-control">
+                            <div class="input"><input type="text" placeholder="Adınız" required name="text"></div>
+                            <div class="icon"><img src="assets/images/icons/user.svg"></div>
+                        </div>
+                        <div class="iconed-control">
+                            <div class="input"><input type="text" placeholder="Soyadınız" required name="surname"></div>
+                            <div class="icon"><img src="assets/images/icons/user.svg"></div>
+                        </div>
+                        <div class="iconed-control">
+                            <div class="input"><input type="email" placeholder="E-posta" required name="email"></div>
+                            <div class="icon"><img src="assets/images/icons/email.svg"></div>
+                        </div>
+                        <div class="iconed-control">
+                            <div class="input"><input type="tel" id="tel_number" required name="tel_number"></div>
+                            <div class="icon"><img src="assets/images/icons/phone.svg"></div>
+                        </div>
+                        <div class="iconed-control">
+                            <div class="input"><input type="password" placeholder="Şifre" required name="password">
+                            </div>
+                            <div class="icon"><img src="assets/images/icons/password.svg"></div>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="user_agreement"
+                                   value="user_agreement" required>
+                            <label class="custom-control-label" for="user-agreement"><a data-toggle="modal"
+                                                                                        data-target="#userAgreementModal"
+                                                                                        href="#">Üyelik sözleşmesini</a>
+                                ve <a href="#">Kişisel verilerin korunması</a> ve gizlilik politikasını okudum
+                                ve kabul ediyorum.</label>
+                        </div>
+                        <button class="custom-button">Üye Ol</button>
+                    </form>
+                    <div class="login-register">Zaten bir hesabınız mı var?<a data-toggle="modal"
+                                                                              data-target="#loginModal"
+                                                                              onclick="$('#registerModal').modal('hide')"
+                                                                              href="#">Giriş Yapın</a></div>
+                    <div class="login-social">
+                        <p><span>veya</span></p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="social-btn">
+                                    <a href="#"><img src="assets/images/icons/fb-logo.svg" alt="">
+                                        <span>Facebook ile devam et</span></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="social-btn">
+                                    <a href="#"><img src="assets/images/icons/g-logo.svg" alt="">
+                                        <span>Google ile devam et</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Register end-->
+
+<!--Forget Password-->
+<div class="modal fade" id="forgetpasswordModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/icons/close-icon.svg">
+                </button>
+                <h2 class="bordered-title">Şifremi Unuttum</h2>
+            </div>
+            <div class="modal-form d-flex justify-content-center flex-column">
+                <div class="modal-form-inner">
+                    <form action="">
+                        <div class="iconed-control">
+                            <div class="input"><input type="email" placeholder="E-posta Adresiniz" required
+                                                      name="email"></div>
+                            <div class="icon"><img src="assets/images/icons/email.svg"></div>
+                        </div>
+                        <button class="custom-button">Şifremi Gönder</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Forget Password end-->
+
+<!--User Agreement-->
+<div class="modal fade" id="userAgreementModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/icons/close-icon.svg">
+                </button>
+                <h2 class="bordered-title">Üyelik Sözleşmesi</h2>
+            </div>
+            <div class="modal-form d-flex justify-content-center flex-column">
+                <div class="modal-form-inner">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et risus tempus, vehicula lacus
+                        pulvinar, facilisis ipsum. Vestibulum tristique magna sagittis dictum hendrerit. Nunc bibendum
+                        convallis velit, a lacinia augue ornare eget. Proin accumsan nec felis in placerat. Vestibulum
+                        sed mollis tellus, et mattis tortor. Donec suscipit purus nec neque consectetur, eget imperdiet
+                        magna fringilla. Praesent finibus posuere ex, sed ultrices odio scelerisque quis.
+                    </p>
+                    <p>
+                        Nam at tincidunt lorem. Nulla scelerisque ullamcorper aliquet. Etiam eget nulla in eros
+                        condimentum dapibus. Aenean blandit mauris odio, vel cursus nibh aliquet sit amet. Nunc lobortis
+                        egestas arcu, sit amet bibendum metus pulvinar vitae. Proin tempus eleifend massa sit amet
+                        gravida. Proin sed odio a lectus consectetur convallis. In lorem velit, vulputate quis nibh vel,
+                        accumsan fringilla sapien. Fusce volutpat diam vel turpis consequat suscipit vel quis arcu.
+                        Nulla ac tortor eget nulla cursus laoreet. Pellentesque habitant morbi tristique senectus et
+                        netus et malesuada fames ac turpis egestas. Maecenas vitae lorem eget erat vestibulum suscipit.
+                        Suspendisse lectus turpis, consequat a metus sed, pulvinar fringilla quam. Nulla facilisi.
+                        Pellentesque porttitor auctor cursus.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--User Agreement End-->
+
+<!--Mobile Register-->
+<div class="modal modal-bottom fade" id="mobile_register" tabindex="-1" role="dialog">
+    <div class="modal-dialog " role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/icons/close-mobile-icon.svg">
+                </button>
+                <h2 class="bordered-title">Üye Ol</h2>
+            </div>
+            <div class="modal-body">
+                <div class="modal-form-inner">
+                    <form action="">
+                        <div class="iconed-control">
+                            <div class="input"><input type="text" placeholder="Adınız" required name="text"></div>
+                            <div class="icon"><img src="assets/images/icons/user.svg"></div>
+                        </div>
+                        <div class="iconed-control">
+                            <div class="input"><input type="text" placeholder="Soyadınız" required name="surname"></div>
+                            <div class="icon"><img src="assets/images/icons/user.svg"></div>
+                        </div>
+                        <div class="iconed-control">
+                            <div class="input"><input type="email" placeholder="E-posta" required name="email"></div>
+                            <div class="icon"><img src="assets/images/icons/email.svg"></div>
+                        </div>
+                        <div class="iconed-control">
+                            <div class="input"><input type="tel" id="tel_number_mobile" required
+                                                      name="tel_number_mobile"></div>
+                            <div class="icon"><img src="assets/images/icons/phone.svg"></div>
+                        </div>
+                        <div class="iconed-control">
+                            <div class="input"><input type="password" placeholder="Şifre" required name="password">
+                            </div>
+                            <div class="icon"><img src="assets/images/icons/password.svg"></div>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="mobile_user-agreement"
+                                   value="user_agreement" required>
+                            <label class="custom-control-label" for="mobile_user-agreement"><a data-toggle="modal"
+                                                                                               data-target="#userAgreementModal"
+                                                                                               href="#">Üyelik
+                                sözleşmesini</a>
+                                ve <a href="#">Kişisel verilerin korunması</a> ve gizlilik politikasını okudum
+                                ve kabul ediyorum.</label>
+                        </div>
+                        <button class="custom-button">Üye Ol</button>
+                    </form>
+                    <div class="login-register">Zaten bir hesabınız mı var?<a data-toggle="modal"
+                                                                              data-target="#mobile_login"
+                                                                              onclick="$('#mobile_register').modal('hide')"
+                                                                              href="#">Giriş Yapın</a></div>
+                    <div class="login-social">
+                        <p><span>veya</span></p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="social-btn">
+                                    <a href="#"><img src="assets/images/icons/fb-logo.svg" alt="">
+                                        <span>Facebook ile devam et</span></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="social-btn">
+                                    <a href="#"><img src="assets/images/icons/g-logo.svg" alt="">
+                                        <span>Google ile devam et</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Mobile Register-->
+
+<!--Mobile Login-->
+<div class="modal modal-bottom fade" id="mobile_login" tabindex="-1" role="dialog">
+    <div class="modal-dialog " role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/icons/close-mobile-icon.svg">
+                </button>
+                <h2 class="bordered-title">Giriş Yap</h2>
+            </div>
+            <div class="modal-body">
+                <div class="modal-form-inner">
+                    <form action="">
+                        <div class="iconed-control">
+                            <div class="input"><input type="email" placeholder="E-posta" required name="email"></div>
+                            <div class="icon"><img src="assets/images/icons/email.svg"></div>
+                        </div>
+                        <div class="iconed-control">
+                            <div class="input"><input type="password" placeholder="Şifre" required name="password">
+                            </div>
+                            <div class="icon"><img src="assets/images/icons/password.svg"></div>
+                        </div>
+                        <div class="login-form-group">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="mobile_remember_me"
+                                       value="mobile_remember_me">
+                                <label class="custom-control-label" for="mobile_remember_me">Beni Hatırla</label>
+                            </div>
+                            <div><a href="#" data-toggle="modal" data-target="#forgetpasswordModal">Şifremi Unuttum</a>
+                            </div>
+                        </div>
+                        <button class="custom-button">Giriş Yap</button>
+                    </form>
+                    <div class="login-register">Hesabınız yok mu?<a data-toggle="modal" data-target="#mobile_register"
+                                                                    onclick="$('#mobile_login').modal('hide')" href="#">Hemen
+                        Kaydolun</a></div>
+                    <div class="login-social">
+                        <p><span>veya</span></p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="social-btn">
+                                    <a href="#"><img src="assets/images/icons/fb-logo.svg" alt="">
+                                        <span>Facebook ile devam et</span></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="social-btn">
+                                    <a href="#"><img src="assets/images/icons/g-logo.svg" alt="">
+                                        <span>Google ile devam et</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Mobile Login-->
+
+<!--Mobile Menu-->
+<div class="modal modal-bottom fade" id="mobile_menu" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/icons/close-mobile-icon.svg">
+                </button>
+                <h2 class="bordered-title">Menu</h2>
+            </div>
+            <div class="modal-body">
+                <ul class="mobile-menu-list">
+                    <li><a href="#">Seyahatlerim</a></li>
+                    <li> <a href="#">Beğendiklerim</a></li>
+                    <li> <a href="#">Profilim</a></li>
+                    <li> <a href="#">İlan Veren Bilgilerim</a></li>
+                    <li> <a href="#">İlan Veren Panosu</a></li>
+                    <li> <a href="#">Çıkış Yap</a></li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <ul>
+                    <li class="header-phone">
+                        <a href="tel:08500000000">
+                            <span>Destek Hattı</span>
+                            0850 000 00 00
+                        </a>
+                    </li>
+                    <li><a href="#">Yardım</a></li>
+                    <li class="nav-select-lang">
+                        <div><span class="flag-icon flag-icon-tr"></span>TR</div>
+                        <ul>
+                            <li><a href="#"><span class="flag-icon flag-icon-us"></span>EN</a></li>
+                            <li><a href="#"><span class="flag-icon flag-icon-fr"></span>FR</a></li>
+                            <li><a href="#"><span class="flag-icon flag-icon-tr"></span>TR</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Mobile Menu-->
+
+<div class="dropzone-template" style="display: none">
+  <div class="item photo-item">
+    <div class="image">
+      <div class="label hide">Kapak Fotoğrafı</div>
+      <img data-dz-thumbnail />
+      <div class="buttons">
+        <a href="#" data-toggle="modal" data-target="#photoDetailModal">
+          <img src="assets/images/icons/edit-icon.svg">
+        </a>
+        <a href="#" data-dz-remove>
+          <img src="assets/images/icons/delete-icon.svg">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/ed60a6a57c.js" crossorigin="anonymous"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/main.js" crossorigin="anonymous"></script>
+<script src="assets/js/jquery.maskedinput.js"></script>
+<script src="assets/js/telinput/js/utils.js"></script>
+<script src="assets/js/telinput/js/intlTelInput.min.js"></script>
+<script type="text/javascript" src="assets/js/select2.full.min.js"></script>
+<script type="text/javascript" src="assets/js/aos.js"></script>
+<script type="text/javascript" src="assets/js/moment-with-locales.min.js"></script>
+<script type="text/javascript" src="assets/js/datepicker/jquery.daterangepicker.js"></script>
+<script type="text/javascript" src="assets/js/dropzone.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js" integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A==" crossorigin="anonymous"></script>
+<script>
+  $(document).on('click', '.js-addDateModal-toggle', function(e) {
+    e.preventDefault();
+    const container = $(this).closest('.js-room-item');
+    container.find('#addDateModal').modal('show');
+  });
+  $(document).on('click', '.js-removeDateModal-toggle', function(e) {
+    e.preventDefault();
+    const container = $(this).closest('.js-room-item');
+    container.find('#removeDateModal').modal('show');
+  });
+  $(document).on('click', '.js-addPriceModal-toggle', function(e) {
+    e.preventDefault();
+    const container = $(this).closest('.js-room-item');
+    container.find('#addPriceModal').modal('show');
+  });
+  $(document).on('click', '.js-removePriceModal-toggle', function(e) {
+    e.preventDefault();
+    const container = $(this).closest('.js-room-item');
+    container.find('#removePriceModal').modal('show');
+  });
+
+
+
+  $('a[href="#"]').on('click', function(e) {
+    e.preventDefault();
+  });
+
+  moment.locale('tr');
+
+  var enumerateDaysBetweenDates = function(startDate, endDate) {
+      var dates = [];
+      var currDate = moment(startDate).startOf('day');
+      var lastDate = moment(endDate).startOf('day');
+      while(currDate.add(1, 'days').diff(lastDate) < 0) {
+          dates.push(moment(currDate.clone().toDate()).format('DD/MM/YYYY'));
+      }
+      return dates;
+  };
+
+  const groupBy = key => array =>
+    array.reduce((objectsByKeyValue, obj) => {
+      const value = obj[key];
+      objectsByKeyValue[value] = (objectsByKeyValue[value] || []).concat(obj);
+      return objectsByKeyValue;
+    }, {});
+
+
+  function setRoomPackages() {
+    $('.js-all-rooms > div').each((i, containerItem) => {
+      $(containerItem).find('.js-tags-area').select2({
+        tags: true,
+        tokenSeparators: [',', ' ']
+      });
+      $(containerItem).find('.js-room-count').text(i + 1);
+      $(document).on('change', '.js-bed-count', function() {
+        $(this).closest('.types').find('.js-beds').html('');
+        if($(this).val() > 0) {
+          for(var v = 0; v < $(this).val(); v++) {
+            $(this).closest('.types').find('.js-beds').append(
+              `
+              <div class="col-sm-6">
+                <label>
+                  ${v+1}. Yatak Tipi
+                  <input type="text" placeholder="Giriniz" />
+                </label>
+              </div>
+              `
+            );
+          }
+        } else {
+          $(this).closest('.types').find('.js-beds').html('');
+        }
+      });
+      Dropzone.autoDiscover = false;
+      $(document).ready(function() {
+
+        // ADD PHOTOS
+        $(document).on('change', '.js-room-type-select', function() {
+          if($(this).val() == "3") {
+              $(containerItem).find('.js-sizes-row').css('display', 'flex');
+          } else {
+              $(containerItem).find('.js-sizes-row').hide();
+          }
+        });
+
+        const dropzoneContainer = $(containerItem).find('.dropzone-area');
+        const dropzonePreview = $(containerItem).find('.dropzone-area .photos-area .photos')[0];
+
+        $(document).on('click', '.item.dz-image-preview .image > img', function() {
+          $(containerItem).find('.item.dz-image-preview .image > .label').hide();
+          $(this).closest('.image').find('.label').show();
+        });
+
+        var myDropzone = new Dropzone(dropzoneContainer[0],{
+            url: "/test",
+            previewTemplate: document.querySelector('.dropzone-template').innerHTML,
+            previewsContainer: dropzonePreview
+        }).on("addedfile", function(file) {
+          setTimeout(() => {
+              $(containerItem).find('.dz-message span').hide();
+              $(containerItem).find('.item.add-item').show();
+              $(containerItem).find('.item.add-item').css('order', ($(containerItem).find('.item.dz-image-preview').length + 1));
+          }, 100);
+        }).on("removedfile", function(file) {
+          setTimeout(() => {
+              if($(containerItem).find('.item.dz-image-preview').length == 0) {
+                  $(containerItem).find('.dz-message span').show();
+                  $(containerItem).find('.item.add-item').hide();
+              }
+              $(containerItem).find('.item.add-item').css('order', ($(containerItem).find('.item.dz-image-preview').length + 1));
+          }, 100);
+        });
+
+
+
+      });
+    });
+  };
+
+  $('.js-add-room').on('click', function() {
+    const template = $('.js-room-item-template').clone();
+    $('.js-all-rooms').append(template.removeClass('js-room-item-template'));
+    setRoomPackages();
+  });
+
+  $(document).on('input', 'input.js-room-name', function() {
+    $(this).closest('.js-room-item').find('small.js-room-name').text($(this).val())
+  });
+
+  // BLOCKING DAYS DATEPICKER
+  $(document).on('click', '.js-date-calendar-toggle', function() {
+    var self = $(this);
+    var containerItem = $(this).closest('.js-room-item');
+    self.toggleClass('active');
+    self.parent().find('.js-date-calendar-container').stop().slideToggle();
+
+
+    // RESERVATION CALENDAR
+    const reservedDays = ["01/04/2021","02/04/2021","03/04/2021","04/04/2021","05/04/2021"]
+    containerItem.attr('data-selectedForBlockingDays', 'hob');
+    containerItem.find('.calendar-area .js-drop-datepicker').dateRangePicker({
+        startOfWeek: 'monday',
+        language: 'tr',
+        autoClose: true,
+        beforeShowDay: function(t){
+            var valid = true;
+            var _class = '';
+            var _tooltip = valid ? '' : '';
+
+            if(reservedDays.includes(moment(t).format('DD/MM/YYYY'))) {
+                _class += 'reserved-days';
+                valid = !(reservedDays.includes(moment(t).format('DD/MM/YYYY')));
+            }
+            if(moment(t).format('DD/MM/YYYY') == reservedDays[reservedDays.length -1]) {
+                _class += ' half';
+            }
+
+            return [valid,_class,_tooltip];
+        }
+    }).bind('datepicker-change', function(e, obj) {
+        var dates =  moment(obj.date1).format('DD/MM/YYYY') + ','+ enumerateDaysBetweenDates(obj.date1, obj.date2).toString() + ',' + moment(obj.date2).format('DD/MM/YYYY');
+
+        containerItem.attr('data-selectedforblockingdays', dates)
+    });;
+
+    const containerCalendar = containerItem.find('.calendar-area .calendar-container-area');
+    containerItem.find('.calendar-area .js-datepicker-inline-area').dateRangePicker({
+        startOfWeek: 'monday',
+        inline:true,
+        singleDate : true,
+        container: containerCalendar,
+        alwaysOpen:true,
+        language: 'tr',
+        showShortcuts: false,
+        beforeShowDay: function(t){
+            var valid = true;
+            var _class = '';
+            var _tooltip = valid ? '' : '';
+
+            if(reservedDays.includes(moment(t).format('DD/MM/YYYY'))) {
+                _class += 'reserved-days';
+                valid = !(reservedDays.includes(moment(t).format('DD/MM/YYYY')));
+            }
+            if(moment(t).format('DD/MM/YYYY') == reservedDays[reservedDays.length -1]) {
+                _class += ' half';
+            }
+
+            if(containerItem.attr('data-blockedDays').split(',').includes(moment(t).format('DD/MM/YYYY'))) {
+                _class += 'blocked-days';
+                valid = !(containerItem.attr('data-blockedDays').split(',').includes(moment(t).format('DD/MM/YYYY')));
+            }
+
+            return [valid,_class,_tooltip];
+        },
+        showDateFilter: function(time, date){
+            return `<span>${date}</span>`
+        }
+    });
+
+    containerItem.find('.calendar-area .js-apply-disabled-days').on('click', function(e) {
+      e.preventDefault();
+      var blockeds = containerItem.attr('data-blockedDays') + ',' + containerItem.attr('data-selectedForBlockingDays');
+      containerItem.attr('data-blockedDays', blockeds);
+
+        containerItem.find('.js-datepicker-inline-area').data('dateRangePicker').resetMonthsView();
+    });
+
+    containerItem.find('.js-clear-disabled-days').on('click', function(e) {
+      e.preventDefault();
+        containerItem.attr('data-blockedDays', containerItem.attr('data-blockedDays').split(',').filter(item => !containerItem.attr('data-selectedForBlockingDays').split(',').includes(item)));
+
+        containerItem.find('.calendar-area .js-datepicker-inline-area').data('dateRangePicker').resetMonthsView();
+    });
+
+  });
+
+  // PRICES DAYS DATEPICKER
+  $(document).on('click', '.js-price-calendar-toggle', function(e) {
+    var self = $(this);
+    const containerItem = $(this).parents('.js-room-item');
+    const calendarContainer = self.parent().find('.js-price-calendar-container');
+    self.toggleClass('active');
+    self.parent().find('.js-price-calendar-container').stop().slideToggle();
+
+
+    if(typeof containerItem.find('.js-drop-datepicker-price').data('dateRangePicker') !== 'undefined') {
+      containerItem.find('.js-drop-datepicker-price').data('dateRangePicker').destroy();
+    }
+    if(typeof containerItem.find('.js-drop-datepicker-price2').data('dateRangePicker') !== 'undefined') {
+      containerItem.find('.js-drop-datepicker-price2').data('dateRangePicker').destroy();
+    }
+
+
+    let defaultPrice = containerItem.attr('data-defaultPrice');
+    let inputPrice = containerItem.attr('data-inputPrice');
+
+    containerItem.find('.js-drop-datepicker-price').dateRangePicker({
+        startOfWeek: 'monday',
+        language: 'tr',
+        autoClose: true,
+        beforeShowDay: function(t){
+            var valid = true;
+            var _class = '';
+            var _tooltip = valid ? '' : '';
+
+            if (JSON.parse(containerItem.attr('data-highlightDatePrice')).filter(e => e.day === moment(t).format('DD/MM/YYYY')).length > 0) {
+              _class += 'add-dot-days';
+              valid = !(JSON.parse(containerItem.attr('data-highlightDatePrice')).includes(moment(t).format('DD/MM/YYYY')));
+            }
+
+            return [valid,_class,_tooltip];
+        },
+    }).bind('datepicker-change', function(e, obj) {
+        var dates =  moment(obj.date1).format('DD/MM/YYYY') + ','+ enumerateDaysBetweenDates(obj.date1, obj.date2).toString() + ',' + moment(obj.date2).format('DD/MM/YYYY');
+        containerItem.attr('data-selectedForHighlightDatePrice', dates)
+    });
+
+    containerItem.find('.js-drop-datepicker-price2').dateRangePicker({
+        startOfWeek: 'monday',
+        language: 'tr',
+        autoClose: true,
+        beforeShowDay: function(t){
+            var valid = true;
+            var _class = '';
+            var _tooltip = valid ? '' : '';
+
+            if (JSON.parse(containerItem.attr('data-highlightDatePrice')).filter(e => e.day === moment(t).format('DD/MM/YYYY')).length > 0) {
+              _class += 'add-dot-days';
+              valid = !(JSON.parse(containerItem.attr('data-highlightDatePrice')).includes(moment(t).format('DD/MM/YYYY')));
+            }
+
+            return [valid,_class,_tooltip];
+        },
+    }).bind('datepicker-change', function(e, obj) {
+        var dates =  moment(obj.date1).format('DD/MM/YYYY') + ','+ enumerateDaysBetweenDates(obj.date1, obj.date2).toString() + ',' + moment(obj.date2).format('DD/MM/YYYY');
+
+        containerItem.attr('data-selectedForHighlightDatePrice', dates)
+    });
+
+    var inlineContainer = calendarContainer.find('.calendar-container-area');
+    calendarContainer.find('.js-datepicker-inline-area').dateRangePicker({
+        startOfWeek: 'monday',
+        inline:true,
+        singleMonth: true,
+        singleDate : true,
+        container: inlineContainer,
+        alwaysOpen:true,
+        language: 'tr',
+        showShortcuts: false,
+        beforeShowDay: function(t){
+            var valid = true;
+            var _class = '';
+            var _tooltip = valid ? '' : '';
+
+            if (JSON.parse(containerItem.attr('data-highlightDatePrice')).filter(e => e.day === moment(t).format('DD/MM/YYYY')).length > 0) {
+              _class += 'highlight-days';
+              valid = !(JSON.parse(containerItem.attr('data-highlightDatePrice')).includes(moment(t).format('DD/MM/YYYY')));
+            }
+
+            return [valid,_class,_tooltip];
+        },
+        showDateFilter: function(time, date){
+            const dateFormatted = moment(time).format('DD/MM/YYYY');
+            let price = '';
+            if(defaultPrice != '') {
+                price = defaultPrice + '₺';
+            } else {
+                price = '';
+            }
+
+            if (JSON.parse(containerItem.attr('data-highlightDatePrice')).filter(e => e.day === moment(time).format('DD/MM/YYYY')).length > 0) {
+                price = JSON.parse(containerItem.attr('data-highlightDatePrice')).filter(e => e.day === moment(time).format('DD/MM/YYYY'))[JSON.parse(containerItem.attr('data-highlightDatePrice')).filter(e => e.day === moment(time).format('DD/MM/YYYY')).length - 1].price;
+            }
+            return `<span>${date} <small>${price}</small></span>`
+        }
+    });
+
+    function calculateNightsSidebar() {
+        const groupByMonth = groupBy('price');
+        const summaryArea = containerItem.find('.summary');
+        const summaryPricesArea = containerItem.find('.js-selected-prices');
+        containerItem.find('.js-selected-prices').html('');
+
+        $.map(groupByMonth(JSON.parse(containerItem.attr('data-highlightDatePrice'))), function(value, index) {
+            summaryArea.show();
+            summaryPricesArea.append(`
+                <tr>
+                    <td>${value[0].month}</td>
+                    <td>${value.length} Gece x ${index}</td>
+                </tr>
+            `);
+        });
+    }
+
+
+    $(document).on('click', '.js-save-special-day', function(e) {
+      e.preventDefault();
+        if(containerItem.find('.js-special-day-value-price').val() !== '') {
+            let mapped = [];
+            containerItem.attr('data-selectedForHighlightDatePrice').split(',').map(item => {
+                let obj = {};
+                obj['price'] = containerItem.find('.js-special-day-value-price').val() + '₺';
+                obj['day'] = item;
+                obj['month'] = moment(item.split('/')[1]).format('MMMM');
+                mapped.push(obj);
+            });
+
+
+            let willDelete = [];
+
+            if(containerItem.find('.summary tr').length > 0) {
+                JSON.parse(containerItem.attr('data-highlightDatePrice')).map((item, idx) => {
+                    if(containerItem.attr('data-selectedForHighlightDatePrice').split(',').indexOf(item.day) > -1) {
+                        willDelete.push(idx);
+                    }
+                });
+            }
+
+            var dataCalc = JSON.parse(containerItem.attr('data-highlightDatePrice'));
+            for (var i = willDelete.length -1; i >= 0; i--) {
+              dataCalc.splice(willDelete[i],1);
+            }
+            containerItem.attr('data-highlightDatePrice', JSON.stringify(dataCalc));
+
+
+            var combine = [...JSON.parse(containerItem.attr('data-highlightDatePrice')), ...mapped];
+            containerItem.attr('data-highlightDatePrice', JSON.stringify(combine))
+
+
+            calendarContainer.find('.js-datepicker-inline-area').data('dateRangePicker').resetMonthsView();
+
+            containerItem.find('#addPriceModal').modal('hide');
+
+            calculateNightsSidebar();
+
+
+        }
+
+    });
+
+    $('.js-clear-special-day').on('click', function(e) {
+        e.preventDefault();
+        const filteredItems = JSON.parse(containerItem.attr('data-highlightDatePrice')).filter(function(item) {
+          return !containerItem.attr('data-selectedForHighlightDatePrice').split(',').includes(item.day)
+        })
+
+        containerItem.attr('data-highlightDatePrice', JSON.stringify(filteredItems))
+
+        calendarContainer.find('.js-datepicker-inline-area').data('dateRangePicker').resetMonthsView();
+        $('#removePriceModal').modal('hide');
+
+        calculateNightsSidebar();
+    });
+
+    calendarContainer.find('.js-table-price-input').on('input', function() {
+        defaultPrice = calendarContainer.find('.js-table-price-input').val();
+        calendarContainer.find('.js-datepicker-inline-area').data('dateRangePicker').resetMonthsView();
+    });
+
+  });
+
+  // CHECKIN CHECKOUT DAYS DATEPICKER
+  $(document).on('click', '.js-checkincheckout-calendar-toggle', function(e) {
+    var self = $(this);
+    const containerItem = $(this).parents('.js-room-item');
+    const calendarContainer = self.parent().find('.js-checkincheckout-calendar-container');
+    self.toggleClass('active');
+    self.parent().find('.js-checkincheckout-calendar-container').stop().slideToggle();
+
+
+    if(typeof containerItem.find('.js-drop-datepicker-date').data('dateRangePicker') !== 'undefined') {
+      containerItem.find('.js-drop-datepicker-date').data('dateRangePicker').destroy();
+    }
+    if(typeof containerItem.find('.js-drop-datepicker-date2').data('dateRangePicker') !== 'undefined') {
+      containerItem.find('.js-drop-datepicker-date2').data('dateRangePicker').destroy();
+    }
+
+    let defaultNights = containerItem.attr('data-defaultNights');
+    let inputNights = containerItem.attr('data-inputNights');
+
+    containerItem.find('.js-drop-datepicker-date').dateRangePicker({
+        startOfWeek: 'monday',
+        language: 'tr',
+        autoClose: true,
+        beforeShowDay: function(t){
+            var valid = true;
+            var _class = '';
+            var _tooltip = valid ? '' : '';
+
+            if (JSON.parse(containerItem.attr('data-highlightDate')).filter(e => e.day === moment(t).format('DD/MM/YYYY')).length > 0) {
+              _class += 'add-dot-days';
+              valid = !(JSON.parse(containerItem.attr('data-highlightDate')).includes(moment(t).format('DD/MM/YYYY')));
+            }
+
+            return [valid,_class,_tooltip];
+        },
+    }).bind('datepicker-change', function(e, obj) {
+        var dates =  moment(obj.date1).format('DD/MM/YYYY') + ','+ enumerateDaysBetweenDates(obj.date1, obj.date2).toString() + ',' + moment(obj.date2).format('DD/MM/YYYY');
+
+        containerItem.attr('data-selectedForHighlightDate', dates)
+    });
+
+    containerItem.find('.js-drop-datepicker-date2').dateRangePicker({
+        startOfWeek: 'monday',
+        language: 'tr',
+        autoClose: true,
+        beforeShowDay: function(t){
+            var valid = true;
+            var _class = '';
+            var _tooltip = valid ? '' : '';
+
+            if (JSON.parse(containerItem.attr('data-highlightDate')).filter(e => e.day === moment(t).format('DD/MM/YYYY')).length > 0) {
+              _class += 'add-dot-days';
+              valid = !(JSON.parse(containerItem.attr('data-highlightDate')).includes(moment(t).format('DD/MM/YYYY')));
+            }
+
+            return [valid,_class,_tooltip];
+        },
+    }).bind('datepicker-change', function(e, obj) {
+        var dates =  moment(obj.date1).format('DD/MM/YYYY') + ','+ enumerateDaysBetweenDates(obj.date1, obj.date2).toString() + ',' + moment(obj.date2).format('DD/MM/YYYY');
+
+        containerItem.attr('data-selectedForHighlightDate', dates)
+    });
+
+    var inlineContainer = calendarContainer.find('.calendar-container-area');
+    calendarContainer.find('.js-datepicker-inline-area').dateRangePicker({
+        startOfWeek: 'monday',
+        inline:true,
+        singleMonth: true,
+        singleDate : true,
+        container: inlineContainer,
+        alwaysOpen:true,
+        language: 'tr',
+        showShortcuts: false,
+        beforeShowDay: function(t){
+            var valid = true;
+            var _class = '';
+            var _tooltip = valid ? '' : '';
+
+            if (JSON.parse(containerItem.attr('data-highlightDate')).filter(e => e.day === moment(t).format('DD/MM/YYYY')).length > 0) {
+              _class += 'highlight-days';
+              valid = !(JSON.parse(containerItem.attr('data-highlightDate')).includes(moment(t).format('DD/MM/YYYY')));
+            }
+
+            return [valid,_class,_tooltip];
+        },
+        showDateFilter: function(time, date){
+            const dateFormatted = moment(time).format('DD/MM/YYYY');
+            let price = '';
+            if(defaultNights != '') {
+                price = defaultNights + ' Gece';
+            } else {
+                price = '';
+            }
+
+            if (JSON.parse(containerItem.attr('data-highlightDate')).filter(e => e.day === moment(time).format('DD/MM/YYYY')).length > 0) {
+                price = JSON.parse(containerItem.attr('data-highlightDate')).filter(e => e.day === moment(time).format('DD/MM/YYYY'))[JSON.parse(containerItem.attr('data-highlightDate')).filter(e => e.day === moment(time).format('DD/MM/YYYY')).length - 1].price;
+            }
+            return `<span>${date} <small>${price}</small></span>`
+        }
+    });
+
+    function calculateNightsSidebarDate() {
+        const groupByMonth = groupBy('price');
+        const summaryArea = containerItem.find('.summary');
+        const summaryPricesArea = containerItem.find('.js-selected-days');
+        containerItem.find('.js-selected-days').html('');
+
+        $.map(groupByMonth(JSON.parse(containerItem.attr('data-highlightDate'))), function(value, index) {
+            summaryArea.show();
+            summaryPricesArea.append(`
+                <tr>
+                    <td>${value[0].month}</td>
+                    <td>${value.length} Gece x ${index}</td>
+                </tr>
+            `);
+        });
+    }
+
+
+    $(document).on('click', '.js-save-special-day', function(e) {
+      e.preventDefault();
+        if(containerItem.find('.js-special-day-value option:selected').val() !== '') {
+            let mapped = [];
+            containerItem.attr('data-selectedForHighlightDate').split(',').map(item => {
+                let obj = {};
+                obj['price'] = containerItem.find('.js-special-day-value option:selected').val() + ' Gece';
+                obj['day'] = item;
+                obj['month'] = moment(item.split('/')[1]).format('MMMM');
+                mapped.push(obj);
+            });
+
+
+            let willDelete = [];
+
+            if(containerItem.find('.summary tr').length > 0) {
+                JSON.parse(containerItem.attr('data-highlightDate')).map((item, idx) => {
+                    if(containerItem.attr('data-selectedForHighlightDate').split(',').indexOf(item.day) > -1) {
+                        willDelete.push(idx);
+                    }
+                });
+            }
+
+            var dataCalc = JSON.parse(containerItem.attr('data-highlightDate'));
+            for (var i = willDelete.length -1; i >= 0; i--) {
+              dataCalc.splice(willDelete[i],1);
+            }
+            containerItem.attr('data-highlightDate', JSON.stringify(dataCalc));
+
+
+            var combine = [...JSON.parse(containerItem.attr('data-highlightDate')), ...mapped];
+            containerItem.attr('data-highlightDate', JSON.stringify(combine))
+
+
+            calendarContainer.find('.js-datepicker-inline-area').data('dateRangePicker').resetMonthsView();
+
+            containerItem.find('#addDateModal').modal('hide');
+
+            calculateNightsSidebarDate();
+
+
+        }
+
+    });
+
+    $('.js-clear-special-day').on('click', function(e) {
+        e.preventDefault();
+        const filteredItems = JSON.parse(containerItem.attr('data-highlightDate')).filter(function(item) {
+          return !containerItem.attr('data-selectedForHighlightDate').split(',').includes(item.day)
+        })
+
+        containerItem.attr('data-highlightDate', JSON.stringify(filteredItems))
+
+        calendarContainer.find('.js-datepicker-inline-area').data('dateRangePicker').resetMonthsView();
+        $('#removeDateModal').modal('hide');
+
+        calculateNightsSidebarDate();
+    });
+
+    containerItem.find('.js-default-day-select').on('change', function() {
+        defaultNights = containerItem.find('.js-default-day-select option:selected').val();
+        calendarContainer.find('.js-datepicker-inline-area').data('dateRangePicker').resetMonthsView();
+    });
+  });
+
+</script>
+</body>
+</html>
