@@ -1715,11 +1715,7 @@ body, html {
   color: #fff!important;
   background: #bf2d45!important;
 }
-.add-images .add-image-hero img {
-    display: inline-block;
-    margin: 0 5px;
-    filter: brightness(500%);
-}
+
 .js-beds {
   width: 100%;
 }
