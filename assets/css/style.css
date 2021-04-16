@@ -3023,6 +3023,7 @@ a.has-sub[aria-expanded="true"]:after {
     position: relative;
     width: 85%;
     margin: 0 auto;
+    z-index: 5!important;
     box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15), 0 3px 8px rgba(0, 0, 0, 0.1) !important;
 }
 
@@ -11628,7 +11629,6 @@ body.payment-body .reservation-summary.sticky-top {
 .payment-result .buttons a:hover {
     background: #bf2d45;
 }
-
 .add-images .add-image-hero img {
     filter: brightness(400%);
 }

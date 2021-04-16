@@ -1855,4 +1855,12 @@ body, html {
   .calendar-area .hero {
     padding-right: 25px;
   }
+  #addPriceModal .modal-dialog--map,
+  #removePriceModal .modal-dialog--map {
+    max-width: 100%!important;
+  }
+  #addPriceModal .modal-content,
+  #removePriceModal .modal-content {
+    border-radius:15px!important;
+  }
 }

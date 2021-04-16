@@ -15,9 +15,10 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/js/telinput/css/intlTelInput.css">
-    <link rel="stylesheet" href="assets/css/daterangepicker.css">
+    <link rel="stylesheet" href="assets/js/datepicker/daterangepicker.min.css">
     <link rel="stylesheet" href="assets/css/select2.min.css">
     <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/add-steps.css">
 </head>
 <body>
 
@@ -1452,48 +1453,32 @@
 <script type="text/javascript" src="assets/js/select2.full.min.js"></script>
 <script type="text/javascript" src="assets/js/aos.js"></script>
 <script type="text/javascript" src="assets/js/moment-with-locales.min.js"></script>
-<script type="text/javascript" src="assets/js/daterangepicker.js"></script>
+<script type="text/javascript" src="assets/js/datepicker/jquery.daterangepicker.js"></script>
 
 
 <!--Sayfaya Özel JS-->
 <script type="text/javascript">
     $(document).ready(function () {
         // Daterange Picker
-        if ($('#search_checkin, #search_checkout').length) {
-            var currentDate = moment().format("DD MMMM YYYY");
+        $('#search_checkin, #search_checkin').dateRangePicker({
+            startOfWeek: 'monday',
+            language: 'tr',
+            autoClose: true,
+            container: '.search-area',
+            getValue: function()
+            {
+                if ($('#search_checkin').val() && $('#search_checkout').val() )
+                    return $('#search_checkin').val() + ' to ' + $('#search_checkout').val();
+                else
+                    return '';
+            },
+            setValue: function(s,s1,s2)
+            {
+                $('#search_checkin').val(s1);
+                $('#search_checkout').val(s2);
+            }
+        });
 
-            moment.locale('tr');
-            $('#search_checkin, #search_checkout').daterangepicker({
-                locale: {
-                    format: 'DD MMMM YYYY',
-                },
-                "linkedCalendars": false,
-                "alwaysShowCalendars": true,
-                "minDate": currentDate,
-                "maxDate": moment().add('months', 12),
-                autoApply: true,
-                autoUpdateInput: false
-            }, function (start, end, label) {
-                var selectedStartDate = start.format('DD MMMM YYYY'); // selected start
-                var selectedEndDate = end.format('DD MMMM YYYY'); // selected end
-
-                $checkinInput = $('#search_checkin');
-                $checkoutInput = $('#search_checkout');
-
-                // Updating Fields with selected dates
-                $checkinInput.val(selectedStartDate);
-                $checkoutInput.val(selectedEndDate);
-
-                var checkOutPicker = $checkoutInput.data('daterangepicker');
-                checkOutPicker.setStartDate(selectedStartDate);
-                checkOutPicker.setEndDate(selectedEndDate);
-
-                var checkInPicker = $checkinInput.data('daterangepicker');
-                checkInPicker.setStartDate(selectedStartDate);
-                checkInPicker.setEndDate(selectedEndDate);
-            });
-
-        }
         // End Daterange Picker
 
         // Carousels
