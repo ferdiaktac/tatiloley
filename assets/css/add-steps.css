@@ -1556,12 +1556,31 @@ body, html {
 .add-room-area a:hover {
   background: #bf2d45;
 }
+.room-container .room-details-area {
+  display: none;
+}
 .room-container .room-hero {
+  cursor: pointer;
+  position: relative;
   font-size: 22px;
   color: #222;
+}
+.room-container .room-hero i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%)
+}
+.room-container.shown .room-details-area {
+  display: block;
+}
+.room-container.shown .room-hero {
   padding-bottom: 20px;
   margin-bottom: 20px;
   border-bottom: solid 1px #ddd;
+}
+.room-container.shown .room-hero i {
+  transform: rotate(180deg) translateY(20px);
 }
 .room-container .room-hero small {
   display: inline-block;
@@ -1695,4 +1714,12 @@ body, html {
 .centered-button.centered-button--full button:hover {
   color: #fff!important;
   background: #bf2d45!important;
+}
+.add-images .add-image-hero img {
+    display: inline-block;
+    margin: 0 5px;
+    filter: brightness(500%);
+}
+.js-beds {
+  width: 100%;
 }

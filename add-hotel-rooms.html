@@ -193,564 +193,567 @@
             <div class="room-hero">
               Oda <span class="js-room-count"></span>
               <small class="js-room-name"></small>
+              <i class="fas fa-chevron-down"></i>
             </div>
-            <div class="fields">
-              <div class="sub-hero">Oda Özellikleri</div>
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="types">
-                    <div class="row">
-                      <div class="col-sm-12">
-                        <label>
-                          Oda adını giriniz
-                          <input type="text" placeholder="Giriniz" class="js-room-name" />
-                        </label>
-                      </div>
-                      <div class="col-sm-6">
-                        <label>
-                          Oda Sayısı
-                          <input type="text" placeholder="Giriniz" />
-                        </label>
-                      </div>
-                      <div class="col-sm-6">
-                        <label>
-                          Oda Genişliği (m²)
-                          <input type="text" placeholder="Giriniz" />
-                        </label>
-                      </div>
-                      <div class="col-sm-12">
-                        <label>
-                          Yatak Sayısı
-                          <select class="js-bed-count">
-                            <option>Lütfen Seçiniz</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                          </select>
-                        </label>
-                      </div>
-                      <div class="js-beds" style="display: flex;"></div>
-                      <div class="col-sm-12">
-                        <label>
-                          Oda Özelliği
-                          <select>
-                            <option>Herşey Dahil</option>
-                          </select>
-                        </label>
-                      </div>
-                      <div class="col-sm-12">
-                        <label>
-                          İptal Seçeneği
-                          <select>
-                            <option>Son 14 güne kadar ücretsiz iptal</option>
-                          </select>
-                        </label>
-                      </div>
-                      <div class="col-sm-12">
-                        <label>
-                          Bebek için Kabul Edilecek Yaş Aralığı
-                          <select>
-                            <option>0-2 yaş</option>
-                          </select>
-                        </label>
-                      </div>
-                      <div class="col-sm-12">
-                        <label>
-                          Yetişkin Sayısı (En Az)
-                          <select>
-                            <option>2 Yetişkin</option>
-                          </select>
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="overflow">
-                    <div class="label">Odaya Özel Olanaklar</div>
-                    <div class="list">
-                      <ul>
-                        <li>
-                          <label class="checkbox-item">
-                            <input type="checkbox" />
-                            <div class="checkbox"></div>
-                            <span>Küvetli Banyo</span>
+            <div class="room-details-area">
+              <div class="fields">
+                <div class="sub-hero">Oda Özellikleri</div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="types">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <label>
+                            Oda adını giriniz
+                            <input type="text" placeholder="Giriniz" class="js-room-name" />
                           </label>
-                        </li>
-                        <li>
-                          <label class="checkbox-item">
-                            <input type="checkbox" />
-                            <div class="checkbox"></div>
-                            <span>Klima</span>
+                        </div>
+                        <div class="col-sm-6">
+                          <label>
+                            Oda Sayısı
+                            <input type="text" placeholder="Giriniz" />
                           </label>
-                        </li>
-                        <li>
-                          <label class="checkbox-item">
-                            <input type="checkbox" />
-                            <div class="checkbox"></div>
-                            <span>Çocuk Havuzu</span>
+                        </div>
+                        <div class="col-sm-6">
+                          <label>
+                            Oda Genişliği (m²)
+                            <input type="text" placeholder="Giriniz" />
                           </label>
-                        </li>
-                        <li>
-                          <label class="checkbox-item">
-                            <input type="checkbox" />
-                            <div class="checkbox"></div>
-                            <span>Kapalı Havuz</span>
+                        </div>
+                        <div class="col-sm-12">
+                          <label>
+                            Yatak Sayısı
+                            <select class="js-bed-count">
+                              <option>Lütfen Seçiniz</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                            </select>
                           </label>
-                        </li>
-                        <li>
-                          <label class="checkbox-item">
-                            <input type="checkbox" />
-                            <div class="checkbox"></div>
-                            <span>Küvetli Banyo</span>
+                        </div>
+                        <div class="js-beds" style="display: flex;"></div>
+                        <div class="col-sm-12">
+                          <label>
+                            Oda Özelliği
+                            <select>
+                              <option>Herşey Dahil</option>
+                            </select>
                           </label>
-                        </li>
-                        <li>
-                          <label class="checkbox-item">
-                            <input type="checkbox" />
-                            <div class="checkbox"></div>
-                            <span>Klima</span>
+                        </div>
+                        <div class="col-sm-12">
+                          <label>
+                            İptal Seçeneği
+                            <select>
+                              <option>Son 14 güne kadar ücretsiz iptal</option>
+                            </select>
                           </label>
-                        </li>
-                        <li>
-                          <label class="checkbox-item">
-                            <input type="checkbox" />
-                            <div class="checkbox"></div>
-                            <span>Çocuk Havuzu</span>
+                        </div>
+                        <div class="col-sm-12">
+                          <label>
+                            Bebek için Kabul Edilecek Yaş Aralığı
+                            <select>
+                              <option>0-2 yaş</option>
+                            </select>
                           </label>
-                        </li>
-                        <li>
-                          <label class="checkbox-item">
-                            <input type="checkbox" />
-                            <div class="checkbox"></div>
-                            <span>Kapalı Havuz</span>
+                        </div>
+                        <div class="col-sm-12">
+                          <label>
+                            Yetişkin Sayısı (En Az)
+                            <select>
+                              <option>2 Yetişkin</option>
+                            </select>
                           </label>
-                        </li>
-                        <li>
-                          <label class="checkbox-item">
-                            <input type="checkbox" />
-                            <div class="checkbox"></div>
-                            <span>Küvetli Banyo</span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="checkbox-item">
-                            <input type="checkbox" />
-                            <div class="checkbox"></div>
-                            <span>Klima</span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="checkbox-item">
-                            <input type="checkbox" />
-                            <div class="checkbox"></div>
-                            <span>Çocuk Havuzu</span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="checkbox-item">
-                            <input type="checkbox" />
-                            <div class="checkbox"></div>
-                            <span>Kapalı Havuz</span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="checkbox-item">
-                            <input type="checkbox" />
-                            <div class="checkbox"></div>
-                            <span>Küvetli Banyo</span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="checkbox-item">
-                            <input type="checkbox" />
-                            <div class="checkbox"></div>
-                            <span>Klima</span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="checkbox-item">
-                            <input type="checkbox" />
-                            <div class="checkbox"></div>
-                            <span>Çocuk Havuzu</span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="checkbox-item">
-                            <input type="checkbox" />
-                            <div class="checkbox"></div>
-                            <span>Kapalı Havuz</span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="checkbox-item">
-                            <input type="checkbox" />
-                            <div class="checkbox"></div>
-                            <span>Küvetli Banyo</span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="checkbox-item">
-                            <input type="checkbox" />
-                            <div class="checkbox"></div>
-                            <span>Klima</span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="checkbox-item">
-                            <input type="checkbox" />
-                            <div class="checkbox"></div>
-                            <span>Çocuk Havuzu</span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="checkbox-item">
-                            <input type="checkbox" />
-                            <div class="checkbox"></div>
-                            <span>Kapalı Havuz</span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="checkbox-item">
-                            <input type="checkbox" />
-                            <div class="checkbox"></div>
-                            <span>Küvetli Banyo</span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="checkbox-item">
-                            <input type="checkbox" />
-                            <div class="checkbox"></div>
-                            <span>Klima</span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="checkbox-item">
-                            <input type="checkbox" />
-                            <div class="checkbox"></div>
-                            <span>Çocuk Havuzu</span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="checkbox-item">
-                            <input type="checkbox" />
-                            <div class="checkbox"></div>
-                            <span>Kapalı Havuz</span>
-                          </label>
-                        </li>
-                      </ul>
-                    </div>
-                    <label>
-                      Çocuk için Kabul Edilecek Yaş Aralığı
-                      <select>
-                        <option>3-11 yaş</option>
-                      </select>
-                    </label>
-                    <label>
-                      Ekstra Yetişkin / Çocuk / Bebek Kapasiteleri
-                      <select class="js-tags-area" multiple>
-                        <option>1 yetişkin</option>
-                        <option>1 yetişkin 1 bebek</option>
-                        <option>1 yetişkin 1 çocuk</option>
-                        <option>1 yetişkin 1 çocuk 1 bebek</option>
-                        <option>2 bebek</option>
-                        <option>3 bebek</option>
-                        <option>2 çocuk</option>
-                        <option>3 çocuk</option>
-                        <option>1 çocuk 1 bebek</option>
-                        <option>1 çocuk 2 bebek</option>
-                        <option>2 çocuk 1 bebek</option>
-                        <option>2 çocuk 2 bebek</option>
-                      </select>
-                    </label>
-                  </div>
-                </div>
-              </div>
-              <label>
-                Açıklama
-                <textarea></textarea>
-                <p class="input-note">Min. 20 Karakter</p>
-              </label>
-            </div>
-            <div class="concept">
-              <div class="seperate-hero">
-                Kuralları Belirtin
-              </div>
-              <div class="rules">
-                <div class="type-radio">
-                  <label>
-                    <input type="checkbox" name="type" />
-                    <div class="item">
-                      <div class="align">
-                        <img src="assets/images/icons/baby-icon-black.svg" alt="" />
-                        <div class="name">Bebeklere Uygun<br />(0-2)</div>
-                      </div>
-                    </div>
-                  </label>
-                </div>
-                <div class="type-radio">
-                  <label>
-                    <input type="checkbox" name="type" />
-                    <div class="item">
-                      <div class="align">
-                        <img src="assets/images/icons/child-icon-black.svg" alt="" />
-                        <div class="name">Çocuklara Uygun<br />(2-12)</div>
-                      </div>
-                    </div>
-                  </label>
-                </div>
-                <div class="type-radio">
-                  <label>
-                    <input type="checkbox" name="type" />
-                    <div class="item">
-                      <div class="align">
-                        <img src="assets/images/icons/party-icon.svg" alt="" />
-                        <div class="name">Etkinlik<br />Düzenlenebilir</div>
-                      </div>
-                    </div>
-                  </label>
-                </div>
-                <div class="type-radio">
-                  <label>
-                    <input type="checkbox" name="type" />
-                    <div class="item">
-                      <div class="align">
-                        <img src="assets/images/icons/pati-icon-black.svg" alt="" />
-                        <div class="name">Evcil Hayvanlara<br /> Uygun</div>
-                      </div>
-                    </div>
-                  </label>
-                </div>
-                <div class="type-radio">
-                  <label>
-                    <input type="checkbox" name="type" />
-                    <div class="item">
-                      <div class="align">
-                        <img src="assets/images/icons/smoke-icon-black.svg" alt="" />
-                        <div class="name">Sigara İçilebilir</div>
-                      </div>
-                    </div>
-                  </label>
-                </div>
-              </div>
-            </div>
-            <div class="add-images">
-              <div class="hero">
-                İlanınıza Fotoğraf Ekleyin
-              </div>
-              <div class="desc">
-                Yüklediğiniz fotoğraflardan ilk sıraya sürükleyerek bir kapak fotoğrafı belirleyebilir, 30 adete kadar yeni fotoğraflar ekleyebilir,
-                yüklediğiniz fotoğraflardan istediklerinizi silebilirsiniz.
-              </div>
-              <form action="/" class="dropzone dropzone-area">
-                  <div class="photos-area">
-                  <div class="dz-message" data-dz-message><span><a href="javascript:void(0)" class="toggle">Fotoğraf Ekle</a></span></div>
-                    <div class="photos">
-                      <div class="item add-item">
-                        <div class="add">
-                          <img src="assets/images/icons/add-photo.svg">
-                          Fotoğraf Ekle
                         </div>
                       </div>
                     </div>
                   </div>
-              </form>
-            </div>
-            <div class="calendar-area">
-              <div class="pick-date-area">
-                <div class="hero js-date-calendar-toggle">
-                  <div>Rezervasyon Takvimi</div>
-                  <p>Seçtiğiniz tarih aralığını rezervasyona toptan kapatabilir ya da açabilirsiniz.</p>
-                </div>
-                <div class="calendar-pick-container js-date-calendar-container">
-                  <div class="buttons">
-                    <div class="row">
-                      <div class="col-sm-6">
-                        <input type="text" placeholder="Tarih Seçiniz" class="js-drop-datepicker" />
+                  <div class="col-sm-6">
+                    <div class="overflow">
+                      <div class="label">Odaya Özel Olanaklar</div>
+                      <div class="list">
+                        <ul>
+                          <li>
+                            <label class="checkbox-item">
+                              <input type="checkbox" />
+                              <div class="checkbox"></div>
+                              <span>Küvetli Banyo</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="checkbox-item">
+                              <input type="checkbox" />
+                              <div class="checkbox"></div>
+                              <span>Klima</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="checkbox-item">
+                              <input type="checkbox" />
+                              <div class="checkbox"></div>
+                              <span>Çocuk Havuzu</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="checkbox-item">
+                              <input type="checkbox" />
+                              <div class="checkbox"></div>
+                              <span>Kapalı Havuz</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="checkbox-item">
+                              <input type="checkbox" />
+                              <div class="checkbox"></div>
+                              <span>Küvetli Banyo</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="checkbox-item">
+                              <input type="checkbox" />
+                              <div class="checkbox"></div>
+                              <span>Klima</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="checkbox-item">
+                              <input type="checkbox" />
+                              <div class="checkbox"></div>
+                              <span>Çocuk Havuzu</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="checkbox-item">
+                              <input type="checkbox" />
+                              <div class="checkbox"></div>
+                              <span>Kapalı Havuz</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="checkbox-item">
+                              <input type="checkbox" />
+                              <div class="checkbox"></div>
+                              <span>Küvetli Banyo</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="checkbox-item">
+                              <input type="checkbox" />
+                              <div class="checkbox"></div>
+                              <span>Klima</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="checkbox-item">
+                              <input type="checkbox" />
+                              <div class="checkbox"></div>
+                              <span>Çocuk Havuzu</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="checkbox-item">
+                              <input type="checkbox" />
+                              <div class="checkbox"></div>
+                              <span>Kapalı Havuz</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="checkbox-item">
+                              <input type="checkbox" />
+                              <div class="checkbox"></div>
+                              <span>Küvetli Banyo</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="checkbox-item">
+                              <input type="checkbox" />
+                              <div class="checkbox"></div>
+                              <span>Klima</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="checkbox-item">
+                              <input type="checkbox" />
+                              <div class="checkbox"></div>
+                              <span>Çocuk Havuzu</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="checkbox-item">
+                              <input type="checkbox" />
+                              <div class="checkbox"></div>
+                              <span>Kapalı Havuz</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="checkbox-item">
+                              <input type="checkbox" />
+                              <div class="checkbox"></div>
+                              <span>Küvetli Banyo</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="checkbox-item">
+                              <input type="checkbox" />
+                              <div class="checkbox"></div>
+                              <span>Klima</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="checkbox-item">
+                              <input type="checkbox" />
+                              <div class="checkbox"></div>
+                              <span>Çocuk Havuzu</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="checkbox-item">
+                              <input type="checkbox" />
+                              <div class="checkbox"></div>
+                              <span>Kapalı Havuz</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="checkbox-item">
+                              <input type="checkbox" />
+                              <div class="checkbox"></div>
+                              <span>Küvetli Banyo</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="checkbox-item">
+                              <input type="checkbox" />
+                              <div class="checkbox"></div>
+                              <span>Klima</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="checkbox-item">
+                              <input type="checkbox" />
+                              <div class="checkbox"></div>
+                              <span>Çocuk Havuzu</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="checkbox-item">
+                              <input type="checkbox" />
+                              <div class="checkbox"></div>
+                              <span>Kapalı Havuz</span>
+                            </label>
+                          </li>
+                        </ul>
                       </div>
-                      <div class="col-sm-6">
-                        <div class="row">
-                          <div class="col-sm-6">
-                            <a href="#" class="js-apply-disabled-days">Günleri Doldur</a>
-                          </div>
-                          <div class="col-sm-6">
-                            <a href="#" class="js-clear-disabled-days">Günleri Boşalt</a>
+                      <label>
+                        Çocuk için Kabul Edilecek Yaş Aralığı
+                        <select>
+                          <option>3-11 yaş</option>
+                        </select>
+                      </label>
+                      <label>
+                        Ekstra Yetişkin / Çocuk / Bebek Kapasiteleri
+                        <select class="js-tags-area" multiple>
+                          <option>1 yetişkin</option>
+                          <option>1 yetişkin 1 bebek</option>
+                          <option>1 yetişkin 1 çocuk</option>
+                          <option>1 yetişkin 1 çocuk 1 bebek</option>
+                          <option>2 bebek</option>
+                          <option>3 bebek</option>
+                          <option>2 çocuk</option>
+                          <option>3 çocuk</option>
+                          <option>1 çocuk 1 bebek</option>
+                          <option>1 çocuk 2 bebek</option>
+                          <option>2 çocuk 1 bebek</option>
+                          <option>2 çocuk 2 bebek</option>
+                        </select>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <label>
+                  Açıklama
+                  <textarea></textarea>
+                  <p class="input-note">Min. 20 Karakter</p>
+                </label>
+              </div>
+              <div class="concept">
+                <div class="seperate-hero">
+                  Kuralları Belirtin
+                </div>
+                <div class="rules">
+                  <div class="type-radio">
+                    <label>
+                      <input type="checkbox" name="type" />
+                      <div class="item">
+                        <div class="align">
+                          <img src="assets/images/icons/baby-icon-black.svg" alt="" />
+                          <div class="name">Bebeklere Uygun<br />(0-2)</div>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="type-radio">
+                    <label>
+                      <input type="checkbox" name="type" />
+                      <div class="item">
+                        <div class="align">
+                          <img src="assets/images/icons/child-icon-black.svg" alt="" />
+                          <div class="name">Çocuklara Uygun<br />(2-12)</div>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="type-radio">
+                    <label>
+                      <input type="checkbox" name="type" />
+                      <div class="item">
+                        <div class="align">
+                          <img src="assets/images/icons/party-icon.svg" alt="" />
+                          <div class="name">Etkinlik<br />Düzenlenebilir</div>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="type-radio">
+                    <label>
+                      <input type="checkbox" name="type" />
+                      <div class="item">
+                        <div class="align">
+                          <img src="assets/images/icons/pati-icon-black.svg" alt="" />
+                          <div class="name">Evcil Hayvanlara<br /> Uygun</div>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="type-radio">
+                    <label>
+                      <input type="checkbox" name="type" />
+                      <div class="item">
+                        <div class="align">
+                          <img src="assets/images/icons/smoke-icon-black.svg" alt="" />
+                          <div class="name">Sigara İçilebilir</div>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="add-images">
+                <div class="hero">
+                  İlanınıza Fotoğraf Ekleyin
+                </div>
+                <div class="desc">
+                  Yüklediğiniz fotoğraflardan ilk sıraya sürükleyerek bir kapak fotoğrafı belirleyebilir, 30 adete kadar yeni fotoğraflar ekleyebilir,
+                  yüklediğiniz fotoğraflardan istediklerinizi silebilirsiniz.
+                </div>
+                <form action="/" class="dropzone dropzone-area">
+                    <div class="photos-area">
+                    <div class="dz-message" data-dz-message><span><a href="javascript:void(0)" class="toggle">Fotoğraf Ekle</a></span></div>
+                      <div class="photos">
+                        <div class="item add-item">
+                          <div class="add">
+                            <img src="assets/images/icons/add-photo.svg">
+                            Fotoğraf Ekle
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="calendar-container">
-                    <div class="statuses">
-                      <ul>
-                        <li>
-                          Dolu Günler
-                        </li>
-                        <li>
-                          Rezerve Günler
-                        </li>
-                        <li>
-                          Boş Günler
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="calendar-container-area">
-                        <input type="hidden" class="js-datepicker-inline-area" />
-                    </div>
-                  </div><br />
-                  <div class="hero">
-                    <div>iCalendar</div>
-                    <p>Bu ilanın rezervasyonlarını iCalendar ile takip ediyorsanız iCal verisini içe aktarmak için iCal adresini giriniz.</p>
-                  </div>
-                  <div class="field">
-                    <label>
-                      iCal Adresi
-                      <input type="text" placeholder="Giriniz" />
-                    </label>
-                  </div>
-                  <ul class="notices">
-                    <li>Yukarıdaki takvimden dolu olarak işaretlenen günler iCalendar tarafında boşaltılamaz.</li>
-                    <li>iCalendar tarafında dolu olarak işaretlenen günler yukarıdaki takvimden boşaltılamaz.</li>
-                    <li>Karışıklıkların önüne geçmek için iCal kullanıyorsanız zorunda kalmadıkça yukarıdaki takvim ile güncelleme yapmayınız.</li>
-                  </ul>
-                </div>
+                </form>
               </div>
-
-            </div>
-            <div class="price-calendar-area price-calendar-container">
-              <div class="price-calendar">
-                <div class="hero js-price-calendar-toggle">
-                  Özel Fiyat Gir <small>(Opsiyonel)</small>
-                </div>
-                <div class="price-calendar-container-details js-price-calendar-container">
-                  <div class="hero">
-                    Fiyatlandırma
+              <div class="calendar-area">
+                <div class="pick-date-area">
+                  <div class="hero js-date-calendar-toggle">
+                    <div>Rezervasyon Takvimi</div>
+                    <p>Seçtiğiniz tarih aralığını rezervasyona toptan kapatabilir ya da açabilirsiniz.</p>
                   </div>
-
-                  <div class="fields">
-                    <div class="row">
-                      <div class="col-sm-6">
-                        <label>
-                          Günlük Fiyat (₺)
-                          <input type="text" placeholder="Giriniz" class="js-table-price-input" />
-                          <p>TatilOley'in %5'lik satıcı komisyonu sonrası toplam gecelik kazancınız 950 TL olacaktır.</p>
-                        </label>
-                      </div>
-                      <div class="col-sm-6">
-                        <label>
-                          Aylık % İndirim <small>Opsiyonel</small>
-                          <input type="text" placeholder="Giriniz" />
-                          <p>30 gün ve üzeri konaklamalarda uygulanacak indirim oranı</p>
-                        </label>
+                  <div class="calendar-pick-container js-date-calendar-container">
+                    <div class="buttons">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <input type="text" placeholder="Tarih Seçiniz" class="js-drop-datepicker" />
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <a href="#" class="js-apply-disabled-days">Günleri Doldur</a>
+                            </div>
+                            <div class="col-sm-6">
+                              <a href="#" class="js-clear-disabled-days">Günleri Boşalt</a>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <ul class="notices">
-                    <li>İsterseniz belirli günler için özel fiyat belirleyebilirsiniz.</li>
-                    <li>Özel fiyat belirlemediğiniz günler için Fiyatlandırma ve Kurallar aşamasında girdiğiniz fiyatlar geçerlidir.</li>
-                  </ul>
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <div class="calendar-container-area single">
+                    <div class="calendar-container">
+                      <div class="statuses">
+                        <ul>
+                          <li>
+                            Dolu Günler
+                          </li>
+                          <li>
+                            Rezerve Günler
+                          </li>
+                          <li>
+                            Boş Günler
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="calendar-container-area">
                           <input type="hidden" class="js-datepicker-inline-area" />
                       </div>
+                    </div><br />
+                    <div class="hero">
+                      <div>iCalendar</div>
+                      <p>Bu ilanın rezervasyonlarını iCalendar ile takip ediyorsanız iCal verisini içe aktarmak için iCal adresini giriniz.</p>
                     </div>
-                    <div class="col-sm-6">
-                      <div class="buttons">
-                        <div class="row">
-                          <div class="col-sm-6">
-                            <a href="#" class="js-addPriceModal-toggle">Özel Fiyat Ekle</a>
-                          </div>
-                          <div class="col-sm-6">
-                            <a href="#" class="js-removePriceModal-toggle">Özel Fiyat Kaldır</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="summary">
-                        <div class="label">Kayıtlı Özel Günler</div>
-                        <table class="js-selected-prices">
-
-                        </table>
-                      </div>
+                    <div class="field">
+                      <label>
+                        iCal Adresi
+                        <input type="text" placeholder="Giriniz" />
+                      </label>
                     </div>
+                    <ul class="notices">
+                      <li>Yukarıdaki takvimden dolu olarak işaretlenen günler iCalendar tarafında boşaltılamaz.</li>
+                      <li>iCalendar tarafında dolu olarak işaretlenen günler yukarıdaki takvimden boşaltılamaz.</li>
+                      <li>Karışıklıkların önüne geçmek için iCal kullanıyorsanız zorunda kalmadıkça yukarıdaki takvim ile güncelleme yapmayınız.</li>
+                    </ul>
                   </div>
                 </div>
+
               </div>
-            </div>
-            <div class="price-calendar-area checkin-checkout-container">
-              <div class="price-calendar">
-                <div class="hero js-checkincheckout-calendar-toggle">
-                  Tarihe Göre Minimum Konaklama <small>(Opsiyonel)</small>
-                </div>
-                <div class="checkin-checkout-container-area js-checkincheckout-calendar-container">
-                  <div class="fields">
+              <div class="price-calendar-area price-calendar-container">
+                <div class="price-calendar">
+                  <div class="hero js-price-calendar-toggle">
+                    Özel Fiyat Gir <small>(Opsiyonel)</small>
+                  </div>
+                  <div class="price-calendar-container-details js-price-calendar-container">
+                    <div class="hero">
+                      Fiyatlandırma
+                    </div>
+
+                    <div class="fields">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <label>
+                            Günlük Fiyat (₺)
+                            <input type="text" placeholder="Giriniz" class="js-table-price-input" />
+                            <p>TatilOley'in %5'lik satıcı komisyonu sonrası toplam gecelik kazancınız 950 TL olacaktır.</p>
+                          </label>
+                        </div>
+                        <div class="col-sm-6">
+                          <label>
+                            Aylık % İndirim <small>Opsiyonel</small>
+                            <input type="text" placeholder="Giriniz" />
+                            <p>30 gün ve üzeri konaklamalarda uygulanacak indirim oranı</p>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <ul class="notices">
+                      <li>İsterseniz belirli günler için özel fiyat belirleyebilirsiniz.</li>
+                      <li>Özel fiyat belirlemediğiniz günler için Fiyatlandırma ve Kurallar aşamasında girdiğiniz fiyatlar geçerlidir.</li>
+                    </ul>
                     <div class="row">
                       <div class="col-sm-6">
-                        <label>
-                          Giriş Saati
-                          <select>
-                            <option>Lütfen Seçiniz</option>
-                          </select>
-                        </label>
-                      </div>
-                      <div class="col-sm-6">
-                        <label>
-                          Çıkış Saati
-                          <select>
-                            <option>Lütfen Seçiniz</option>
-                          </select>
-                        </label>
-                      </div>
-                      <div class="col-sm-6">
-                        <label>
-                          Konaklama
-                          <select class="js-default-day-select">
-                            <option value="">Lütfen Seçiniz</option>
-                            <option value="1">1</option>
-                            <option value="3">3</option>
-                            <option value="5">5</option>
-                            <option value="7">7</option>
-                          </select>
-                        </label>
-                      </div>
-                      <div class="col-sm-6">
-                        <label>
-                          Temizlik Ücreti (₺)
-                          <input type="text" placeholder="Giriniz" />
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <div class="calendar-container-area single">
-                          <input type="hidden" class="js-datepicker-inline-area" />
-                      </div>
-                    </div>
-                    <div class="col-sm-6">
-                      <div class="buttons">
-                        <div class="row">
-                          <div class="col-sm-6">
-                            <a href="#" class="js-addDateModal-toggle">Özel Gün Ekle</a>
-                          </div>
-                          <div class="col-sm-6">
-                            <a href="#" class="js-removeDateModal-toggle">Özel Fiyat Kaldır</a>
-                          </div>
+                        <div class="calendar-container-area single">
+                            <input type="hidden" class="js-datepicker-inline-area" />
                         </div>
                       </div>
-                      <div class="summary">
-                        <div class="label">Kayıtlı Özel Günler</div>
-                        <table class="js-selected-days">
-                        </table>
+                      <div class="col-sm-6">
+                        <div class="buttons">
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <a href="#" class="js-addPriceModal-toggle">Özel Fiyat Ekle</a>
+                            </div>
+                            <div class="col-sm-6">
+                              <a href="#" class="js-removePriceModal-toggle">Özel Fiyat Kaldır</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="summary">
+                          <div class="label">Kayıtlı Özel Günler</div>
+                          <table class="js-selected-prices">
+
+                          </table>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="centered-button centered-button--full flex">
-              <button>
-                Değişiklikleri Kaydet
-              </button>
+              <div class="price-calendar-area checkin-checkout-container">
+                <div class="price-calendar">
+                  <div class="hero js-checkincheckout-calendar-toggle">
+                    Tarihe Göre Minimum Konaklama <small>(Opsiyonel)</small>
+                  </div>
+                  <div class="checkin-checkout-container-area js-checkincheckout-calendar-container">
+                    <div class="fields">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <label>
+                            Giriş Saati
+                            <select>
+                              <option>Lütfen Seçiniz</option>
+                            </select>
+                          </label>
+                        </div>
+                        <div class="col-sm-6">
+                          <label>
+                            Çıkış Saati
+                            <select>
+                              <option>Lütfen Seçiniz</option>
+                            </select>
+                          </label>
+                        </div>
+                        <div class="col-sm-6">
+                          <label>
+                            Konaklama
+                            <select class="js-default-day-select">
+                              <option value="">Lütfen Seçiniz</option>
+                              <option value="1">1</option>
+                              <option value="3">3</option>
+                              <option value="5">5</option>
+                              <option value="7">7</option>
+                            </select>
+                          </label>
+                        </div>
+                        <div class="col-sm-6">
+                          <label>
+                            Temizlik Ücreti (₺)
+                            <input type="text" placeholder="Giriniz" />
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="calendar-container-area single">
+                            <input type="hidden" class="js-datepicker-inline-area" />
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="buttons">
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <a href="#" class="js-addDateModal-toggle">Özel Gün Ekle</a>
+                            </div>
+                            <div class="col-sm-6">
+                              <a href="#" class="js-removeDateModal-toggle">Özel Fiyat Kaldır</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="summary">
+                          <div class="label">Kayıtlı Özel Günler</div>
+                          <table class="js-selected-days">
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="centered-button centered-button--full flex">
+                <button>
+                  Değişiklikleri Kaydet
+                </button>
+              </div>
             </div>
             <div class="modal fade" id="photoDetailModal" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog modal-dialog--map modal-dialog-centered" role="document">
@@ -1778,14 +1781,19 @@
     container.find('#removePriceModal').modal('show');
   });
 
-
-
   $('a[href="#"]').on('click', function(e) {
     e.preventDefault();
   });
 
-  moment.locale('tr');
+  $(document).on('click', '.room-container .room-hero', function() {
+    $(this).closest('.room-container').stop().toggleClass('shown');
+    $(this).closest('.room-container').find('.js-tags-area').select2({
+      tags: true,
+      tokenSeparators: [',', ' ']
+    });
+  });
 
+  moment.locale('tr');
   var enumerateDaysBetweenDates = function(startDate, endDate) {
       var dates = [];
       var currDate = moment(startDate).startOf('day');
@@ -1806,10 +1814,6 @@
 
   function setRoomPackages() {
     $('.js-all-rooms > div').each((i, containerItem) => {
-      $(containerItem).find('.js-tags-area').select2({
-        tags: true,
-        tokenSeparators: [',', ' ']
-      });
       $(containerItem).find('.js-room-count').text(i + 1);
       $(document).on('change', '.js-bed-count', function() {
         $(this).closest('.types').find('.js-beds').html('');
@@ -1820,7 +1824,9 @@
               <div class="col-sm-6">
                 <label>
                   ${v+1}. Yatak Tipi
-                  <input type="text" placeholder="Giriniz" />
+                  <select>
+                    <option>Seçiniz</option>
+                  </select>
                 </label>
               </div>
               `
