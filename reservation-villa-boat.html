@@ -2,7 +2,7 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Tatiloley</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -129,344 +129,357 @@
 <section class="page-content-two">
     <div class="container">
         <h2>Rezervasyon isteğinizi tamamlayın</h2>
-        <div class="row">
-            <div class="col-lg-8">
-                <div class="login-redirect-wrapper">
-                    <div class="left">Oturum açarak daha hızlı ilerleyebilirsiniz!</div>
-                    <div class="right hidden-m">
-                        <a href="#" class="custom-button-bordered" data-toggle="modal" data-target="#loginModal">Giriş
-                            Yap</a>
-                        <span>veya</span>
-                        <a href="#" class="custom-button-bordered" data-toggle="modal" data-target="#registerModal">Üye
-                            Ol</a>
+        <form>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="login-redirect-wrapper">
+                        <div class="left">Oturum açarak daha hızlı ilerleyebilirsiniz!</div>
+                        <div class="right hidden-m">
+                            <a href="#" class="custom-button-bordered" data-toggle="modal" data-target="#loginModal">Giriş
+                                Yap</a>
+                            <span>veya</span>
+                            <a href="#" class="custom-button-bordered" data-toggle="modal" data-target="#registerModal">Üye
+                                Ol</a>
+                        </div>
+                        <div class="right hidden-d">
+                            <a href="#" class="custom-button-bordered" data-toggle="modal" data-target="#mobile_login">Giriş
+                                Yap</a>
+                            <span>veya</span>
+                            <a href="#" class="custom-button-bordered" data-toggle="modal"
+                               data-target="#mobile_register">Üye
+                                Ol</a>
+                        </div>
                     </div>
-                    <div class="right hidden-d">
-                        <a href="#" class="custom-button-bordered" data-toggle="modal" data-target="#mobile_login">Giriş
-                            Yap</a>
-                        <span>veya</span>
-                        <a href="#" class="custom-button-bordered" data-toggle="modal" data-target="#mobile_register">Üye
-                            Ol</a>
+                    <div class="reservation-forms part-space">
+                        <h3 class="part-title">Kişisel Bilgiler</h3>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Adınız ve Soyadınız" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" id="phone" placeholder="Telefon Numaranız"
+                                           required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="E-mail adresiniz" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="tc" placeholder="T.C. Kimlik Numaranız"
+                                           required>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="2" placeholder="Notunuz (varsa)"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="billing-form-wrapper">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="billing_check"
+                                               value="user_agreement">
+                                        <label class="custom-control-label" for="billing_check">Fatura bilgilerimi
+                                            girmek
+                                            istiyorum.</label>
+                                    </div>
+                                    <div class="billing-forms" style="display: none;">
+                                        <div class="form-group">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" class="custom-control-input" id="individual"
+                                                       name="billing-type" checked>
+                                                <label class="custom-control-label" for="individual">Bireysel</label>
+                                            </div>
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" class="custom-control-input" id="corporate"
+                                                       name="billing-type">
+                                                <label class="custom-control-label" for="corporate">Kurumsal</label>
+                                            </div>
+                                        </div>
+                                        <div class="individual">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" placeholder="Adınız"
+                                                               required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" placeholder="Soyadınız"
+                                                               required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control"
+                                                               placeholder="T.C. Kimlik Numaranız" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <select class="form-control">
+                                                            <option value="" selected disabled>Şehir seçiniz</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <select class="form-control">
+                                                            <option value="" selected disabled>İlçe seçiniz</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="form-group">
+                                                    <textarea rows="2" class="form-control"
+                                                              placeholder="Fatura Adresi"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="corporate">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" placeholder="Adınız"
+                                                               required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" placeholder="Soyadınız"
+                                                               required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control"
+                                                               placeholder="Vergi Numaranız" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control"
+                                                               placeholder="Vergi Dairesi"
+                                                               required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="form-group">
+                                                        <select class="form-control">
+                                                            <option value="" selected disabled>Şehir seçiniz</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="form-group">
+                                                        <select class="form-control">
+                                                            <option value="" selected disabled>İlçe seçiniz</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="form-group">
+                                                    <textarea rows="2" class="form-control"
+                                                              placeholder="Fatura Adresi"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span class="form-info">Firmamız kazancı tutarında komisyon bedeli faturası kesmektedir. Kalan tutar için mülk girişinde mülk sahibiyle görüşebilirsiniz.</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="payment-options part-space">
+                        <h3 class="part-title">Ödeme Yöntemleri</h3>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="payment-option">
+                                    <div class="left">
+                                        <img src="assets/images/icons/credit-card-icon.svg">
+                                    </div>
+                                    <div class="right">
+                                        <strong>Kredi Kartı İle Ödeme</strong>
+                                        <span>Bu Rezervasyonun ödemesini <b>Kredi Kartı</b> ile gerçekleştirebilirsiniz.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="payment-option">
+                                    <div class="left">
+                                        <img src="assets/images/icons/eft-icon.svg">
+                                    </div>
+                                    <div class="right">
+                                        <strong>Havale ya da EFT ile ödeme</strong>
+                                        <span>Bu Rezervasyonun ödemesini <b>Havale</b> veya <b>EFT</b> ile gerçekleştirebilirsiniz.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="payment-option">
+                                    <div class="left">
+                                        <img src="assets/images/icons/partial-payment-icon.svg">
+                                    </div>
+                                    <div class="right">
+                                        <strong>Parçalı Ödeme</strong>
+                                        <span>Bu Rezervasyonun ödemesini birden fazla Kredi Kartı veya Havale/EFT ile gerçekleştirebilirsiniz.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rules">
+                        <h3 class="part-title">Girişte Dikkat Edilmesi Gerekenler</h3>
+                        <ul>
+                            <li><img src="assets/images/icons/check-in.svg">
+                                <p>Giriş:<strong>14:00 'dan itibaren</strong></p>
+                            </li>
+                            <li><img src="assets/images/icons/check-out.svg">
+                                <p>Çıkış:<strong>16:00</strong></p>
+                            </li>
+                            <li><img src="assets/images/icons/deposit.svg">
+                                <p>Hasar Depozitosu:<strong>500,00 ₺</strong></p>
+                            </li>
+                            <li><img src="assets/images/icons/check-green.svg">
+                                <p>Bebeklere uygun<span>0 - 2 yaş</span></p>
+                            </li>
+                            <li><img src="assets/images/icons/check-green.svg">
+                                <p>Çocuklara uygun<span>2 - 12 yaş</span></p>
+                            </li>
+                            <li><img src="assets/images/icons/check-green.svg">
+                                <p>Evcil hayvanlara uygun</p>
+                            </li>
+                            <li><img src="assets/images/icons/check-green.svg">
+                                <p>Etkinlik düzenlenebilir</p>
+                            </li>
+                            <li><img src="assets/images/icons/restriction.svg">
+                                <p>Sigara içilemez</p>
+                            </li>
+                        </ul>
+                        <div class="rules-desc">
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                invidunt
+                                ut labore et dolore.</p>
+
+                            <p>aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                                rebum.
+                                Stet
+                                clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+                                ipsum
+                                dolor
+                                sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                                et
+                                dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                                dolores
+                                et ea
+                                rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                                amet.</p>
+
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                invidunt
+                                ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                                justo
+                                duo
+                                dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+                                dolor
+                                sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                eirmod
+                                tempor
+                                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                                accusam
+                                et
+                                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+                                Lorem
+                                ipsum dolor sit amet.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="reservation-forms part-space">
-                    <h3 class="part-title">Kişisel Bilgiler</h3>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Adınız ve Soyadınız" required>
-                            </div>
+                <div class="col-lg-4 pl-lg-4">
+                    <div class="reservation-summary sticky-top" id="reservation-summary">
+                        <div class="reservation-image"
+                             style="background-image: linear-gradient(to bottom, rgba(225, 80, 104, 0) 10%, #e15068), url('assets/images/others/otel-detay-1.png');">
+                            <div class="name">Kalkan Patara'da Muhteşem Manzaralı, Özel Havuzlu, Tasarım Villa</div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <input type="tel" class="form-control" id="phone" placeholder="Telefon Numaranız"
-                                       required>
+                        <div class="reservation-details">
+                            <div class="pax">
+                                <div class="total-pax">
+                                    <img src="assets/images/icons/pax-gray.svg">
+                                    1 Yetişkin, 2 Çocuk, 0 Bebek
+                                </div>
+                                <a href="#" class="change-reservation">Değiştir</a>
                             </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <input type="email" class="form-control" placeholder="E-mail adresiniz" required>
+                            <div class="dates">
+                                <div class="date checkin-dates">
+                                    <div class="left">
+                                        <span class="month">Mart</span>
+                                        <span class="day">09</span>
+                                    </div>
+                                    <div class="right">
+                                        <span>09-03-2021</span>
+                                        <span>Salı</span>
+                                    </div>
+                                </div>
+                                <div class="divider-arrow">
+                                    <img src="assets/images/icons/arrow-right-gray.svg">
+                                </div>
+                                <div class="date checkout-dates">
+                                    <div class="left">
+                                        <span class="month">Mart</span>
+                                        <span class="day">20</span>
+                                    </div>
+                                    <div class="right">
+                                        <span>09-03-2021</span>
+                                        <span>Salı</span>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="tc" placeholder="T.C. Kimlik Numaranız"
-                                       required>
+                            <div class="prices">
+                                <ul>
+                                    <li>
+                                        <div class="desc">350,00 ₺ x 11 Gece</div>
+                                        <div class="price">3.850,00 ₺</div>
+                                    </li>
+                                    <li>
+                                        <div class="desc">Ön Ödeme</div>
+                                        <div class="price">1.540,00 ₺</div>
+                                    </li>
+                                    <li>
+                                        <div class="desc">Girişte Ödeme</div>
+                                        <div class="price">2.310,00 ₺</div>
+                                    </li>
+                                    <li class="total">
+                                        <div class="desc">Toplam</div>
+                                        <div class="price">3.850,00 ₺</div>
+                                    </li>
+                                </ul>
                             </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="form-group">
-                                <textarea class="form-control" rows="2" placeholder="Notunuz (varsa)"></textarea>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="billing-form-wrapper">
+                            <div class="submit">
                                 <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="billing_check"
-                                           value="user_agreement">
-                                    <label class="custom-control-label" for="billing_check">Fatura bilgilerimi girmek
-                                        istiyorum.</label>
+                                    <input type="checkbox" class="custom-control-input" id="reservation_agreement"
+                                           value="reservation_agreement">
+                                    <label class="custom-control-label" for="reservation_agreement">
+                                        <a href="#" data-toggle="modal" data-target="#reservationAgreementModal">
+                                            Rezervasyon Koşullarını</a> okudum, onaylıyorum.
+                                    </label>
                                 </div>
-                                <div class="billing-forms" style="display: none;">
-                                    <div class="form-group">
-                                        <div class="custom-control custom-radio">
-                                            <input type="radio" class="custom-control-input" id="individual"
-                                                   name="billing-type" checked>
-                                            <label class="custom-control-label" for="individual">Bireysel</label>
-                                        </div>
-                                        <div class="custom-control custom-radio">
-                                            <input type="radio" class="custom-control-input" id="corporate"
-                                                   name="billing-type">
-                                            <label class="custom-control-label" for="corporate">Kurumsal</label>
-                                        </div>
-                                    </div>
-                                    <div class="individual">
-                                        <div class="row">
-                                            <div class="col-lg-4">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="Adınız"
-                                                           required>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="Soyadınız"
-                                                           required>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                           placeholder="T.C. Kimlik Numaranız" required>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="form-group">
-                                                    <select class="form-control">
-                                                        <option value="" selected disabled>Şehir seçiniz</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="form-group">
-                                                    <select class="form-control">
-                                                        <option value="" selected disabled>İlçe seçiniz</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-12">
-                                                <div class="form-group">
-                                                    <textarea rows="2" class="form-control"
-                                                              placeholder="Fatura Adresi"></textarea>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="corporate">
-                                        <div class="row">
-                                            <div class="col-lg-4">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="Adınız"
-                                                           required>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="Soyadınız"
-                                                           required>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control"
-                                                           placeholder="Vergi Numaranız" required>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="Vergi Dairesi"
-                                                           required>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <div class="form-group">
-                                                    <select class="form-control">
-                                                        <option value="" selected disabled>Şehir seçiniz</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <div class="form-group">
-                                                    <select class="form-control">
-                                                        <option value="" selected disabled>İlçe seçiniz</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-12">
-                                                <div class="form-group">
-                                                    <textarea rows="2" class="form-control"
-                                                              placeholder="Fatura Adresi"></textarea>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <span class="form-info">Firmamız kazancı tutarında komisyon bedeli faturası kesmektedir. Kalan tutar için mülk girişinde mülk sahibiyle görüşebilirsiniz.</span>
-                                </div>
+                                <button type="submit" class="custom-button-green">Rezervasyonu Tamamla</button>
+                                <div>Bu adımda ödeme yapmayacaksınız</div>
                             </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="payment-options part-space">
-                    <h3 class="part-title">Ödeme Yöntemleri</h3>
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <div class="payment-option">
-                                <div class="left">
-                                    <img src="assets/images/icons/credit-card-icon.svg">
-                                </div>
-                                <div class="right">
-                                    <strong>Kredi Kartı İle Ödeme</strong>
-                                    <span>Bu Rezervasyonun ödemesini <b>Kredi Kartı</b> ile gerçekleştirebilirsiniz.</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="payment-option">
-                                <div class="left">
-                                    <img src="assets/images/icons/eft-icon.svg">
-                                </div>
-                                <div class="right">
-                                    <strong>Havale ya da EFT ile ödeme</strong>
-                                    <span>Bu Rezervasyonun ödemesini <b>Havale</b> veya <b>EFT</b> ile gerçekleştirebilirsiniz.</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="payment-option">
-                                <div class="left">
-                                    <img src="assets/images/icons/partial-payment-icon.svg">
-                                </div>
-                                <div class="right">
-                                    <strong>Parçalı Ödeme</strong>
-                                    <span>Bu Rezervasyonun ödemesini birden fazla Kredi Kartı veya Havale/EFT ile gerçekleştirebilirsiniz.</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="rules">
-                    <h3 class="part-title">Girişte Dikkat Edilmesi Gerekenler</h3>
-                    <ul>
-                        <li><img src="assets/images/icons/check-in.svg">
-                            <p>Giriş:<strong>14:00 'dan itibaren</strong></p>
-                        </li>
-                        <li><img src="assets/images/icons/check-out.svg">
-                            <p>Çıkış:<strong>16:00</strong></p>
-                        </li>
-                        <li><img src="assets/images/icons/deposit.svg">
-                            <p>Hasar Depozitosu:<strong>500,00 ₺</strong></p>
-                        </li>
-                        <li><img src="assets/images/icons/check-green.svg">
-                            <p>Bebeklere uygun<span>0 - 2 yaş</span></p>
-                        </li>
-                        <li><img src="assets/images/icons/check-green.svg">
-                            <p>Çocuklara uygun<span>2 - 12 yaş</span></p>
-                        </li>
-                        <li><img src="assets/images/icons/check-green.svg">
-                            <p>Evcil hayvanlara uygun</p>
-                        </li>
-                        <li><img src="assets/images/icons/check-green.svg">
-                            <p>Etkinlik düzenlenebilir</p>
-                        </li>
-                        <li><img src="assets/images/icons/restriction.svg">
-                            <p>Sigara içilemez</p>
-                        </li>
-                    </ul>
-                    <div class="rules-desc">
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                            invidunt
-                            ut labore et dolore.</p>
-
-                        <p>aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                            Stet
-                            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
-                            dolor
-                            sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-                            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-                            et ea
-                            rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-                            amet.</p>
-
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                            invidunt
-                            ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
-                            duo
-                            dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-                            dolor
-                            sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                            tempor
-                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-                            et
-                            justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-                            ipsum dolor sit amet.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 pl-lg-4">
-                <div class="reservation-summary sticky-top" id="reservation-summary">
-                    <div class="reservation-image"
-                         style="background-image: linear-gradient(to bottom, rgba(225, 80, 104, 0) 10%, #e15068), url('assets/images/others/otel-detay-1.png');">
-                        <div class="name">Kalkan Patara'da Muhteşem Manzaralı, Özel Havuzlu, Tasarım Villa</div>
-                    </div>
-                    <div class="reservation-details">
-                        <div class="pax">
-                            <div class="total-pax">
-                                <img src="assets/images/icons/pax-gray.svg">
-                                1 Yetişkin, 2 Çocuk, 0 Bebek
-                            </div>
-                            <a href="#" class="change-reservation">Değiştir</a>
-                        </div>
-                        <div class="dates">
-                            <div class="date checkin-dates">
-                                <div class="left">
-                                    <span class="month">Mart</span>
-                                    <span class="day">09</span>
-                                </div>
-                                <div class="right">
-                                    <span>09-03-2021</span>
-                                    <span>Salı</span>
-                                </div>
-                            </div>
-                            <div class="divider-arrow">
-                                <img src="assets/images/icons/arrow-right-gray.svg">
-                            </div>
-                            <div class="date checkout-dates">
-                                <div class="left">
-                                    <span class="month">Mart</span>
-                                    <span class="day">20</span>
-                                </div>
-                                <div class="right">
-                                    <span>09-03-2021</span>
-                                    <span>Salı</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="prices">
-                            <ul>
-                                <li>
-                                    <div class="desc">350,00 ₺ x 11 Gece</div>
-                                    <div class="price">3.850,00 ₺</div>
-                                </li>
-                                <li>
-                                    <div class="desc">Ön Ödeme</div>
-                                    <div class="price">1.540,00 ₺</div>
-                                </li>
-                                <li>
-                                    <div class="desc">Girişte Ödeme</div>
-                                    <div class="price">2.310,00 ₺</div>
-                                </li>
-                                <li class="total">
-                                    <div class="desc">Toplam</div>
-                                    <div class="price">3.850,00 ₺</div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="submit">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="reservation_agreement"
-                                       value="reservation_agreement">
-                                <label class="custom-control-label" for="reservation_agreement">
-                                    <a href="#" data-toggle="modal" data-target="#reservationAgreementModal">
-                                        Rezervasyon Koşullarını</a> okudum, onaylıyorum.
-                                </label>
-                            </div>
-                            <button type="submit" class="custom-button-green">Rezervasyonu Tamamla</button>
-                            <div>Bu adımda ödeme yapmayacaksınız</div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </form>
     </div>
 </section>
 

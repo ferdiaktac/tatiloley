@@ -10,7 +10,7 @@
     }
 
     .owl-carousel-dest-cats .owl-stage,
-    .owl-carousel-specs .owl-stage{
+    .owl-carousel-specs .owl-stage {
         width: 100% !important;
         column-count: 4;
     }
@@ -21,20 +21,20 @@
     }
 
     .owl-carousel-dest-cats .owl-item,
-    .owl-carousel-specs .owl-item{
+    .owl-carousel-specs .owl-item {
         width: 100% !important;
     }
 
     .owl-carousel.owl-carousel-dest-cats .owl-item,
-    .owl-carousel.owl-carousel-specs .owl-item{
+    .owl-carousel.owl-carousel-specs .owl-item {
         -webkit-backface-visibility: initial !important;
         -moz-backface-visibility: initial !important;
         -ms-backface-visibility: initial !important;
         -webkit-transform: initial !important;
         -moz-transform: initial !important;
         -ms-transform: initial !important;
-        min-height: initial!important;
-        float: initial!important;
+        min-height: initial !important;
+        float: initial !important;
     }
 }
 
@@ -2339,6 +2339,162 @@
 
     .special-feature .special-feature-item strong {
         font-size: 13px;
+    }
+
+    .payment-content .payment-content-wrapper {
+        flex-direction: column;
+    }
+
+    .payment-content .payment-content-wrapper .page-left {
+        padding: 15px;
+    }
+
+    .payment-content .payment-content-wrapper .page-left {
+        width: 100%;
+    }
+
+    .payment-content .payment-content-wrapper .page-right {
+        padding: 15px;
+    }
+
+    .payment-content .payment-content-wrapper .page-right {
+        width: 100%;
+        background: transparent;
+        padding: 15px
+    }
+
+    .payment-content .payment-content-wrapper .page-right .reservation-summary {
+        padding: 15px;
+    }
+
+    .payment-content .payment-content-wrapper .page-right .reservation-details {
+        padding: 15px 0;
+    }
+
+    .payment-content .payment-content-wrapper .page-right .reservation-details .pax {
+        flex-direction: column;
+    }
+
+    .payment-content .payment-content-wrapper .page-right .pax .total-pax {
+        padding-bottom: 15px;
+    }
+
+    .reservation-details .dates .right {
+        font-size: 15px;
+    }
+
+    .payment-content .payment-content-wrapper .page-right .reservation-details .dates .right strong {
+        font-size: 12px;
+        padding-bottom: 3px;
+        text-align: center;
+    }
+
+    .summary-bottom-info .right span {
+        font-size: 14px;
+    }
+
+    .payment-content .welcome-info p {
+        font-size: 13px;
+    }
+
+    section.payment-header div.left, section.payment-header div.right {
+        display: none;
+    }
+
+    section.payment-header {
+        height: 60px;
+        padding: 0 15px;
+    }
+
+    .payment-content .welcome-info {
+        padding: 15px;
+        border-radius: 15px;
+        margin-bottom: 15px;
+    }
+
+    .page-left .nav-tabs li:first-child .nav-link {
+        border-top-right-radius: 15px !important;
+    }
+
+    .page-left .nav-tabs li:first-child {
+        width: 100%;
+    }
+
+    .page-left .nav-tabs li:last-child {
+        width: 50%;
+    }
+
+    .page-left .nav-tabs .nav-link {
+        padding: 10px;
+    }
+
+    .page-left .nav-tabs li:last-child .nav-link {
+        border-top-right-radius: 0 !important;
+    }
+
+    .page-left .tab-content {
+        border-radius: 0 0 15px 15px;
+    }
+
+    .page-left .tab-content {
+        padding: 15px;
+    }
+
+    section.payment-content .animation {
+        display: none;
+    }
+
+    .payment-content .info {
+        margin-top: 20px;
+    }
+
+    .partial-payment-section .title:after {
+        display: none;
+    }
+
+    .partial-payment-section {
+        margin-bottom: 30px;
+    }
+
+    .partial-number {
+        flex-direction: column;
+    }
+
+    .partial-number select {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .partial-price .input input {
+        width: 100%;
+    }
+
+    .partial-left {
+        width: 100%;
+    }
+
+    .partial-payment-content ul.nav.nav-tabs li {
+        width: 100%;
+    }
+
+    .partial-payment-content ul.nav.nav-tabs {
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .partial-payment-content ul.nav.nav-tabs li:first-child {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .partial-payment-content ul.nav.nav-tabs li:last-child {
+        border-radius: 0 0 10px 10px;
+    }
+
+    .payment-result{
+        width: 100%;
+        margin: 50px 0;
+        padding: 20px;
     }
 
 

@@ -27,109 +27,626 @@
     <div class="right"><img src="assets/images/header/surface.svg">GÜVENLİ ÖDEME</div>
 </section>
 
-<section class="page-content-two mt-lg-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8">
-                <div class="reservation-success-wrapper">
-                    <div class="reservation-success">
-                        <img src="assets/images/icons/done-icon.svg">
-                        <h1>REZERVASYON İSTEĞİNİZ BİZE ULAŞTI</h1>
-                        <strong>Müşteri temsilcilerimiz en kısa zamanda size ulaşacaktır.</strong>
-                        <span>Ön rezervasyon detaylarınız e-mail adresinize gönderildi.</span>
-                    </div>
-                    <div class="reservation-success-info">
-                        Mülk sahibinden rezervasyon için onay alındığında;<br>
-                        Ödeme yapabilmeniz için size E-posta ve SMS ile bir bağlantı göndereceğiz.
-                    </div>
-                    <div class="payment-options">
-                        <h3 class="part-title">Ödeme Yöntemleri</h3>
-                        <div class="row">
-                            <div class="col-lg-6 col-6">
-                                <div class="payment-option">
-                                    <div class="left">
-                                        <img src="assets/images/icons/credit-card-red-icon.svg">
+<section class="payment-content">
+    <div class="payment-content-wrapper">
+        <div class="page-left">
+            <div class="welcome-info">
+                <span>Merhaba, <b>John Doe</b></span>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.</p>
+            </div>
+            <div class="title">
+                <h3 class="part-title">Ödeme Yöntemleri</h3>
+            </div>
+            <ul class="nav nav-tabs" id="payment_options" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="card-tab" data-toggle="tab" href="#card_tab" role="tab"
+                       aria-controls="home" aria-selected="true">Banka / Kredi Kartı</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#bank_tab" role="tab"
+                       aria-controls="profile" aria-selected="false">Havale / EFT ile Ödeme</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#partial_tab" role="tab"
+                       aria-controls="contact" aria-selected="false">Parçalı Ödeme</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="payment_options_content">
+                <div class="card_tab tab-pane fade show active" id="card_tab" role="tabpanel"
+                     aria-labelledby="card_tab">
+                    <form id="cc_form" action="">
+                        <div class="payment-content">
+                            <div class="card-holder-container">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="cc-inputs ">
+                                            <div class="form-item">
+                                                <label for="card_holder">Kart Üzerindeki Ad Soyad</label>
+                                                <input type="text" class="form-control" required
+                                                       id="card_holder" name="card_holder">
+                                            </div>
+                                            <div class="form-item">
+                                                <label for="card_number">Kart Numarası</label>
+                                                <input type="text" class="form-control" required
+                                                       id="card_number" name="card_number">
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-8 col-xs-8 col-8">
+                                                    <label>Son Kullanma Tarihi</label>
+                                                    <div class="row">
+                                                        <div class="col-lg-6 col-xs-6 col-6">
+                                                            <select class="form-control" name="cc_day"
+                                                                    id="cc_day" required>
+                                                                <option selected value="">01</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-lg-6 col-xs-6 col-6">
+                                                            <select class="form-control" name="cc_month"
+                                                                    id="cc_month" required>
+                                                                <option selected value="">19</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-xs-4 col-4">
+                                                    <label for="cvc">CVC</label>
+                                                    <input class="form-control" type="text" name="cvc" id="cvc"
+                                                           required>
+                                                </div>
+                                                <div class="col-lg-12 col-xs-12">
+                                                    <div class="installment-info">
+                                                        Taksit Seçenekleri kart bilgilerinizi girmenizin ardından
+                                                        görüntülenecektir.
+                                                    </div>
+                                                    <!--taksit seçenekleri-->
+                                                    <div class="installment-list">
+                                                        <table class="table">
+                                                            <tr class="br-none">
+                                                                <th></th>
+                                                                <th>Aylık Ödeme</th>
+                                                                <th>Toplam</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="pass-price-elements">
+                                                                        <label>
+                                                                            <input type="radio" value="1"
+                                                                                   name="installment">
+                                                                            <span class="label-text">1 Taksit</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </td>
+                                                                <td>XXX.XX₺</td>
+                                                                <td>XXX.XX₺</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="pass-price-elements">
+                                                                        <label>
+                                                                            <input type="radio" value="2"
+                                                                                   name="installment"> <span
+                                                                                class="label-text">6 Taksit</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </td>
+                                                                <td>XXX.XX₺</td>
+                                                                <td>XXX.XX₺</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="pass-price-elements">
+                                                                        <label>
+                                                                            <input type="radio" value="2"
+                                                                                   name="installment" checked=""> <span
+                                                                                class="label-text">12 Taksit</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </td>
+                                                                <td>XXX.XX₺</td>
+                                                                <td>XXX.XX₺</td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                    <!--taksit seçenekleri bitti-->
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="right">
-                                        <strong>Kredi Kartı</strong>
-                                        <span>Tüm kredi kartlarına 12 taksit fırsatı </span>
+                                    <div class="col-lg-6">
+                                        <div class="animation">
+                                            <div class="card-wrapper"></div>
+                                        </div>
+                                        <div class="info">
+                                            <img src="assets/images/icons/secure-payment-icon.svg">
+                                            Tatiloley’den yapacağınız tüm işlemler dünyanın önde gelen güvenlik
+                                            sertifikası şirketi Comodo tarafından şifrelenerek korunmaktadır.
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-6">
-                                <div class="payment-option">
-                                    <div class="left">
-                                        <img src="assets/images/icons/eft-red-icon.svg">
-                                    </div>
-                                    <div class="right">
-                                        <strong>Havale & EFT ile</strong>
-                                        <span>TR, USD, EURO, GBP</span>
+                        </div>
+                    </form>
+                </div>
+                <div class="bank_tab tab-pane fade" id="bank_tab" role="tabpanel" aria-labelledby="bank_tab">
+                    <form>
+                        <div class="bank-eft">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <label>Banka Seçiniz</label>
+                                    <select class="form-control" name="banks" class="banks">
+                                        <option value="garanti" selected>Garanti Bankası</option>
+                                        <option value=isbankasi>İş Bankası</option>
+                                        <option value=akbank>Akbank</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-12">
+                                    <table class="bank-details">
+                                        <tbody>
+                                        <tr>
+                                            <td>
+                                                <span>BANKA</span>
+                                            </td>
+                                            <td>
+                                                <span class="bank-name">GARANTİ BANKASI</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>IBAN NO</span>
+                                            </td>
+                                            <td>
+                                                <span class="bank-iban copy-content">TR00 0000 0000 0000 0000 0000 00</span>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="copy"><i class="far fa-copy"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>ALICI</span>
+                                            </td>
+                                            <td>
+                                                <span class="bank-receiver copy-content">Tatiloley A.Ş.</span>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="copy"><i class="far fa-copy"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>HAVALE/EFT AÇIKLAMASI</span>
+                                            </td>
+                                            <td>
+                                                <span class="bank-receiver copy-content">123456789</span>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="copy"><i class="far fa-copy"></i></a>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="bank-info">Ödemenizi tamamlarken <b>123456789</b> sipariş numaranızı
+                                        açıklama alanında belirtmenizi önemle rica ederiz.
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="partial_tab tab-pane fade" id="partial_tab" role="tabpanel" aria-labelledby="partial_tab">
+                    <div class="partial-payment-wrapper">
+                        <div class="form-group">
+                            <div class="col-lg-8">
+                                <div class="partial-number">
+                                    <label for="partial-number">Ödemenizi kaça bölmek istersiniz?</label>
+                                    <select class="form-control" id="partial-number">
+                                        <option value="2" selected>2'ye Böl</option>
+                                        <option value="3">3'e Böl</option>
+                                        <option value="4">4'e Böl</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="partial-payment-section">
+                            <div class="title">
+                                <span>1</span>
+                                <h3 class="part-title">1. Ödeme Bilgileri</h3>
+                            </div>
+                            <div class="success">
+                                <img src="assets/images/icons/img-check.svg">Ödemeniz Onaylandı.
+                            </div>
+                        </div>
+                        <div class="partial-payment-section">
+                            <div class="title">
+                                <span>2</span>
+                                <h3 class="part-title">2. Ödeme Bilgileri</h3>
+                            </div>
+                            <div class="partial-payment-content">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="partial-price">
+                                            <label>2. ödeme için çekilecek tutarı giriniz</label>
+                                            <div class="input">
+                                                <input type="text" id="partial_price" name="partial_price"
+                                                       class="form-control" placeholder="Tutar Giriniz"
+                                                       required>
+                                                <span>TL</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="partial-left">
+                                            <span>Kalan tutar:</span>
+                                            <strong>5.000,00</strong>
+                                            <span>TL</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <ul class="nav nav-tabs" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" id="card-tab-partial" data-toggle="tab"
+                                                   href="#card_tab-partial" role="tab"
+                                                   aria-controls="home" aria-selected="true">Banka / Kredi Kartı</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="profile-tab-partial" data-toggle="tab"
+                                                   href="#bank_tab-partial" role="tab"
+                                                   aria-controls="profile" aria-selected="false">Havale / EFT</a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div class="card_tab tab-pane fade show active" id="card_tab-partial"
+                                                 role="tabpanel"
+                                                 aria-labelledby="card_tab-partial">
+                                                <form id="cc_form_partial">
+                                                    <div class="payment-content">
+                                                        <div class="card-holder-container">
+                                                            <div class="row">
+                                                                <div class="col-lg-7">
+                                                                    <div class="cc-inputs ">
+                                                                        <div class="form-item">
+                                                                            <label for="card_holder">Kart Üzerindeki Ad
+                                                                                Soyad</label>
+                                                                            <input type="text" class="form-control"
+                                                                                   required
+                                                                                   id="card_holder_partial"
+                                                                                   name="card_holder">
+                                                                        </div>
+                                                                        <div class="form-item">
+                                                                            <label for="card_number">Kart
+                                                                                Numarası</label>
+                                                                            <input type="text" class="form-control"
+                                                                                   required
+                                                                                   id="card_number_partial"
+                                                                                   name="card_number">
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col-lg-8 col-xs-8 col-8">
+                                                                                <label>Son Kullanma Tarihi</label>
+                                                                                <div class="row">
+                                                                                    <div class="col-lg-6 col-xs-6 col-6">
+                                                                                        <select class="form-control"
+                                                                                                name="cc_day"
+                                                                                                id="cc_day_partial"
+                                                                                                required>
+                                                                                            <option selected value="">
+                                                                                                01
+                                                                                            </option>
+                                                                                        </select>
+                                                                                    </div>
+                                                                                    <div class="col-lg-6 col-xs-6 col-6">
+                                                                                        <select class="form-control"
+                                                                                                name="cc_month"
+                                                                                                id="cc_month_partial"
+                                                                                                required>
+                                                                                            <option selected value="">
+                                                                                                19
+                                                                                            </option>
+                                                                                        </select>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-4 col-xs-4 col-4">
+                                                                                <label for="cvc">CVC</label>
+                                                                                <input class="form-control" type="text"
+                                                                                       name="cvc" id="cvc_partial"
+                                                                                       required>
+                                                                            </div>
+                                                                            <div class="col-lg-12 col-xs-12">
+                                                                                <div class="installment-info">
+                                                                                    Taksit Seçenekleri kart
+                                                                                    bilgilerinizi girmenizin ardından
+                                                                                    görüntülenecektir.
+                                                                                </div>
+                                                                                <!--taksit seçenekleri-->
+                                                                                <div class="installment-list">
+                                                                                    <table class="table">
+                                                                                        <tr class="br-none">
+                                                                                            <th></th>
+                                                                                            <th>Aylık Ödeme</th>
+                                                                                            <th>Toplam</th>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <div class="pass-price-elements">
+                                                                                                    <label>
+                                                                                                        <input type="radio"
+                                                                                                               value="1"
+                                                                                                               name="installment">
+                                                                                                        <span class="label-text">1 Taksit</span>
+                                                                                                    </label>
+                                                                                                </div>
+                                                                                            </td>
+                                                                                            <td>XXX.XX₺</td>
+                                                                                            <td>XXX.XX₺</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <div class="pass-price-elements">
+                                                                                                    <label>
+                                                                                                        <input type="radio"
+                                                                                                               value="2"
+                                                                                                               name="installment">
+                                                                                                        <span
+                                                                                                                class="label-text">6 Taksit</span>
+                                                                                                    </label>
+                                                                                                </div>
+                                                                                            </td>
+                                                                                            <td>XXX.XX₺</td>
+                                                                                            <td>XXX.XX₺</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <div class="pass-price-elements">
+                                                                                                    <label>
+                                                                                                        <input type="radio"
+                                                                                                               value="2"
+                                                                                                               name="installment"
+                                                                                                               checked="">
+                                                                                                        <span
+                                                                                                                class="label-text">12 Taksit</span>
+                                                                                                    </label>
+                                                                                                </div>
+                                                                                            </td>
+                                                                                            <td>XXX.XX₺</td>
+                                                                                            <td>XXX.XX₺</td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                </div>
+                                                                                <!--taksit seçenekleri bitti-->
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-5">
+                                                                    <div class="info">
+                                                                        <img src="assets/images/icons/secure-payment-icon.svg">
+                                                                        Tatiloley’den yapacağınız tüm işlemler dünyanın
+                                                                        önde gelen güvenlik
+                                                                        sertifikası şirketi Comodo tarafından
+                                                                        şifrelenerek korunmaktadır.
+                                                                    </div>
+                                                                    <div class="partial-summary">
+                                                                        <div class="top">
+                                                                            <span>Ödenecek Tutar</span>
+                                                                            <strong>4.000,00 TL</strong>
+                                                                        </div>
+                                                                        <div class="submit">
+                                                                            <button type="submit"
+                                                                                    class="custom-button-green">Bu
+                                                                                Ödemeyi
+                                                                                Onayla
+                                                                            </button>
+                                                                        </div>
+                                                                        <div class="info">
+                                                                            <img src="assets/images/icons/info-icon.svg">
+                                                                            Bu karttan çekilecek tutar için ön provizyon
+                                                                            alınacaktır. Sipariş işlemi tamamlandığında
+                                                                            tutar kartınızdan tahsil edilecektir.
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="bank_tab tab-pane fade" id="bank_tab-partial" role="tabpanel"
+                                                 aria-labelledby="bank_tab-partial">
+                                                <form>
+                                                    <div class="bank-eft">
+                                                        <div class="row">
+                                                            <div class="col-lg-7">
+                                                                <label>Banka Seçiniz</label>
+                                                                <select class="form-control" name="banks" class="banks">
+                                                                    <option value="garanti" selected>Garanti Bankası
+                                                                    </option>
+                                                                    <option value=isbankasi>İş Bankası</option>
+                                                                    <option value=akbank>Akbank</option>
+                                                                </select>
+                                                                <table class="bank-details">
+                                                                    <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <span>BANKA</span>
+                                                                        </td>
+                                                                        <td>
+                                                                            <span class="bank-name">GARANTİ BANKASI</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <span>IBAN NO</span>
+                                                                        </td>
+                                                                        <td>
+                                                                            <span class="bank-iban copy-content">TR00 0000 0000 0000 0000 0000 00</span>
+                                                                        </td>
+                                                                        <td>
+                                                                            <a href="#" class="copy"><i
+                                                                                    class="far fa-copy"></i></a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <span>ALICI</span>
+                                                                        </td>
+                                                                        <td>
+                                                                            <span class="bank-receiver copy-content">Tatiloley A.Ş.</span>
+                                                                        </td>
+                                                                        <td>
+                                                                            <a href="#" class="copy"><i
+                                                                                    class="far fa-copy"></i></a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <span>HAVALE/EFT AÇIKLAMASI</span>
+                                                                        </td>
+                                                                        <td>
+                                                                            <span class="bank-receiver copy-content">123456789</span>
+                                                                        </td>
+                                                                        <td>
+                                                                            <a href="#" class="copy"><i
+                                                                                    class="far fa-copy"></i></a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <div class="bank-info">Ödemenizi tamamlarken
+                                                                    <b>123456789</b> sipariş numaranızı
+                                                                    açıklama alanında belirtmenizi önemle rica ederiz.
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-5">
+                                                                <div class="info">
+                                                                    <img src="assets/images/icons/secure-payment-icon.svg">
+                                                                    Tatiloley’den yapacağınız tüm işlemler dünyanın
+                                                                    önde gelen güvenlik
+                                                                    sertifikası şirketi Comodo tarafından
+                                                                    şifrelenerek korunmaktadır.
+                                                                </div>
+                                                                <div class="partial-summary">
+                                                                    <div class="top">
+                                                                        <span>Ödenecek Tutar</span>
+                                                                        <strong>4.000,00 TL</strong>
+                                                                    </div>
+                                                                    <div class="submit">
+                                                                        <button type="submit"
+                                                                                class="custom-button-green">Bu Ödemeyi
+                                                                            Onayla
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="info">
+                                                                        <img src="assets/images/icons/info-icon.svg">
+                                                                        Bu karttan çekilecek tutar için ön provizyon
+                                                                        alınacaktır. Sipariş işlemi tamamlandığında
+                                                                        tutar kartınızdan tahsil edilecektir.
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="partial-payment-section">
+                            <div class="title">
+                                <span>3</span>
+                                <h3 class="part-title">3. Ödeme Bilgileri</h3>
+                            </div>
+                            <div class="notification">
+                                <img src="assets/images/icons/info-icon.svg">
+                                Önceki ödeme bilgileriniz onaylandıktan sonra 3. ödeme bilgilerinizi girebilirsiniz.
+                            </div>
+                        </div>
+                        <div class="partial-payment-section">
+                            <div class="title">
+                                <span>4</span>
+                                <h3 class="part-title">4. Ödeme Bilgileri</h3>
+                            </div>
+                            <div class="notification">
+                                <img src="assets/images/icons/info-icon.svg">
+                                Önceki ödeme bilgileriniz onaylandıktan sonra 4. ödeme bilgilerinizi girebilirsiniz.
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 pl-lg-4">
-                <div class="reservation-summary" id="reservation-summary">
-                    <div class="reservation-image"
-                         style="background-image: linear-gradient(to bottom, rgba(225, 80, 104, 0) 10%, #e15068), url('assets/images/others/otel-detay-1.png');">
-                        <div class="name">Kalkan Patara'da Muhteşem Manzaralı, Özel Havuzlu, Tasarım Villa</div>
-                    </div>
-                    <div class="reservation-details">
-                        <div class="pax">
-                            <div class="total-pax">
-                                <img src="assets/images/icons/pax-gray.svg">
-                                1 Yetişkin, 2 Çocuk, 0 Bebek
-                            </div>
-                            <a href="#" class="change-reservation">Değiştir</a>
+        </div>
+        <div class="page-right">
+            <div class="reservation-summary sticky-top" id="reservation-summary">
+                <div class="reservation-image"
+                     style="background-image: linear-gradient(to bottom, rgba(225, 80, 104, 0) 10%, #e15068), url('assets/images/others/otel-detay-1.png');">
+                    <div class="name">Kalkan Patara'da Muhteşem Manzaralı, Özel Havuzlu, Tasarım Otel</div>
+                </div>
+                <div class="reservation-details">
+                    <div class="pax">
+                        <div class="total-pax">
+                            <img src="assets/images/icons/pax-gray.svg">
+                            1 Yetişkin, 2 Çocuk, 0 Bebek
                         </div>
                         <div class="dates">
                             <div class="date checkin-dates">
-                                <div class="left">
-                                    <span class="month">Mart</span>
-                                    <span class="day">09</span>
-                                </div>
                                 <div class="right">
+                                    <strong>Giriş Tarihi</strong>
                                     <span>09-03-2021</span>
-                                    <span>Salı</span>
                                 </div>
-                            </div>
-                            <div class="divider-arrow">
-                                <img src="assets/images/icons/arrow-right-gray.svg">
                             </div>
                             <div class="date checkout-dates">
-                                <div class="left">
-                                    <span class="month">Mart</span>
-                                    <span class="day">20</span>
-                                </div>
                                 <div class="right">
+                                    <strong>Çıkış Tarihi</strong>
                                     <span>09-03-2021</span>
-                                    <span>Salı</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="prices">
-                            <ul>
-                                <li>
-                                    <div class="desc">350,00 ₺ x 11 Gece</div>
-                                    <div class="price">3.850,00 ₺</div>
-                                </li>
-                                <li>
-                                    <div class="desc">Ön Ödeme</div>
-                                    <div class="price">1.540,00 ₺</div>
-                                </li>
-                                <li>
-                                    <div class="desc">Girişte Ödeme</div>
-                                    <div class="price">2.310,00 ₺</div>
-                                </li>
-                                <li class="total">
-                                    <div class="desc">Toplam</div>
-                                    <div class="price">3.850,00 ₺</div>
-                                </li>
-                            </ul>
+                    </div>
+                    <div class="prices">
+                        <ul>
+                            <li>
+                                <div class="desc">Ön Ödeme</div>
+                                <div class="price">1.540,00 ₺</div>
+                            </li>
+                            <li>
+                                <div class="desc">Girişte Ödeme</div>
+                                <div class="price">2.310,00 ₺</div>
+                            </li>
+                            <li>
+                                <div class="desc">Toplam</div>
+                                <div class="price">3.850,00 ₺</div>
+                            </li>
+                        </ul>
+                        <div class="now-payment">
+                            <span>Şimdi Ödenecek</span>
+                            <span>1.540,00 ₺</span>
                         </div>
+                    </div>
+                    <div class="submit">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="reservation_agreement"
+                                   value="reservation_agreement">
+                            <label class="custom-control-label" for="reservation_agreement">
+                                <a href="#" data-toggle="modal" data-target="#reservationAgreementModal">
+                                    Rezervasyon Koşullarını</a> okudum, onaylıyorum.
+                            </label>
+                        </div>
+                        <button type="submit" class="custom-button-green" disabled>Güvenli Ödeme Yap</button>
+                    </div>
+                    <div class="summary-bottom-info">
+                        <div class="left">
+                            <img src="assets/images/icons/guarantee.svg" alt="">
+                        </div>
+                        <div class="right">
+                            <strong>%100 Para İade Garantisi Misafir Koruma</strong>
+                            <span>Tatiloley.com ile yaptığın rezervasyonlar %100 para iadesi garantisiyle misafir koruma
+                                programımız kapsamındadır.</span>
+                        </div>
+                    </div>
+                    <div class="summary-bottom-cards">
+                        <img src="assets/images/icons/payment-logos.svg">
                     </div>
                 </div>
             </div>
@@ -137,27 +654,7 @@
     </div>
 </section>
 
-
 <footer>
-    <div class="app-section">
-        <div class="container">
-            <div class="app-area">
-                <div class="left col-lg-6 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000"
-                     data-aos-delay="200">
-                    <h2>Tatiloley Uygulamasını İndirin</h2>
-                    <span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.</span>
-                    <div class="app-logo">
-                        <a href="#"><img src="assets/images/footer/appstore-white.svg"></a>
-                        <a href="#"><img src="assets/images/footer/gplay-white.svg"></a>
-                    </div>
-                </div>
-                <div class="right col-lg-6 aos-init aos-animate" data-aos="fade-left" data-aos-duration="1000"
-                     data-aos-delay="400">
-                    <img src="assets/images/footer/footer-img.png" alt="Tatiloley Uygulamasını İndirin">
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="newsletter-section">
         <div class="container">
             <div class="newsletter-area">
@@ -226,18 +723,6 @@
     </div>
 </footer>
 
-<!--Mobile Bottom Menu-->
-<div class="mobile-bottom-fixed-menu">
-    <ul>
-        <li class="home"><a href="#"><i></i>Keşfedin</a></li>
-        <li class="liked"><a href="#"><i></i>Beğendiklerim</a></li>
-        <li class="travels"><a href="#"><i></i>Seyahatler</a></li>
-        <!--<li class="login"><a href="#" data-toggle="modal" data-target="#mobile_login"><i></i>Giriş Yap</a></li>-->
-        <li class="profile"><a href="#"><i></i>Profilim</a></li>
-    </ul>
-</div>
-<!--Mobile Bottom Menu-->
-
 <!--Reservation Agreement-->
 <div class="modal fade" id="reservationAgreementModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -275,382 +760,6 @@
 </div>
 <!--Reservation Agreement End-->
 
-<!--Login-->
-<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <img src="assets/images/icons/close-icon.svg">
-                </button>
-                <h2 class="bordered-title">Giriş Yap</h2>
-            </div>
-            <div class="modal-form d-flex justify-content-center flex-column">
-                <div class="modal-form-inner">
-                    <form action="">
-                        <div class="iconed-control">
-                            <div class="input"><input type="email" placeholder="E-posta" required name="email"></div>
-                            <div class="icon"><img src="assets/images/icons/email.svg"></div>
-                        </div>
-                        <div class="iconed-control">
-                            <div class="input"><input type="password" placeholder="Şifre" required name="password">
-                            </div>
-                            <div class="icon"><img src="assets/images/icons/password.svg"></div>
-                        </div>
-                        <div class="login-form-group">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="remember_me"
-                                       value="remember_me">
-                                <label class="custom-control-label" for="remember_me">Beni Hatırla</label>
-                            </div>
-                            <div><a href="#" data-toggle="modal" data-target="#forgetpasswordModal"
-                                    onclick="$('#loginModal').modal('hide')">Şifremi Unuttum</a></div>
-                        </div>
-                        <button class="custom-button">Giriş Yap</button>
-                    </form>
-                    <div class="login-register">Hesabınız yok mu?<a data-toggle="modal" data-target="#registerModal"
-                                                                    onclick="$('#loginModal').modal('hide')" href="#">Hemen
-                        Kaydolun</a></div>
-                    <div class="login-social">
-                        <p><span>veya</span></p>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="social-btn">
-                                    <a href="#"><img src="assets/images/icons/fb-logo.svg" alt="">
-                                        <span>Facebook ile devam et</span></a>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="social-btn">
-                                    <a href="#"><img src="assets/images/icons/g-logo.svg" alt="">
-                                        <span>Google ile devam et</span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--Login end-->
-
-<!--Register-->
-<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <img src="assets/images/icons/close-icon.svg">
-                </button>
-                <h2 class="bordered-title">Üye Ol</h2>
-            </div>
-            <div class="modal-form d-flex justify-content-center flex-column">
-                <div class="modal-form-inner">
-                    <form action="">
-                        <div class="iconed-control">
-                            <div class="input"><input type="text" placeholder="Adınız" required name="text"></div>
-                            <div class="icon"><img src="assets/images/icons/user.svg"></div>
-                        </div>
-                        <div class="iconed-control">
-                            <div class="input"><input type="text" placeholder="Soyadınız" required name="surname"></div>
-                            <div class="icon"><img src="assets/images/icons/user.svg"></div>
-                        </div>
-                        <div class="iconed-control">
-                            <div class="input"><input type="email" placeholder="E-posta" required name="email"></div>
-                            <div class="icon"><img src="assets/images/icons/email.svg"></div>
-                        </div>
-                        <div class="iconed-control">
-                            <div class="input"><input type="tel" id="tel_number" required name="tel_number"></div>
-                            <div class="icon"><img src="assets/images/icons/phone.svg"></div>
-                        </div>
-                        <div class="iconed-control">
-                            <div class="input"><input type="password" placeholder="Şifre" required name="password">
-                            </div>
-                            <div class="icon"><img src="assets/images/icons/password.svg"></div>
-                        </div>
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="user_agreement"
-                                   value="user_agreement" required>
-                            <label class="custom-control-label" for="user-agreement"><a data-toggle="modal"
-                                                                                        data-target="#userAgreementModal"
-                                                                                        href="#">Üyelik sözleşmesini</a>
-                                ve <a href="#">Kişisel verilerin korunması</a> ve gizlilik politikasını okudum
-                                ve kabul ediyorum.</label>
-                        </div>
-                        <button class="custom-button">Üye Ol</button>
-                    </form>
-                    <div class="login-register">Zaten bir hesabınız mı var?<a data-toggle="modal"
-                                                                              data-target="#loginModal"
-                                                                              onclick="$('#registerModal').modal('hide')"
-                                                                              href="#">Giriş Yapın</a></div>
-                    <div class="login-social">
-                        <p><span>veya</span></p>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="social-btn">
-                                    <a href="#"><img src="assets/images/icons/fb-logo.svg" alt="">
-                                        <span>Facebook ile devam et</span></a>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="social-btn">
-                                    <a href="#"><img src="assets/images/icons/g-logo.svg" alt="">
-                                        <span>Google ile devam et</span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--Register end-->
-
-<!--Forget Password-->
-<div class="modal fade" id="forgetpasswordModal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <img src="assets/images/icons/close-icon.svg">
-                </button>
-                <h2 class="bordered-title">Şifremi Unuttum</h2>
-            </div>
-            <div class="modal-form d-flex justify-content-center flex-column">
-                <div class="modal-form-inner">
-                    <form action="">
-                        <div class="iconed-control">
-                            <div class="input"><input type="email" placeholder="E-posta Adresiniz" required
-                                                      name="email"></div>
-                            <div class="icon"><img src="assets/images/icons/email.svg"></div>
-                        </div>
-                        <button class="custom-button">Şifremi Gönder</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--Forget Password end-->
-
-<!--User Agreement-->
-<div class="modal fade" id="userAgreementModal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <img src="assets/images/icons/close-icon.svg">
-                </button>
-                <h2 class="bordered-title">Üyelik Sözleşmesi</h2>
-            </div>
-            <div class="modal-form d-flex justify-content-center flex-column">
-                <div class="modal-form-inner">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et risus tempus, vehicula lacus
-                        pulvinar, facilisis ipsum. Vestibulum tristique magna sagittis dictum hendrerit. Nunc bibendum
-                        convallis velit, a lacinia augue ornare eget. Proin accumsan nec felis in placerat. Vestibulum
-                        sed mollis tellus, et mattis tortor. Donec suscipit purus nec neque consectetur, eget imperdiet
-                        magna fringilla. Praesent finibus posuere ex, sed ultrices odio scelerisque quis.
-                    </p>
-                    <p>
-                        Nam at tincidunt lorem. Nulla scelerisque ullamcorper aliquet. Etiam eget nulla in eros
-                        condimentum dapibus. Aenean blandit mauris odio, vel cursus nibh aliquet sit amet. Nunc lobortis
-                        egestas arcu, sit amet bibendum metus pulvinar vitae. Proin tempus eleifend massa sit amet
-                        gravida. Proin sed odio a lectus consectetur convallis. In lorem velit, vulputate quis nibh vel,
-                        accumsan fringilla sapien. Fusce volutpat diam vel turpis consequat suscipit vel quis arcu.
-                        Nulla ac tortor eget nulla cursus laoreet. Pellentesque habitant morbi tristique senectus et
-                        netus et malesuada fames ac turpis egestas. Maecenas vitae lorem eget erat vestibulum suscipit.
-                        Suspendisse lectus turpis, consequat a metus sed, pulvinar fringilla quam. Nulla facilisi.
-                        Pellentesque porttitor auctor cursus.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--User Agreement End-->
-
-<!--Mobile Register-->
-<div class="modal modal-bottom fade" id="mobile_register" tabindex="-1" role="dialog">
-    <div class="modal-dialog " role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <img src="assets/images/icons/close-mobile-icon.svg">
-                </button>
-                <h2 class="bordered-title">Üye Ol</h2>
-            </div>
-            <div class="modal-body">
-                <div class="modal-form-inner">
-                    <form action="">
-                        <div class="iconed-control">
-                            <div class="input"><input type="text" placeholder="Adınız" required name="text"></div>
-                            <div class="icon"><img src="assets/images/icons/user.svg"></div>
-                        </div>
-                        <div class="iconed-control">
-                            <div class="input"><input type="text" placeholder="Soyadınız" required name="surname"></div>
-                            <div class="icon"><img src="assets/images/icons/user.svg"></div>
-                        </div>
-                        <div class="iconed-control">
-                            <div class="input"><input type="email" placeholder="E-posta" required name="email"></div>
-                            <div class="icon"><img src="assets/images/icons/email.svg"></div>
-                        </div>
-                        <div class="iconed-control">
-                            <div class="input"><input type="tel" id="tel_number_mobile" required
-                                                      name="tel_number_mobile"></div>
-                            <div class="icon"><img src="assets/images/icons/phone.svg"></div>
-                        </div>
-                        <div class="iconed-control">
-                            <div class="input"><input type="password" placeholder="Şifre" required name="password">
-                            </div>
-                            <div class="icon"><img src="assets/images/icons/password.svg"></div>
-                        </div>
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="mobile_user-agreement"
-                                   value="user_agreement" required>
-                            <label class="custom-control-label" for="mobile_user-agreement"><a data-toggle="modal"
-                                                                                               data-target="#userAgreementModal"
-                                                                                               href="#">Üyelik
-                                sözleşmesini</a>
-                                ve <a href="#">Kişisel verilerin korunması</a> ve gizlilik politikasını okudum
-                                ve kabul ediyorum.</label>
-                        </div>
-                        <button class="custom-button">Üye Ol</button>
-                    </form>
-                    <div class="login-register">Zaten bir hesabınız mı var?<a data-toggle="modal"
-                                                                              data-target="#mobile_login"
-                                                                              onclick="$('#mobile_register').modal('hide')"
-                                                                              href="#">Giriş Yapın</a></div>
-                    <div class="login-social">
-                        <p><span>veya</span></p>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="social-btn">
-                                    <a href="#"><img src="assets/images/icons/fb-logo.svg" alt="">
-                                        <span>Facebook ile devam et</span></a>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="social-btn">
-                                    <a href="#"><img src="assets/images/icons/g-logo.svg" alt="">
-                                        <span>Google ile devam et</span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--Mobile Register-->
-
-<!--Mobile Login-->
-<div class="modal modal-bottom fade" id="mobile_login" tabindex="-1" role="dialog">
-    <div class="modal-dialog " role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <img src="assets/images/icons/close-mobile-icon.svg">
-                </button>
-                <h2 class="bordered-title">Giriş Yap</h2>
-            </div>
-            <div class="modal-body">
-                <div class="modal-form-inner">
-                    <form action="">
-                        <div class="iconed-control">
-                            <div class="input"><input type="email" placeholder="E-posta" required name="email"></div>
-                            <div class="icon"><img src="assets/images/icons/email.svg"></div>
-                        </div>
-                        <div class="iconed-control">
-                            <div class="input"><input type="password" placeholder="Şifre" required name="password">
-                            </div>
-                            <div class="icon"><img src="assets/images/icons/password.svg"></div>
-                        </div>
-                        <div class="login-form-group">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="mobile_remember_me"
-                                       value="mobile_remember_me">
-                                <label class="custom-control-label" for="mobile_remember_me">Beni Hatırla</label>
-                            </div>
-                            <div><a href="#" data-toggle="modal" data-target="#forgetpasswordModal">Şifremi Unuttum</a>
-                            </div>
-                        </div>
-                        <button class="custom-button">Giriş Yap</button>
-                    </form>
-                    <div class="login-register">Hesabınız yok mu?<a data-toggle="modal" data-target="#mobile_register"
-                                                                    onclick="$('#mobile_login').modal('hide')" href="#">Hemen
-                        Kaydolun</a></div>
-                    <div class="login-social">
-                        <p><span>veya</span></p>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="social-btn">
-                                    <a href="#"><img src="assets/images/icons/fb-logo.svg" alt="">
-                                        <span>Facebook ile devam et</span></a>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="social-btn">
-                                    <a href="#"><img src="assets/images/icons/g-logo.svg" alt="">
-                                        <span>Google ile devam et</span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--Mobile Login-->
-
-<!--Mobile Menu-->
-<div class="modal modal-bottom fade" id="mobile_menu" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <img src="assets/images/icons/close-mobile-icon.svg">
-                </button>
-                <h2 class="bordered-title">Menu</h2>
-            </div>
-            <div class="modal-body">
-                <ul class="mobile-menu-list">
-                    <li><a href="#">Seyahatlerim</a></li>
-                    <li><a href="#">Beğendiklerim</a></li>
-                    <li><a href="#">Profilim</a></li>
-                    <li><a href="#">İlan Veren Bilgilerim</a></li>
-                    <li><a href="#">İlan Veren Panosu</a></li>
-                    <li><a href="#">Çıkış Yap</a></li>
-                </ul>
-            </div>
-            <div class="modal-footer">
-                <ul>
-                    <li class="header-phone">
-                        <a href="tel:08500000000">
-                            <span>Destek Hattı</span>
-                            0850 000 00 00
-                        </a>
-                    </li>
-                    <li><a href="#">Yardım</a></li>
-                    <li class="nav-select-lang">
-                        <div><span class="flag-icon flag-icon-tr"></span>TR</div>
-                        <ul>
-                            <li><a href="#"><span class="flag-icon flag-icon-us"></span>EN</a></li>
-                            <li><a href="#"><span class="flag-icon flag-icon-fr"></span>FR</a></li>
-                            <li><a href="#"><span class="flag-icon flag-icon-tr"></span>TR</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-<!--Mobile Menu-->
-
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
@@ -666,5 +775,49 @@
 <script type="text/javascript" src="assets/js/aos.js"></script>
 <script type="text/javascript" src="assets/js/moment-with-locales.min.js"></script>
 <script type="text/javascript" src="assets/js/daterangepicker.js"></script>
+
+<!--Sayfaya Özel JS-->
+<script type="text/javascript" src="assets/js/card.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $("#reservation_agreement").change(function () {
+            if ($(this).prop("checked") === true) {
+                $(".submit button").prop("disabled", false);
+            } else {
+                $(".submit button").prop("disabled", true);
+            }
+        });
+
+        var card = new Card({
+            form: 'form#cc_form',
+            container: '.card-wrapper',
+            formSelectors: {
+                numberInput: 'input#card_number', // optional — default input[name="number"]
+                expiryInput: 'input[name="expiry"]', // optional — default input[name="expiry"]
+                cvcInput: 'input#cvc', // optional — default input[name="cvc"]
+                nameInput: 'input#card_holder' // optional - defaults input[name="name"]
+            },
+            formatting: true,
+            messages: {
+                validDate: 'geç\ntarih', // optional - default 'valid\'
+                monthYear: 'aa/yyyy', // optional - default 'month/year'
+            },
+            // Default placeholders for rendered fields - optional
+            placeholders: {
+                number: '•••• •••• •••• ••••',
+                name: 'İSİM SOYİSİM',
+                expiry: '••/••',
+                cvc: '•••'
+            },
+
+            masks: {
+                cardNumber: '•' // optional - mask card number
+            },
+            // if true, will log helpful messages for setting up Card
+            debug: false // optional - default false
+        });
+    });
+</script>
 </body>
 </html>
