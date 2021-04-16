@@ -40,6 +40,10 @@
 
 /*Max 1280 Fix*/
 @media (max-width: 1280px) {
+    .partial-payment-section .title:after{
+        display: none;
+    }
+
     .search-area {
         width: 100%;
         margin: 0 auto;

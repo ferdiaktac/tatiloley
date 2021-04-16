@@ -9227,7 +9227,7 @@ input.favorite-list-link {
     padding: 0 8px;
 }
 
-.info {
+.affiliate-info  {
     padding: 15px;
     border-radius: 5px;
     background-color: #f5f5f5;
@@ -9241,7 +9241,7 @@ input.favorite-list-link {
     margin-bottom: 48px;
 }
 
-.info i {
+.affiliate-info  i {
     padding-right: 10px;
 }
 
