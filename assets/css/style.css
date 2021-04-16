@@ -11628,3 +11628,7 @@ body.payment-body .reservation-summary.sticky-top {
 .payment-result .buttons a:hover {
     background: #bf2d45;
 }
+
+.add-images .add-image-hero img {
+    filter: brightness(400%);
+}
