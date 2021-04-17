@@ -8562,23 +8562,6 @@ ul {
     margin-right: 5px;
 }
 
-.profile-wrapper {
-    flex-direction: column;
-    border-radius: 20px;
-    padding: 20px;
-}
-
-.point-label {
-    width: 100%;
-    border-radius: 200px;
-    height: auto;
-    box-shadow: none;
-}
-
-.travel-summary {
-    margin: 20px 0;
-}
-
 .advertiser-type {
     display: flex;
     justify-content: space-between;
@@ -11628,7 +11611,4 @@ body.payment-body .reservation-summary.sticky-top {
 
 .payment-result .buttons a:hover {
     background: #bf2d45;
-}
-.add-images .add-image-hero img {
-    filter: brightness(400%);
 }

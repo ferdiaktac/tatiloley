@@ -2501,8 +2501,24 @@
         padding: 20px;
     }
 
-}
+    .profile-wrapper {
+        flex-direction: column;
+        border-radius: 20px;
+        padding: 20px;
+    }
 
+    .point-label {
+        width: 100%;
+        border-radius: 200px;
+        height: auto;
+        box-shadow: none;
+    }
+
+    .travel-summary {
+        margin: 20px 0;
+    }
+
+}
 
 /*Extra Small*/
 
