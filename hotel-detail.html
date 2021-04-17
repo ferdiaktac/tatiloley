@@ -2034,6 +2034,17 @@
 <script type="text/javascript">
     $(document).ready(function () {
         // Daterange Picker
+        var enumerateDaysBetweenDates = function(startDate, endDate) {
+            var dates = [];
+            var currDate = moment(startDate).startOf('day');
+            var lastDate = moment(endDate).startOf('day');
+            while(currDate.add(1, 'days').diff(lastDate) < 0) {
+                dates.push(moment(currDate.clone().toDate()).format('DD/MM/YYYY'));
+            }
+            return dates;
+        };
+
+        moment.locale('tr');
         $('#search_checkin, #search_checkin').dateRangePicker({
             startOfWeek: 'monday',
             language: 'tr',
@@ -2047,8 +2058,9 @@
             },
             setValue: function(s,s1,s2)
             {
-                $('#search_checkin').val(s1);
-                $('#search_checkout').val(s2);
+                $('.total-night-calc').text(enumerateDaysBetweenDates(s1, s2).length + 1);
+                $('#search_checkin').val(moment(s1).format('DD MMMM YYYY'));
+                $('#search_checkout').val(moment(s2).format('DD MMMM YYYY'));
             }
         });
         // End Daterange Picker

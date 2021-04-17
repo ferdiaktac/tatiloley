@@ -15,9 +15,10 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/js/telinput/css/intlTelInput.css">
-    <link rel="stylesheet" href="assets/css/daterangepicker.css">
+    <link rel="stylesheet" href="assets/js/datepicker/daterangepicker.min.css">
     <link rel="stylesheet" href="assets/css/select2.min.css">
     <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/add-steps.css">
 </head>
 <body>
 <header class="header pages">
@@ -1758,7 +1759,7 @@
 <script type="text/javascript" src="assets/js/select2.full.min.js"></script>
 <script type="text/javascript" src="assets/js/aos.js"></script>
 <script type="text/javascript" src="assets/js/moment-with-locales.min.js"></script>
-<script type="text/javascript" src="assets/js/daterangepicker.js"></script>
+<script type="text/javascript" src="assets/js/datepicker/jquery.daterangepicker.js"></script>
 
 <!--Sayfaya Özel JS-->
 <script src='//cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js'></script>
@@ -1767,72 +1768,35 @@
 <script type="text/javascript">
     $(document).ready(function () {
         // Daterange Picker
-        let disabledDays = ["24-04-2021","25-04-2021","26-04-2021","27-04-2021",];
+        var enumerateDaysBetweenDates = function(startDate, endDate) {
+            var dates = [];
+            var currDate = moment(startDate).startOf('day');
+            var lastDate = moment(endDate).startOf('day');
+            while(currDate.add(1, 'days').diff(lastDate) < 0) {
+                dates.push(moment(currDate.clone().toDate()).format('DD/MM/YYYY'));
+            }
+            return dates;
+        };
 
-        if ($('#search_checkin, #search_checkout').length) {
-            var currentDate = moment().format("DD MMMM YYYY");
-            moment.locale('tr');
-            $('#search_checkin, #search_checkout').daterangepicker({
-                // Disabled dates
-                isInvalidDate: function(ele) {
-                    var currDate = moment(ele._d).format('DD-MM-YYYY');
-                    return disabledDays.indexOf(currDate) !== -1;
-                },
-                // Checkout dates
-                isCustomDate: function(e) {
-                    var dataCell = moment(e._d).format("DD-MM-YYYY");
-                    if ( dataCell === "28-04-2021" )  {
-                        return 'checkoutday';
-                    }
-                },
-                locale: {
-                    format: 'DD MMMM YYYY',
-                },
-                /*Mininmum Night*/
-                "minSpan": {
-                    "days": 5
-                },
-                "linkedCalendars": false,
-                "alwaysShowCalendars": true,
-                "minDate": currentDate,
-                "maxDate": moment().add('months', 12),
-                "opens": "center",
-                autoApply: true,
-                autoUpdateInput: false
-            }, function (start, end, label) {
-                var selectedStartDate = start.format('DD MMMM YYYY'); // selected start
-                var selectedEndDate = end.format('DD MMMM YYYY'); // selected end
-
-
-                $checkinInput = $('#search_checkin');
-                $checkoutInput = $('#search_checkout');
-
-                // Updating Fields with selected dates
-                $checkinInput.val(selectedStartDate);
-                $checkoutInput.val(selectedEndDate);
-
-                var checkOutPicker = $checkoutInput.data('daterangepicker');
-                checkOutPicker.setStartDate(selectedStartDate);
-                checkOutPicker.setEndDate(selectedEndDate);
-
-                var checkInPicker = $checkinInput.data('daterangepicker');
-                checkInPicker.setStartDate(selectedStartDate);
-                checkInPicker.setEndDate(selectedEndDate);
-
-            });
-            $('#search_checkin').on('apply.daterangepicker', function(ev, picker) {
-                var d1 = picker.startDate.format('YYYY-MM-DD');
-                var d2 = picker.endDate.format('YYYY-MM-DD');
-
-                if(moment('2021-04-24').isBetween(d1, d2)) {
-                    $('#search_checkin').click();
-                    setTimeout(() => {
-                        $('#search_checkout').val('');
-                        $('.total-night-calc').text('0')
-                    }, 250);
-                }
-            });
-        }
+        moment.locale('tr');
+        $('#search_checkin, #search_checkin').dateRangePicker({
+            startOfWeek: 'monday',
+            language: 'tr',
+            autoClose: true,
+            getValue: function()
+            {
+                if ($('#search_checkin').val() && $('#search_checkout').val() )
+                    return $('#search_checkin').val() + ' to ' + $('#search_checkout').val();
+                else
+                    return '';
+            },
+            setValue: function(s,s1,s2)
+            {
+                $('.total-night-calc').text(enumerateDaysBetweenDates(s1, s2).length + 1);
+                $('#search_checkin').val(moment(s1).format('DD MMMM YYYY'));
+                $('#search_checkout').val(moment(s2).format('DD MMMM YYYY'));
+            }
+        });
         // End Daterange Picker
 
         /*Fixed Mobile Bottom*/

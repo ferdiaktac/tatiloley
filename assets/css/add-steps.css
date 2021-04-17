@@ -1360,10 +1360,12 @@ body, html {
   width: 100%!important;
   border: unset!important;
 }
+.availability .calendar-container-area.single table,
 .date-picker-wrapper .month-wrapper table {
   width: 49%!important;
   table-layout: fixed!important;
 }
+.availability .calendar-container-area.single table.month2,
 .date-picker-wrapper .month-wrapper table.month2 {
   float: right;
 }

@@ -1460,6 +1460,7 @@
 <script type="text/javascript">
     $(document).ready(function () {
         // Daterange Picker
+        moment.locale('tr');
         $('#search_checkin, #search_checkin').dateRangePicker({
             startOfWeek: 'monday',
             language: 'tr',
@@ -1474,8 +1475,8 @@
             },
             setValue: function(s,s1,s2)
             {
-                $('#search_checkin').val(s1);
-                $('#search_checkout').val(s2);
+                $('#search_checkin').val(moment(s1).format('DD MMMM YYYY'));
+                $('#search_checkout').val(moment(s2).format('DD MMMM YYYY'));
             }
         });
 
