@@ -829,10 +829,11 @@
         })
 
         $('#partial_price').on('input', function() {
-            let price = $('.partial-left strong').attr('data-price');
+            let price = parseInt($('.partial-left strong').attr('data-price'));
             if($(this).val() > 0) {
                 price = price - parseInt($(this).val());
-                $('.partial-summary .top strong').text(formatter.format(price))
+                $('.partial-left strong').text(formatter.format(price))
+                $('.partial-summary .top strong').text(formatter.format(parseInt($(this).val())))
             }
         });
 
