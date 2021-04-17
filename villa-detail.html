@@ -2089,10 +2089,35 @@
         };
 
         moment.locale('tr');
+        const reservedDays = ["01/04/2021","02/04/2021","03/04/2021","04/04/2021","05/04/2021"];
+        const blockedDays = ["10/04/2021","11/04/2021","12/04/2021","13/04/2021","14/04/2021"];
         $('#search_checkin, #search_checkin').dateRangePicker({
             startOfWeek: 'monday',
             language: 'tr',
             autoClose: true,
+            minDays: 5,
+            startDate: new Date(),
+            beforeShowDay: function(t){
+                var valid = true;
+                var _class = '';
+                var _tooltip = valid ? '' : '';
+
+                if(reservedDays.includes(moment(t).format('DD/MM/YYYY'))) {
+                    _class += 'reserved-days';
+                    valid = !(reservedDays.includes(moment(t).format('DD/MM/YYYY')));
+                }
+                if(moment(t).format('DD/MM/YYYY') == reservedDays[reservedDays.length -1]) {
+                    _class += ' half';
+                    valid = true;
+                }
+
+                if(blockedDays.includes(moment(t).format('DD/MM/YYYY'))) {
+                    _class += 'blocked-days';
+                    valid = !(blockedDays.includes(moment(t).format('DD/MM/YYYY')));
+                }
+
+                return [valid,_class,_tooltip];
+            },
             getValue: function()
             {
                 if ($('#search_checkin').val() && $('#search_checkout').val() )
@@ -2109,7 +2134,7 @@
         });
         // End Daterange Picker
 
-        const reservedDays = ["01/04/2021","02/04/2021","03/04/2021","04/04/2021","05/04/2021"];
+
         $('.js-datepicker-inline-area').dateRangePicker({
             startOfWeek: 'monday',
             inline:true,
