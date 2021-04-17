@@ -173,7 +173,7 @@
                             <div class="row">
                                 <div class="col-lg-6">
                                     <label>Banka Seçiniz</label>
-                                    <select class="form-control" name="banks" class="banks">
+                                    <select name="banks" class="form-control banks js-bank-type-transfer">
                                         <option value="garanti" selected>Garanti Bankası</option>
                                         <option value=isbankasi>İş Bankası</option>
                                         <option value=akbank>Akbank</option>
@@ -217,7 +217,7 @@
                                                 <span>HAVALE/EFT AÇIKLAMASI</span>
                                             </td>
                                             <td>
-                                                <span class="bank-receiver copy-content">123456789</span>
+                                                <span class="bank-detail copy-content">123456789</span>
                                             </td>
                                             <td>
                                                 <a href="#" class="copy"><i class="far fa-copy"></i></a>
@@ -277,7 +277,7 @@
                                     <div class="col-lg-6">
                                         <div class="partial-left">
                                             <span>Kalan tutar:</span>
-                                            <strong>5.000,00</strong>
+                                            <strong data-price="5000">5.000,00</strong>
                                             <span>TL</span>
                                         </div>
                                     </div>
@@ -458,7 +458,7 @@
                                                         <div class="row">
                                                             <div class="col-lg-7">
                                                                 <label>Banka Seçiniz</label>
-                                                                <select class="form-control" name="banks" class="banks">
+                                                                <select name="banks" class="form-control banks js-bank-type-transfer">
                                                                     <option value="garanti" selected>Garanti Bankası
                                                                     </option>
                                                                     <option value=isbankasi>İş Bankası</option>
@@ -503,7 +503,7 @@
                                                                             <span>HAVALE/EFT AÇIKLAMASI</span>
                                                                         </td>
                                                                         <td>
-                                                                            <span class="bank-receiver copy-content">123456789</span>
+                                                                            <span class="bank-detail copy-content">123456789</span>
                                                                         </td>
                                                                         <td>
                                                                             <a href="#" class="copy"><i
@@ -786,6 +786,53 @@
                 $(".submit button").prop("disabled", false);
             } else {
                 $(".submit button").prop("disabled", true);
+            }
+        });
+
+        $('#bank_tab .js-bank-type-transfer, #partial_tab .js-bank-type-transfer').on('change', function() {
+            let container = $(this).closest('.tab-pane');
+            let iban, receiver, name;
+            if($(this).val() == 'garanti') {
+                iban = 'TR00 0000 0000 0000 0000 0000 00';
+                name = 'Garanti Bankası';
+                receiver = 'Tatiloley A.Ş.';
+            } else if ($(this).val() == 'isbankasi') {
+                iban = 'TR00 0000 0000 0000 0000 0000 01';
+                name = 'İş Bankası';
+                receiver = 'Tatiloley A.Ş.';
+            } else if ($(this).val() == 'akbank') {
+                iban = 'TR00 0000 0000 0000 0000 0000 02';
+                name = 'Akbank';
+                receiver = 'Tatiloley A.Ş.';
+            }
+            container.find('.bank-name').text(name);
+            container.find('.bank-iban').text(iban);
+            container.find('.bank-receiver').text(receiver);
+        });
+
+        function copyToClipboard(element) {
+          var $temp = $("<input>");
+          $("body").append($temp);
+          $temp.val($(element).text()).select();
+          document.execCommand("copy");
+          $temp.remove();
+        }
+
+        $('.copy').on('click', function() {
+            copyToClipboard($(this).closest('tr').find('.copy-content'));
+        });
+
+        const formatter = new Intl.NumberFormat('tr-TR', {
+          style: 'currency',
+          currency: 'TRY',
+          minimumFractionDigits: 2
+        })
+
+        $('#partial_price').on('input', function() {
+            let price = $('.partial-left strong').attr('data-price');
+            if($(this).val() > 0) {
+                price = price - parseInt($(this).val());
+                $('.partial-summary .top strong').text(formatter.format(price))
             }
         });
 
