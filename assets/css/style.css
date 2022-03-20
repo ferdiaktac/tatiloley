@@ -11612,3 +11612,66 @@ body.payment-body .reservation-summary.sticky-top {
 .payment-result .buttons a:hover {
     background: #bf2d45;
 }
+
+/* New CSS */
+
+.date-picker-wrapper .month-wrapper div span small {
+    z-index: 1;
+}
+
+.date-picker-wrapper .month-wrapper div span {
+    z-index: 1;
+}
+
+.day.toMonth.reserved-days.half-reverse {
+    background: #fff!important;
+}
+
+.day.toMonth.reserved-days.half-reverse::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    display: block;
+    width: 83%;
+    height: 200%;
+    background: #ffd9df;
+    transform: rotate(221deg)!important;
+    margin: -28px 31px;
+}
+
+.date-picker-wrapper .day.toMonth.reserved-days.half-reverse::after {
+    transform: rotate(225deg)!important;
+    margin: -12px 20px!important;
+    z-index: -1;
+}
+
+.date-picker-wrapper .day.toMonth.reserved-days.half::after {
+    transform: rotate(225deg)!important;
+    margin: -32px -12px!important;
+    z-index: -1;
+}
+
+.date-picker-wrapper .month-wrapper .day{
+    z-index: 2;
+}
+
+.date-range-length-tip{
+    z-index: 99;
+}
+
+.day.toMonth.reserved-days.half.checked.first-date-selected::after,
+.day.toMonth.reserved-days.half-reverse.checked.first-date-selected::after {
+    opacity: 0.5;
+}
+
+
+.date-picker-wrapper.inline-wrapper .month-wrapper div.reserved-days.half::after {
+    transform: rotate(222deg)!important;
+    margin: -32px -20px!important;
+}
+
+.date-picker-wrapper.inline-wrapper .day.toMonth.blocked-days.invalid small {
+    display: none;
+}
+
